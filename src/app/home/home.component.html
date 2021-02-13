@@ -1,0 +1,400 @@
+
+
+<!-- dashboard d-flex justify-content-center background: #3f51b5;-->
+<div class="  p-2" style="background: #333; margin-top: -25px;min-height: 250px;" >
+
+  <div class="row ">
+    <div class="col-8" style="color: white;">
+      <!-- <h3 class="font-weight-bold mb-3 ">Welcome </h3> -->
+      <h4 class="mb-2 h5 text-left header-text">
+        
+          A stock broker plays an essential role in the buying and selling of securities in India. Since stockbrokers play an important role, it is crucial to choose the most suitable stockbroker for yourself.
+          They help you in opening a Demat and Trading Account for your trading and investment needs.
+         
+      </h4>
+    </div>
+    <div class="col-3" >
+       
+    </div>
+    <div class="col-3">
+      <p>
+          <!-- <a href="" class="btn btn-danger btn-md waves-effect waves-light">Margin Calculator</a> -->
+      </p>
+    </div>
+  </div>
+    
+  
+  
+  </div>
+  <!-- /dashboard -->
+<!-- card -->
+<div class="row">
+  <div class="col-1">
+
+  </div>
+  <div class="col-10">
+    <app-carousel></app-carousel>
+  </div>
+  <div class="col-1">
+
+  </div>
+
+</div>
+<!-- /card -->
+  <!-- calculator -->
+  <div class="container-fluid">
+  <h5 class="mt-5"> Brokerage & Margin calculator  </h5>
+
+  <div class="row m-0">
+    <!-- <div class="col-1">
+    
+    </div> -->
+    <div class="col-md-9" >
+      
+
+      <div class="row calculatorDiv" style="background: #333958;">
+       
+        
+        <div class="col-md-4 text-center" >
+          <span class="fa-3 " (click) = "showCalculator = !showCalculator">
+            <i class="fa fa-calculator" style="color: white;" aria-hidden="true"></i>
+          </span>
+        </div>
+        <div class="col-md-8 my-auto text-center">
+          <h3 style="color: white;"> Brokerage & Margin Calculator</h3>
+        </div>
+
+      </div>
+
+      <div class="row mt-1" *ngIf = "showCalculator">
+<app-home-calculator>
+
+      </app-home-calculator>
+      </div>
+      <div class="row mt-1">
+      
+        <div class="col-sm-12">
+          <h5 class="mt-1"> IPO details & Broker reviews  </h5>
+        </div>
+        <!-- <div class="col-1">
+      
+        </div> -->
+        <div class="col-md-4  "  id="side31">
+            <!-- ALL ALERTS RELATED TO COMPANY HERE  -->
+            <div class="card shadow" style="width: 100%;">
+                <!-- <img src="..." class="card-img-top" alt="..."> -->
+                <div class="card-body pb-1"  style="border-bottom: 2px solid #333958;">
+                    <h5 class="card-title">Top Share Brokers Reviews</h5>
+                   
+                    <!-- <p class="card-text">
+                      
+                    </p> -->
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item"> 
+                      <!-- <i class="fa fa-handshake-o fa-lg"></i> <span>Zerodha</span> &nbsp; &nbsp; <span class="text-sm">Rs 20/Trade</span> -->
+                    
+                      <h6>
+                        <i class="fa fa-university mr-2" aria-hidden="true"></i>
+                        Zerodha <small class="text-muted">Rs 20/Trade</small>
+                      </h6>
+                    </li>
+                    <li class="list-group-item"> 
+                      <h6>
+                        <i class="fa fa-university mr-2" aria-hidden="true"></i>
+                        Upstox <small class="text-muted">Rs 20/Trade</small>
+                      </h6>
+                    </li>
+                    <li class="list-group-item"> 
+  
+                      <h6>
+                        <i class="fa fa-university mr-2" aria-hidden="true"></i>
+                        Edelweiss <small class="text-muted">Rs 10/Trade</small>
+                      </h6>
+                    </li>
+                    <li class="list-group-item"> 
+  
+                      <h6>
+                        <i class="fa fa-university mr-2" aria-hidden="true"></i>
+                        5Paisa  <small class="text-muted">Rs 10/Trade</small>
+                      </h6>
+                    </li>
+                    <li class="list-group-item"> 
+  
+                      <h6>
+                        <i class="fa fa-university mr-2" aria-hidden="true"></i>
+                        Alice Blue <small class="text-muted">Rs 20/Trade</small>
+                      </h6>
+                    </li>
+                    <li class="list-group-item"> 
+  
+                      <h6>
+                        <i class="fa fa-university mr-2" aria-hidden="true"></i>
+                        Prostocks  <small class="text-muted">Unlimited @ 899/Month</small>
+                      </h6>
+  
+                    </li>
+               </ul>
+                <!-- <div class="card-body">
+                    <a href="#" style="text-decoration: none;" class="card-link">Card link</a>
+                    <a href="#" style="text-decoration: none;"  class="card-link">Another link</a>
+                </div> -->
+            </div>
+    
+        </div>
+  
+        <div class="col-md-4 "  id="side31">
+          <!-- ALL ALERTS RELATED TO COMPANY HERE  -->
+          <div class="card shadow" style="width: 100%;">
+              <!-- <img src="..." class="card-img-top" alt="..."> -->
+              <div class="card-body pb-1"  style="border-bottom: 2px solid #333958;">
+                  <h5 class="card-title">IPO Watch </h5>
+                 
+                  <!-- <p class="card-text">
+                    
+                  </p> -->
+              </div>
+              <ul class="list-group list-group-flush">
+                  <li class="list-group-item"> 
+                    <!-- <i class="fa fa-handshake-o fa-lg"></i> <span>Zerodha</span> &nbsp; &nbsp; <span class="text-sm">Rs 20/Trade</span> -->
+                  
+                    <h6>
+                      <i class="fa fa-handshake-o fa-lg mr-2"></i>
+                      Current IPO List
+                    </h6>
+                  </li>
+                  <li class="list-group-item"> 
+                    <h6>
+                      <i class="fa fa-handshake-o fa-lg mr-2"></i>
+                      IPO Calender
+                    </h6>
+                  </li>
+                  <li class="list-group-item"> 
+  
+                    <h6>
+                      <i class="fa fa-handshake-o fa-lg mr-2"></i>
+                      IPO Grey Premium
+                    </h6>
+                  </li>
+                  <li class="list-group-item"> 
+  
+                    <h6>
+                      <i class="fa fa-handshake-o fa-lg mr-2"></i>
+                      IPO Reviews
+                    </h6>
+                  </li>
+                  <li class="list-group-item"> 
+  
+                    <h6>
+                      <i class="fa fa-handshake-o fa-lg mr-2"></i>
+                      IPO Performance Tracker
+                    </h6>
+                  </li>
+                  <li class="list-group-item"> 
+  
+                    <h6>
+                      <i class="fa fa-handshake-o fa-lg mr-2"></i>
+                      IPO Reports (Historic)
+                    </h6>
+  
+                  </li>
+             </ul>
+              <!-- <div class="card-body">
+                  <a href="#" style="text-decoration: none;" class="card-link">Card link</a>
+                  <a href="#" style="text-decoration: none;"  class="card-link">Another link</a>
+              </div> -->
+          </div>
+  
+      </div>
+  
+      <div class="col-md-4 "  id="side31">
+        <!-- ALL ALERTS RELATED TO COMPANY HERE  -->
+        <div class="card shadow" style="width: 100%;">
+            <!-- <img src="..." class="card-img-top" alt="..."> -->
+            <div class="card-body pb-1"  style="border-bottom: 2px solid #333958;">
+                <h5 class="card-title">Share Market Information </h5>
+               
+                <!-- <p class="card-text">
+                  
+                </p> -->
+            </div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item"> 
+                  <!-- <i class="fa fa-handshake-o fa-lg"></i> <span>Zerodha</span> &nbsp; &nbsp; <span class="text-sm">Rs 20/Trade</span> -->
+                
+                  <h6>
+                    <i class="fa fa-info-circle mr-2"></i>  Message Board
+                  </h6>
+                </li>
+                <li class="list-group-item"> 
+                  <h6>
+                    <i class="fa fa-info-circle mr-2"></i> Stock Market Guides
+                  </h6>
+                </li>
+                <li class="list-group-item"> 
+  
+                  <h6>
+                    <i class="fa fa-info-circle mr-2"></i> NSE Bulk Deals
+                  </h6>
+                </li>
+                <li class="list-group-item"> 
+  
+                  <h6>
+                    <i class="fa fa-info-circle mr-2"></i> NSE Circuit Filters
+                  </h6>
+                </li>
+                <li class="list-group-item"> 
+  
+                  <h6>
+                    <i class="fa fa-info-circle mr-2"></i>  NCD Public Issue
+                  </h6>
+                </li>
+                <li class="list-group-item"> 
+  
+                  <h6>
+                    <i class="fa fa-info-circle mr-2"></i> Market Holidays BSE, NSE | MCX
+                  </h6>
+  
+                </li>
+           </ul>
+            <!-- <div class="card-body">
+                <a href="#" style="text-decoration: none;" class="card-link">Card link</a>
+                <a href="#" style="text-decoration: none;"  class="card-link">Another link</a>
+            </div> -->
+        </div>
+  
+    </div>
+       
+    
+    </div>
+
+    <div class="row mt-5">
+      <div class="col-sm-12">
+        <h5 class="mt-1"> IPO Watch  </h5>
+        <app-ipo-watch></app-ipo-watch>
+      </div>
+    </div>
+    <div class="row mt-5">
+      <div class="col-sm-12">
+        <h5 class="mt-1"> Share Broker Reviews  </h5>
+        <app-share-broker-reviews></app-share-broker-reviews>
+      </div>
+    </div>
+
+    <div class="row mt-5">
+      <div class="col-sm-12">
+        <h5 class="mt-1"> Compare Broker  </h5>
+        <app-compare-broker></app-compare-broker>
+      </div>
+    </div>
+    </div>
+    <div class="col-md-3">
+      <div class="col-12">
+       <a href="" class="btn btn-danger btn-md waves-effect waves-light">IPO Information</a>
+        <a href="" class="btn btn-danger btn-md waves-effect waves-light">NCD Public Issue</a>
+       
+        <a href="" class="btn btn-danger btn-md waves-effect waves-light">Rights Issue</a>
+        <a href="" class="btn btn-danger btn-md waves-effect waves-light">Broker reviews</a>
+        <a href="" class="btn btn-danger btn-md waves-effect waves-light">Best Of Brokers</a>
+        <div class="card shadow" style="width: 100%;">
+          <!-- <img src="..." class="card-img-top" alt="..."> -->
+          <div class="card-body pb-1"  style="border-bottom: 2px solid #333958;">
+              <h6 class="card-title"><u>Reviews</u></h6>
+             
+              <p class="card-text">
+                Discount Brokers
+              </p>
+          </div>
+          <ul class="list-group list-group-flush">
+              <li class="list-group-item"> 
+                <!-- <i class="fa fa-handshake-o fa-lg"></i> <span>Zerodha</span> &nbsp; &nbsp; <span class="text-sm">Rs 20/Trade</span> -->
+              
+                <h6>
+                  <i class="fa fa-university mr-2" aria-hidden="true"></i>
+                  Zerodha <span class="badge badge-info">Rs 20/Trade</span>
+                </h6>
+              </li>
+              <li class="list-group-item"> 
+                <h6>
+                  <i class="fa fa-university mr-2" aria-hidden="true"></i>
+                  Upstox <span class="badge badge-info">Rs 20/Trade</span>
+                </h6>
+              </li>
+              <li class="list-group-item"> 
+
+                <h6>
+                  <i class="fa fa-university mr-2" aria-hidden="true"></i>
+                  Edelweiss <span class="badge badge-info">Rs 10/Trade</span>
+                </h6>
+              </li>
+              <li class="list-group-item"> 
+
+                <h6>
+                  <i class="fa fa-university mr-2" aria-hidden="true"></i>
+                  5Paisa  <span class="badge badge-info">Rs 10/Trade</span>
+                </h6>
+              </li>
+              <li class="list-group-item"> 
+
+                <h6>
+                  <i class="fa fa-university mr-2" aria-hidden="true"></i>
+                  Fyers <span class="badge badge-info">Rs 10/Trade</span>
+                </h6>
+              </li>
+              <li class="list-group-item"> 
+
+                <h6>
+                  <i class="fa fa-university mr-2" aria-hidden="true"></i>
+                  Alice Blue  <span class="badge badge-info">Unlimited @ 899/Month</span>
+                </h6>
+                
+              </li>
+              <li class="list-group-item"> 
+
+                <h6>
+                  <i class="fa fa-university mr-2" aria-hidden="true"></i>
+                  Prostocks <span class="badge badge-info">Unlimited @ 899/Month</span>
+                </h6>
+                
+              </li>
+              <li class="list-group-item"> 
+
+                <h6>
+                  <i class="fa fa-university mr-2" aria-hidden="true"></i>
+                  Trade Smart <span class="badge badge-info">Rs 15/Trade</span>
+                </h6>
+              </li>
+              <li class="list-group-item"> 
+
+                <h6>
+                  <i class="fa fa-university mr-2" aria-hidden="true"></i>
+                  SAS Online <span class="badge badge-info">Rs 9/Trade</span>
+                </h6>
+              </li>
+              <li class="list-group-item"> 
+
+                <h6>
+                  <i class="fa fa-university mr-2" aria-hidden="true"></i>
+                  Groww <span class="badge badge-info">Rs 20/Trade</span>
+                </h6>
+              </li>
+         </ul>
+          <div class="card-body">
+            <a href="" class="btn btn-danger btn-md waves-effect waves-light">More Brokers</a>
+              <!-- <a href="#" style="text-decoration: none;" class="card-link">More Brokers</a> -->
+              <a href="" class="btn btn-danger btn-md waves-effect waves-light">Reviews (Full Service)</a>
+              <a href="" class="btn btn-danger btn-md waves-effect waves-light">Compare Brokers</a>
+              <a href="" class="btn btn-danger btn-md waves-effect waves-light">Trading Platform Reviews</a>
+              
+            </div>
+      </div>
+       
+    </div>
+    </div>
+  </div>
+  <!-- /calculator -->
+  
+    
+    
+
+  </div>

@@ -1,0 +1,133 @@
+<div class="row">
+
+    <div class="col-md-6">
+        <div class="card" >
+            <div class="card-body">
+              <h5 class="card-title">Upcoming IPO 2020 (Mainboard)</h5>
+              <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
+              <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="card-link">Card link</a>
+              <a href="#" class="card-link">Another link</a> -->
+              <table class="table text-center">
+                <thead>
+                  <tr>
+                    <th scope="col">Issuer Company</th>
+                    <th scope="col">Open</th>
+                    <th scope="col">Close</th>
+                    
+        
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor = "let data of upcomingIPO">
+                    <td>{{data.company}}</td>
+                    <td> {{data.open}}</td>
+                    <td> {{data.close}}</td>
+                   
+                  </tr>
+                  
+                </tbody>
+              </table>
+              <a href="#" class="card-link text-right">More mainline IPO</a>
+            </div>
+            
+          </div>
+    </div>
+    <div class="col-md-6">
+        <div class="card" >
+            <div class="card-body">
+              <h5 class="card-title">Upcoming SME IPO 2020</h5>
+              <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
+              <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="card-link">Card link</a>
+              <a href="#" class="card-link">Another link</a> -->
+              <table class="table text-center">
+                <thead>
+                  <tr>
+                    <th scope="col">Issuer Company</th>
+                    <th scope="col">Open</th>
+                    <th scope="col">Close</th>
+                    
+        
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr  *ngFor = "let data of upcomingSMEipo">
+                    <td>{{data.company}}</td>
+                    <td>{{data.open}}</td>
+                    <td>{{data.close}}</td>
+                   
+                  </tr>
+                  
+                </tbody>
+              </table>
+              <a href="#" class="card-link text-right">More SME IPO</a>
+            </div>
+          </div>
+    </div>
+    <div class="col-md-6">
+        <div class="card" >
+            <div class="card-body">
+              <h5 class="card-title">Upcoming NCD 2020 (Public Issue)</h5>
+              <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
+              <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="card-link">Card link</a>
+              <a href="#" class="card-link">Another link</a> -->
+              <table class="table text-center">
+                <thead>
+                  <tr>
+                    <th scope="col">Issuer Company</th>
+                    <th scope="col">Open</th>
+                    <th scope="col">Close</th>
+                    
+        
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor = "let data of upcomingNCD">
+                    <td>{{data.company}}</td>
+                    <td>{{data.open}}</td>
+                    <td>{{data.close}}</td>
+                   
+                  </tr>
+                  
+                </tbody>
+              </table>
+              <a href="#" class="card-link text-right">More NCD Public Issue</a>
+            </div>
+            
+          </div>
+    </div>
+    <div class="col-md-6">
+        <div class="card" >
+            <div class="card-body">
+              <h5 class="card-title">Upcoming Rights Issue 2020</h5>
+              <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
+              <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="card-link">Card link</a>
+              <a href="#" class="card-link">Another link</a> -->
+              <table class="table text-center">
+                <thead>
+                  <tr>
+                    <th scope="col">Issuer Company</th>
+                    <th scope="col">Open</th>
+                    <th scope="col">Close</th>
+                    
+        
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor = "let data of upcomingRightsIssue">
+                    <td>{{data.company}}</td>
+                    <td>{{data.open}}</td>
+                    <td>{{data.close}}</td>
+                   
+                  </tr>
+                  
+                </tbody>
+              </table>
+              <a href="#" class="card-link text-right">More Rights Issue</a>
+            </div>
+          </div>
+    </div>
+</div>

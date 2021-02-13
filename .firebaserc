@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "trade-7fd3d": {
+      "hosting": {
+        "appdemo": [
+          "trade-7fd3d"
+        ]
+      }
+    }
+  }
+}

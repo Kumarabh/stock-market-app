@@ -1,0 +1,28 @@
+.card-body {
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: 1.25rem;
+}
+
+.card {
+    font-weight: 400;
+    border: 0;
+    border-radius: .25rem;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+}
+input {
+    height: 32px;
+}
+input:hover {
+    border: 3px solid #333958;
+}
+.btn-info {
+    color: #333958;
+    background-color: white;
+    border: 3px solid #333958;
+}
+.btn-info:hover {
+    color: white;
+    background-color: #333958;
+    border: 3px solid #333958;
+}
