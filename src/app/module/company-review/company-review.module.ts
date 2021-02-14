@@ -6,6 +6,8 @@ import { ZerodhaReviewComponent } from './components/zerodha-review/zerodha-revi
 import { UpstoxComponent } from './components/upstox/upstox.component';
 // import { CompareBrokerComponent } from './compare-broker/compare-broker.component';
 import { FormsModule } from '@angular/forms';
+import { CompanyReviewService } from './company-review.service';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -13,7 +15,10 @@ import { FormsModule } from '@angular/forms';
   imports: [
     CommonModule,
     CompanyReviewRoutingModule,
-    FormsModule
-  ]
+    FormsModule,
+    // CompanyReviewService
+    HttpClientModule
+  ],
+  providers: [CompanyReviewService]
 })
 export class CompanyReviewModule { }

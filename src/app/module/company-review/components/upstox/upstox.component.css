@@ -159,3 +159,7 @@ transition: .3s;
 .note-pad-div {
     background: #333958;
 }
+.btn-primary {
+    background: #333958;
+    color: white;
+}

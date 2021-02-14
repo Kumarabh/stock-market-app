@@ -12,6 +12,13 @@ export const environment = {
     messagingSenderId: "643519894049",
     appId: "1:643519894049:web:d5cf56ab396556c97d8960",
     measurementId: "G-D0G4P7DBVZ"
+    // apiKey: "AIzaSyCXSmbX8M0j5BaNKyByD8FWBn76A8fRoYM",
+    // authDomain: "stock-market-app-23a09.firebaseapp.com",
+    // projectId: "stock-market-app-23a09",
+    // storageBucket: "stock-market-app-23a09.appspot.com",
+    // messagingSenderId: "776401776405",
+    // appId: "1:776401776405:web:8578d64649105f2341431c",
+    // measurementId: "G-PQZ6J5BY39"
   }
 };
 

@@ -91,18 +91,197 @@
                 <h1 class="display-4">Upstox Stock Trading / Demat / Brokerage / Reviews 2021</h1>
                 <hr class="my-4">
                 <p class="lead">
-                  Zerodha is India's No. 1 stockbroker. It is largest and most popular broker offering online flat fee discount brokerage services to invest in Equity, Currency, Commodity, IPO and Direct Mutual Funds.
+                  Upstox is a tech-first low cost broking firm in India providing trading opportunities at unbeatable prices.                
                 </p>
                 <br>
                 <p class="lead">
-                  Zerodha charges Rs 0 brokerage for equity delivery trades and direct mutual funds. For intraday and F&O, it charges flat Rs 20 or 0.03% (whichever is lower) per trade. With Zerodha, the maximum brokerage you pay for any transaction is Rs 20 for an order (of any size, amount or segment).
+                  Company provide trading on different segments such as equities, commodities, currency, futures, options which are available on its Upstox Pro Web and Upstox Pro Mobile trading platforms.
                 </p>
               </div>
             </div>
 
+
+
+            <div class="jumbotron jumbotron-fluid">
+              <div class="container">
+                <h1 class="display-4">Account Types
+    
+                </h1>
+                <p class="lead">
+                  Upstox offers two different type of trading account to suite investors/traders need:
+
+    
+                </p>
+                <hr class="my-4">
+                <!-- <p class="lead">Securities Transaction Tax (STT)</p> -->
+               
+              <!-- list item -->
+              <h4 class="sub-header">
+                <!-- <i class="fa fa-shield mr-2 fa-flip-horizontal"></i> -->
+                Upstox Basic Plan
+              </h4>
+              <p class="lead">
+                Brokerage Free equity delivey and Rs 20 per trade for Equity F&O, Commodity and Currency
+                 The plan offers basic trading features in Equity Delivery segment through mobile and website. Upstock doesn't change any brokerage for trading in Equity Delivery segment.
+                  Upstox basic plan offers upto 20x leverage on Cash segment.
+              </p>
+              <!-- list item ends -->
+              <!-- list item -->
+              <h4 class="sub-header">
+                <!-- <i class="fa fa-shield mr-2 fa-flip-horizontal"></i> -->
+                Upstox Priority Pack</h4>
+              <p class="lead">
+                Rs 0 equity delivey brokerage and flat Rs 30 per trade for Equity F&O, Commodity and Currency
+                Upstox Pro is the trading platform for frequent traders; who trade in Indra-day and F&O segments. This plan offers upto 25x leverage on Cash segment.
+                Along with the standard features offered in Upstox Basic Plan, Upstox Pro offers stock search, analyze, trade, and monitor stocks, currencies, F&O, and commodities.
+                Upstox Pro provides advance charting for professional traders for technical analysis. It also offers wide range of indicators, chart types, data rich user interface.
+              </p>
+              <!-- list item ends -->
+             
+              </div>
+            </div>
+    
+  <!-- sub section -->
+  <h3 class="sub-header">Upstox Trading Plans Comparison</h3>
+  <!-- <p class="sub-header-content">
+    Zerodha account opening charges are Rs 200 for online account opening. If you choose to open an account offline, you will be charged Rs 400. The demat account AMC is Rs 300 per year.
+  </p> -->
+
+  <table class="table mt-5 mb-5 text-center">
+    <thead>
+      <tr>
+        <th scope="col">Segment</th>
+        <th scope="col">Upstox Basic Plan</th>
+        <th scope="col">Upstox Priority Pack</th>
+
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Brokerage - Equity Delivery	</td>
+        <td> {{tradingPlansComparisionObject?.brokerage_equity_delivery?.upstox_basic_plan}}</td>
+        <td> {{tradingPlansComparisionObject?.brokerage_equity_delivery?.upstox_priority_pack}} </td>
+      </tr>
+      <tr>
+        <td>Brokerage - F&O, Commodity, Currency</td>
+        <td> {{tradingPlansComparisionObject?.brokerage_fo_commodity_currency?.upstox_basic_plan}}</td>
+        <td> {{tradingPlansComparisionObject?.brokerage_fo_commodity_currency?.upstox_priority_pack}} </td>
+      </tr>
+      
+      <tr>
+        <td>
+          <b>Margin - Intraday</b>
+        </td>
+        <td>
+
+        </td>
+        <td>
+
+        </td>
+      </tr>
+      <tr>
+        <td>NSE/BSE Cash</td>
+        <td> {{tradingPlansComparisionObject?.margin_intraday?.nse_bse_cash?.upstox_basic_plan}}</td>
+        <td> {{tradingPlansComparisionObject?.margin_intraday?.nse_bse_cash?.upstox_priority_pack}} </td>
+      </tr>
+      <tr>
+        <td>Index Futures	</td>
+        <td> {{tradingPlansComparisionObject?.margin_intraday?.index_futures?.upstox_basic_plan}}</td>
+        <td> {{tradingPlansComparisionObject?.margin_intraday?.index_futures?.upstox_priority_pack}} </td>
+      </tr>
+      <tr>
+        <td>Stock Futures	</td>
+        <td> {{tradingPlansComparisionObject?.margin_intraday?.stock_futures?.upstox_basic_plan}}</td>
+        <td> {{tradingPlansComparisionObject?.margin_intraday?.stock_futures?.upstox_priority_pack}} </td>
+      </tr>
+      <tr>
+        <td>Index Option Sell		</td>
+        <td> {{tradingPlansComparisionObject?.margin_intraday?.index_option_sell?.upstox_basic_plan}}</td>
+        <td> {{tradingPlansComparisionObject?.margin_intraday?.index_option_sell?.upstox_priority_pack}} </td>
+      </tr>
+      <tr>
+        <td>Stock Option Sell	</td>
+        <td> {{tradingPlansComparisionObject?.margin_intraday?.stock_option_sell?.upstox_basic_plan}}</td>
+        <td> {{tradingPlansComparisionObject?.margin_intraday?.stock_option_sell?.upstox_priority_pack}} </td>
+      </tr>
+      <tr>
+        <td>NSE Currency	</td>
+        <td> {{tradingPlansComparisionObject?.margin_intraday?.nse_currency?.upstox_basic_plan}}</td>
+        <td> {{tradingPlansComparisionObject?.margin_intraday?.nse_currency?.upstox_priority_pack}} </td>
+      </tr>
+      <tr>
+        <td>MCX Future	</td>
+        <td> {{tradingPlansComparisionObject?.margin_intraday?.mcx_future?.upstox_basic_plan}}</td>
+        <td> {{tradingPlansComparisionObject?.margin_intraday?.mcx_future?.upstox_priority_pack}} </td>
+      </tr>
+
+      <tr>
+        <td>
+          <b>Margin - CO/OCO Orders
+          </b>
+        </td>
+        <td>
+
+        </td>
+        <td>
+
+        </td>
+      </tr>
+      <tr>
+        <td>NSE/BSE Cash		</td>
+        <td> {{tradingPlansComparisionObject?.margin_co_oco_orders?.nse_bse_cash?.upstox_basic_plan}}</td>
+        <td> {{tradingPlansComparisionObject?.margin_co_oco_orders?.nse_bse_cash?.upstox_priority_pack}} </td>
+      </tr>
+      <tr>
+        <td>Index Futures			</td>
+        <td> {{tradingPlansComparisionObject?.margin_co_oco_orders?.index_futures?.upstox_basic_plan}}</td>
+        <td> {{tradingPlansComparisionObject?.margin_co_oco_orders?.index_futures?.upstox_priority_pack}} </td>
+      </tr>
+      <tr>
+        <td>Stock Futures </td>
+        <td> {{tradingPlansComparisionObject?.margin_co_oco_orders?.stock_futures?.upstox_basic_plan}}</td>
+        <td> {{tradingPlansComparisionObject?.margin_co_oco_orders?.stock_futures?.upstox_priority_pack}} </td>
+      </tr>
+      <tr>
+        <td>NSE Option Buy	 </td>
+        <td> {{tradingPlansComparisionObject?.margin_co_oco_orders?.nse_option_buy?.upstox_basic_plan}}</td>
+        <td> {{tradingPlansComparisionObject?.margin_co_oco_orders?.nse_option_buy?.upstox_priority_pack}} </td>
+      </tr>
+      <tr>
+        <td>Index Option Sell		 </td>
+        <td> {{tradingPlansComparisionObject?.margin_co_oco_orders?.index_option_sell?.upstox_basic_plan}}</td>
+        <td> {{tradingPlansComparisionObject?.margin_co_oco_orders?.index_option_sell?.upstox_priority_pack}} </td>
+      </tr>
+      <tr>
+        <td>Stock Option Sell		 </td>
+        <td> {{tradingPlansComparisionObject?.margin_co_oco_orders?.stock_option_sell?.upstox_basic_plan}}</td>
+        <td> {{tradingPlansComparisionObject?.margin_co_oco_orders?.stock_option_sell?.upstox_priority_pack}} </td>
+      </tr>
+      <tr>
+        <td>NSE Currency</td>
+        <td> {{tradingPlansComparisionObject?.margin_co_oco_orders?.nse_currency?.upstox_basic_plan}}</td>
+        <td> {{tradingPlansComparisionObject?.margin_co_oco_orders?.nse_currency?.upstox_priority_pack}} </td>
+      </tr>
+      <tr>
+        <td>MCX Future</td>
+        <td> {{tradingPlansComparisionObject?.margin_co_oco_orders?.mcx_future?.upstox_basic_plan}}</td>
+        <td> {{tradingPlansComparisionObject?.margin_co_oco_orders?.mcx_future?.upstox_priority_pack}} </td>
+      </tr>
+    </tbody>
+  </table>
+  <!-- sub section ends -->
+
       </div>
       <div class="col-md-3">
-
+        <div class="card mt-5" style="width: 18rem;border: 2px solid #333958;">
+          <!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
+          <div class="card-body">
+            <h5 class="card-title">Get 30 Days Unlimited Trading</h5>
+            <hr>
+            <p class="card-text">Join over 20 lakh traders. Open an account and get 30 days unlimited brokerage credit. Trade in Intra-day and F&O Trades at flat Rs 20 per order.</p>
+            <a href="#" class="btn btn-primary">Request callback</a>
+          </div>
+        </div>
       </div>
     </div>
 </div>
