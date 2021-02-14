@@ -73,7 +73,9 @@ tbody tr td {
 }
 
 .lead {
-    color: #333958;
+    /* color: #333958; */
+    color:#222223;
+
 }
 .lead2 {
     font-size: 18px;

@@ -10,9 +10,11 @@ export class UpstoxComponent implements OnInit {
 
   broker1;
   broker2;
-  tradingPlansComparisionObject
+  tradingPlansComparisonObject
+  companyBasicDetailsObject
   constructor(private service: CompanyReviewService) {
     this.getUpstoxTradingPlansComparison();
+    this.getCompanyBasicDetails();
    }
 
   ngOnInit() {
@@ -22,8 +24,18 @@ export class UpstoxComponent implements OnInit {
   getUpstoxTradingPlansComparison() {
     this.service.getUpstoxTradingPlansComparison().subscribe((doc) => {
           if(doc.exists) {
-            this.tradingPlansComparisionObject = doc.data();
-            console.log(this.tradingPlansComparisionObject);
+            this.tradingPlansComparisonObject = doc.data();
+            console.log(this.tradingPlansComparisonObject);
+          } else {
+            console.log('document not exist')
+          }
+       })
+  }
+  getCompanyBasicDetails() {
+    this.service.getCompanyBasicDetails("upstox-review").subscribe((doc) => {
+          if(doc.exists) {
+            this.companyBasicDetailsObject = doc.data();
+            console.log('Upstox basic details',this.companyBasicDetailsObject);
           } else {
             console.log('document not exist')
           }

@@ -9,10 +9,14 @@ export class CompanyReviewService {
 
   constructor(private http:HttpClient, private firestore: AngularFirestore) { }
   
-  getUpstoxTradingPlansComparison() : Observable<any> {
-   
-   return this.firestore.collection("upstox-review").doc("upstox-trading-plans-comparison").get();
 
+  getUpstoxTradingPlansComparison() : Observable<any> {
+   return this.firestore.collection("upstox-review").doc("upstox-trading-plans-comparison").get();
    
   }
+
+
+  getCompanyBasicDetails(collection): Observable<any> {
+    return this.firestore.collection(collection).doc("basic_details").get();
+   }
 }
