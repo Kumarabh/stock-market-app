@@ -8,10 +8,14 @@ import { UpstoxComponent } from './components/upstox/upstox.component';
 import { FormsModule } from '@angular/forms';
 import { CompanyReviewService } from './company-review.service';
 import { HttpClientModule } from '@angular/common/http';
+import { SpecialOffersComponent } from './components/special-offers/special-offers.component';
+import { EdelweissReviewComponent } from './components/edelweiss-review/edelweiss-review.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { FivePaisaComponent } from './components/five-paisa/five-paisa.component';
 
 
 @NgModule({
-  declarations: [ZerodhaReviewComponent, UpstoxComponent],
+  declarations: [ZerodhaReviewComponent, UpstoxComponent, SpecialOffersComponent, EdelweissReviewComponent, FooterComponent, FivePaisaComponent],
   imports: [
     CommonModule,
     CompanyReviewRoutingModule,

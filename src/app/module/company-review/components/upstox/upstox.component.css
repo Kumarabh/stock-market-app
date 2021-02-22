@@ -165,3 +165,10 @@ transition: .3s;
     background: #333958;
     color: white;
 }
+
+.col-md-9{
+    /* background: #fbfbea; */
+}
+.jumbotron , table {
+    background: white !important;
+}

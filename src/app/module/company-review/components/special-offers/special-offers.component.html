@@ -1,0 +1,36 @@
+<div class="container-fluid">
+
+    <div class="row">
+
+        <div class="col-md-4 " *ngFor = "let offer of specialOffersArray">
+            <div class="card shadow-sm" style="width: 18rem;">
+                <!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
+               
+                <li class="list-group-item" style="    background: #333958;
+                color: white;"> {{offer.company_title}}</li>
+                <div class="card-body">
+                  <h5 class="card-title">{{offer.offer_title}}</h5>
+                  <p class="card-text">{{offer.offer_subtitle}}</p>
+                </div>
+                <!-- <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Cras justo odio</li>
+                  <li class="list-group-item">Dapibus ac facilisis in</li>
+                  <li class="list-group-item">Vestibulum at eros</li>
+                </ul> -->
+                
+                <div class="card-footer" style="background: none;">
+                    <button type="submit" 
+                        class="btn btn-sm btn-info ">{{offer.action_name}}</button>
+                    <!-- <li class="list-group-item" style="    border: none;
+                    color: white; background: transparent;">
+                      
+  
+                    </li> -->
+                  <!-- <a href="#" class="card-link">Another link</a> -->
+                  
+                </div>
+               
+            </div>
+        </div>
+    </div>
+</div>

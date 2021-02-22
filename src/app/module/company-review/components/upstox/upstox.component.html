@@ -78,8 +78,24 @@
     </div>
   </div>
     <!-- compare broker ends -->
+    
+    <div class="container-fluid">
+      <h1 class="display-4">Special Offers</h1>
+      <hr class="">
+    <div class="row">
+        <div class="col-md-2">
 
+        </div>
+        <div class="col-md-8 p-0">
+          <app-special-offers></app-special-offers>
+        </div>
+        <div class="col-md-2">
 
+        </div>
+    </div>
+      
+      
+    </div>
     <!-- review body -->
 
   <div class="container-fluid">
@@ -144,7 +160,7 @@
   <!-- sub section -->
   <h3 class="sub-header">Upstox Trading Plans Comparison</h3>
   <!-- <p class="sub-header-content">
-    Zerodha account opening charges are Rs 200 for online account opening. If you choose to open an account offline, you will be charged Rs 400. The demat account AMC is Rs 300 per year.
+    {{companyName}} account opening charges are Rs 200 for online account opening. If you choose to open an account offline, you will be charged Rs 400. The demat account AMC is Rs 300 per year.
   </p> -->
 <hr>
   <table class="table mt-5 mb-5 text-center">
@@ -345,8 +361,8 @@
   <div class="jumbotron jumbotron-fluid">
     <div class="container">
       
-      <h3 class="sub-header">Zerodha Hidden Charges</h3>
-  <hr>
+      <!-- <h3 class="sub-header">Zerodha Hidden Charges</h3>
+  <hr> -->
   <p class="sub-header-content">
     The amount that the customer receives (Rs 151, Rs 501 and Rs 1501) will have the following validity:
   </p>
@@ -374,10 +390,732 @@
 
   <!-- sub section ends -->
 
+   <!-- sub section -->
+   <h3 class="sub-header">Upstox Equity Delivery & Intraday Charges</h3>
+   <hr>
+   <p class="sub-header-content">
+    Upstox equity delivery brokerage is Rs 0 (Free). Upstox equity intraday brokerage is Rs 20 per executed order or 0.05% (whichever is lower).
+   </p>
+ 
+   <table class="table mt-5 mb-5 text-center">
+     <thead>
+       <tr>
+         <th scope="col">Upstox Charges</th>
+         <th scope="col">Equity Delivery</th>
+         <th scope="col">Equity Intraday</th>
+       </tr>
+     </thead>
+     <tbody>
+       <tr>
+         <td>Brokerage</td>
+         <td> {{equityDeliveryAndIntradayCharges?.brokerage?.equity_delivery}}</td>
+         <td> {{equityDeliveryAndIntradayCharges?.brokerage.equity_intraday}} </td>
+ 
+       </tr>
+       <tr>
+         <td>STT	</td>
+         <td> {{equityDeliveryAndIntradayCharges?.stt?.equity_delivery}}</td>
+         <td> {{equityDeliveryAndIntradayCharges?.stt.equity_intraday}} </td>
+       </tr>
+       
+       <tr>
+         <td>Transaction Charges	</td>
+         <td> {{equityDeliveryAndIntradayCharges?.transaction_charges?.equity_delivery}}</td>
+         <td> {{equityDeliveryAndIntradayCharges?.transaction_charges.equity_intraday}} </td>
+       </tr>
+       <tr>
+        <td>Demat Transaction Charges</td>
+        <td> {{equityDeliveryAndIntradayCharges?.demat_transaction_charges?.equity_delivery}}</td>
+        <td> {{equityDeliveryAndIntradayCharges?.demat_transaction_charges.equity_intraday}} </td>
+      </tr>
+      <tr>
+        <td>GST	</td>
+        <td> {{equityDeliveryAndIntradayCharges?.gst?.equity_delivery}}</td>
+        <td> {{equityDeliveryAndIntradayCharges?.gst.equity_intraday}} </td>
+      </tr>
+      <tr>
+        <td>SEBI Charges	</td>
+        <td> {{equityDeliveryAndIntradayCharges?.sebi_charges?.equity_delivery}}</td>
+        <td> {{equityDeliveryAndIntradayCharges?.sebi_charges.equity_intraday}} </td>
+      </tr>
+      <tr>
+        <td>Stamp Duty	</td>
+        <td> {{equityDeliveryAndIntradayCharges?.stamp_duty?.equity_delivery}}</td>
+        <td> {{equityDeliveryAndIntradayCharges?.stamp_duty.equity_intraday}} </td>
+      </tr>
+     </tbody>
+   </table>
+ 
+   
+
+   <!-- subsection ends-->
+
+
+      <!-- sub section -->
+      <h3 class="sub-header">Upstox Equity F&O Charges</h3>
+      <hr>
+      <p class="sub-header-content">
+        Upstox Equity F&O brokerage is Rs 20 per executed order or 0.05% (whichever is lower).
+      </p>
+    
+      <table class="table mt-5 mb-5 text-center">
+        <thead>
+          <tr>
+            <th scope="col">Upstox Charges	</th>
+            <th scope="col">Futures</th>
+            <th scope="col">Options</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Brokerage</td>
+            <td> {{equityFandOCharges?.brokerage?.futures}}</td>
+            <td> {{equityFandOCharges?.brokerage.options}} </td>
+    
+          </tr>
+          <tr>
+            <td>STT	</td>
+            <td> {{equityFandOCharges?.stt?.futures}}</td>
+            <td> {{equityFandOCharges?.stt.options}} </td>
+          </tr>
+          
+          <tr>
+            <td>Transaction Charges	</td>
+            <td> {{equityFandOCharges?.transaction_charges?.futures}}</td>
+            <td> {{equityFandOCharges?.transaction_charges.options}} </td>
+          </tr>
+          <tr>
+           <td>Demat Transaction Charges</td>
+           <td> {{equityFandOCharges?.demat_transaction_charges?.futures}}</td>
+           <td> {{equityFandOCharges?.demat_transaction_charges.options}} </td>
+         </tr>
+         <tr>
+           <td>GST	</td>
+           <td> {{equityFandOCharges?.gst?.futures}}</td>
+           <td> {{equityFandOCharges?.gst.options}} </td>
+         </tr>
+         <tr>
+           <td>SEBI Charges	</td>
+           <td> {{equityFandOCharges?.sebi_charges?.futures}}</td>
+           <td> {{equityFandOCharges?.sebi_charges.options}} </td>
+         </tr>
+         <tr>
+           <td>Stamp Duty	</td>
+           <td> {{equityFandOCharges?.stamp_duty?.futures}}</td>
+           <td> {{equityFandOCharges?.stamp_duty.options}} </td>
+         </tr>
+        </tbody>
+      </table>
+    
+      
+   
+      <!-- subsection ends-->
+
+      
+      
+      <!-- sub section -->
+      <h3 class="sub-header">Upstox Currency Charges</h3>
+      <hr>
+      <p class="sub-header-content">
+        Upstox Currency brokerage is Rs 20 per executed order or 0.05% (whichever is lower).
+      </p>
+    
+      <table class="table mt-5 mb-5 text-center">
+        <thead>
+          <tr>
+            <th scope="col">Upstox Charges	</th>
+            <th scope="col">Currency Futures	</th>
+            <th scope="col">Currency Options
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Brokerage</td>
+            <td> {{currencyCharges?.brokerage?.currency_futures}}</td>
+            <td> {{currencyCharges?.brokerage?.currency_options}} </td>
+    
+          </tr>
+          <tr>
+            <td>STT	</td>
+            <td> {{currencyCharges?.stt?.currency_futures}}</td>
+            <td> {{currencyCharges?.stt?.currency_options}} </td>
+          </tr>
+          
+          <tr>
+            <td>Transaction Charges	</td>
+            <td> {{currencyCharges?.transaction_charges?.currency_futures}}</td>
+            <td> {{currencyCharges?.transaction_charges?.currency_options}} </td>
+          </tr>
+          
+         <tr>
+           <td>GST	</td>
+           <td> {{currencyCharges?.gst?.currency_futures}}</td>
+           <td> {{currencyCharges?.gst?.currency_options}} </td>
+         </tr>
+         <tr>
+           <td>SEBI Charges	</td>
+           <td> {{currencyCharges?.sebi_charges?.currency_futures}}</td>
+           <td> {{currencyCharges?.sebi_charges?.currency_options}} </td>
+         </tr>
+         <tr>
+           <td>Stamp Duty	</td>
+           <td> {{currencyCharges?.stamp_duty?.currency_futures}}</td>
+           <td> {{currencyCharges?.stamp_duty?.currency_options}} </td>
+         </tr>
+        </tbody>
+      </table>
+    
+      
+   
+      <!-- subsection ends-->
+           <!-- sub section -->
+            <h3 class="sub-header">Upstox Commodity Charges
+            </h3>
+            <hr>
+            <p class="sub-header-content">
+              Upstox Commodity brokerage is Rs 20 per executed order or 0.05% (whichever is lower).
+
+            </p>
+          
+            <table class="table mt-5 mb-5 text-center">
+              <thead>
+                <tr>
+                  <th scope="col">Upstox Charges	</th>
+                  <th scope="col">Commodity Futures		</th>
+                  <th scope="col">Commodity Options
+
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Brokerage</td>
+                  <td> {{commodityCharges?.brokerage?.commodity_futures}}</td>
+                  <td> {{commodityCharges?.brokerage?.commodity_options}} </td>
+          
+                </tr>
+                <tr>
+                  <td>STT	</td>
+                  <td> {{commodityCharges?.stt?.commodity_futures}}</td>
+                  <td> {{commodityCharges?.stt?.commodity_options}} </td>
+                </tr>
+                
+                <tr>
+                  <td>Transaction Charges	</td>
+                  <td> {{commodityCharges?.transaction_charges?.commodity_futures}}</td>
+                  <td> {{commodityCharges?.transaction_charges?.commodity_options}} </td>
+                </tr>
+                
+               <tr>
+                 <td>GST	</td>
+                 <td> {{commodityCharges?.gst?.commodity_futures}}</td>
+                 <td> {{commodityCharges?.gst?.commodity_options}} </td>
+               </tr>
+               <tr>
+                 <td>SEBI Charges	</td>
+                 <td> {{commodityCharges?.sebi_charges?.commodity_futures}}</td>
+                 <td> {{commodityCharges?.sebi_charges?.commodity_options}} </td>
+               </tr>
+               <tr>
+                 <td>Stamp Duty	</td>
+                 <td> {{commodityCharges?.stamp_duty?.commodity_futures}}</td>
+                 <td> {{commodityCharges?.stamp_duty?.commodity_options}} </td>
+               </tr>
+              </tbody>
+            </table>
+         
+            <!-- subsection ends-->
+
+            <!-- subsection start -->
+            <div class="jumbotron jumbotron-fluid">
+              <div class="container">
+                <!-- <h1 class="display-4">Upstox Charges 2021
+            
+                </h1> -->
+                <h3 class="sub-header">UpStox Charge Explained</h3>
+          
+                <hr class="my-4">
+                <!-- <p class="lead">Securities Transaction Tax (STT)</p> -->
+               
+              <!-- list item -->
+              <h4 class="sub-header">STT</h4>
+              <p class="lead">This is charged only on the sell side for intraday and F&O trades. It is charged on both sides for Delivery trades in Equity.</p>
+              <!-- list item ends -->
+              <!-- list item -->
+              <h4 class="sub-header">Stamp Duty</h4>
+              <p class="lead">Charges based on the state the customer is located in.</p>
+              <!-- list item ends -->
+              <!-- list item -->
+              <h4 class="sub-header">Goods and Services Tax (GST)</h4>
+              <p class="lead">This is charged at 18% of the total cost of brokerage plus transaction charges.</p>
+              <!-- list item ends -->
+              <!-- list item -->
+              <h4 class="sub-header">SEBI Turnover Fees</h4>
+              <p class="lead">This is charged at Rs 5 per Crore.</p>
+              <!-- list item ends -->
+             
+              </div>
+            </div>
+          
+            <!-- subsection ends -->
+
+            <!-- subsection start -->
+            <div class="jumbotron jumbotron-fluid">
+              <div class="container">
+                
+                <!-- <h3 class="sub-header">Zerodha Hidden Charges</h3>
+            <hr> -->
+            <!-- <p class="sub-header">
+              Other Charges (Upstox Broker Hidden Charges / Fees)
+            </p> -->
+            <h3 class="sub-header"> Other Charges (Upstox Broker Hidden Charges / Fees)</h3>
+          
+                <hr class="my-4">
+                <!-- <p class="lead">Securities Transaction Tax (STT)</p> -->
+               
+              <!-- list item -->
+              <p class="lead" >
+                <i class="fa fa-superpowers mr-2" aria-hidden="true"></i> Call & Trade: Rs 20 per executed order.
+              </p>
+              <!-- list item ends -->
+              <!-- list item -->
+              <p class="lead" >
+                <i class="fa fa-superpowers mr-2" aria-hidden="true"></i> Physical contract notes: Rs 25 per contract note plus courier charges. (Digital contract notes are free.)
+              </p>
+              <!-- list item ends -->
+              <!-- list item -->
+              <p class="lead" >
+                <i class="fa fa-superpowers mr-2" aria-hidden="true"></i>Instant Money Transfer Fee: Rs 7 per transfer
+              </p>
+              <!-- list item ends -->
+              <!-- <p class="">*18% GST will be levied on the amount on the prepaid brokerage.</p>
+          
+              </div> -->
+            </div>
+          
+            
+      </div>
+            <!-- subsection ends -->
+
+
+               <!-- subsection start -->
+               <div class="jumbotron jumbotron-fluid">
+                <div class="container">
+                  
+                  <!-- <h3 class="sub-header">Zerodha Hidden Charges</h3>
+              <hr> -->
+              <!-- <p class="sub-header">
+                Other Charges (Upstox Broker Hidden Charges / Fees)
+              </p> -->
+              <h3 class="sub-header"> Upstox Online Account Opening</h3>
+            
+                  <hr class="my-4">
+                  <!-- <p class="lead">Securities Transaction Tax (STT)</p> -->
+                 
+                <!-- list item -->
+                <p class="lead" >
+                  <i class="fa fa-superpowers mr-2" aria-hidden="true"></i> 
+                  To open an account with Upstox; please leave your information and Upstox representative will contact you.
+                </p>
+                <!-- list item ends -->
+               
+                <!-- <p class="">*18% GST will be levied on the amount on the prepaid brokerage.</p>
+            
+                </div> -->
+              </div>
+            
+              
+        </div>
+              <!-- subsection ends -->
+
+               <!-- subsection start -->
+            <div class="jumbotron jumbotron-fluid">
+              <div class="container">
+                <h3 class="sub-header">Upstox Trading Software (Upstox Trading Platforms)</h3>
+                <hr class="my-4">
+                <!-- <p class="lead">Securities Transaction Tax (STT)</p> -->
+               
+              <!-- list item -->
+              <!-- <h4 class="sub-header">STT</h4> -->
+              <p class="lead">Upstox offers mobile and website based trading. Upstox's trading platform is build in-house by RKSV to make it extremely easy to place orders through mobile as well as web browser. As of now no trading terminal is available though Upstox.</p>
+              <!-- list item ends -->
+              
+             
+              </div>
+            </div>
+          
+            <!-- subsection ends -->
+
+            <!-- subsection start -->
+            <div class="jumbotron jumbotron-fluid">
+              <div class="container">
+                <!-- <hr class="my-4"> -->
+
+                <h1 class="display-4">Upstox Pros (Advantages)
+    
+                </h1>
+                <p class="lead">
+                  The following are the advantages of Upstox. You must read Upstox advantages and disadvantages before opening an account with Upstox. Upstox pros and cons help you find if it suits your investment needs.
+    
+                </p>
+                <hr class="my-4">
+                <!-- <p class="lead">Securities Transaction Tax (STT)</p> -->
+               
+              <!-- list item -->
+              <p class="lead">
+                <i class="fa fa-superpowers mr-2" aria-hidden="true"></i>  
+                Upstox offers brokerage free trading in Equity Delivery segment (Customer does not have to pay brokerage for delivery trades in equity segment).
+              </p>
+              <!-- list item ends -->
+             
+              <!-- list item -->
+              <p class="lead">
+                <i class="fa fa-superpowers mr-2" aria-hidden="true"></i>  
+                Mobile trading app available for both Android and iOS phones. No software uses charges.
+              </p>
+              <!-- list item ends -->
+              <!-- list item -->
+              <p class="lead">
+                <i class="fa fa-superpowers mr-2" aria-hidden="true"></i>  
+                After Market Order (AMO), Cover Order and Bracket Order(BO) or One cancels Other (OCO) orders are available on both web and mobile.              
+              </p>
+              <!-- list item ends -->
+
+              <!-- list item -->
+              <p class="lead">
+                <i class="fa fa-superpowers mr-2" aria-hidden="true"></i>  
+                Trailing-Stop/Stop-Loss (SL) is available in both web and mobile.              </p>
+              <!-- list item ends -->
+              <!-- list item -->
+              <p class="lead">
+                <i class="fa fa-superpowers mr-2" aria-hidden="true"></i>  
+                Upstox Pro Web Trading Platform offers multiple indicators to monitor markets on-the-go.
+              </p>
+              <!-- list item ends -->
+              <!-- list item -->
+              <p class="lead">
+                <i class="fa fa-superpowers mr-2" aria-hidden="true"></i>  
+                Upstox Bridge for AmiBroker helps you to code & execute your trading strategy using the AmiBroker AFL editor.
+              </p>
+              <!-- list item ends -->
+              <!-- list item -->
+              <p class="lead">
+                <i class="fa fa-superpowers mr-2" aria-hidden="true"></i>  
+                Upstox Developer Console helps you build (code) your own trading app using languages such as Python.
+              </p>
+              <!-- list item ends -->
+              <!-- list item -->
+              <p class="lead">
+                <i class="fa fa-superpowers mr-2" aria-hidden="true"></i>  
+                Upstox Option Chain Tool helps traders find out Spot, Future prices, vertical comparison of rates, get details such as circuit levels, Open High Low Close and market depth. It allows customers to measure volatility, open Interest, performance indicator and check greeks as well.              </p>
+              <!-- list item ends -->
+              <!-- list item -->
+              <p class="lead">
+                <i class="fa fa-superpowers mr-2" aria-hidden="true"></i>  
+                Upstox MF Platform offers 1000's of Mutual Funds to invest in. Customers can choose Lumpsum or SIP pattern of investing.
+              </p>
+              <!-- list item ends -->
+
+              <!-- list item -->
+              <p class="lead">
+                <i class="fa fa-superpowers mr-2" aria-hidden="true"></i>  
+                Margin Against Shares is available.
+              </p>
+              <!-- list item ends -->
+              <!-- list item -->
+              <p class="lead">
+                <i class="fa fa-superpowers mr-2" aria-hidden="true"></i>  
+                Priority Brokerage Package is available for customers who need higher leverage.
+              </p>
+              <!-- list item ends -->
+              <!-- list item -->
+              <p class="lead">
+                <i class="fa fa-superpowers mr-2" aria-hidden="true"></i>  
+                Online IPO Application (UPI) is available.
+
+              </p>
+              <!-- list item ends -->
+              </div>
+            </div>
+    
+            <div class="jumbotron jumbotron-fluid">
+              <div class="container">
+                <h1 class="display-4">Upstox Cons (Disadvantages)
+    
+                </h1>
+                <p class="lead">
+                  The following are the cons of Upstox. Check the list of Upstox drawbacks.
+    
+                </p>
+                <hr class="my-4">
+                <!-- <p class="lead">Securities Transaction Tax (STT)</p> -->
+               
+             <!-- list item -->
+             <p class="lead">
+              <i class="fa fa-superpowers mr-2" aria-hidden="true"></i>  
+              Online IPO Application (UPI) is available.
+
+            </p>
+            <!-- list item ends -->
+            <!-- list item -->
+            <p class="lead">
+              <i class="fa fa-superpowers mr-2" aria-hidden="true"></i>  
+              Good Till Cancelled (GTC) and Good Till Date/Time (GTD) Orders are not available in Equity Segment. GTC/GTD orders are available in commodity trading.
+
+            </p>
+            <!-- list item ends -->
+            <!-- list item -->
+            <p class="lead">
+              <i class="fa fa-superpowers mr-2" aria-hidden="true"></i>  
+              Margin Funding is not available on delivery trades. Higher leverage is available in Upstox Priority Pack account.
+
+            </p>
+            <!-- list item ends -->
+            <!-- list item -->
+            <p class="lead">
+              <i class="fa fa-superpowers mr-2" aria-hidden="true"></i>  
+              Upstox doesn't offer unlimited monthly trading plans.
+
+            </p>
+            <!-- list item ends -->
+            <!-- list item -->
+            <p class="lead">
+              <i class="fa fa-superpowers mr-2" aria-hidden="true"></i>  
+              Call and trade fee is charged at extra Rs 20 per executed order (Rs 20 Brokerage + Rs 20 Call & Trade Fee).
+
+            </p>
+            <!-- list item ends -->
+            <!-- list item -->
+            <p class="lead">
+              <i class="fa fa-superpowers mr-2" aria-hidden="true"></i>  
+              Additional Rs 20 per executed order is charged for Intraday square MIS/BO/CO orders when they are not square off by the customer.
+            </p>
+            <!-- list item ends -->
+            <!-- list item -->
+            <p class="lead">
+              <i class="fa fa-superpowers mr-2" aria-hidden="true"></i>  
+              Brokerage free trading is available only in Equity Delivery segment (in Upstox Basic plan). For all other segments including Equity F&O, Commodity F&O and Currency Derivative, brokerage is charged at Rs 20 or lower per trade.
+
+
+            </p>
+            <!-- list item ends -->
+              <!-- list item -->
+              <p class="lead">
+                <i class="fa fa-superpowers mr-2" aria-hidden="true"></i>  
+                In Upstox basic plan, though brokerage is free, customers still have to pay the Demat Transaction Charges. Upstox Demat debit transaction charges (Rs 21.83) is high than other discount brokers who charges fee of Rs 15.93 per demat debit transaction.
+  
+  
+              </p>
+              <!-- list item ends -->
+                <!-- list item -->
+            <p class="lead">
+              <i class="fa fa-superpowers mr-2" aria-hidden="true"></i>  
+              Doesn't provide stock tips or recommendations.
+
+
+            </p>
+            <!-- list item ends -->
+              <!-- list item -->
+              <p class="lead">
+                <i class="fa fa-superpowers mr-2" aria-hidden="true"></i>  
+                3-in-1 accounts are not available as company doesn't provide banking services.
+  
+  
+              </p>
+              <!-- list item ends -->
+                <!-- list item -->
+            <p class="lead">
+              <i class="fa fa-superpowers mr-2" aria-hidden="true"></i>  
+              24/7 customer service is not available.
+
+
+            </p>
+            <!-- list item ends -->
+            <!-- list item -->
+            <p class="lead">
+              <i class="fa fa-superpowers mr-2" aria-hidden="true"></i>  
+              Upstox NRI Trading and demat account is no more available (since Jan 2018).
+
+
+            </p>
+            <!-- list item ends -->
+            <!-- list item -->
+            <p class="lead">
+              <i class="fa fa-superpowers mr-2" aria-hidden="true"></i>  
+              Upstox doesn't offer API access for automated trading.
+
+
+            </p>
+            <!-- list item ends -->
+              </div>
+            </div>
+    
+            <!-- subsection end -->
+
+             <!-- sub section -->
+             <h3 class="sub-header">Upstox Margin / Exposure
+            </h3>
+            <hr>
+            <p class="sub-header-content">
+              Upstox leverage for intraday, delivery, options, currency and commodities.
+
+
+            </p>
+          
+            <table class="table mt-5 mb-5 text-center">
+              <thead>
+                <tr>
+                  <th scope="col">Segment	</th>
+                  <th scope="col">Margin		</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Equity Delivery	</td>
+                  <td> {{marginExposure?.equity_delivery?.margin}}</td>
+          
+                </tr>
+                <tr>
+                  <td>Equity Intraday		</td>
+                  <td> {{marginExposure?.equity_intraday?.margin}} </td>
+                </tr>
+                
+                <tr>
+                  <td>Equity Future	</td>
+                  <td> {{marginExposure?.equity_futures?.margin}} </td>
+                </tr>
+                
+               <tr>
+                 <td>Equity Options		</td>
+                 <td> {{marginExposure?.equity_options?.margin}} </td>
+                </tr>
+               <tr>
+                 <td>Currency Future		</td>
+                 <td> {{marginExposure?.currency_futures?.margin}}</td>
+               </tr>
+               <tr>
+                 <td>Currency Options		</td>
+                 <td> {{marginExposure?.currency_options?.margin}} </td>
+               </tr>
+               <tr>
+                <td>Commodity Future			</td>
+                <td> {{marginExposure?.commodity_futures?.margin}}</td>
+              </tr>
+              <tr>
+                <td>Commodity Options			</td>
+                <td> {{marginExposure?.commodity_options?.margin}}</td>
+              </tr>
+              </tbody>
+            </table>
+         
+            <!-- subsection ends-->
 
 
       </div>
       <div class="col-md-3">
+        <div class="col-12">
+          <a href="" class="btn btn-danger w-100 btn-md waves-effect waves-light">IPO Information</a>
+           <a href="" class="btn btn-danger w-100 btn-md waves-effect waves-light">NCD Public Issue</a>
+          
+           <a href="" class="btn btn-danger w-100 btn-md waves-effect waves-light">Rights Issue</a>
+           <a href="" class="btn btn-danger w-100 btn-md waves-effect waves-light">Broker reviews</a>
+           <a href="" class="btn btn-danger w-100 btn-md waves-effect waves-light">Best Of Brokers</a>
+           <div class="card shadow ml-2" style="width: 100%;">
+             <!-- <img src="..." class="card-img-top" alt="..."> -->
+             <div class="card-body pb-1"  style="border-bottom: 2px solid #333958;">
+                 <h6 class="card-title"><u>Reviews</u></h6>
+                
+                 <p class="card-text">
+                   Discount Brokers
+                 </p>
+             </div>
+             <ul class="list-group list-group-flush">
+                 <li class="list-group-item"> 
+                   <!-- <i class="fa fa-handshake-o fa-lg"></i> <span>Zerodha</span> &nbsp; &nbsp; <span class="text-sm">Rs 20/Trade</span> -->
+                 
+                   <h6>
+                     <i class="fa fa-university mr-2" aria-hidden="true"></i>
+                     Zerodha <span class="badge badge-info">Rs 20/Trade</span>
+                   </h6>
+                 </li>
+                 <li class="list-group-item"> 
+                   <h6>
+                     <i class="fa fa-university mr-2" aria-hidden="true"></i>
+                     Upstox <span class="badge badge-info">Rs 20/Trade</span>
+                   </h6>
+                 </li>
+                 <li class="list-group-item"> 
+   
+                   <h6>
+                     <i class="fa fa-university mr-2" aria-hidden="true"></i>
+                     Edelweiss <span class="badge badge-info">Rs 10/Trade</span>
+                   </h6>
+                 </li>
+                 <li class="list-group-item"> 
+   
+                   <h6>
+                     <i class="fa fa-university mr-2" aria-hidden="true"></i>
+                     5Paisa  <span class="badge badge-info">Rs 10/Trade</span>
+                   </h6>
+                 </li>
+                 <li class="list-group-item"> 
+   
+                   <h6>
+                     <i class="fa fa-university mr-2" aria-hidden="true"></i>
+                     Fyers <span class="badge badge-info">Rs 10/Trade</span>
+                   </h6>
+                 </li>
+                 <li class="list-group-item"> 
+   
+                   <h6>
+                     <i class="fa fa-university mr-2" aria-hidden="true"></i>
+                     Alice Blue  <span class="badge badge-info">Unlimited @ 899/Month</span>
+                   </h6>
+                   
+                 </li>
+                 <li class="list-group-item"> 
+   
+                   <h6>
+                     <i class="fa fa-university mr-2" aria-hidden="true"></i>
+                     Prostocks <span class="badge badge-info">Unlimited @ 899/Month</span>
+                   </h6>
+                   
+                 </li>
+                 <li class="list-group-item"> 
+   
+                   <h6>
+                     <i class="fa fa-university mr-2" aria-hidden="true"></i>
+                     Trade Smart <span class="badge badge-info">Rs 15/Trade</span>
+                   </h6>
+                 </li>
+                 <li class="list-group-item"> 
+   
+                   <h6>
+                     <i class="fa fa-university mr-2" aria-hidden="true"></i>
+                     SAS Online <span class="badge badge-info">Rs 9/Trade</span>
+                   </h6>
+                 </li>
+                 <li class="list-group-item"> 
+   
+                   <h6>
+                     <i class="fa fa-university mr-2" aria-hidden="true"></i>
+                     Groww <span class="badge badge-info">Rs 20/Trade</span>
+                   </h6>
+                 </li>
+            </ul>
+             <div class="card-body">
+               <a href="" class="btn btn-danger w-100 btn-md waves-effect waves-light">More Brokers</a>
+                 <!-- <a href="#" style="text-decoration: none;" class="card-link">More Brokers</a> -->
+                 <a href="" class="btn btn-danger w-100 btn-md waves-effect waves-light">Reviews (Full Service)</a>
+                 <a href="" class="btn btn-danger w-100 btn-md waves-effect waves-light">Compare Brokers</a>
+                 <a href="" class="btn btn-danger w-100 btn-md waves-effect waves-light">Trading Platform Reviews</a>
+                 
+               </div>
+         </div>
+          
+       </div>
+
         <div class="card mt-5" style="width: 18rem;border: 2px solid #333958;">
           <!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
           <div class="card-body">
@@ -388,6 +1126,146 @@
           </div>
         </div>
       </div>
+
+
+      
+<!-- footer cards -->
+
+<app-footer [companyName]="companyName"></app-footer>
+<!-- footer cards -->
+
+
+<!-- <hr class="my-4"> -->
+  <div class="container pt-3 note-pad" >
+    <h1 class="display-4 text-center m-5" style="color:  #333958;">
+      <i class="fa fa-question-circle mr-2" aria-hidden="true"></i> Frequently Asked Questions
+    
+    </h1>
+    <hr class="my-4">
+
+      <div class="row mx-auto m-1 text-center ">
+        <div class="col-md-4">
+          <div class="card faqCards ">
+            <div class="card-body">
+             
+             <a class="form-control" class="faq"  href="">What is Upstox account?</a>
+                
+             
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card faqCards ">
+            <div class="card-body">
+              <a class="form-control" class="faq"  href="">How to open Upstox account online?</a>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card faqCards ">
+            <div class="card-body">
+              <a class="form-control" class="faq"  href="">
+                Upstox is good or bad?
+              </a>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mx-auto m-1 text-center">
+        <div class="col-md-4">
+          <div class="card faqCards ">
+            <div class="card-body">
+              <a class="form-control" class="faq"  href="">
+                Who owns Upstox?
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card faqCards ">
+            <div class="card-body">
+              <a class="form-control" class="faq"  href="">
+                Is Upstox free?
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card faqCards ">
+            <div class="card-body">
+            
+              <a class="form-control" class="faq"  href="">
+                Is Upstox trusted?
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mx-auto m-1 text-center">
+        <div class="col-md-4">
+          <div class="card faqCards ">
+            <div class="card-body">
+              <a class="form-control" class="faq"  href="">
+                How to buy at Upstox?
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card faqCards ">
+            <div class="card-body">
+              <a class="form-control" class="faq"  href="">
+                How to buy IPO Upstox?
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card faqCards ">
+            <div class="card-body">
+              <a class="form-control" class="faq"  href="">
+                How to transfer money from Upstox to the bank account?
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mx-auto m-1 text-center">
+        <div class="col-md-4">
+          <div class="card faqCards ">
+            <div class="card-body">
+              <a class="form-control" class="faq"  href="">
+                How to earn from Upstox?
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card faqCards ">
+            <div class="card-body">
+              <a class="form-control" class="faq"  href="">
+                How to close Upstox account?
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card faqCards ">
+            <div class="card-body">
+              <a class="form-control" class="faq"  href="">
+                Does Upstox allow BTST?
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+  </div>
+  <!-- footer cards -->
+
+
     </div>
 </div>
 

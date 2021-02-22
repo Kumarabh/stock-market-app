@@ -1,0 +1,903 @@
+<!-- Buttons -->
+<div class="row mr-0">
+    <!-- <div class="col-1">
+       
+  
+    </div> -->
+    <div class="col-12" style="margin-top: -20px;">
+        <a href="" class="btn btn-danger btn-md waves-effect waves-light">{{companyData?.company_name}} Review</a>
+        <a href="" class="btn btn-danger btn-md waves-effect waves-light">Brokerage</a>
+        <a href="" class="btn btn-danger btn-md waves-effect waves-light">Mobile App</a>
+        <a href="" class="btn btn-danger btn-md waves-effect waves-light">Exposure</a>
+        <a href="" class="btn btn-danger btn-md waves-effect waves-light">Acct Opening</a>
+        <a href="" class="btn btn-danger btn-md waves-effect waves-light">Demat</a>
+        <a href="" class="btn btn-danger btn-md waves-effect waves-light">IPO</a>
+        <a href="" class="btn btn-danger btn-md waves-effect waves-light">Branches</a>
+        <a href="" class="btn btn-danger btn-md waves-effect waves-light">Trading Software</a>
+        <a href="" class="btn btn-danger btn-md waves-effect waves-light">NRI Account</a>
+        <a href="" class="btn btn-danger btn-md waves-effect waves-light">Mutual Fund</a>
+        <!-- <a href="" class="btn btn-danger btn-md waves-effect waves-light">BROKERAGE</a> -->
+       
+    </div>
+    <!-- <div class="col-1">
+        
+       
+    </div> -->
+    
+  </div>
+
+
+  <div class="   p-3" style="background: #333958; margin-top: -25px;">
+
+    <div class="row ">
+      <div class="col-6" style="color: white;">
+        <h1 class="font-weight-bold mb-3 h2">{{companyData?.company_name}}</h1>
+        <!-- <h4 class="mb-2 h5 text-left">
+              A stock broker plays an essential role in the buying and selling of securities in India. Since stockbrokers play an important role, it is crucial to choose the most suitable stockbroker for yourself.
+              They help you in opening a Demat and Trading Account for your trading and investment needs.
+          </h4> -->
+      </div>
+      <div class="col-3">
+  
+      </div>
+      <div class="col-3">
+        <p>
+          <!-- <a href="" class="btn btn-danger btn-md waves-effect waves-light">Margin Calculator</a> -->
+        </p>
+      </div>
+    </div>
+  
+  </div>
+
+
+  
+
+  <!-- compare broker -->
+
+  <div class="container-fluid mt-5 p-3 mb-5">
+    <div class="row mt-2">
+      <div class="row mx-auto">
+        <div class="col-md-4">
+          <!-- <label for="">First Broker</label> -->
+          <input type="text" placeholder="" [(ngModel)]="broker1"  class="form-control">
+  
+      </div>
+          <div class="col-md-4">
+              <!-- <label for="">Second Broker</label> -->
+              <input type="text" placeholder="" [(ngModel)]="broker2"  class="form-control">
+  
+          </div>
+          
+          
+          
+          <div class="col-md-4">
+              <button type="submit" (click) = "submitCompareForm()"  class=" submit-button "><b>Compare Brokers</b></button>
+  
+          </div>
+      </div>
+    </div>
+  </div>
+    <!-- compare broker ends -->
+    
+    <div class="container-fluid">
+      <h1 class="display-4">Special Offers</h1>
+      <hr class="">
+    <div class="row">
+        <div class="col-md-2">
+
+        </div>
+        <div class="col-md-8 p-0">
+          <app-special-offers></app-special-offers>
+        </div>
+        <div class="col-md-2">
+
+        </div>
+    </div>
+      
+      
+    </div>
+    <!-- review body -->
+    <div class="container-fluid">
+        <div class="row m-0">
+          <div class="col-md-9">
+
+            <div class="jumbotron jumbotron-fluid">
+                <div class="container">
+                  <h1 class="display-4">{{companyData?.company_name}} Stock Trading / Demat / Brokerage / Reviews 2021</h1>
+                  <hr class="my-4">
+                  <p class="lead">
+                    5paisa is a leading stockbroker in India. 5paisa Capital Ltd is a publicly-traded and professionally managed company promoted by IIFL founders. 5paisa.com started operations in March 2016 and became 2nd largest discount stock broker in India by Dec 2018. It is listed on BSE and NSE.
+
+                    5paisa online trading is available in equity, commodity, and currency at BSE, NSE, and MCX. It is a flat rate discount stockbroker. It charges flat 20 Rs brokerage irrespective of the size of the trade, segment or exchange. It also offers 5paisa prepaid plans i.e. Optimum Plan, Platinum Plan and Titanium Plan. Customer pays further lower brokerage in platinum and titanium plans for an additional fixed monthly fee.
+                </p>
+                  <br>
+                  <p class="lead">
+                    5paisa Mutual Funds offering include both Regular as well as direct mutual funds. 5paisa change flat Rs 10 per executed order for online mutual funds investment. An investor can invest in lump sum or through SIP.
+
+                    5paisa demat account is offered through its depository participant membership with CDSL. It is awarded as Premier Depository Participant by CDSL in March 2019.
+                    
+                    5paisa trading platform includes Mobile Trading App, Trading Website and Installable Trading Terminal. These platforms are built on the latest technology and recognized for 'Best use of Mobile Technology in Financial Services' in Feb 2019.
+                </p>
+                </div>
+              </div>
+
+
+              <!-- subsection start -->
+              <div class="jumbotron jumbotron-fluid">
+                <div class="container">
+                  <h1 class="display-4">Account Types</h1>
+                  <!-- <p class="lead">
+                    5paisa Trading Account   
+                  </p> -->
+                  <hr class="my-4">
+                 
+                <!-- list item -->
+                <h4 class="sub-header">
+                    5paisa Trading Account   
+                </h4>
+                <p class="lead">
+                    5paisa is India's fast growing discount broker offering investing and trading services in segments including stocks, derivatives (F&O) and currency. 5paisa is member of BSE and NSE. 5paisa trading account is backed by the experience and technology developed by its parent company IIFL for over 20 years in retail broking industry.
+                    5paisa.com offer trading services under a simple brokerage plan. Customers can trade across the segments for a flat rate of Rs 20/order in Optimum Plan and Rs 10/order in Platinum Plan and Free Equity Delivery in Titanium Plan. This brings saving up to 90% in comparison to traditional brokers who charge brokerage fee in % of the total turnover.
+                    5paisa trading account is well integrated with other products they offer including mutual funds, etf, bonds and insurance.
+                </p>
+                <!-- list item ends -->
+                <!-- list item -->
+                <h4 class="sub-header">
+                  <!-- <i class="fa fa-shield mr-2 fa-flip-horizontal"></i> -->
+                  Mutual Fund Account                
+                </h4>
+                <p class="lead">
+                    Online Mutual Funds Investment Account is a key offering from 5paisa. You can open just a Mutual Funds Investment Account with 5paisa for free of charges.
+
+                    5paisa also offers Systematic Investment Plans (SIP), an automatic periodic investment option in stock market though mutual funds.
+                    
+                    The 'Auto Investor' tool is available free of charge to its customer which helps with online MF advisory. This tool help in choosing the right funds based on their risk profile and return expectations.
+                </p>
+                <!-- list item ends -->
+               
+     
+                </div>
+              </div>
+              <!-- subsection ends -->
+
+<!-- subsection start -->
+ <!-- list item -->
+ <h4 class="sub-header">
+    5Paisa subscription plans
+</h4>
+<hr>
+<p class="lead">
+    5Paisa has recently introduced three subscription plans- Optimum, Platinum and Titanium Plan. New customers can subscribe to the plans while opening the account by paying a fee of 1 Rupee. Existing customers can subscribe to the plans using 5Paisa website or mobile application. While subscribing to the plans, they have to pay the charges as mentioned in the below table through Credit Card or UPI. Customers can either pay subscription charges Monthly or Annually.
+
+</p>
+<p class="lead">
+    <b>Note</b> - All the plans activated before 31st December 2019 will offer the pre-existing benefits.
+</p>
+<!-- list item ends -->
+
+<!-- subsection ends -->
+
+ <!-- sub section start-->
+ <div class="jumbotron jumbotron-fluid">
+ <h3 class="sub-header">{{companyName}} Brokerage Plans 2020
+
+</h3>
+<hr>
+
+
+<table class="table mt-5 mb-5 text-center">
+  <thead>
+    <tr>
+        <th scope="col">Rows
+        </th>
+      <th scope="col">Optimum Plan
+      </th>
+      <th scope="col">Platinum plan
+      </th>
+      <th scope="col">Titanium plan
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Fee </td>
+      <td>{{companyData?.brokerage_plans?.fee?.optimum_plan}}</td>
+      <td>{{companyData?.brokerage_plans?.fee?.platinum_plan}} </td>
+      <td> {{companyData?.brokerage_plans?.fee?.titanium_plan}}</td>
+
+    </tr>
+    <tr>
+        <td>Brokerage</td>
+        <td>{{companyData?.brokerage_plans?.brokerage?.optimum_plan}}</td>
+        <td>{{companyData?.brokerage_plans?.brokerage?.platinum_plan}} </td>
+        <td> {{companyData?.brokerage_plans?.brokerage?.titanium_plan}}</td>
+  
+    </tr>
+    <tr>
+        <td>Maintenance Charge</td>
+        <td>{{companyData?.brokerage_plans?.maintenance_charges?.optimum_plan}}</td>
+        <td>{{companyData?.brokerage_plans?.maintenance_charges?.platinum_plan}} </td>
+        <td> {{companyData?.brokerage_plans?.maintenance_charges?.titanium_plan}}</td>
+  
+    </tr>
+    <tr>
+        <td>DP Transaction Charges</td>
+        <td>{{companyData?.brokerage_plans?.transaction_charges?.optimum_plan}}</td>
+        <td>{{companyData?.brokerage_plans?.transaction_charges?.platinum_plan}} </td>
+        <td> {{companyData?.brokerage_plans?.transaction_charges?.titanium_plan}}</td>
+  
+    </tr>
+    <tr>
+        <td>Pay In charges</td>
+        <td>{{companyData?.brokerage_plans?.pay_in_charges?.optimum_plan}}</td>
+        <td>{{companyData?.brokerage_plans?.pay_in_charges?.platinum_plan}} </td>
+        <td> {{companyData?.brokerage_plans?.pay_in_charges?.titanium_plan}}</td>
+  
+    </tr>
+    <tr>
+        <td>Call-N-Trade</td>
+        <td>{{companyData?.brokerage_plans?.call_n_trade?.optimum_plan}}</td>
+        <td>{{companyData?.brokerage_plans?.call_n_trade?.platinum_plan}} </td>
+        <td> {{companyData?.brokerage_plans?.call_n_trade?.titanium_plan}}</td>
+  
+    </tr>
+    <tr>
+        <td>Direct MF Investment Charges</td>
+        <td>{{companyData?.brokerage_plans?.direct_mf_investment_charges?.optimum_plan}}</td>
+        <td>{{companyData?.brokerage_plans?.direct_mf_investment_charges?.platinum_plan}} </td>
+        <td> {{companyData?.brokerage_plans?.direct_mf_investment_charges?.titanium_plan}}</td>
+  
+    </tr>
+    <tr>
+        <td>Research Advisory</td>
+        <td>{{companyData?.brokerage_plans?.research_advisory?.optimum_plan}}</td>
+        <td>{{companyData?.brokerage_plans?.research_advisory?.platinum_plan}} </td>
+        <td> {{companyData?.brokerage_plans?.research_advisory?.titanium_plan}}</td>
+  
+    </tr>
+    <tr>
+        <td>Free Trades</td>
+        <td>{{companyData?.brokerage_plans?.free_trades?.optimum_plan}}</td>
+        <td>{{companyData?.brokerage_plans?.free_trades?.platinum_plan}} </td>
+        <td> {{companyData?.brokerage_plans?.free_trades?.titanium_plan}}</td>
+  
+    </tr>
+    <tr>
+        <td>Dedicated Customer Support</td>
+        <td>{{companyData?.brokerage_plans?.dedicated_customer_support?.optimum_plan}}</td>
+        <td>{{companyData?.brokerage_plans?.dedicated_customer_support?.platinum_plan}} </td>
+        <td> {{companyData?.brokerage_plans?.dedicated_customer_support?.titanium_plan}}</td>
+  
+    </tr>
+  </tbody>
+</table>
+ </div>
+<!-- subsection ends-->
+
+
+<!-- subsection start -->
+<div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-4">5paisa Charges 2021
+    </h1>
+      <!-- <p class="lead">
+        5paisa Trading Account   
+      </p> -->
+      <hr class="my-4">
+     
+    <!-- list item -->
+    <h4 class="sub-header">
+        5paisa Account Opening Charges & AMC   
+    </h4>
+    <table class="table mt-5 mb-5 text-center">
+        <thead>
+          <tr>
+              <th scope="col">Service
+              </th>
+            <th scope="col">Charges
+            </th>
+           
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Trading Account Opening Charges (One Time) </td>
+            <td>{{companyData?.account_opening_charges?.trading_account_opening_charges_one_time}}</td>
+          </tr>
+          <tr>
+            <td>Trading Annual maintenance charges (AMC)	 </td>
+            <td>{{companyData?.account_opening_charges?.trading_annual_maintenance_charges}}</td>
+          </tr>
+          <tr>
+            <td>Demat Account Opening Charges (One Time)	 </td>
+            <td>{{companyData?.account_opening_charges?.demat_account_opening_charges_one_time}}</td>
+          </tr>
+          <tr>
+            <td>Demat Account Maintenance Charges (AMC)	 </td>
+            <td>{{companyData?.account_opening_charges?.demat_account_maintenance_charges}}</td>
+          </tr>
+         
+          
+        </tbody>
+      </table>
+    <!-- list item ends -->
+  
+   
+       <!-- list item -->
+    <h4 class="sub-header">
+        5Paisa Trading Brokerage Charges 
+    </h4>
+    <table class="table mt-5 mb-5 text-center">
+        <thead>
+          <tr>
+              <th scope="col">Service
+              </th>
+            <th scope="col">Brokerage Fee
+            </th>
+           
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Equity Intra-day	</td>
+            <td>{{companyData?.trading_brokerage_charges?.equity_intraday}}</td>
+          </tr>
+          <tr>
+            <td>Equity Delivery		 </td>
+            <td>{{companyData?.trading_brokerage_charges?.equity_delivery}}</td>
+          </tr>
+          <tr>
+            <td>Equity Futures	 (One Time)	 </td>
+            <td>{{companyData?.trading_brokerage_charges?.equity_futures}}</td>
+          </tr>
+          <tr>
+            <td>Equity Options		 </td>
+            <td>{{companyData?.trading_brokerage_charges?.equity_options}}</td>
+          </tr>
+          <tr>
+            <td>Commodity Futures		 </td>
+            <td>{{companyData?.trading_brokerage_charges?.commodity_futures}}</td>
+          </tr>
+          <tr>
+            <td>Commodity Options		 </td>
+            <td>{{companyData?.trading_brokerage_charges?.commodity_options}}</td>
+          </tr>
+          <tr>
+            <td>currency Futures		 </td>
+            <td>{{companyData?.trading_brokerage_charges?.currency_futures}}</td>
+          </tr>
+          <tr>
+            <td>currency Options		 </td>
+            <td>{{companyData?.trading_brokerage_charges?.currency_options}}</td>
+          </tr>
+          
+        </tbody>
+      </table>
+    <!-- list item ends -->
+
+    <!-- list item -->
+    <h4 class="sub-header">
+        5paisa Online Account Opening   
+    </h4>
+    <hr>
+
+    <p class="lead">
+        
+        5paisa's 2-in-1 account (demat + trading account) gives its customer an option to invest and trade in the stock market as well as in mutual funds. If you are looking for only Mutual Funds as investment options, a separate Mutual Fund Account is available.
+
+        5paisa offers completely paperless account opening based on Aadhaar. If you have Aadhaar number and your Aadhaar number is mapped to correct mobile number, the account opening process is really fast. After completing the online application, the online trading accounts get activated in few hours.
+        
+        You could also download the application form, print it, fill it up and send it to 5paisa Mumbai office to open the account.   
+     </p>
+    <!-- list item ends -->
+
+    </div>
+  </div>
+  <!-- subsection ends -->
+
+  <!-- subsection start -->
+ <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <!-- <h1 class="display-4">Upstox Charges 2021
+  
+      </h1> -->
+      <h3 class="sub-header">{{companyName}} Trading Software ({{companyName}} Trading Platforms)</h3>
+
+      <hr class="my-4">
+      <p class="lead">The 5paisa Trading Platform is built on IIFL's trading platform which is being used by many customers over last 2 decades. The trading platform of 5paisa is available on mobile app, browser (web) and install-able desktop trading application (Exe).</p>
+
+     <!-- subsection start -->
+      <!-- list item -->
+      <h4 class="sub-header">5paisa Mobile App
+
+      </h4>
+      <p class="lead">The 5paisa mobile trading app offers trading at BSE/NSE and Robo Advisory on the go. Customer can download this free app from Google App Store or Apple App Store. The simple intuitive app can be used to buy stocks, trade in stock and currency futures & options, invest in mutual funds, etf's and bonds ect.
+      </p>
+      <!-- list item ends -->
+
+      <!-- list item -->
+      <h4 class="sub-header">5paisa Web Trading (5paisa.com)
+
+    </h4>
+    <p class="lead">5paisa has a powerful trading website (www.5paisa.com) which can be accessed from any available web browser on computer, laptop, mobile devices or tablets. The website (also called 5paisa Trader Station) offers all trading and investment options under one domain.
+    </p>
+    <!-- list item ends -->
+
+    <!-- list item -->
+    <h4 class="sub-header">5paisa Trade Terminal
+
+    </h4>
+    <p class="lead">5paisa installable trading terminal is designed for frequent traders who need advance trading tools. The desktop application offers real time data, advance charts for intraday and historic stock prices.
+
+        Variety of keyboard shortcuts are available to monitor the market on real-time basis and place orders faster.
+    </p>
+    <!-- list item ends -->
+
+
+    </div>
+ </div>
+ <!-- subsection ends -->
+
+   <!-- subsection start -->
+   <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <!-- <hr class="my-4"> -->
+
+      <h1 class="display-4">{{companyName}} Pros (Advantages)
+
+      </h1>
+      <p class="lead">
+        The following are the advantages of {{companyName}}. You must read {{companyName}} advantages and disadvantages before opening an account with 5paisa. 5paisa pros and cons help you find if it suits your investment needs.
+
+      </p>
+      <hr class="my-4">
+      <!-- <p class="lead">Securities Transaction Tax (STT)</p> -->
+     
+    <!-- list item -->
+    <p class="lead">
+      <i class="fa fa-superpowers mr-2" aria-hidden="true"></i>  
+      <b>Promoted by the IIFL promoters</b>. IIFL is a premier non-banking financial institution in India with experience of over 2 decades.        
+    </p>
+    <!-- list item ends -->
+   
+    <!-- list item -->
+    <p class="lead">
+      <i class="fa fa-superpowers mr-2" aria-hidden="true"></i>  
+      Choose from 3 Subscription plans as per your trading needs.
+           </p>
+    <!-- list item ends -->
+    <!-- list item -->
+    <p class="lead">
+      <i class="fa fa-superpowers mr-2" aria-hidden="true"></i>  
+      FFree trading platform including mobile app, website and desktop trading terminal. No software charges.
+
+    </p>
+    <!-- list item ends -->
+
+    <!-- list item -->
+    <p class="lead">
+      <i class="fa fa-superpowers mr-2" aria-hidden="true"></i>  
+      Offers free technical, derivative and fundamental research & advice to customers for additional cost.
+      <!-- list item ends -->
+
+
+    </div>
+  </div>
+
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-4">{{companyName}} Cons (Disadvantages)
+
+
+      </h1>
+      <p class="lead">
+        The following are the cons of 5paisa. Check the list of 5paisa drawbacks.
+
+
+
+      </p>
+      <hr class="my-4">
+      <!-- <p class="lead">Securities Transaction Tax (STT)</p> -->
+     
+   <!-- list item -->
+   <p class="lead">
+    <i class="fa fa-superpowers mr-2" aria-hidden="true"></i>  
+    Doesn't offer 3-in-1 account.
+
+
+  </p>
+  <!-- list item ends -->
+  <!-- list item -->
+  <p class="lead">
+    <i class="fa fa-superpowers mr-2" aria-hidden="true"></i>  
+    Very high demat debit transaction charges. They charge Rs 25 or 0.025% in Optimum plan.
+
+  </p>
+  <!-- list item ends -->
+  <!-- list item -->
+  <p class="lead">
+    <i class="fa fa-superpowers mr-2" aria-hidden="true"></i>  
+    Higher exchange transaction charges in competition to other discount brokers.
+
+  </p>
+  <!-- list item ends -->
+  <!-- list item -->
+  <p class="lead">
+    <i class="fa fa-superpowers mr-2" aria-hidden="true"></i>  
+    Call & Trade is available at an additional cost of Rs 100 per call in Optimum plan. The customer can place any number of trades in one call for Flat Rs 100 fee.
+
+  </p>
+  <!-- list item ends -->
+ <!-- list item -->
+ <p class="lead">
+    <i class="fa fa-superpowers mr-2" aria-hidden="true"></i>  
+    Research & advisory services are not available in Optimum Plan.
+
+  </p>
+  <!-- list item ends -->
+ 
+  <!-- list item -->
+  <p class="lead">
+    <i class="fa fa-superpowers mr-2" aria-hidden="true"></i>  
+    5Paisa doesn't offer NRI Trading services.
+
+  </p>
+  <!-- list item ends -->
+ 
+    </div>
+  </div>
+
+  <!-- subsection end -->
+
+      <!-- sub section start-->
+      <h3 class="sub-header">{{companyName}} Margin / Exposure
+    </h3>
+    <hr>
+    <p class="sub-header-content">
+        {{companyName}} leverage for intraday, delivery, options, currency and commodities.
+
+
+    </p>
+  
+    <table class="table mt-5 mb-5 text-center">
+      <thead>
+        <tr>
+          <th scope="col">Segment	</th>
+          <th scope="col">Margin		</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Equity Delivery	</td>
+          <td> {{companyData?.margin_exposure?.equity_delivery}}</td>
+  
+        </tr>
+        <tr>
+          <td>Equity Intraday		</td>
+          <td> {{companyData?.margin_exposure?.equity_intraday}} </td>
+        </tr>
+        
+        <tr>
+          <td>Equity Future	</td>
+          <td> {{companyData?.margin_exposure?.equity_futures}} </td>
+        </tr>
+        
+       <tr>
+         <td>Equity Options		</td>
+         <td> {{companyData?.margin_exposure?.equity_options}} </td>
+        </tr>
+       <tr>
+         <td>Currency Future		</td>
+         <td> {{companyData?.margin_exposure?.currency_futures}}</td>
+       </tr>
+       <tr>
+         <td>Currency Options		</td>
+         <td> {{companyData?.margin_exposure?.currency_options}} </td>
+       </tr>
+       <tr>
+        <td>Commodity Future			</td>
+        <td> {{companyData?.margin_exposure?.commodity_futures}}</td>
+      </tr>
+      <tr>
+        <td>Commodity Options			</td>
+        <td> {{companyData?.margin_exposure?.commodity_options}}</td>
+      </tr>
+      </tbody>
+    </table>
+ 
+    <!-- subsection ends-->
+
+      <!-- sub section start-->
+      <h3 class="sub-header">{{companyName}} Ratings
+    </h3>
+    <hr>
+    
+  
+    <table class="table mt-5 mb-5 text-center">
+      <thead>
+        <tr>
+          <th scope="col">Segment	</th>
+          <th scope="col">Ratings		</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><b>Overall Rating</b>	</td>
+          <td> {{companyData?.ratings?.overall_ratings}}</td>
+  
+        </tr>
+        <tr>
+          <td>Fees		</td>
+          <td> {{companyData?.ratings?.fees}} </td>
+        </tr>
+        
+        <tr>
+          <td>Brokerage	</td>
+          <td> {{companyData?.ratings?.brokerage}} </td>
+        </tr>
+        
+       <tr>
+         <td>Usability		</td>
+         <td> {{companyData?.ratings?.usability}} </td>
+        </tr>
+       <tr>
+         <td>Customer Service		</td>
+         <td> {{companyData?.ratings?.customer_service}}</td>
+       </tr>
+       <tr>
+         <td>Research Capabilities		</td>
+         <td> {{companyData?.ratings?.research_capabilities}} </td>
+       </tr>
+       
+      </tbody>
+    </table>
+ 
+    <!-- subsection ends-->
+<!-- subsection start -->
+<div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <!-- <h1 class="display-4">Upstox Charges 2021
+  
+      </h1> -->
+      <h3 class="sub-header">5paisa Short Selling
+    </h3>
+
+      <hr class="my-4">
+      <!-- <p class="lead">The 5paisa Trading Platform is built on IIFL's trading platform which is being used by many customers over last 2 decades. The trading platform of 5paisa is available on mobile app, browser (web) and install-able desktop trading application (Exe).</p> -->
+
+     <!-- subsection start -->
+      <!-- list item -->
+      <h4 class="sub-header">Equity Futures & Options
+
+      </h4>
+      <p class="lead">5Paisa allow intraday and overnight short selling in F&O segment.
+      </p>
+      <!-- list item ends -->
+
+      <!-- list item -->
+      <h4 class="sub-header">Equity Cash
+
+    </h4>
+    <p class="lead">5Paisa allows short selling only for Intraday, but not for overnight positions. Short selling is available in all groups except z category or T2T script.
+    </p>
+    <!-- list item ends -->
+
+   
+
+    </div>
+ </div>
+ <!-- subsection ends -->
+
+
+<!-- subsection start -->
+<div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <!-- <h1 class="display-4">Upstox Charges 2021
+  
+      </h1> -->
+      <h3 class="sub-header">5Paisa.com Membership
+
+    </h3>
+
+      <hr class="my-4">
+      <!-- <p class="lead">The 5paisa Trading Platform is built on IIFL's trading platform which is being used by many customers over last 2 decades. The trading platform of 5paisa is available on mobile app, browser (web) and install-able desktop trading application (Exe).</p> -->
+
+     <!-- subsection start -->
+      <!-- list item -->
+      <h4 class="sub-header">5Paisa SEBI Membership
+
+      </h4>
+      <p class="lead">INZ000010231
+      </p>
+      <!-- list item ends -->
+
+      <!-- list item -->
+      <h4 class="sub-header">5Paisa NSE Member ID
+
+    </h4>
+    <p class="lead">14300
+    </p>
+    <!-- list item ends -->
+
+   <!-- list item -->
+   <h4 class="sub-header">5Paisa BSE Clearing Number
+
+</h4>
+<p class="lead">6363
+</p>
+<!-- list item ends -->
+
+
+
+    </div>
+ </div>
+ <!-- subsection ends -->
+
+
+          </div>
+          <div class="col-md-3">
+        </div>
+        </div>
+    </div>  
+
+
+    <!-- FAQs -->
+<div class="container pt-3 note-pad" >
+    <h1 class="display-4 text-center m-5" style="color:  #333958;">
+      <i class="fa fa-question-circle mr-2" aria-hidden="true"></i> Frequently Asked Questions
+    
+    </h1>
+    <hr class="my-4">
+
+      <div class="row mx-auto m-1 text-center ">
+        <div class="col-md-4">
+          <div class="card faqCards ">
+            <div class="card-body">
+             
+             <a class="form-control" class="faq"  href="">What is 5Paisa ?</a>
+                
+             
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card faqCards ">
+            <div class="card-body">
+              <a class="form-control" class="faq"  href="">What is 5paisa Capital Limited?</a>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card faqCards ">
+            <div class="card-body">
+              <a class="form-control" class="faq"  href="">
+                Who owns 5paisa?
+              </a>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mx-auto m-1 text-center">
+        <div class="col-md-4">
+          <div class="card faqCards ">
+            <div class="card-body">
+              <a class="form-control" class="faq"  href="">
+                How is 5paisa for trading?
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card faqCards ">
+            <div class="card-body">
+              <a class="form-control" class="faq"  href="">
+                How good is 5paisa?
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card faqCards ">
+                <div class="card-body">
+                  <a class="form-control" class="faq"  href="">
+                    What is brokerage at 5paisa.com?
+                  </a>
+                </div>
+              </div>
+        </div>
+      </div>
+    
+      <div class="row mx-auto m-1 text-center">
+        <div class="col-md-4">
+          <div class="card faqCards ">
+            <div class="card-body">
+              <a class="form-control" class="faq"  href="">
+                How to open 5paisa account?
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card faqCards ">
+            <div class="card-body">
+              <a class="form-control" class="faq"  href="">
+                How to invest in 5paisa.com?
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card faqCards ">
+                <div class="card-body">
+                  <a class="form-control" class="faq"  href="">
+                    Is 5paisa legit?
+                  </a>
+                </div>
+              </div>
+        </div>
+      </div>
+    
+      <div class="row mx-auto m-1 text-center">
+        <div class="col-md-4">
+          <div class="card faqCards ">
+            <div class="card-body">
+              <a class="form-control" class="faq"  href="">
+                How to open 5paisa account?
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card faqCards ">
+            <div class="card-body">
+              <a class="form-control" class="faq"  href="">
+                How to invest in 5paisa.com?
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card faqCards ">
+                <div class="card-body">
+                  <a class="form-control" class="faq"  href="">
+                    Is 5paisa legit?
+                  </a>
+                </div>
+              </div>
+        </div>
+      </div>
+      <div class="row mx-auto m-1 text-center">
+        <div class="col-md-4">
+          <div class="card faqCards ">
+            <div class="card-body">
+              <a class="form-control" class="faq"  href="">
+                How to use 5paisa mobile app?
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card faqCards ">
+            <div class="card-body">
+              <a class="form-control" class="faq"  href="">
+                How to close 5paisa account?
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card faqCards ">
+                <div class="card-body">
+                  <a class="form-control" class="faq"  href="">
+                    Is 5paisa and IIFL same?
+                  </a>
+                </div>
+              </div>
+        </div>
+      </div>
+  </div>
+  <!-- FAQs ends -->
+
+  <app-footer [companyName]="companyName"></app-footer>
