@@ -1,4 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+.newSubsection {
+    margin-top: 120px;
+}
+.col-md-3 {
+    margin-top: 4rem;
+}
 .btn:not(:disabled):not(.disabled) {
     cursor: pointer;
 }
@@ -34,8 +40,8 @@ a.waves-effect, a.waves-light {
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
-    padding: .84rem 2.14rem;
-    font-size: .81rem;
+    /* padding: .84rem 2.14rem; */
+    /* font-size: .81rem; */
 }
 .waves-effect {
     position: relative;
@@ -74,9 +80,12 @@ tbody tr td {
 }
 
 .lead {
-    /* color: #333958; */
-    color:#222223;
+    color: #333958;
+    /* color:#222223; */
 
+}
+.sub-header, .sub-header-content {
+    color: #333958;
 }
 .lead2 {
     font-size: 18px;
@@ -122,6 +131,7 @@ h1 {
 }
 .display-4 {
     font-weight: 400;
+    font-size: 34px;
 }
 .faqCards {
     /* background:  #333958; */

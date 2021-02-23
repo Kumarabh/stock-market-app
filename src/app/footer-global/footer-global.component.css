@@ -1,0 +1,13 @@
+/* .lead {
+    color: white;
+}
+.sub-header {
+    color: white;
+} */
+
+.lead {
+    font-size: 15px;
+}
+.sub-header {
+    font-size: 18px;
+}

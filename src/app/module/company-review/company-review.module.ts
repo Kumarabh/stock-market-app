@@ -12,10 +12,11 @@ import { SpecialOffersComponent } from './components/special-offers/special-offe
 import { EdelweissReviewComponent } from './components/edelweiss-review/edelweiss-review.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { FivePaisaComponent } from './components/five-paisa/five-paisa.component';
+import { ProstocksComponent } from './components/prostocks/prostocks.component';
 
 
 @NgModule({
-  declarations: [ZerodhaReviewComponent, UpstoxComponent, SpecialOffersComponent, EdelweissReviewComponent, FooterComponent, FivePaisaComponent],
+  declarations: [ZerodhaReviewComponent, UpstoxComponent, SpecialOffersComponent, EdelweissReviewComponent, FooterComponent, FivePaisaComponent, ProstocksComponent],
   imports: [
     CommonModule,
     CompanyReviewRoutingModule,

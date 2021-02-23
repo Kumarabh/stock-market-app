@@ -18,6 +18,7 @@ import { AngularFireAnalyticsModule } from '@angular/fire/analytics';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { environment } from '../environments/environment';
 import { CarouselComponent } from './carousel/carousel.component';
+import { FooterGlobalComponent } from './footer-global/footer-global.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { CarouselComponent } from './carousel/carousel.component';
     IpoWatchComponent,
     ShareBrokerReviewsComponent,
     CompareBrokerComponent,
-    CarouselComponent
+    CarouselComponent,
+    FooterGlobalComponent
   ],
   imports: [
     BrowserModule,
