@@ -1,0 +1,753 @@
+<!-- Buttons -->
+<div class="row mr-0">
+    <!-- <div class="col-1">
+       
+  
+    </div> -->
+    <div class="col-12" style="margin-top: -20px;">
+        <a href="" class="btn btn-danger btn-md waves-effect waves-light">{{companyData?.company_name}} Review</a>
+        <a href="" class="btn btn-danger btn-md waves-effect waves-light">Brokerage</a>
+        <a href="" class="btn btn-danger btn-md waves-effect waves-light">Mobile App</a>
+        <a href="" class="btn btn-danger btn-md waves-effect waves-light">Exposure</a>
+        <a href="" class="btn btn-danger btn-md waves-effect waves-light">Acct Opening</a>
+        <a href="" class="btn btn-danger btn-md waves-effect waves-light">Demat</a>
+        <a href="" class="btn btn-danger btn-md waves-effect waves-light">IPO</a>
+        <a href="" class="btn btn-danger btn-md waves-effect waves-light">Branches</a>
+        <a href="" class="btn btn-danger btn-md waves-effect waves-light">Trading Software</a>
+        <a href="" class="btn btn-danger btn-md waves-effect waves-light">NRI Account</a>
+        <a href="" class="btn btn-danger btn-md waves-effect waves-light">Mutual Fund</a>
+        <!-- <a href="" class="btn btn-danger btn-md waves-effect waves-light">BROKERAGE</a> -->
+       
+    </div>
+    <!-- <div class="col-1">
+        
+       
+    </div> -->
+    
+  </div>
+
+
+  <div class="   p-3" style="background: #333958; margin-top: -25px;">
+
+    <div class="row ">
+      <div class="col-6" style="color: white;">
+        <h1 class="font-weight-bold mb-3 h2">{{companyData?.company_name}}</h1>
+        <!-- <h4 class="mb-2 h5 text-left">
+              A stock broker plays an essential role in the buying and selling of securities in India. Since stockbrokers play an important role, it is crucial to choose the most suitable stockbroker for yourself.
+              They help you in opening a Demat and Trading Account for your trading and investment needs.
+          </h4> -->
+      </div>
+      <div class="col-3">
+  
+      </div>
+      <div class="col-3">
+        <p>
+          <!-- <a href="" class="btn btn-danger btn-md waves-effect waves-light">Margin Calculator</a> -->
+        </p>
+      </div>
+    </div>
+  
+  </div>
+
+
+  
+
+  <!-- compare broker -->
+
+  <div class="container-fluid mt-5 p-3 mb-5">
+    <div class="row mt-2">
+      <div class="row mx-auto">
+        <div class="col-md-4">
+          <!-- <label for="">First Broker</label> -->
+          <input type="text" placeholder="" [(ngModel)]="broker1"  class="form-control">
+  
+      </div>
+          <div class="col-md-4">
+              <!-- <label for="">Second Broker</label> -->
+              <input type="text" placeholder="" [(ngModel)]="broker2"  class="form-control">
+  
+          </div>
+          
+          
+          
+          <div class="col-md-4">
+              <button type="submit" (click) = "submitCompareForm()"  class=" submit-button "><b>Compare Brokers</b></button>
+  
+          </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid"> 
+    <div class="row">
+        <div class="col-md-9">
+
+            <!-- subsection start -->
+            <div class="jumbotron jumbotron-fluid">
+                <div class="container">
+                  <h1 class="display-4">{{companyData?.company_name}} Stock Trading / Demat / Brokerage / Reviews 2021
+                  </h1>
+                  <hr class="my-4">
+                  <p class="lead">
+                    Incorporated in February 2000, Sharekhan is India's 3rd largest stock broker (after ICICI Direct and HDFC Securities). Sharekhan provides brokerage services through its online trading website Sharekhan.com and 1800 offices which includes branches & franchises in over 550 cities across India. Sharekhan has seen incredible growth over last 10+ years though it's very successful online trading platform and the chain of franchises located in almost every part of India. Sharekhan also has international presence in the UAE and Oman.                  </p>
+                  <br>
+                  <p class="lead">
+                    Sharekhan offers its services to all kinds of customers including individual investors and traders, corporate, institutional and NRI's. As of Dec 2018, Sharekhan has over 17 lakh customers. Sharekhan offers trade execution facilities for equity cash and derivatives segments on BSE and NSE, commodities trading facilities on MCX and NCDEX. Sharekhan also offer depository services (demat account) and option to invest in mutual funds and IPOs.
+                  </p>
+                  <p class="lead">
+                    Sharekhan.com is the finest investment portal for India stock market. The well designed website provides wide range on investment options, share market news, research reports, stock quotes, fundamental and statistical info across equity, mutual funds, IPOs and much more.                  
+                </p>
+                <p class="lead">
+                    The new Sharekhan App is user friendly and has been redesigned keeping user's requirements in mind. Along with its fresh new look, it also offers extensive features for both traders and investors alike. Now, you can initiate trade easily, keep track of your stocks and manage portfolio, all in one place.
+
+                    Sharekhan also offers 'Sharekhan TradeTiger', one of the most popular trading terminals, for retail investors. The Trade Tiger is quite similar to Broker Terminal and allows frequent traders to place and execute their orders at a high speed. It also provides live data and other tools on the same screen to help the users with their trades.                </p>
+                </div>
+              </div>
+              <!-- subsection ends -->
+
+<!-- subsection start -->
+<div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-4">Account Types</h1>
+
+      <hr class="my-4">
+
+      <!-- list item -->
+      <h4 class="sub-header">
+        Classic account
+      </h4>
+      <p class="lead">
+        Allow investor to buy and sell stocks online along with the following features like multiple watch lists, Integrated Banking, demat and digital contracts, Real-time portfolio tracking with price alerts and Instant credit & transfer.
+      </p>
+
+      <p class="lead">Online trading account for investing in Equities and Derivatives</p>
+      <p class="lead">Free trading through Phone (Dial-n-Trade)</p>
+       <div class="card">
+         <div class="card-body">
+           <p><i class="fa fa-superpowers mr-2"></i> Two dedicated numbers for placing your orders with your cellphone or landline.
+           </p>
+           <p><i class="fa fa-superpowers mr-2"></i>Automtic funds tranfer with phone banking (for Citibank and HDFC bank customers)
+           </p>
+           <p><i class="fa fa-superpowers mr-2"></i>Simple and Secure Interactive Voice Response based system for authentication
+           </p>
+           <p><i class="fa fa-superpowers mr-2"></i>get the trusted, professional advice of our telebrokers
+           </p>
+           <p><i class="fa fa-superpowers mr-2"></i>After hours order placement facility between 8.00 am and 9.30 am
+           </p>
+         </div>
+       </div>
+    <p class="lead">Integration of: Online trading + Bank + Demat account</p>
+    <p class="lead">Instant cash transfer facility against purchase & sale of shares</p>
+    <p class="lead">IPO investments</p>
+    <p class="lead">Instant order and trade confirmations by e-mail</p>
+    <p class="lead">Single screen interface for cash and derivatives</p>
+
+      <!-- list item ends -->
+      <!-- list item -->
+      <h4 class="sub-header">
+        <!-- <i class="fa fa-shield mr-2 fa-flip-horizontal"></i> -->
+        TradeTiger account
+
+      </h4>
+      <p class="lead">
+        This is a net based executable application for active traders who trade frequently during the day's trading session. Following are few popular features of Trade Tiger account.
+      </p>
+      <!-- list item ends -->
+      <p class="lead">A single platform for multiple exchange BSE & NSE (Cash & F&O), MCX, NCDEX</p>
+      <p class="lead">Multiple Market Watch available on Single Screen </p>
+      <p class="lead">Hot keys similar to a traditional broker terminal</p>
+      <p class="lead">Tie-up with 12 banks for online transfer of funds</p>
+      <p class="lead">Different tools available to gauge market such as Tick Query, Ticker, Market Summary, Action Watch, Option Premium Calculator, Span Calculator</p>
+      <p class="lead">Graph Studies are available including Average, Band- Bollinger, Know SureThing, MACD, RSI, etc</p>
+
+    </div>
+  </div>
+  <!-- subsection ends -->
+
+<!-- subsection start -->
+<div class="container-fluid">
+    <!-- list item -->
+    <h4 class="sub-header">
+      Sharekhan Charges 2021
+    </h4>
+    <hr>
+
+    <h4 class="sub-header">Account Opening Fees & Annual maintenance charges (AMC)</h4>
+
+    <p class="lead">
+      Trading Account Opening Charges (One Time): {{companyData?.charges?.trading_account_opening_charges}}
+    </p>
+    <p class="lead">
+        Trading Annual maintenance charges (AMC): {{companyData?.charges?.trading_annual_maintenance_charges}}
+
+    </p>
+    <p class="lead">
+        Demat Account Opening Charges (One Time): {{companyData?.charges?.demat_account_opening_charges}}
+    </p>
+    <p class="lead">
+        Demat Account Annual Maintenance Charges (AMC): {{companyData?.charges?.demat_annual_maintenance_charges}}
+    </p>
+
+    <!-- list item ends -->
+
+  </div>
+  <!-- subsection ends -->
+
+<br>
+  <!-- subsection-start -->
+  <div class="container-fluid">
+    <!-- list item -->
+    <h4 class="sub-header">
+      {{companyName}} Trading Brokerages Charges:
+    </h4>
+    <!-- <hr> -->
+    <p class="lead">
+      <b>Equity Cash Intra-day Trades</b> : {{companyData?.trading_brokerage_charges?.equity_cash_intraday_trades}}
+  </p>
+    <p class="lead">
+      <b>Equity Delivery Trades</b>: {{companyData?.trading_brokerage_charges?.equity_delivery_trades}}
+
+    </p>
+    <p class="lead">
+      <b>F&O Trades</b>: {{companyData?.trading_brokerage_charges?.f_o_trades}}
+  </p>
+  <p class="lead">
+    <b>Options Trades</b>: {{companyData?.trading_brokerage_charges?.options_trades}}
+</p>
+<p class="lead">
+    <b>Currency Future</b>: {{companyData?.trading_brokerage_charges?.currency_futures}}
+</p>
+<p class="lead">
+    <b>Currency Options</b>: {{companyData?.trading_brokerage_charges?.currency_options}}
+</p>
+<p class="lead">
+    <b>Commodity</b>: {{companyData?.trading_brokerage_charges?.commodity}}
+</p>
+
+    <!-- list item ends -->
+  </div>
+
+<!-- subsection-ends -->
+
+ <!-- subsection start -->
+ <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-4">Sharekhan Minimum Brokerage Fee:</h1>
+
+      <hr class="my-4">
+
+      <!-- list item -->
+      <h4 class="sub-header">
+        For Intra-day Trades
+      </h4>
+      <p class="lead">
+        Sharekhan charges minimum brokerage of 5 paise per share. This means that while doing intraday trading if the share price you trade in is Rs 50 or less, a minimum brokerage of 5 paise per share will be charged.
+      </p>
+      <!-- list item ends -->
+      <!-- list item -->
+      <h4 class="sub-header">
+        <!-- <i class="fa fa-shield mr-2 fa-flip-horizontal"></i> -->
+        For Delivery Based Trades
+
+      </h4>
+      <p class="lead">
+        Sharekhan charges minimum brokerage fee of 10 paise per share. This means; for delivery based trades minimum brokerage of 10 paise per share is charged when the share price is Rs 20 or less.
+      </p>
+      <!-- list item ends -->
+
+<!-- list item -->
+<h4 class="sub-header">
+    <!-- <i class="fa fa-shield mr-2 fa-flip-horizontal"></i> -->
+    Minimum DP charges
+
+  </h4>
+  <p class="lead">
+    DP charges of Rs 16 per scrip is charged when the total traded value is Rs 3200 or less in case of sell transaction.
+  </p>
+  <!-- list item ends -->
+
+    </div>
+  </div>
+  <!-- subsection ends -->
+
+<!-- subsection start -->
+<div class="container-fluid newSubsection">
+
+
+    <h3 class="sub-header">Sharekhan Post Paid Plans
+    </h3>
+    <hr>
+    <p class="sub-header-content">
+        Sharekhan offers following post paid plans. To get the offer customer has to deposit the margin money with Sharekhan based the plan they choose. The brokerage reduces as the margin money is high.
+
+    </p>
+
+    <table class="table mt-5 mb-5 text-center">
+      <thead>
+        <tr>
+          <th scope="col">Rows	</th>
+          <th scope="col" colspan="3">Equity Cash	</th>
+          <th scope="col" colspan="3">Future	</th>
+          <th scope="col">Options
+        </th>
+        </tr>
+        <tr>
+            <th scope="col">Margin Scheme	</th>
+            <th scope="col">Leg 1	</th>
+            <th scope="col">Leg 2 </th>
+            <th scope="col">Delivery </th>
+            <th scope="col">Leg 1	</th>
+            <th scope="col">Leg 2 (same day) </th>
+            <th scope="col">Leg 2 (next day) </th>
+            <th scope="col">Option (whichever is higher)</th>
+        </tr>
+          
+      </thead>
+      <tbody>
+        <tr *ngFor = "let data of companyData?.post_paid_plans">
+          <td>{{data.margin_scheme}}</td>
+          <td>{{data.equity_cash_leg1}}</td>
+          <td>{{data.equity_cash_leg2}}</td>
+          <td>{{data.equity_cash_delivery}}</td>
+          <td>{{data.future_leg1}}</td>
+          <td>{{data.future_leg2_same_day}}</td>
+          <td>{{data.future_leg2_next_day}}</td>
+          <td>{{data.option}}</td>
+         
+        </tr>
+        
+      </tbody>
+    </table>
+
+  </div>
+<!-- subsection ends -->
+
+
+
+<!-- subsection start -->
+<div class="container-fluid newSubsection">
+
+
+    <h3 class="sub-header">Sharekhan Pre Paid Plans
+    </h3>
+    <hr>
+    <p class="sub-header-content">
+        Sharekhan offers following post paid plans. To get the offer customer has to deposit the margin money with Sharekhan based the plan they choose. The brokerage reduces as the margin money is high.
+
+    </p>
+
+    <table class="table mt-5 mb-5 text-center">
+      <thead>
+        <tr>
+          <th scope="col">Rows	</th>
+          <th scope="col" colspan="4">Equity Cash	</th>
+          <th scope="col" colspan="3">Future	</th>
+          <th scope="col">Options
+        </th>
+        </tr>
+        <tr>
+            <th scope="col">Amount	</th>
+            <th scope="col">Period	</th>
+            <th scope="col">Leg 1	</th>
+            <th scope="col">Leg 2 </th>
+            <th scope="col">Delivery </th>
+            <th scope="col">Leg 1	</th>
+            <th scope="col">Leg 2 (same day) </th>
+            <th scope="col">Leg 2 (next day) </th>
+            <th scope="col">Option (whichever is higher)</th>
+        </tr>
+          
+      </thead>
+      <tbody>
+        <tr *ngFor = "let data of companyData?.pre_paid_plans">
+          <td>{{data.amount}}</td>
+          <td>{{data.equity_cash_period}}</td>
+          <td>{{data.equity_cash_leg1}}</td>
+          <td>{{data.equity_cash_leg2}}</td>
+          <td>{{data.equity_cash_delivery}}</td>
+          <td>{{data.future_leg1}}</td>
+          <td>{{data.future_leg2_same_day}}</td>
+          <td>{{data.future_leg2_next_day}}</td>
+          <td>{{data.option}}</td>
+         
+        </tr>
+        
+      </tbody>
+    </table>
+
+  </div>
+<!-- subsection ends -->
+
+ <!-- subsection start -->
+ <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-4">Sharekhan Online Account Opening:</h1>
+
+      <hr class="my-4">
+<p class="lead">For online trading with Sharekhan, investor has to open an account. Following are the ways to open an account with Sharekhan:
+</p>
+      <!-- list item -->
+      <h4 class="sub-header">
+        <!-- For Intra-day Trades -->
+      </h4>
+      <p class="lead">
+        <b>Drop your phone number</b> and Sharekhan Customer Service Executive will call you back for trading & demat account.      </p>
+      <!-- list item ends -->
+     
+
+    </div>
+  </div>
+  <!-- subsection ends -->
+
+
+<!-- subsection start -->
+<div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-4">Sharekhan Trading Software (Sharekhan Trading Platforms)
+    </h1>
+   
+      <hr class="my-4">
+      <p class="lead">Sharekhan offers 4 online trading software to its customer.
+    </p>
+      <!-- list item -->
+      <h5 class="sub-header">
+        TradeTiger (Trading Terminal)
+      </h5>
+      <h5 class="sub-header">
+        Sharekhan Website (Website Trading)
+
+      </h5>
+      <h5 class="sub-header">
+        Sharekhan App (Mobile Trading)
+    </h5>
+      <h5 class="sub-header">
+        Sharekhan Mini (Low bandwidth App)
+    </h5>
+      <!-- list item ends -->
+     
+      <p class="lead">
+        These Sharekhan trading software's offer trading in equity, commodity, and currency at BSE, NSE, MCX, and NCDEX. Sharekhan trading platform is available for free to all customers.
+        TradeTiger, the exe based installable trading application for PC is among the most powerful and advanced trading software available in India. Build in-house by Sharekhan IT team, this platform is continuously improved based on user feedback. Sharekhan Trade Tiger has all the functions needed for an active trader.
+      </p>
+
+    </div>
+  </div>
+  <!-- subsection ends -->
+
+
+  <!-- subsection start -->
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <!-- <hr class="my-4"> -->
+
+      <h1 class="display-4">{{companyName}} Pros (Advantages)
+
+      </h1>
+      <p class="lead">
+        The following are the advantages of Sharekhan. You must read Sharekhan advantages and disadvantages before opening an account with Sharekhan. Sharekhan pros and cons help you find if it suits your investment needs.      </p>
+      <hr class="my-4">
+      <!-- <p class="lead">Securities Transaction Tax (STT)</p> -->
+     
+    <!-- list item -->
+    <p class="lead">
+        Sharekhan offers different trading platform to suite customer requirement. This includes online browser based trading, Installable terminal, mobile, call n trade and in-person trade though branch offices.    </p>
+    <!-- list item ends -->
+   
+    <!-- list item -->
+    <p class="lead">
+        It offers different brokerage slabs to suit individual customers. Higher your trade your brokerage gets reduced. They have multiple brokerage schemas are available with them.           </p>
+    <!-- list item ends -->
+    <!-- list item -->
+    <p class="lead">
+        Sharekhan offers online and classroom training, seminars and workshops to investors.
+
+    </p>
+    <!-- list item ends -->
+    <!-- list item -->
+    <p class="lead">
+        Sharekhan doesn't charge for Online Funds Transfer from bank account and Funds Pay-out to bank account.
+        <!-- list item ends -->
+    </p>
+     <!-- list item -->
+     <p class="lead">
+        Sharekhan doesn't charge for DP transactions. Share transfer from and to the dp account is free.
+        <!-- list item ends -->
+      </p>
+       <!-- list item -->
+    <p class="lead">
+        Sharekhan has India-wide network of branches. You can find surly find a Sharekhan in your neighborhood.
+        <!-- list item ends -->
+      </p>
+       <!-- list item -->
+    <p class="lead">
+        Call & Trade facility is free with Sharekhan.
+        <!-- list item ends -->
+      </p>
+      <p class="lead">
+        Sharekhan allows fixed deposit as collateral for future and option trading.
+        <!-- list item ends -->
+      </p>
+      
+    </div>
+  </div>
+
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-4">{{companyName}} Cons (Disadvantages)
+     </h1>
+      <p class="lead">
+        The following are the cons of Sharekhan. Check the list of Sharekhan drawbacks.
+
+    </p>
+      <hr class="my-4">
+      <!-- <p class="lead">Securities Transaction Tax (STT)</p> -->
+    <!-- list item -->
+    <p class="lead">
+        Sharekhan doesn't offer 3-in-1 account as they don't provide banking services.
+
+  </p>
+  <!-- list item ends -->
+  <!-- list item -->
+  <p class="lead">
+    They brokerage charges are % based which are higher in comparison to flat fee brokers.
+
+  </p>
+  <!-- list item ends -->
+  <p class="lead">
+    They charge minimum brokerage of 10 paisa per stock would not let you trade stocks below Rs 20. (If you trade, you will loose majority of your money in brokerage).
+  </p>
+  <p class="lead">
+    Classic account holders cannot trade commodities.
+
+  </p>
+    </div>
+  </div>
+
+  <!-- subsection end -->
+
+
+  <!-- sub section start-->
+  <div class="container-fluid">
+    <h3 class="sub-header">Prostocks Margin / Exposure
+    </h3>
+    <hr>
+    <p class="sub-header-content">
+        Prostocks leverage for intraday, delivery, options, currency and commodities.
+    
+    </p>
+    
+    <table class="table mt-5 mb-5 text-center">
+      <thead>
+        <tr>
+          <th scope="col">Segment</th>
+          <th scope="col">Margin</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Equity Delivery	</td>
+          <td> {{companyData?.margin_exposure?.equity_delivery}}</td>
+    
+        </tr>
+        <tr>
+          <td>Equity Intraday		</td>
+          <td> {{companyData?.margin_exposure?.equity_intraday}} </td>
+        </tr>
+        
+        <tr>
+          <td>Equity Future	</td>
+          <td> {{companyData?.margin_exposure?.equity_futures}} </td>
+        </tr>
+        
+       <tr>
+         <td>Equity Options		</td>
+         <td> {{companyData?.margin_exposure?.equity_options}} </td>
+        </tr>
+       <tr>
+         <td>Currency Future		</td>
+         <td> {{companyData?.margin_exposure?.currency_futures}}</td>
+       </tr>
+       <tr>
+         <td>Currency Options		</td>
+         <td> {{companyData?.margin_exposure?.currency_options}} </td>
+       </tr>
+       <tr>
+        <td>Commodity Future			</td>
+        <td> {{companyData?.margin_exposure?.commodity_futures}}</td>
+      </tr>
+      <tr>
+        <td>Commodity Options			</td>
+        <td> {{companyData?.margin_exposure?.commodity_options}}</td>
+      </tr>
+      </tbody>
+    </table>
+   </div>
+
+<!-- subsection ends-->
+
+<!-- subsection start -->
+<div class="container-fluid newSubsection">
+    <h3 class="sub-header">{{companyName}} Ratings
+    </h3>
+    <hr>
+    
+    
+    <table class="table mt-5 mb-5 text-center">
+      <thead>
+        <tr>
+          <th scope="col">Segment	</th>
+          <th scope="col">Ratings		</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><b>Overall Rating</b>	</td>
+          <td> {{companyData?.ratings?.overall_ratings}}</td>
+    
+        </tr>
+        <tr>
+          <td>Fees		</td>
+          <td> {{companyData?.ratings?.fees}} </td>
+        </tr>
+        
+        <tr>
+          <td>Brokerage	</td>
+          <td> {{companyData?.ratings?.brokerage}} </td>
+        </tr>
+        
+       <tr>
+         <td>Usability		</td>
+         <td> {{companyData?.ratings?.usability}} </td>
+        </tr>
+       <tr>
+         <td>Customer Service		</td>
+         <td> {{companyData?.ratings?.customer_service}}</td>
+       </tr>
+       <tr>
+         <td>Research Capabilities		</td>
+         <td> {{companyData?.ratings?.research_capabilities}} </td>
+       </tr>
+       
+      </tbody>
+    </table>
+    
+  </div>
+
+<!-- subsection ends -->
+
+
+
+        </div>
+        <div class="col-md-3">
+            <app-special-offers></app-special-offers>
+        </div>
+    </div>
+  </div>
+
+
+
+
+  <!-- FAQs -->
+  <div class="container pt-3 note-pad" >
+    <h1 class="display-4 text-center m-5" style="color:  #333958;">
+      <i class="fa fa-question-circle mr-2" aria-hidden="true"></i> Frequently Asked Questions
+    
+    </h1>
+    <hr class="my-4">
+
+    <div class="row mx-auto m-1 text-center ">
+        <div class="col-md-4">
+          <div class="card faqCards ">
+            <div class="card-body">
+             
+             <a class="form-control" class="faq"  href="">How Sharekhan works?</a>
+                
+             
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card faqCards ">
+            <div class="card-body">
+              <a class="form-control" class="faq"  href="">Why to choose Sharekhan?</a>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card faqCards ">
+            <div class="card-body">
+              <a class="form-control" class="faq"  href="">
+                Is Sharekhan good?
+              </a>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mx-auto m-1 text-center ">
+        <div class="col-md-4">
+          <div class="card faqCards ">
+            <div class="card-body">
+             
+             <a class="form-control" class="faq"  href="">How to open trading account in Sharekhan?</a>
+                
+             
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card faqCards ">
+            <div class="card-body">
+              <a class="form-control" class="faq"  href="">How much Sharekhan charges?</a>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card faqCards ">
+            <div class="card-body">
+              <a class="form-control" class="faq"  href="">
+                How is Sharekhan review?
+              </a>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mx-auto m-1 text-center ">
+        <div class="col-md-4">
+          <div class="card faqCards ">
+            <div class="card-body">
+             
+             <a class="form-control" class="faq"  href="">What is Sharekhan DP ID?</a>
+                
+             
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card faqCards ">
+            <div class="card-body">
+              <a class="form-control" class="faq"  href="">How to buy IPO in Sharekhan app?</a>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card faqCards ">
+            <div class="card-body">
+              <a class="form-control" class="faq"  href="">
+                How to Cancel SIP in Sharekhan?
+              </a>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+</div>   
+
+<app-footer [companyName]="companyName"></app-footer>
+
+  

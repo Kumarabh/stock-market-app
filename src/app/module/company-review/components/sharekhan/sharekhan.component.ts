@@ -2,13 +2,12 @@ import { Component, OnInit } from '@angular/core';
 import { CompanyReviewService } from '../../company-review.service';
 
 @Component({
-  selector: 'app-prostocks',
-  templateUrl: './prostocks.component.html',
-  styleUrls: ['./prostocks.component.css']
+  selector: 'app-sharekhan',
+  templateUrl: './sharekhan.component.html',
+  styleUrls: ['./sharekhan.component.css']
 })
-export class ProstocksComponent implements OnInit {
+export class SharekhanComponent implements OnInit {
 
-  
   broker1
   broker2
   companyData
@@ -23,7 +22,7 @@ export class ProstocksComponent implements OnInit {
   }
   
   getCompanyData() {
-    this.service.getCompanyData('prostocks_review').subscribe((doc) => {
+    this.service.getCompanyData('sharekhan_review').subscribe((doc) => {
       if(doc.exists) {
         this.companyData = doc.data();
         this.companyName = this.companyData.company_name;
@@ -37,5 +36,6 @@ export class ProstocksComponent implements OnInit {
   submitCompareForm() {
 
   }
+
 
 }

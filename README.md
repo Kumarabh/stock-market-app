@@ -1,13 +1,14 @@
 npm install express � save
 npm install mongoose � save
 npm install body-parser --save
-
+ 
 
 {
     charges: {
         trading_account_opening_charges: '',
+        trading_annual_maintenance_charges: '',
         demat_account_opening_charges: '',
-        demat_account_amc: ''
+        demat_annual_maintenance_charges: ''
     },
     brokerage_charges: {
         equity_delivery: '',

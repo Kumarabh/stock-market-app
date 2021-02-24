@@ -5,6 +5,7 @@ import { ZerodhaReviewComponent } from './components/zerodha-review/zerodha-revi
 import { EdelweissReviewComponent } from './components/edelweiss-review/edelweiss-review.component';
 import { FivePaisaComponent } from './components/five-paisa/five-paisa.component';
 import { ProstocksComponent } from './components/prostocks/prostocks.component';
+import { SharekhanComponent } from './components/sharekhan/sharekhan.component';
 
 
 const routes: Routes = [
@@ -14,6 +15,7 @@ const routes: Routes = [
   {path: 'edelweiss', component: EdelweissReviewComponent},
   {path: 'five-paisa', component: FivePaisaComponent},
   {path: 'prostocks', component: ProstocksComponent},
+  {path: 'sharekhan', component: SharekhanComponent},
 
 ];
 
