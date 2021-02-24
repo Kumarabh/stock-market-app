@@ -7,7 +7,8 @@ import { FivePaisaComponent } from './components/five-paisa/five-paisa.component
 import { ProstocksComponent } from './components/prostocks/prostocks.component';
 import { SharekhanComponent } from './components/sharekhan/sharekhan.component';
 import { AngelBrokingComponent } from './components/angel-broking/angel-broking.component';
-
+import {HdfcSecuritiesComponent} from './components/hdfc-securities/hdfc-securities.component'
+import { FyersComponent } from './components/fyers/fyers.component';
 
 const routes: Routes = [
   {path: '', component: ZerodhaReviewComponent},
@@ -17,7 +18,9 @@ const routes: Routes = [
   {path: 'five-paisa', component: FivePaisaComponent},
   {path: 'prostocks', component: ProstocksComponent},
   {path: 'sharekhan', component: SharekhanComponent},
-  {path: 'angel-broking', component: AngelBrokingComponent}
+  {path: 'angel-broking', component: AngelBrokingComponent},
+  {path: 'hdfc-securities', component: HdfcSecuritiesComponent},
+  {path: 'fyers', component: FyersComponent}
 
 ];
 
