@@ -15,10 +15,12 @@ import { FivePaisaComponent } from './components/five-paisa/five-paisa.component
 import { ProstocksComponent } from './components/prostocks/prostocks.component';
 import { SharekhanComponent } from './components/sharekhan/sharekhan.component';
 import { AngelBrokingComponent } from './components/angel-broking/angel-broking.component';
+import { FyersComponent } from './components/fyers/fyers.component';
+import { HdfcSecuritiesComponent } from './components/hdfc-securities/hdfc-securities.component';
 
 
 @NgModule({
-  declarations: [ZerodhaReviewComponent, UpstoxComponent, SpecialOffersComponent, EdelweissReviewComponent, FooterComponent, FivePaisaComponent, ProstocksComponent, SharekhanComponent, AngelBrokingComponent],
+  declarations: [ZerodhaReviewComponent, UpstoxComponent, SpecialOffersComponent, EdelweissReviewComponent, FooterComponent, FivePaisaComponent, ProstocksComponent, SharekhanComponent, AngelBrokingComponent, FyersComponent, HdfcSecuritiesComponent],
   imports: [
     CommonModule,
     CompanyReviewRoutingModule,

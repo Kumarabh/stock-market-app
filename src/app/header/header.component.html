@@ -2,7 +2,9 @@
  
 <nav class="navbar navbar-expand-sm bg-light justify-content-left">
   <ul class="navbar-nav">
-    
+    <li class="nav-item">
+      <i class="fa fa-home" aria-hidden="true" routerLink="/" style="color: white;font-size: 42px;cursor: pointer;"></i>
+    </li>
     <!-- Broker Reviews -->
     <li class="nav-item" >
       <div class="dropdown">
@@ -41,11 +43,11 @@
  
          <div class="col-4">
           <h6 class="dropdown-header">MARGIN CALCULATOR</h6>
-       <a class="dropdown-item" href="#" >Zerodha</a>
-       <a class="dropdown-item" href="#">Upstox </a>
+       <a class="dropdown-item" routerLink="review/zerodha" routerLinkActive="active" >Zerodha</a>
+       <a class="dropdown-item" routerLink="review/upstox" routerLinkActive="active">Upstox </a>
        <a class="dropdown-item" routerLink="review/sharekhan" routerLinkActive="active" >Sharekhan </a>
-       <a class="dropdown-item" href="#">Angel Broking </a>
-       <a class="dropdown-item" href="#" >5Paisa </a>
+       <a class="dropdown-item" routerLink="review/angel-broking" routerLinkActive="active">Angel Broking </a>
+       <a class="dropdown-item" routerLink="review/five-paisa" routerLinkActive="active" >5Paisa </a>
        <a class="dropdown-item" href="#">HDFC Securities </a>
        <a class="dropdown-item" href="#" >KOTAK Securities</a>
        <a class="dropdown-item" href="#">ICICI Direct </a>
@@ -132,11 +134,11 @@
  
            <div class="col-3">
             <h6 class="dropdown-header">BROKER Reviews</h6>
-         <a class="dropdown-item" href="#" >Zerodha</a>
-         <a class="dropdown-item" href="#">5Paisa </a>
+         <a class="dropdown-item" routerLink="review/zerodha" routerLinkActive="active" >Zerodha</a>
+         <a class="dropdown-item" routerLink="review/five-paisa" routerLinkActive="active">5Paisa </a>
          <a class="dropdown-item" routerLink="review/prostocks" routerLinkActive="active" >ProStocks </a>
-         <a class="dropdown-item" href="#">Share Khan </a>
-         <a class="dropdown-item" href="#" >Angel Broking </a>
+         <a class="dropdown-item" routerLink="review/sharekhan" routerLinkActive="active">Share Khan </a>
+         <a class="dropdown-item" routerLink="review/angel-broking" routerLinkActive="active" >Angel Broking </a>
          <a class="dropdown-item" href="#">ICICI Direct </a>
         
          </div>

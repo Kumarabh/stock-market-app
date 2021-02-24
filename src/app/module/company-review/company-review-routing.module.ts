@@ -6,6 +6,7 @@ import { EdelweissReviewComponent } from './components/edelweiss-review/edelweis
 import { FivePaisaComponent } from './components/five-paisa/five-paisa.component';
 import { ProstocksComponent } from './components/prostocks/prostocks.component';
 import { SharekhanComponent } from './components/sharekhan/sharekhan.component';
+import { AngelBrokingComponent } from './components/angel-broking/angel-broking.component';
 
 
 const routes: Routes = [
@@ -16,6 +17,7 @@ const routes: Routes = [
   {path: 'five-paisa', component: FivePaisaComponent},
   {path: 'prostocks', component: ProstocksComponent},
   {path: 'sharekhan', component: SharekhanComponent},
+  {path: 'angel-broking', component: AngelBrokingComponent}
 
 ];
 
