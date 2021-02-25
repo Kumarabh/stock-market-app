@@ -5,7 +5,7 @@
         </div>
         <div class="card-body" style="min-height: 160px;">
             
-               <div class="card" style="border: none;" *ngFor = "let links of companyScrollObject">
+               <div class="card mt-2 mb-2" style="border: none;" *ngFor = "let links of companyScrollObject">
                 <a class="links" (click) = scrollTo(0,links.scrollTo); >{{links.links}}</a>
                    
                 <div class="cards" style="border: none;" *ngFor = "let sublinks of links.sublinks">
