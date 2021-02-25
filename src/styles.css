@@ -221,3 +221,11 @@ h1 {
     opacity: .87;
     font-weight: 400;
 }
+
+.card-title {
+    font-size: 14px;
+    
+}
+.card-text {
+    font-size: 13px;
+}

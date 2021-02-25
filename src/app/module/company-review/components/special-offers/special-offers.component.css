@@ -1,19 +1,31 @@
 .card {
-    min-height: 264px !important;
+    min-height: 215px !important;
     margin: 5px;
+    
 }
-.btn-info {
+.btn-info-custom {
     color: #333958;
     background-color: white;
-    border: 3px solid #333958;
+    border: 3px solid white;
+    box-shadow: none;
+    font-weight: 600;
+    font-size: 12px;
+    float: right;
 }
-.btn-info:hover {
+.btn-info-custom:hover {
     color: white;
     background-color: #333958;
     border: 3px solid #333958;
 }
 .card:hover {
     /* box-shadow: 0 1rem 3rem rgba(0,0,0,.175)!important; */
-    box-shadow: 0 2px 5px 0 rgba(0,0,0,.25),0 3px 10px 0 rgba(0,0,0,.2)!important;
-    border: 1px solid #333958;
+    /* box-shadow: 0 2px 5px 0 rgba(0,0,0,.25),0 3px 10px 0 rgba(0,0,0,.2)!important; */
+    /* border: 1px solid #333958; */
+}
+.card-body {
+    background: #333958;
+    color: white;
+}
+.card-footer {
+    min-height: 50px;
 }
