@@ -1,8 +1,17 @@
-select {
-  -webkit-appearance: none !important;
-    -moz-appearance: none;
-    text-indent: 1px;
-    text-overflow: '';
+.moveToTopDiv {
+  height: 42px;
+    width: 42px;
+    background: #2b3152;
+    position: absolute;
+    right: 0px;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    position: fixed;
+    z-index: 10;
+    bottom: 42px;
+}
+.fa-arrow-up:hover {
+  cursor: pointer;
 }
 /* .header {
     overflow: hidden;

@@ -11,23 +11,37 @@ export class AngelBrokingComponent implements OnInit {
   companyScrollObject = [
     {
       links: "Angel Broking Stock Trading",
-      sublinks: [],
-      scrollTo: 100
+      scrollTo: 100,
+      sublinks: []
+      
     },
     {
       links: "Angel Broking Trading Platforms",
       scrollTo: 500,
       sublinks: [
       {links: "Angel Broking Trade", scrollTo: 600},
-      {links: "Angel SpeedPro", scrollTo: 1300}
+      {links: "Angel SpeedPro", scrollTo: 1300},
+      {links: "Angel Broking App", scrollTo: 1700},
+
     ]
       
     },
     {
-      links: "charges 2021",
-      sublinks: [],
-      scrollTo: 2400
-  }
+      links: "Angel Broking Charges 2021",
+      scrollTo: 2400,
+      sublinks: [
+      {links: "Angel Broking Options Brokerage Charges", scrollTo: 2500},
+      {links: "Angel Broking Charges For Options", scrollTo: 3000},
+      ]
+      
+  },
+  {
+    links: "Compare Broker against other broker",
+    scrollTo: 3600,
+    sublinks: [
+    ]
+    
+}
   ]
   broker1
   broker2

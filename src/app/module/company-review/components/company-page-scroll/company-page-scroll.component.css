@@ -11,3 +11,9 @@
     text-decoration: none;
 
 }
+.customCardHeader {
+    background: white;
+    border: none;
+    font-weight: 600;
+    color: darkcyan;
+}

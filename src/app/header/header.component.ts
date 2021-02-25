@@ -12,6 +12,9 @@ export class HeaderComponent implements OnInit {
 
   ngOnInit() {
   }
+  scrollTo(y) {
+    window.scrollTo(0,y);
+  }
   setBottomBorder (id) {
     // document.getElementById('dropdownMenu2').style.border = 'none';
     // document.getElementById('dropdownMenu3').style.border = 'none';
