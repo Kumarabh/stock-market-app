@@ -1,1 +1,504 @@
-<p>hdfc-securities works!</p>
+<!-- Buttons -->
+<app-company-header [companyName] = "companyName"></app-company-header>
+
+<!-- compare broker -->
+
+  <div class="container-fluid mt-5 p-3 mb-5">
+    <div class="row mt-2">
+      <div class="row mx-auto">
+        <div class="col-md-4">
+          <!-- <label for="">First Broker</label> -->
+          <input type="text" placeholder="" [(ngModel)]="broker1"  class="form-control">
+  
+      </div>
+          <div class="col-md-4">
+              <!-- <label for="">Second Broker</label> -->
+              <input type="text" placeholder="" [(ngModel)]="broker2"  class="form-control">
+  
+          </div>
+          
+          
+          
+          <div class="col-md-4">
+              <button type="submit" (click) = "submitCompareForm()"  class=" submit-button "><b>Compare Brokers</b></button>
+  
+          </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container-fluid"> 
+    <div class="row">
+        <div class="col-md-9">
+
+            <!-- subsection start -->
+            <div class="jumbotron jumbotron-fluid">
+                <div class="container">
+                  <h1 class="display-4">{{companyData?.company_name}} Stock Trading / Demat / Brokerage / Reviews 2021
+                  </h1>
+                  <hr class="my-4">
+                  <p class="lead">
+                    HDFC Securities(HDFCsec) is Equity Trading Company of HDFC Bank. HDFC Securities provide both online trading and trading on phone. The HDFC Securities trading account has a unique 3-in-1 feature that integrates your HDFC Securities trading account with your existing HDFC bank savings account and existing Demat account. Funds / shares are seamlessly moved from the linked Demat/Bank account to execute the transactions.
+
+                    HDFCsec provides Cash-n-Carry on both NSE and BSE, Day trading on both NSE and BSE, Trade on Futures & Options on the NSE and Online IPO Investment.
+                </p>
+                  <br>
+                  
+                </div>
+              </div>
+              <!-- subsection ends -->
+
+
+               <!-- subsection start -->
+      <div class="container-fluid">
+        <h4 class="sub-header">Features on HDFC Securities Online trading
+        </h4>
+        <hr>
+
+        <p class="lead">
+          <b>Seamless Transactions</b> - By integrating your accounts, we ensure minimal waste of time during movement of your funds and shares.
+        </p>
+        <p class="lead">
+          <b>Speed</b> - Orders are placed electronically, so proceeds are available instantly.
+        </p>
+        <p class="lead">
+          <b>No manipulation</b> - To prevent any mismanagement, we will send you an email confirmation, the minute your order is executed.
+        </p>
+        <p class="lead">
+          <b>Safety and Security</b> - HDFC Securities offer the highest level of security such as 128-bit encryption technology.
+        </p>
+        <p class="lead">
+          <b>Dedicated and Separate contact numbers</b> - for trading over the phone as well as for customer care.
+        </p>
+        <p class="lead">
+            <b>Trade In</b>: BSE and NSE
+        </p>
+      </div>
+      <br>
+    
+  
+<br><br>
+
+        <div class="container-fluid">
+            <h4 class="sub-header">
+                HDFC 3-in-1 Account
+            </h4>
+            <hr>
+            <p class="lead">
+                HDFC Bank's 3-in-1 Account offers seamless investment opportunity. It is combination of a bank account, a trading account and a demat account. All these account are linked together and operate seamless as 1 account.
+            </p>
+            <p class="lead">
+                When a customer buy a stock, the money is withdrawn from bank account and shares are deposited in demat account. In the same way when shares are sold using trading account, the shares are withdrawn from demat account and money gets deposited in HDFC Bank account.
+            </p>
+        </div>
+
+<br><br>
+        <div class="container-fluid">
+            <h4 class="sub-header">
+                HDFC Securities Charges 2021
+            </h4>
+            <hr>
+            <p class="lead">
+                Account Opening Fee: Rs 999 (Including trading account, bank account and DP account with HDFC)
+            </p>
+            <p class="lead">
+                <b>Please note</b> - For HDFC Bank savings account minimum balance (Average Quarterly Balance) of Rs 10,000 (Metro / Urban) or Rs 5000 (Semi-Urban / Rural) is required. If you already have Saving account or DP account with HDFC, you could link them with trading account.
+            </p>
+        </div>
+        <br><br>
+
+
+        <!-- subsection start -->
+        <div class="container-fluid">
+            <h4 class="sub-header">
+                Brokerage for Delivery Based Trades
+            </h4>
+            <table class="table mt-5 mb-5 text-center">
+                <thead>
+                  <tr>
+                    <th scope="col">Equity Segment
+                    </th>
+                    <th scope="col">
+                    </th>
+                    <!-- <th scope="col">Classic
+                    </th>
+                    <th scope="col">Preferred
+                    </th>
+                    <th scope="col">Premiere
+                    </th>
+                    <th scope="col">Elite
+                    </th> -->
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Delivery Based Trades</td>
+                    <td>{{companyData?.brokerage_delivery_based_trades?.delivery_based_trades}}</td>
+                    
+                  </tr>
+                  <tr>
+                    <td>Square-Off Trades Cash & Carry Scrips </td>
+                    <td>{{companyData?.brokerage_delivery_based_trades?.square_off_trades_cash_scrips}}</td>
+                    
+                  </tr>
+                  <tr>
+                    <td>Square-Off Trades Margin Scrips </td>
+                    <td>{{companyData?.brokerage_delivery_based_trades?.square_off_trades_margin_scrips}}</td>
+                  
+                  </tr>
+                  <tr>
+                    <td>Derivatives (Futures Market) </td>
+                    <td></td>
+                  
+                  </tr>
+                  <tr>
+                    <td>Non-Square Off (Carry Forward) Trades</td>
+                    <td>{{companyData?.brokerage_delivery_based_trades?.non_square_off_carry_forward_trades}}</td>
+                  
+                  </tr>
+                  <tr>
+                    <td>Square-Off Trades </td>
+                    <td>{{companyData?.brokerage_delivery_based_trades?.square_off_trades}}</td>
+                  
+                  </tr>
+                  <tr>
+                    <td>Derivatives (Option Market) </td>
+                    <td></td>
+                  
+                  </tr>
+                 
+                  <tr>
+                    <td>Brokerage </td>
+                    <td>{{companyData?.brokerage_delivery_based_trades?.brokerage}}</td>
+                  
+                  </tr>
+                 
+                 
+                 
+                  
+                </tbody>
+              </table>
+        </div>
+        <!-- subsection ends -->
+
+
+
+         <!-- subsection start -->
+         <div class="container-fluid">
+            <h4 class="sub-header">
+                Other Standard Charges on Trades
+            </h4>
+            <table class="table mt-5 mb-5 text-center">
+                <thead>
+                  <tr>
+                    <th scope="col">Rows
+                    </th>
+                    <th scope="col">Charges
+                    </th>
+                    <!-- <th scope="col">Classic
+                    </th>
+                    <th scope="col">Preferred
+                    </th>
+                    <th scope="col">Premiere
+                    </th>
+                    <th scope="col">Elite
+                    </th> -->
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Goods and Services Tax (GST)</td>
+                    <td>{{companyData?.charges?.gst}}</td>
+                    
+                  </tr>
+                  <tr>
+                    <td>Securities Transaction Tax (STT) </td>
+                    <td>{{companyData?.charges?.stt}}</td>
+                    
+                  </tr>
+                  <tr>
+                    <td>Stamp Duty </td>
+                    <td>{{companyData?.charges?.stamp_duty}}</td>
+                  
+                  </tr>
+                  <tr>
+                    <td>SEBI Turnover Tax</td>
+                    <td>{{companyData?.charges?.sebi_charges}}</td>
+                  
+                  </tr>
+                  
+                 
+                 
+                 
+                  
+                </tbody>
+              </table>
+        </div>
+        <!-- subsection ends -->
+        <br><br><br><br>
+        <!-- subsection start -->
+        <div class="container-fluid">
+            <h4 class="display-4">
+                Useful Articles:
+            </h4>
+            <hr>
+            <p class="lead">
+                The Best <b>3-in-1 Trading Account</b> in India Stock Market - ICICI Bank, HDFC Bank, SBI, Kotak Securities etc
+            </p>
+            <p class="lead">
+                Know about <b>Flat Fee Share Brokers in India</b> (Also known as budget broker or discount broker)
+            </p>
+            <p class="lead">
+                Visit <b>HDFC Securities Brokerage Charges</b> Review for more detail.
+            </p>
+        </div>
+        <!-- subsection ends -->
+
+
+<br><br><br><br>
+        <!-- subsection start -->
+        <div class="container-fluid">
+            <h4 class="display-4">
+                HDFC Securities Online Account Opening
+            </h4>
+            <hr>
+            <p class="lead">
+                For Online Stock Trading with HDFC, investor needs to open 3 accounts; HDFC Bank Account, HDFC Trading Account and HDFC Demat Account. Opening a trading account with HDFC is easy. You could use one of the following options to open account with HDFC:
+            </p>
+            <p class="lead">
+               <i class="fa fa-superpowers mr-2"></i> Visit hdfcsec.com and fill the "Open Trading A/C" form.
+            </p>
+            <p class="lead">
+                <i class="fa fa-superpowers mr-2"></i> Call HDFC and tell them that you are interested in opening an account with them.
+            </p>
+            <p class="lead">
+                In both the cases HDFC representative contact you in a day or two and tell you about the procedure to open the account. They usually send somebody to your home to collect documents, signature and for demo, if required.
+            </p>
+            <p class="lead">
+                <b>Document Required to open account with HDFCsec</b>
+            </p>
+            <p class="lead">
+                Any Indian resident/non resident individual NRI (except for the US NRIs) or an Indian Corporate can register with HDFCsec. Following documents are required to open accouunt with HDFCsec.
+            </p>
+            <p class="lead">
+                <i class="fa fa-superpowers mr-2"></i> One passport size photograph.
+            </p>
+            <p class="lead">
+                <i class="fa fa-superpowers mr-2"></i> Copy of PAN card.
+            </p>
+            <p class="lead">
+                <i class="fa fa-superpowers mr-2"></i> Identity proof - copy of passport or PAN card or voter ID or driving license or ration card.
+            </p>
+            <p class="lead">
+                <i class="fa fa-superpowers mr-2"></i> Address proof - copy of driving license or passport or ration card or voter card or telephone bill or electricity bill or bank statement.
+            </p>
+        </div>
+        <!-- subsection ends -->
+        <br><br><br><br>
+        <!-- subsection start -->
+        <div class="container-fluid">
+            <h4 class="display-4">
+                HDFC Securities Trading Software (HDFC Securities Trading Platforms)
+            </h4>
+            <hr>
+            <p class="lead">
+                HDFC Sec offers multiple investment platforms. These trading platforms are personalized for beginners and experienced investors. Available trading software's include install-able trading terminal, browser based trading website and mobile trading app.
+            </p>
+        </div>
+        <!-- subsection ends -->
+
+        
+        <br><br><br><br>
+        <!-- subsection start -->
+            <div class="container-fluid">
+                <h4 class="display-4">
+                    HDFC Securities Pros and Cons
+                </h4>
+                <hr>
+
+                <h4 class="sub-header">
+                    HDFC Securities Pros (Advantages)
+                </h4>
+                <p class="lead">
+                    The following are the advantages of HDFC Securities. You must read HDFC Securities advantages and disadvantages before opening an account with HDFC Securities. HDFC Securities pros and cons help you find if it suits your investment needs.
+                </p>
+                <p class="lead">
+                    <i class="fa fa-superpowers mr-2"></i>
+                        Integrated 3-in-1 account (banking, broking, and demat accounts) is available. This makes HDFC extremely convenient trading platform.
+                    
+                </p>
+                <p class="lead">
+                    <i class="fa fa-superpowers mr-2"></i>
+                        Investment online in IPOs, Mutual Funds, GOI Bonds, Insurance and Postal Savings Schemes all from one website.
+                    
+                </p>
+                <p class="lead">
+                    <i class="fa fa-superpowers mr-2"></i>
+                        Trading is available in both BSE and NSE.
+                    
+                </p>
+                <p class="lead">
+                    <i class="fa fa-superpowers mr-2"></i>
+                        Excellent trading platform for beginners.
+                    
+                </p>
+
+                <br><br>
+
+
+                <h4 class="sub-header">
+                    HDFC Securities Cons (Disadvantages)
+
+                </h4>
+                <p class="lead">
+                    The following are the cons of HDFC Securities. Check the list of HDFC Securities drawbacks.
+                </p>
+                
+                <p class="lead">
+                    <i class="fa fa-superpowers mr-2"></i>
+                    HDFC Sec brokerage is very high and not negotiable.                    
+                </p>
+                <p class="lead">
+                    <i class="fa fa-superpowers mr-2"></i>
+                    HDFC doesn't offer commodity trading. You cannot trade at MCX or NCDEX through HDFC.
+                    
+                </p>
+                <p class="lead">
+                    <i class="fa fa-superpowers mr-2"></i>
+                    In the 3-in-1 account, the Demat Account has to be opened with HDFC Bank Ltd as the Depository Participant (DP) and the Bank Account has to be opened with HDFC Bank as the Banker.
+                    
+                </p>
+                <p class="lead">
+                    <i class="fa fa-superpowers mr-2"></i>
+                    HDFC minimum brokerage charge is Rs 25 per trade which is very high. The most discount broker doesn't have a minimum brokerage.
+                    
+                </p>
+                <p class="lead">
+                    <i class="fa fa-superpowers mr-2"></i>
+                    HDFC charges flat Rs 0.05 per share brokerage on stocks quoting up to Rs 10. This makes it very difficult to trade in penny stocks.
+                    
+                </p>
+            </div>
+        <!-- subsection ends -->
+        <br><br><br><br>
+        <!-- subsection start -->
+   <div class="container-fluid">
+    <h3 class="sub-header">HDFC Securities Margin / Exposure
+    </h3>
+    <hr>
+    <p class="sub-header-content">
+        HDFC Securities leverage for intraday, delivery, options, currency and commodities.
+    
+    </p>
+    
+    <table class="table mt-5 mb-5 text-center">
+      <thead>
+        <tr>
+          <th scope="col">Segment	</th>
+          <th scope="col">Margin		</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Equity Delivery	</td>
+          <td> {{companyData?.margin_exposure?.equity_delivery}}</td>
+    
+        </tr>
+        <tr>
+          <td>Equity Intraday		</td>
+          <td> {{companyData?.margin_exposure?.equity_intraday}} </td>
+        </tr>
+        
+        <tr>
+          <td>Equity Future	</td>
+          <td> {{companyData?.margin_exposure?.equity_futures}} </td>
+        </tr>
+        
+       <tr>
+         <td>Equity Options		</td>
+         <td> {{companyData?.margin_exposure?.equity_options}} </td>
+        </tr>
+       <tr>
+         <td>Currency Future		</td>
+         <td> {{companyData?.margin_exposure?.currency_futures}}</td>
+       </tr>
+       <tr>
+         <td>Currency Options		</td>
+         <td> {{companyData?.margin_exposure?.currency_options}} </td>
+       </tr>
+       <tr>
+        <td>Commodity Future			</td>
+        <td> {{companyData?.margin_exposure?.commodity_futures}}</td>
+      </tr>
+      <tr>
+        <td>Commodity Options			</td>
+        <td> {{companyData?.margin_exposure?.commodity_options}}</td>
+      </tr>
+      </tbody>
+    </table>
+   </div>
+
+<!-- subsection ends-->
+
+
+
+
+<!-- sub section start-->
+<div class="container-fluid newSubsection">
+    <h3 class="sub-header">{{companyName}} Ratings
+    </h3>
+    <hr>
+    
+    
+    <table class="table mt-5 mb-5 text-center">
+      <thead>
+        <tr>
+          <th scope="col">Segment	</th>
+          <th scope="col">Ratings		</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><b>Overall Rating</b>	</td>
+          <td> {{companyData?.ratings?.overall_ratings}}</td>
+    
+        </tr>
+        <tr>
+          <td>Fees		</td>
+          <td> {{companyData?.ratings?.fees}} </td>
+        </tr>
+        
+        <tr>
+          <td>Brokerage	</td>
+          <td> {{companyData?.ratings?.brokerage}} </td>
+        </tr>
+        
+       <tr>
+         <td>Usability		</td>
+         <td> {{companyData?.ratings?.usability}} </td>
+        </tr>
+       <tr>
+         <td>Customer Service		</td>
+         <td> {{companyData?.ratings?.customer_service}}</td>
+       </tr>
+       <tr>
+         <td>Research Capabilities		</td>
+         <td> {{companyData?.ratings?.research_capabilities}} </td>
+       </tr>
+       
+      </tbody>
+    </table>
+    
+  </div>
+
+<!-- subsection ends -->
+        </div>
+        <div class="col-md-3">
+            <app-company-page-scroll [companyScrollObject] = "companyScrollObject"></app-company-page-scroll>
+            <app-special-offers></app-special-offers>
+
+        </div>
+    </div>
+  </div>
+  <app-footer [companyName]="companyName"></app-footer>
