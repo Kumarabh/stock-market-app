@@ -8,7 +8,7 @@ export class ZerodhaReviewComponent implements OnInit {
 
   broker1;
   broker2;
-
+companyName = "Zerodha"
   constructor() { }
 
   ngOnInit() {

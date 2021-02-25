@@ -70,29 +70,21 @@ table thead tr {
     border-bottom: none !important;
 }
 tbody tr td {
-    /* color: white; */
-    /* color: white; */
+    
+    /* color: #333958; */
     color: #333958;
+    /* color:#37474f; */
+    font-size: 16px;
+    line-height: 30px;
+    opacity: .87;
+    font-weight: 400;
 }
 .table-dark.table-striped tbody tr:nth-of-type(odd) {
     background-color: white;
     border-bottom: 1px solid gainsboro;
 }
 
-.lead {
-    color: #333958;
-    /* color:#222223; */
 
-}
-.sub-header, .sub-header-content {
-    color: #333958;
-}
-.lead2 {
-    font-size: 18px;
-    font-weight: 100;
-    font-family: fangsong;
-    color: #333958;
-}
 /* compare broker start */
 
 input:hover {
@@ -126,13 +118,7 @@ label {
     color: #333958;
     background: white;
 }
-h1 {
-    font-size: 34px;
-}
-.display-4 {
-    font-weight: 400;
-    font-size: 34px;
-}
+
 .faqCards {
     /* background:  #333958; */
     background: none;
@@ -182,4 +168,57 @@ transition: .3s;
 }
 .jumbotron , table {
     background: white !important;
+}
+
+.lead {
+    color: #333958;
+    /* color:#37474f; */
+    font-size: 16px;
+    line-height: 30px;
+    opacity: .87;
+    font-weight: 400;
+
+}
+/* .sub-header, .sub-header-content {
+    color: #333958;
+    
+} */
+.sub-header {
+    color: #2b3152;
+    /* color: #37474f; */
+    /* font-size: 24px; */
+    line-height: 32px;
+    margin: 0 0 16px;
+    opacity: .87;
+    font-weight: 600;
+    font-size: 18px;
+    
+
+}
+.sub-header-content {
+    color: #333958;
+    /* color:#222223; */
+    font-size: 16px;
+    line-height: 30px;
+    opacity: .87;
+    font-weight: 400;
+}
+.lead2 {
+    font-size: 18px;
+    font-weight: 100;
+    font-family: fangsong;
+    color: #333958;
+}
+h1 {
+    font-size: 24px !important;
+}
+.display-4 {
+    
+    /* color: #333958; */
+    /* color:#37474f; */
+    color: #2b3152;
+    font-size: 24px;
+    line-height: 30px;
+    opacity: .87;
+    font-weight: 400;
 }

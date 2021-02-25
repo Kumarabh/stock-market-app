@@ -13,26 +13,16 @@ export class HeaderComponent implements OnInit {
   ngOnInit() {
   }
   setBottomBorder (id) {
-    if(id === 'dropdownMenu2') {
-      // document.getElementById('contactUs').style.border = 'none';
-      // document.getElementById('calculator').style.border = 'none';
-      // document.getElementById('contactUs').style.color = 'rgba(255, 255, 255, 0.8)';
-      // document.getElementById('calculator').style.color = 'rgba(255, 255, 255, 0.8)';
-      document.getElementById(id).style.borderLeft = ' 3px solid white';
-      document.getElementById(id).style.color = '#f8f9fa';
-      
-    } 
-    if(id === 'contactUs'){
-      document.getElementById('contactUs').style.border = 'none';
-      document.getElementById('calculator').style.border = 'none';
-      document.getElementById(id).style.borderBottom = ' 3px solid';
+    document.getElementById('dropdownMenu2').style.border = 'none';
+    document.getElementById('dropdownMenu3').style.border = 'none';
+    document.getElementById('dropdownMenu4').style.border = 'none';
+    document.getElementById('dropdownMenu5').style.border = 'none';
+    document.getElementById('dropdownMenu6').style.border = 'none';
 
-      document.getElementById('contactUs').style.color = 'rgba(255, 255, 255, 0.8)';
-      document.getElementById('calculator').style.color = 'rgba(255, 255, 255, 0.8)';
-      document.getElementById(id).style.color = '#f8f9fa';
+    document.getElementById(id).style.borderLeft = ' 3px solid white';
+    document.getElementById(id).style.color = '#f8f9fa';
 
-
-    }
+    
     
   }
 }
