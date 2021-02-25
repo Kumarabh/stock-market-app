@@ -1,0 +1,13 @@
+<div class="card" style="border:none;border-left: 2px solid darkcyan;">
+    <div class="card-body" style="height: 160px;">
+        
+           <div class="card" style="border: none;" *ngFor = "let links of companyScrollObject">
+            <a class="links" (click) = scrollTo(0,links.scrollTo); >{{links.links}}</a>
+               
+            <div class="cards" style="border: none;" *ngFor = "let sublinks of links.sublinks">
+                <a class="links pl-3" (click) = scrollTo(0,sublinks.scrollTo); >{{sublinks.links}}</a>
+            </div>
+        </div>
+    </div>
+
+</div>

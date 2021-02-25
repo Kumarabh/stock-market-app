@@ -1,0 +1,13 @@
+.links {
+    font-size: 12px;
+    color: darkcyan;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+}
+.links:hover {
+    transition: .1s;
+    font-size: 13px;
+    text-decoration: none;
+
+}

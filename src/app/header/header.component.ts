@@ -13,14 +13,14 @@ export class HeaderComponent implements OnInit {
   ngOnInit() {
   }
   setBottomBorder (id) {
-    document.getElementById('dropdownMenu2').style.border = 'none';
-    document.getElementById('dropdownMenu3').style.border = 'none';
-    document.getElementById('dropdownMenu4').style.border = 'none';
-    document.getElementById('dropdownMenu5').style.border = 'none';
-    document.getElementById('dropdownMenu6').style.border = 'none';
+    // document.getElementById('dropdownMenu2').style.border = 'none';
+    // document.getElementById('dropdownMenu3').style.border = 'none';
+    // document.getElementById('dropdownMenu4').style.border = 'none';
+    // document.getElementById('dropdownMenu5').style.border = 'none';
+    // document.getElementById('dropdownMenu6').style.border = 'none';
 
-    document.getElementById(id).style.borderLeft = ' 3px solid white';
-    document.getElementById(id).style.color = '#f8f9fa';
+    // document.getElementById(id).style.borderLeft = ' 3px solid white';
+    // document.getElementById(id).style.color = '#f8f9fa';
 
     
     

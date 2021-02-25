@@ -8,7 +8,27 @@ import { CompanyReviewService } from '../../company-review.service';
 })
 export class AngelBrokingComponent implements OnInit {
 
- 
+  companyScrollObject = [
+    {
+      links: "Angel Broking Stock Trading",
+      sublinks: [],
+      scrollTo: 100
+    },
+    {
+      links: "Angel Broking Trading Platforms",
+      scrollTo: 500,
+      sublinks: [
+      {links: "Angel Broking Trade", scrollTo: 600},
+      {links: "Angel SpeedPro", scrollTo: 1300}
+    ]
+      
+    },
+    {
+      links: "charges 2021",
+      sublinks: [],
+      scrollTo: 2400
+  }
+  ]
   broker1
   broker2
   companyData
@@ -38,5 +58,6 @@ export class AngelBrokingComponent implements OnInit {
 
   }
 
+  
 
 }
