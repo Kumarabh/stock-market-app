@@ -9,6 +9,7 @@ import { SharekhanComponent } from './components/sharekhan/sharekhan.component';
 import { AngelBrokingComponent } from './components/angel-broking/angel-broking.component';
 import {HdfcSecuritiesComponent} from './components/hdfc-securities/hdfc-securities.component'
 import { FyersComponent } from './components/fyers/fyers.component';
+import { KotakSecuritiesComponent } from './components/kotak-securities/kotak-securities.component';
 
 const routes: Routes = [
   {path: '', component: ZerodhaReviewComponent},
@@ -20,7 +21,8 @@ const routes: Routes = [
   {path: 'sharekhan', component: SharekhanComponent},
   {path: 'angel-broking', component: AngelBrokingComponent},
   {path: 'hdfc-securities', component: HdfcSecuritiesComponent},
-  {path: 'fyers', component: FyersComponent}
+  {path: 'fyers', component: FyersComponent},
+  {path: 'kotak-securities', component: KotakSecuritiesComponent}
 
 ];
 

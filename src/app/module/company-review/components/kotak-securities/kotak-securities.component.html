@@ -1,0 +1,173 @@
+<!-- Buttons -->
+<app-company-header [companyName] = "companyName"></app-company-header>
+
+<!-- compare broker -->
+
+  <div class="container-fluid mt-5 p-3 mb-5">
+    <div class="row mt-2">
+      <div class="row mx-auto">
+        <div class="col-md-4">
+          <!-- <label for="">First Broker</label> -->
+          <input type="text" placeholder="" [(ngModel)]="broker1"  class="form-control">
+  
+      </div>
+          <div class="col-md-4">
+              <!-- <label for="">Second Broker</label> -->
+              <input type="text" placeholder="" [(ngModel)]="broker2"  class="form-control">
+  
+          </div>
+          
+          
+          
+          <div class="col-md-4">
+              <button type="submit" (click) = "submitCompareForm()"  class=" submit-button "><b>Compare Brokers</b></button>
+  
+          </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container-fluid"> 
+    <div class="row">
+        <div class="col-md-9">
+            <!-- subsection start -->
+            <div class="jumbotron jumbotron-fluid">
+                <div class="container">
+                  <h1 class="display-4">{{companyData?.company_name}} Stock Trading / Demat / Brokerage / Reviews 2021
+                  </h1>
+                  <hr class="my-4">
+                  <p class="lead">
+                    Kotak Securities Ltd, a subsidiary of Kotak Mahindra Bank was founded in 1994. They offers stock broking services and distributes financial products in India. They have 1209 branches, franchisees and satellite offices offers services to 11.95 Lakh customers. They corporate members with the Bombay Stock Exchange and the National Stock Exchange. They are also a depository participant with National Securities Depository Limited (NSDL) and Central Depository Services Limited (CDSL).
+                  </p>
+                  <p class="lead">
+                    Kotak securities offers three-in-one account which allows investor to open demat, trading as well as a bank account together with Kotak Mahindra Bank Limited. One can open those account independently or at the same time under one umbrella with a single application form. Using 3 in 1 account client won't have to manually transfer money to trading account from the bank f=.account. The required funds get credited automatically. So it's easy to manage. Once your;- account open you can trade in Equity, IPO, Mutual Fund, ETF, Tax free bonds, Currency Derivatives, Gold ETF etc.
+                    </p>
+                  <br>
+                  
+                  <p class="lead">
+                    Kotak Securities Open Account
+                  </p>
+                  <p class="lead">
+                      <i class="fa fa-superpowers mr-2"></i>
+                      Fill online Contact Us form on Kotak Securities web site. Enter your name, phone number, email address, city and submit the form. Once the form submitted, one of Kotak securities representative will contact you.
+                  </p>
+                  <p class="lead">
+                    <i class="fa fa-superpowers mr-2"></i> 
+                    Download the forms from their website, fill in the required details,  and submit it to their registered office.
+                  </p>
+
+                  <p class="lead">
+                    Kotak Securities Account Opening Form, Name Change Request Form, Kotak Securities Account Closing Form etc. are available on their website. One can fill the form as per their requirement and submit it to their registered office.
+                  </p>
+                </div>
+              </div>
+              <!-- subsection ends -->
+
+
+
+              <br><br><br><br>
+              <!-- subsection start -->
+              <div class="container-fluid">
+                <h4 class="display-4">
+                  Account Types
+                </h4>
+                <hr>
+                <p class="lead">
+                  Kotak offers different account types according to users requirement:
+                </p>
+                
+                <h4 class="sub-header">
+                  AutoInvest
+                </h4>
+                <p class="lead">
+                  AutoInvest is a unique Online Trading Account which provide investment planning in Gold ETFs (Exchange Traded Funds), Equities and Mutual Funds to their customers. Gold ETFs are mutual fund schemes that will invest the money collected from their investors in standard gold bullion.
+
+                  Kotak's advisor gives the recommendation according to investor's risk capability and investment plans. Minimum investment of Rs 5000 required for AutoInvest account.
+                </p>
+
+                <h4 class="sub-header">
+                  Kotak Gateway
+                </h4>
+                <p class="lead">
+                  Kotak Gateway account opens the gateway to a world of investing opportunities for beginners. Kotak Gateway user can trade anywhere, anytime using internet. Kotak also offers call and trade facility. Investor can also trade Currency Derivative using Kotal gateway account.
+
+                  Kotak Securities provide SMS alert, research report, free news and market updates to the account holders. Best feature of Kotak gateway is call and trade facility. Anybody can activate Kotak Gateway account with any amount between Rs 20,000 to 5, 00,000. This can be in form of cash deposit or the value of the shares you buy. Brokerage will be charged based on the account type. For intraday trading brokerage is .06% both sides for less then 25 lakhs and .023% for more then 25 crores.
+                </p>
+
+                <h4 class="sub-header">
+                  Kotak Privilege Circle
+                </h4>
+                <p class="lead">
+                  Kotak Privilege Circle is the premium investment account offed by Kotak Securities. Along with Kotak Gateway account benefits Kotak provides independent market expertise and support through a dedicated relationship manager and a dedicated customer service desk which provides assistance in opening accounts, handling day-to-day problems, and more. They provides KEAT premium which is an exclusive online tool that lets you monitor what is happening in the market and view your gains and losses in real-time.
+
+                 One can activate Kotak Privilege Circle account with any amount more than Rs. 10,00,000 as margin, by way of cash or stock. For intraday trading brokerage is .06% both sides for less then 25 lakhs and .03% for more then 25 crores.
+                </p>
+
+                <h4 class="sub-header">
+                  Kotak Freedom
+                </h4>
+                <p class="lead">
+                  For Mutual Fund Investments.
+                </p>
+
+                <h4 class="sub-header">
+                  Kotak Super Saver
+                </h4>
+                <p class="lead">
+                  A flat brokerage and a low margin account.
+                </p>
+
+                <h4 class="sub-header">
+                  PMS (Portfolio Management Service)
+                </h4>
+                <p class="lead">
+                  An account for people who need an expert to help to manage their investments.
+                </p>
+
+
+                <h4 class="sub-header">
+                  NRI Account
+                </h4>
+                <p class="lead">
+                  An online trading an investment account for NRI investors.
+                </p>
+
+                <h4 class="sub-header">
+                  Trinity Account [3-in-1 Account]
+                </h4>
+                <p class="lead">
+                  Trinity Account is an integrated account that helps investors enjoy the benefits of a Online Trading Account, Bank Account, Demat Account on a single platform for your securities transaction. This account gives convenience of fund transfer and online trading.
+                </p>
+            </div>
+              <!-- subsection ends -->
+              <br><br><br><br>
+              <!-- subsection start -->
+              <div class="container-fluid">
+                <div class="display-4">
+                    Kotak Securities Charges 2021
+                </div>
+                <hr>
+                <p class="lead">
+                    Trading Account Opening Charges (One Time): {{companyData?.charges?.trading_account_opening_charges}}
+                </p>
+                <p class="lead">
+                    Trading Annual maintenance charges (AMC): {{companyData?.charges?.trading_account_maintenance_charges}}
+                </p>
+                <p class="lead">
+                    Demat Account Opening Charges (One Time): {{companyData?.charges?.demat_account_opening_charges}}
+                </p>
+                <p class="lead">
+                    Demat Account Annual Maintenance Charges (AMC): {{companyData?.charges?.demat_account_maintenance_charges}}
+                </p>
+            </div>
+            <!-- subsection ends -->
+        </div>
+        <div class="col-md-3">
+            <app-company-page-scroll [companyScrollObject] = "companyScrollObject"></app-company-page-scroll>
+            <app-special-offers></app-special-offers>
+
+        </div>
+    </div>
+  </div>
+  <app-footer [companyName]="companyName"></app-footer>

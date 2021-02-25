@@ -19,10 +19,11 @@ import { FyersComponent } from './components/fyers/fyers.component';
 import { HdfcSecuritiesComponent } from './components/hdfc-securities/hdfc-securities.component';
 import { CompanyHeaderComponent } from './components/company-header/company-header.component';
 import { CompanyPageScrollComponent } from './components/company-page-scroll/company-page-scroll.component';
+import { KotakSecuritiesComponent } from './components/kotak-securities/kotak-securities.component';
 
 
 @NgModule({
-  declarations: [ZerodhaReviewComponent, UpstoxComponent, SpecialOffersComponent, EdelweissReviewComponent, FooterComponent, FivePaisaComponent, ProstocksComponent, SharekhanComponent, AngelBrokingComponent, FyersComponent, HdfcSecuritiesComponent, CompanyHeaderComponent, CompanyPageScrollComponent],
+  declarations: [ZerodhaReviewComponent, UpstoxComponent, SpecialOffersComponent, EdelweissReviewComponent, FooterComponent, FivePaisaComponent, ProstocksComponent, SharekhanComponent, AngelBrokingComponent, FyersComponent, HdfcSecuritiesComponent, CompanyHeaderComponent, CompanyPageScrollComponent, KotakSecuritiesComponent],
   imports: [
     CommonModule,
     CompanyReviewRoutingModule,
