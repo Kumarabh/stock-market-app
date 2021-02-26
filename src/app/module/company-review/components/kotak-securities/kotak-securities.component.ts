@@ -37,56 +37,83 @@ export class KotakSecuritiesComponent implements OnInit {
       links: "Kotak Securities Charges 2021",
       scrollTo: 2500,
       sublinks: [
-      {links: "Brokerage for Delivery Based Trades", scrollTo: 1500},
-      {links: "Other Standard Charges on Trades", scrollTo: 2300},
-      {links: "Useful Articles", scrollTo: 2600},
+      {links: "Fixed Brokerage Plan", scrollTo: 2600},
+      {links: "Dynamic Brokerage Plan", scrollTo: 2800},
+      {links: "Free Intraday Trading (FIT)", scrollTo: 4300},
 
     ]
       
     },
     {
-      links: "HDFC Securities Online Account Opening",
-      scrollTo: 3200,
+      links: "Kotak Securities Minimum Brokerage:",
+      scrollTo: 5000,
       sublinks: [
       
       ]
       
   },
   {
-    links: "HDFC Securities Trading Software",
-    scrollTo: 3800,
+    links: "Kotak Securities Demat Account Charges:",
+    scrollTo: 5300,
     sublinks: [
     
     ]
   },
   {
-    links: "HDFC Securities Pros and Cons",
-    scrollTo: 4200,
-    sublinks: []
-  },
-  {
-    links: "HDFC Securities Margin / Exposure",
-    scrollTo: 5200,
-    sublinks: []
-  },
-  {
-    links: "HDFC Securities Ratings",
+    links: "Useful Articles",
     scrollTo: 5900,
     sublinks: []
   },
   {
-    links: "Compare Broker against other broker",
-    scrollTo: 6400,
+    links: "Kotak Securities Online Account Opening",
+    scrollTo: 6200,
+    sublinks: []
+  },
+  {
+    links: "Kotak Securities Trading Software (Kotak Securities Trading Platforms)",
+    scrollTo: 6600,
     sublinks: [
+      {links: "Website Based Trading", scrollTo: 6700},
+      {links: "Trading Terminals (KEATProX and FASTLANE)", scrollTo: 6700},
+      {links: "Mobile Stock Trading", scrollTo: 7000},
+      {links: "Branch Advisory and Call & Trade", scrollTo: 7200},
+
+    ]
+  },
+  {
+    links: "Kotak Securities Pros and Cons",
+    scrollTo: 7400,
+    sublinks: [
+      {links: "Kotak Securities Pros (Advantages)", scrollTo: 7400},
+      {links: "Kotak Securities Cons (Disadvantages)", scrollTo: 7700}
     ]
     
+},
+
+  {
+    links: "Kotak Securities Margin / Exposure",
+    scrollTo: 8100,
+    sublinks: []
+    
+}
+,
+  {
+    links: "KOTAK Securities Ratings",
+    scrollTo: 8900,
+    sublinks: []
+    
+},
+{
+  links: "Compare KOTAK Securities with Top Brokers in India",
+  scrollTo: 9400,
+  sublinks: []
 }
   ]
   broker1
   broker2
   companyData
   brokerList
-  companyName
+  companyName = 'KOTAK Securities';
   constructor(private service: CompanyReviewService) {
     this.getCompanyData();
   }

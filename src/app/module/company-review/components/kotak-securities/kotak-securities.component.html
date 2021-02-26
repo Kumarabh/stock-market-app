@@ -34,7 +34,7 @@
             <!-- subsection start -->
             <div class="jumbotron jumbotron-fluid">
                 <div class="container">
-                  <h1 class="display-4">{{companyData?.company_name}} Stock Trading / Demat / Brokerage / Reviews 2021
+                  <h1 class="display-4">{{companyName}} Stock Trading / Demat / Brokerage / Reviews 2021
                   </h1>
                   <hr class="my-4">
                   <p class="lead">
@@ -162,6 +162,553 @@
                 </p>
             </div>
             <!-- subsection ends -->
+
+<br><br>
+            <!-- subsection start -->
+            <div class="container-fluid">
+              <h4 class="sub-header">
+                Fixed Brokerage Plan
+              </h4>
+              <p class="lead">Kotak Securities Fixed Brokerage plan is specifically created to the suit the needs of newbies or infrequent traders.
+
+              </p>
+              <table class="table mt-5 mb-5 text-center">
+                <thead>
+                  <tr>
+                    <th scope="col">Trading Segment
+                    </th>
+                    <th scope="col">Brokerage Charges
+
+                    </th>
+                    <!-- <th scope="col">Classic
+                    </th>
+                    <th scope="col">Preferred
+                    </th>
+                    <th scope="col">Premiere
+                    </th>
+                    <th scope="col">Elite
+                    </th> -->
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Equity Cash Delivery</td>
+                    <td>{{companyData?.fixed_brokerage_plan?.equity_cash_delivery}}</td>
+                    
+                  </tr>
+                  <tr>
+                    <td>Equity Cash Intraday </td>
+                    <td>{{companyData?.fixed_brokerage_plan?.equity_cash_intraday}}</td>
+                    
+                  </tr>
+                  <tr>
+                    <td>Equity Futures (Both Sides)	 </td>
+                    <td>{{companyData?.fixed_brokerage_plan?.equity_futures}}</td>
+                  
+                  </tr>
+                  <tr>
+                    <td>Equity Options	</td>
+                    <td>{{companyData?.fixed_brokerage_plan?.equity_options}}</td>
+                  
+                  </tr>
+                  <tr>
+                    <td>Minimum Brokerage	</td>
+                    <td>{{companyData?.fixed_brokerage_plan?.minimum_brokerage}}</td>
+                  
+                  </tr>
+                 
+                </tbody>
+              </table>
+
+
+
+            </div>
+            <!-- subsection ends -->
+            <br><br>
+            <!-- subsection start -->
+            <div class="container-fluid">
+              <h4 class="sub-header">
+                Dynamic Brokerage Plan
+              </h4>
+              <p class="lead">Kotak Securities Dynamic Brokerage Plan is specifically created for those Customer who are frequent traders and looking for a good bargain on their brokerage rates.
+
+              </p>
+              <table class="table mt-5 mb-5 text-center">
+                <thead>
+                  <tr>
+                    <th scope="col">Trading Segment	
+                    </th>
+                    <th scope="col">Brokerage Charges
+                    </th>
+                   
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Equity Cash Delivery</td>
+                    <td>{{companyData?.dynamic_brokerage_plan?.equity_cash_delivery}}</td>
+                    
+                  </tr>
+                  <tr>
+                    <td>Equity Cash Intraday </td>
+                    <td>{{companyData?.dynamic_brokerage_plan?.equity_cash_intraday}}</td>
+                    
+                  </tr>
+                  <tr>
+                    <td>Equity Futures Intraday	 </td>
+                    <td>{{companyData?.dynamic_brokerage_plan?.equity_futures_intraday}}</td>
+                  
+                  </tr>
+                  <tr>
+                    <td>Equity Futures Settlement	</td>
+                    <td>{{companyData?.dynamic_brokerage_plan?.equity_futures_settlement}}</td>
+                  
+                  </tr>
+                  <tr>
+                    <td>Equity Options Intraday	</td>
+                    <td>{{companyData?.dynamic_brokerage_plan?.equity_options_intraday}}</td>
+                  
+                  </tr>
+                  <tr>
+                    <td>Equity Options Settlement	 </td>
+                    <td>{{companyData?.dynamic_brokerage_plan?.equity_options_settlement}}</td>
+                  
+                  </tr>
+                  <tr>
+                    <td>Options Minimum (Settlement)	</td>
+                    <td>{{companyData?.dynamic_brokerage_plan?.options_minimum}}</td>
+                  
+                  </tr>
+                  <tr>
+                    <td>Currency Futures	</td>
+                    <td>{{companyData?.dynamic_brokerage_plan?.currency_futures}}</td>
+                  
+                  </tr>
+                  <tr>
+                    <td>Currency Options	</td>
+                    <td>{{companyData?.dynamic_brokerage_plan?.currency_options}}</td>
+                  
+                  </tr>
+                </tbody>
+              </table>
+
+
+
+            </div>
+            <!-- subsection ends -->
+
+            <br><br>
+            <!-- subsection start -->
+            <div class="container-fluid">
+              <h4 class="sub-header">
+                3. Free Intraday Trading (FIT) (Rs 999 Plan or Unlimited Trading Plan)
+
+              </h4>
+              <p class="lead">
+                Kotak Securities Free Intraday Trading (FIT) offers free unlimited intra-day equity trading across segments like Equity Cash, Equity Futures & Equity Options for a yearly fee of Rs 999. This unlimited trading plan is available for Equity Intraday Trades only. Note that Equity Delivery, Currency and Commodity trading are not covered in this plan.
+              </p>
+              <p class="lead">Rs 999 Plan Key Facts:
+
+              </p>
+              <p class="lead">
+                <i class="fa fa-check-square-o" aria-hidden="true"></i>
+                Free trading is only available in Equity (Cash and F&O) Intraday segment.
+
+              </p>
+              <p class="lead">
+                <i class="fa fa-check-square-o" aria-hidden="true"></i>
+                Customers still have to pay regular brokerage for Equity Delivery, Commodity, and Currency trading. Note that Kotak Securities regular brokerage is extremely high in comparison to discount brokers like Zerodha or ProStocks.
+
+              </p>
+              <p class="lead">
+                <i class="fa fa-check-square-o" aria-hidden="true"></i>
+                This price plan only available for online trading. Call & Trade or using trading desk or trade though dealers are not an option in this plan.
+
+              </p>
+              <p class="lead">
+                <i class="fa fa-check-square-o" aria-hidden="true"></i>
+                The price of this plan is Rs 999 per year paid up front.
+
+              </p>
+
+              <p class="lead">
+                <i class="fa fa-check-square-o" aria-hidden="true"></i>
+                Customers will have to provide margins as per the agreement with Kotak Securities. Unlike most brokers, Kotak doesn't provide high margins.
+
+              </p>
+              <p class="lead">
+                <i class="fa fa-check-square-o" aria-hidden="true"></i>
+                FIT cannot be used by ODIN Diet clients. The mobile trading app, TradeSmart terminal, and website based trading are available under this plan.
+
+              </p>
+              <p class="lead">
+                <i class="fa fa-check-square-o" aria-hidden="true"></i>
+                In case you rollover your position beyond the day, the trade gets converted into a delivery trade, in which case, the brokerage will be charged. This could cost a trader lot money.
+
+              </p>
+
+            </div>
+            <!-- subsection ends -->
+
+<br><br>
+            <!-- subsection start -->
+            <div class="container-fluid">
+              <h4 class="sub-header">
+                Kotak Securities Minimum Brokerage:
+              </h4>
+
+              <p class="lead">
+                Cash Delivery: {{companyData?.minimum_brokerage?.cash_delivery}}
+              </p>
+              <p class="lead">
+                Intraday: {{companyData?.minimum_brokerage?.intraday}}              
+              </p>
+              <p class="lead">
+                Equity Futures: {{companyData?.minimum_brokerage?.equity_futures}}
+              </p>
+
+            </div>
+            <!-- subsection ends -->
+
+
+            <br><br>
+            <!-- subsection start -->
+            <div class="container-fluid">
+              <h4 class="sub-header">
+                Kotak Securities Demat Account Charges:
+              </h4>
+              <table class="table mt-5 mb-5 text-center">
+                <thead>
+                  <tr>
+                    <th scope="col">Account Head	
+                    </th>
+                    <th scope="col">Rate
+                    </th>
+                    <th scope="col">
+                      Minimum Payable
+
+                    </th>
+                   
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Dematerialisation	</td>
+                    <td>{{companyData?.demat_account_charges?.dematerialisation?.rate}}</td>
+                    <td>{{companyData?.demat_account_charges?.dematerialisation?.minimum_payable}}</td>
+
+                  </tr>
+                  <tr>
+                    <td>Rematerialisation </td>
+                    <td>{{companyData?.demat_account_charges?.rematerialisation?.rate}}</td>
+                    <td>{{companyData?.demat_account_charges?.rematerialisation?.minimum_payable}}</td>
+
+                  </tr>
+                  <tr>
+                    <td>Debit Transactions - On Market and Off Market		 </td>
+                    <td>{{companyData?.demat_account_charges?.debit_transactions?.rate}}</td>
+                    <td>{{companyData?.demat_account_charges?.debit_transactions?.minimum_payable}}</td>
+
+                  </tr>
+                  <tr>
+                    <td>Account Maintenance Charges</td>
+                    <td>{{companyData?.demat_account_charges?.account_maintenance_charges?.rate}}</td>
+                    <td>{{companyData?.demat_account_charges?.account_maintenance_charges?.minimum_payable}}</td>
+
+                  </tr>
+                  <tr>
+                    <td>Pledge Charges	</td>
+                    <td>{{companyData?.demat_account_charges?.pledge_charges?.rate}}</td>
+                    <td>{{companyData?.demat_account_charges?.pledge_charges?.minimum_payable}}</td>
+
+                  </tr>
+                  <tr>
+                    <td>Invocation of Pledge	 </td>
+                    <td>{{companyData?.demat_account_charges?.invocation_of_pledge?.rate}}</td>
+                    <td>{{companyData?.demat_account_charges?.invocation_of_pledge?.minimum_payable}}</td>
+
+                  </tr>
+                  <tr>
+                    <td>Charge for Client Master change intimation	</td>
+                    <td>{{companyData?.demat_account_charges?.client_master_charges?.rate}}</td>
+                    <td>{{companyData?.demat_account_charges?.client_master_charges?.minimum_payable}}</td>
+
+                  </tr>
+                  
+                </tbody>
+              </table>
+
+
+              
+
+            </div>
+            <!-- subsection ends -->
+            <br><br><br><br>
+            <!-- subection start -->
+            <div class="container-fluid">
+              <h4 class="display-4">
+                Useful Articles
+              </h4>
+              <hr>
+              <p class="lead">
+                <i class="fa fa-check-square-o" aria-hidden="true"></i>
+                The <b>Best 3-in-1 Trading Account</b> in India Stock Market - ICICI Bank, HDFC Bank, SBI, Kotak Securities etc
+              </p>
+            
+              <p class="lead">
+                <i class="fa fa-check-square-o" aria-hidden="true"></i>
+                Know about <b>Flat Fee Share Brokers in India</b> (Also known as budget broker or discount broker)
+              </p>
+              <p class="lead">
+                Visit Kotak Securities Brokerage Charges Review for more detail.
+              </p>
+            </div>
+            <!-- subsection ends -->
+
+            <br><br><br><br>
+            <!-- subection start -->
+            <div class="container-fluid">
+              <h4 class="display-4">
+                Kotak Securities Online Account Opening
+
+              </h4>
+              <hr>
+              <p class="lead">
+                There are 3 simple ways to open an account with Kotak Sec:
+              </p>
+            
+              <p class="lead">
+                <i class="fa fa-check-square-o" aria-hidden="true"></i>
+                Call at one of the below number and ask to open an account with them.
+                Toll Free No.: 1800-222-299, 1800-209-9191
+              </p>
+              <p class="lead">
+                <i class="fa fa-check-square-o" aria-hidden="true"></i>
+
+                Visit one of their nearest branches.
+              </p>
+              <p class="lead">
+                <i class="fa fa-check-square-o" aria-hidden="true"></i>
+
+                Fill online account application form on Kotak Securities website.
+              </p>
+            </div>
+            <!-- subsection ends -->
+
+            <br><br><br><br>
+            <!-- subection start -->
+            <div class="container-fluid">
+              <h4 class="display-4">
+                Kotak Securities Trading Software (Kotak Securities Trading Platforms)
+
+              </h4>
+              <hr>
+              <p class="lead">
+                Kotak Securities offers multiple trading platforms to suite investor's requirement. Following are the trading platforms available by Kotak Sec:
+              </p>
+            
+              <h4 class="sub-header">
+                Website Based Trading
+              </h4>
+              <p class="lead">
+                A stock treading website which can be accessed though any popular Web Browser. This is the most convenient and popular way to invest with Kotak Securities. Kotak also offers a light weight trading website 'Xtralite', which can be used by investors with slow speed internet.
+              </p>
+              <h4 class="sub-header">
+                Trading Terminals (KEATProX and FASTLANE)
+              </h4>
+              <p class="lead">
+
+                Kotak offers two different trading terminal based application which are very popular among stock traders. KEATProX is an exe based installable desktop application providing fastest trading experience. FASTLANE is a Java applet based application which gives you a trading terminal kind of experience without any installation on your computer. FASTLANE gives KEATProX like features and the benefits of website based trading as it can be access from anywhere though web browser.
+              </p>
+              <h4 class="sub-header">
+                Mobile Stock Trading
+              </h4>
+              <p class="lead">
+                Kotak offers high speed mobile based application to trade in Stock Market. Through this mobile app, a customer can Execute Trades, Monitor Portfolio, View Streaming Quotes and Intraday Charts.
+              </p>
+              <h4 class="sub-header">
+                Branch Advisory and Call & Trade
+              </h4>
+              <p class="lead">
+                Kotak also offers trading facility though its 1400+ branches and though call centers using call & trade facility.              </p>
+            </div>
+            <!-- subsection ends -->
+
+
+            <br><br><br><br>
+            <!-- subection start -->
+            <div class="container-fluid">
+              <h4 class="display-4">
+                Kotak Securities Pros and Cons
+
+              </h4>
+              <hr>
+             
+            
+              <h4 class="sub-header">
+                Kotak Securities Pros (Advantages)
+              </h4>
+              <p class="lead">
+                The following are the advantages of Kotak Securities. You must read Kotak Securities advantages and disadvantages before opening an account with Kotak Securities. Kotak Securities pros and cons help you find if it suits your investment needs.
+              </p>
+
+              
+              <p class="lead">
+                <i class="fa fa-check-square-o"></i>
+                Kotak Securities website provides wide range of investment options. This includes investment in equity, IPO's, Bonds, FD's, ETF's, Mutual Funds, Currency Derivatives etc.
+              </p>
+              
+              <p class="lead">
+                <i class="fa fa-check-square-o"></i>
+                Along with the online trading facility, customer gets access to 1400+ branches for help on investment and issue resolution.              </p>
+              
+              <p class="lead">
+                <i class="fa fa-check-square-o"></i>
+
+                Kotak Securities provide daily SMS alerts, market pointers, periodical research reports, stock recommendations etc. to help the customers.              
+              </p>
+              <p class="lead">
+                <i class="fa fa-check-square-o"></i>
+
+                Online Chat facility is available to support customer.
+              </p>
+              <p class="lead">
+                <i class="fa fa-check-square-o"></i>
+
+                Kotak security offers easy integration of trading account with Citibank, HDFC Bank, UTI Bank and Kotak Mahindra Bank.
+                </p>
+
+<br><br>
+
+                <h4 class="sub-header">
+                  Kotak Securities Cons (Disadvantages)
+                </h4>
+                <p class="lead">
+                  The following are the cons of Kotak Securities. Check the list of Kotak Securities drawbacks.
+                </p>
+  
+                
+                <p class="lead">
+                  <i class="fa fa-check-square-o"></i>
+                  Kotak Securities is a Full Services Broker. The brokerage charged by them is higher than the Discount Brokers.
+                </p>
+                
+               
+            </div>
+            <!-- subsection ends -->
+<br><br><br><br>
+                    <!-- subsection start -->
+   <div class="container-fluid">
+    <h3 class="sub-header">Kotak Securities Margin / Exposure
+    </h3>
+    <hr>
+    <p class="sub-header-content">
+      Kotak Securities leverage for intraday, delivery, options, currency and commodities.    
+    </p>
+    
+    <table class="table mt-5 mb-5 text-center">
+      <thead>
+        <tr>
+          <th scope="col">Segment	</th>
+          <th scope="col">Margin		</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Equity Delivery	</td>
+          <td> {{companyData?.margin_exposure?.equity_delivery}}</td>
+    
+        </tr>
+        <tr>
+          <td>Equity Intraday		</td>
+          <td> {{companyData?.margin_exposure?.equity_intraday}} </td>
+        </tr>
+        
+        <tr>
+          <td>Equity Future	</td>
+          <td> {{companyData?.margin_exposure?.equity_futures}} </td>
+        </tr>
+        
+       <tr>
+         <td>Equity Options		</td>
+         <td> {{companyData?.margin_exposure?.equity_options}} </td>
+        </tr>
+       <tr>
+         <td>Currency Future		</td>
+         <td> {{companyData?.margin_exposure?.currency_futures}}</td>
+       </tr>
+       <tr>
+         <td>Currency Options		</td>
+         <td> {{companyData?.margin_exposure?.currency_options}} </td>
+       </tr>
+       <tr>
+        <td>Commodity Future			</td>
+        <td> {{companyData?.margin_exposure?.commodity_futures}}</td>
+      </tr>
+      <tr>
+        <td>Commodity Options			</td>
+        <td> {{companyData?.margin_exposure?.commodity_options}}</td>
+      </tr>
+      </tbody>
+    </table>
+   </div>
+
+<!-- subsection ends-->
+
+
+
+
+<!-- sub section start-->
+<div class="container-fluid newSubsection">
+    <h3 class="sub-header">{{companyName}} Ratings
+    </h3>
+    <hr>
+    
+    
+    <table class="table mt-5 mb-5 text-center">
+      <thead>
+        <tr>
+          <th scope="col">Segment	</th>
+          <th scope="col">Ratings		</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><b>Overall Rating</b>	</td>
+          <td> {{companyData?.ratings?.overall_ratings}}</td>
+    
+        </tr>
+        <tr>
+          <td>Fees		</td>
+          <td> {{companyData?.ratings?.fees}} </td>
+        </tr>
+        
+        <tr>
+          <td>Brokerage	</td>
+          <td> {{companyData?.ratings?.brokerage}} </td>
+        </tr>
+        
+       <tr>
+         <td>Usability		</td>
+         <td> {{companyData?.ratings?.usability}} </td>
+        </tr>
+       <tr>
+         <td>Customer Service		</td>
+         <td> {{companyData?.ratings?.customer_service}}</td>
+       </tr>
+       <tr>
+         <td>Research Capabilities		</td>
+         <td> {{companyData?.ratings?.research_capabilities}} </td>
+       </tr>
+       
+      </tbody>
+    </table>
+    
+  </div>
+
+<!-- subsection ends -->
+
+
         </div>
         <div class="col-md-3">
             <app-company-page-scroll [companyScrollObject] = "companyScrollObject"></app-company-page-scroll>

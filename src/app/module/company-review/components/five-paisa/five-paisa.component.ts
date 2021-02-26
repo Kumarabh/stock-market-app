@@ -12,7 +12,7 @@ export class FivePaisaComponent implements OnInit {
   broker2
   companyData
   brokerList
-  companyName
+  companyName = "5Paisa"
   constructor(private service: CompanyReviewService) {
     this.getCompanyData();
     this.getBrokerList();

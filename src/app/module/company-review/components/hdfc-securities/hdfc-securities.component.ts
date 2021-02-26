@@ -78,7 +78,7 @@ export class HdfcSecuritiesComponent implements OnInit {
   broker2
   companyData
   brokerList
-  companyName
+  companyName = 'HDFC Securities'
   constructor(private service: CompanyReviewService) {
     this.getCompanyData();
   }

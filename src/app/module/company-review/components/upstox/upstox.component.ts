@@ -18,7 +18,7 @@ export class UpstoxComponent implements OnInit {
   equityFandOCharges: any;
   marginExposure: any;
   brokerList
-  companyName
+  companyName = 'Upstox'
   constructor(private service: CompanyReviewService) {
     this.getUpstoxTradingPlansComparison();
     this.getCompanyBasicDetails();

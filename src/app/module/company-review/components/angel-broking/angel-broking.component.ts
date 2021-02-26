@@ -47,7 +47,7 @@ export class AngelBrokingComponent implements OnInit {
   broker2
   companyData
   brokerList
-  companyName
+  companyName = "Angel Broking"
   constructor(private service: CompanyReviewService) {
     this.getCompanyData();
   }

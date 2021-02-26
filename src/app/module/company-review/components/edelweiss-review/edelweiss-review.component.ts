@@ -12,7 +12,7 @@ export class EdelweissReviewComponent implements OnInit {
   broker2
   companyData
   brokerList
-  companyName
+  companyName = 'Edelweiss'
   constructor(private service: CompanyReviewService) {
     this.getCompanyData();
     this.getBrokerList();
