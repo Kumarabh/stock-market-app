@@ -21,8 +21,8 @@ export class MotilalOswalComponent implements OnInit {
       scrollTo: 900,
       sublinks: [
         {links: "Default Account", scrollTo: 1000},
-        {links: "Value Pack", scrollTo: 1500},
-        {links: "Margin Pack", scrollTo: 2500},
+        {links: "Value Pack", scrollTo: 1200},
+        {links: "Margin Pack", scrollTo: 1300},
        
 
       ]
@@ -30,9 +30,9 @@ export class MotilalOswalComponent implements OnInit {
     
     {
       links: "Motilal Oswal Charges 2021",
-      scrollTo: 4200,
+      scrollTo: 1600,
       sublinks: [
-        
+        {links: "Motilal Oswal Account Opening Charges", scrollTo: 1700}
     ]
       
     },

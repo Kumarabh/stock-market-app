@@ -22,10 +22,11 @@ import { CompanyPageScrollComponent } from './components/company-page-scroll/com
 import { KotakSecuritiesComponent } from './components/kotak-securities/kotak-securities.component';
 import { IciciDirectComponent } from './components/icici-direct/icici-direct.component';
 import { MotilalOswalComponent } from './components/motilal-oswal/motilal-oswal.component';
+import { AxisDirectComponent } from './components/axis-direct/axis-direct.component';
 
 
 @NgModule({
-  declarations: [ZerodhaReviewComponent, UpstoxComponent, SpecialOffersComponent, EdelweissReviewComponent, FooterComponent, FivePaisaComponent, ProstocksComponent, SharekhanComponent, AngelBrokingComponent, FyersComponent, HdfcSecuritiesComponent, CompanyHeaderComponent, CompanyPageScrollComponent, KotakSecuritiesComponent, IciciDirectComponent, MotilalOswalComponent],
+  declarations: [ZerodhaReviewComponent, UpstoxComponent, SpecialOffersComponent, EdelweissReviewComponent, FooterComponent, FivePaisaComponent, ProstocksComponent, SharekhanComponent, AngelBrokingComponent, FyersComponent, HdfcSecuritiesComponent, CompanyHeaderComponent, CompanyPageScrollComponent, KotakSecuritiesComponent, IciciDirectComponent, MotilalOswalComponent, AxisDirectComponent],
   imports: [
     CommonModule,
     CompanyReviewRoutingModule,

@@ -12,6 +12,7 @@ import { FyersComponent } from './components/fyers/fyers.component';
 import { KotakSecuritiesComponent } from './components/kotak-securities/kotak-securities.component';
 import { IciciDirectComponent } from './components/icici-direct/icici-direct.component';
 import { MotilalOswalComponent } from './components/motilal-oswal/motilal-oswal.component';
+import { AxisDirectComponent } from './components/axis-direct/axis-direct.component';
 
 const routes: Routes = [
   {path: '', component: ZerodhaReviewComponent},
@@ -26,7 +27,8 @@ const routes: Routes = [
   {path: 'fyers', component: FyersComponent},
   {path: 'kotak-securities', component: KotakSecuritiesComponent},
   {path: 'icici-direct', component: IciciDirectComponent},
-  {path: 'motilal-oswal', component: MotilalOswalComponent}
+  {path: 'motilal-oswal', component: MotilalOswalComponent},
+  {path: 'axis-direct', component: AxisDirectComponent}
 
 ];
 

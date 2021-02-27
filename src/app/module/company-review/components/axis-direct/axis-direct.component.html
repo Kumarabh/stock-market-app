@@ -1,0 +1,441 @@
+<!-- Buttons -->
+<app-company-header [companyName] = "companyName"></app-company-header>
+
+<!-- compare broker -->
+
+  <div class="container-fluid mt-5 p-3 mb-5">
+    <div class="row mt-2">
+      <div class="row mx-auto">
+        <div class="col-md-4">
+          <!-- <label for="">First Broker</label> -->
+          <input type="text" placeholder="" [(ngModel)]="broker1"  class="form-control">
+  
+      </div>
+          <div class="col-md-4">
+              <!-- <label for="">Second Broker</label> -->
+              <input type="text" placeholder="" [(ngModel)]="broker2"  class="form-control">
+  
+          </div>
+          
+          
+          
+          <div class="col-md-4">
+              <button type="submit" (click) = "submitCompareForm()"  class=" submit-button "><b>Compare Brokers</b></button>
+  
+          </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container-fluid">
+      <div class="row">
+          <div class="col-md-9">
+
+             <!-- subsection start -->
+             <div class="jumbotron jumbotron-fluid">
+                <div class="container">
+                  <h1 class="display-4">{{companyName}} Stock Trading / Demat / Brokerage / Reviews 2021
+                  </h1>
+                  <hr class="my-4">
+                  <p class="lead">
+                    Incorporated in 2005, Axis Securities Ltd is part of Axis Bank, a leading private bank in India. Axis Sec is a full-service broker offering stock broking services and distribution of financial products to retail customers in India through its AxisDirect brand. AxisDirect is among top 10 stock brokers in India with over 4.2 lakhs active customers.
+
+AxisDirect offers investment in Equities, Mutual Fund, SIP, IPO, Derivatives, Bond, NCD, ETF and Company Fixed Deposits. Axis Sec also offers Home Loans, Auto Loans, Personal Loans, Loan against Property, Loan against Shares and Loans for SME, Credit and Prepaid Cards.
+
+AxisDirect offers 3-in-1 account, an integrated Trading, Demat and Bank account. This account offers a seamless transaction of money and shares between the 3 accounts. It simplifies trading for the customers especially beginners and casual traders.
+                </p>
+                  <br>
+                  
+                </div>
+              </div>
+              <!-- subsection ends -->
+
+
+              <!-- subsection start -->
+              <div class="container-fluid">
+                  <h4 class="display-4">
+                    AxisDirect Charges 2021
+                  </h4>
+                  <hr>
+
+                  <h4 class="sub-header">
+                    Axis Direct Account Opening Charges
+
+                  </h4>
+                  
+                  <table class="table mt-5 mb-5 text-center">
+                    <thead>
+                      <tr>
+                          <th>Charges</th>
+                          <th>value</th>
+                        <!-- <th scope="col">Equity Segment
+                        </th>
+                        <th scope="col">
+                        </th> -->
+                        <!-- <th scope="col">Classic
+                        </th>
+                        <th scope="col">Preferred
+                        </th>
+                        <th scope="col">Premiere
+                        </th>
+                        <th scope="col">Elite
+                        </th> -->
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>3-in-1 Account Opening Charges</td>
+                        <td>{{companyData?.account_opening_charges?.account_opening_charges_3_in_1}}</td>
+                        
+                      </tr>
+                      <tr>
+                        <td>Demat Account Opening Charges	 </td>
+                        <td>{{companyData?.account_opening_charges?.demat_account_opening_charges}}</td>
+                        
+                      </tr>
+                      <tr>
+                        <td>Demat Account AMC	 </td>
+                        <td>{{companyData?.account_opening_charges?.demat_account_maintenance_charges}}</td>
+                      
+                      </tr>
+                      
+                     
+                     
+                     
+                      
+                    </tbody>
+                  </table>
+
+
+                  <br><br>
+                  <h4 class="sub-header">
+                    Axis Direct Brokerage Charges
+                  </h4>
+                  <p class="lead">
+                    Axis Direct charges 0.50% brokerage for equity delivery, 0.05% for Intraday & Futures, and Rs 10 per lot for options.
+                  </p>
+                  <table class="table mt-5 mb-5 text-center">
+                    <thead>
+                      <tr>
+                          <th>Segment</th>
+                          <th>Brokerage Charges
+                        </th>
+                       
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Equity Delivery	</td>
+                        <td>{{companyData?.brokerage_charges?.equity_delivery}}</td>
+                        
+                      </tr>
+                      <tr>
+                        <td>Equity Intraday		 </td>
+                        <td>{{companyData?.brokerage_charges?.equity_intraday}}</td>
+                        
+                      </tr>
+                      <tr>
+                        <td>Equity Future	 </td>
+                        <td>{{companyData?.brokerage_charges?.equity_futures}}</td>
+                      
+                      </tr>
+                      <tr>
+                        <td>Equity Options		</td>
+                        <td>{{companyData?.brokerage_charges?.equity_options}}</td>
+                        
+                      </tr>
+                      <tr>
+                        <td>Currency Futures			 </td>
+                        <td>{{companyData?.brokerage_charges?.currency_futures}}</td>
+                        
+                      </tr>
+                      <tr>
+                        <td>Currency Options	 </td>
+                        <td>{{companyData?.brokerage_charges?.currency_options}}</td>
+                      
+                      </tr>
+                      <tr>
+                        <td>Commodity Futures				 </td>
+                        <td>{{companyData?.brokerage_charges?.commodity_futures}}</td>
+                        
+                      </tr>
+                      <tr>
+                        <td>Commodity Options		 </td>
+                        <td>{{companyData?.brokerage_charges?.commodity_options}}</td>
+                      
+                      </tr>
+                   </tbody>
+                  </table>
+
+
+              </div>
+              <!-- subsection ends -->
+
+<br><br>
+              <!-- subsection ends -->
+              <div class="container-fluid">
+                <h4 class="sub-header">
+                    AxisDirect Other Charges (Hidden Fees)
+                </h4>
+                <p class="lead">
+                    <i class="fa fa-check-square-o"></i>
+                    Axis Direct Minimum Brokerage: Rs 20 per trade
+
+                </p>
+                <p class="lead">
+                    <i class="fa fa-check-square-o"></i>
+                    Call & Trade Service: Rs 20 per call
+
+
+                </p>
+                <p class="lead">
+                    <i class="fa fa-check-square-o"></i>
+                    Brokerage Plan Modification Charge: Rs 500 per quarter
+
+                </p>
+                <p class="lead">
+                    <i class="fa fa-check-square-o"></i>
+                    Payment Gateway Charges (For Non-Axis Bank Customers): Rs 9 per transfer
+
+                </p>
+              </div>
+              <!-- subsection ends -->
+
+
+              <br><br><br><br>
+              <!-- subsection start -->
+              <div class="container-fluid">
+                <h4 class="display-4">
+                    AxisDirect Trading Software (AxisDirect Trading Platforms)
+                  </h4>
+                  <hr>
+                  <p class="lead">
+                    Axis Securities offer multiple trading platforms based on customers investment style and needs.
+                  </p>
+    <br>
+                  <h4 class="sub-header">
+                    DirectTrade
+                  </h4>
+                  <p class="lead">
+                    A Desktop trading application which has advanced charting, auto-refreshing order/trade/position books and high frequency updates of market rate. This trading terminal is suitable for high frequency traders.
+
+                    The DirectTrade Terminal also offers live streaming quotes, Fully Customizable Multiple Market Watch and Quick access to order placement and reports.
+                    
+                    The DirectTrade is available at additional cost of Rs 2999 per year.
+                  </p>
+<br>
+                  <h4 class="sub-header">
+                    Swift Trade
+                  </h4>
+                  <p class="lead">
+                    A Java applet-based trading platform. This light-weight trading platform offers functionality of trading terminal in a web browser.
+                 </p>
+                 <br>
+                  <h4 class="sub-header">
+                    Mobile Trading
+                  </h4>
+                  <p class="lead">
+                    AxisDirect Mobile App allows customers to trade in Equity and Derivative segments through your smart phone.
+                 </p>
+                 <br>
+                  <h4 class="sub-header">
+                    AxisDirect lite
+
+                  </h4>
+                  <p class="lead">
+                    AxisDirect Lite is a low bandwidth, user friendly trading platform that allows customers to trade in Equities and Derivatives even on slower internet connection.
+
+                  </p>
+              </div>
+
+              
+              <!-- subsection ends -->
+
+
+              <br><br><br><br>
+            <!-- subection start -->
+            <div class="container-fluid">
+              <h4 class="display-4">
+                AxisDirect Pros and Cons
+
+
+              </h4>
+              <hr>
+             
+            
+              <h4 class="sub-header">
+                AxisDirect Pros (Advantages)
+              </h4>
+              <p class="lead">
+                The following are the advantages of AxisDirect. You must read AxisDirect advantages and disadvantages before opening an account with AxisDirect. AxisDirect pros and cons help you find if it suits your investment needs.
+
+
+            </p>
+
+              
+              <p class="lead">
+                <i class="fa fa-check-square-o"></i>
+                Axis Direct offers a 3-in-1 account. This includes Bank, Demat and Trading Account. This makes trading and investing very easy.
+            </p>
+              
+              <p class="lead">
+                <i class="fa fa-check-square-o"></i>
+                Axis Direct offers a large number of products under one single brand/website.
+              
+              <p class="lead">
+                <i class="fa fa-check-square-o"></i>
+
+                Axis Direct offers free research reports to its customers.
+            </p>
+              <p class="lead">
+                <i class="fa fa-check-square-o"></i>
+
+                Axis Direct offers classroom sessions, webinars, Online Tutorials and Articles by Experts to help beginners understand basics.
+            </p>
+              
+
+<br><br>
+
+                <h4 class="sub-header">
+                    AxisDirect Cons (Disadvantages)
+                </h4>
+                <p class="lead">
+                    The following are the cons of AxisDirect. Check the list of AxisDirect drawbacks.
+
+
+                </p>
+  
+                
+                <p class="lead">
+                  <i class="fa fa-check-square-o"></i>
+                  Very high brokerage in comparison to discount stock brokers like Zerodha.
+                </p>
+               
+                 
+               
+            </div>
+            <!-- subsection ends -->
+
+            <br><br><br><br>
+            <!-- subsection start -->
+<div class="container-fluid">
+<h3 class="sub-header">AxisDirect Margin / Exposure
+
+</h3>
+<hr>
+<p class="sub-header-content">
+    AxisDirect leverage for intraday, delivery, options, currency and commodities.
+
+</p>
+
+<table class="table mt-5 mb-5 text-center">
+<thead>
+<tr>
+  <th scope="col">Segment	</th>
+  <th scope="col">Margin		</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>Equity Delivery	</td>
+  <td> {{companyData?.margin_exposure?.equity_delivery}}</td>
+
+</tr>
+<tr>
+  <td>Equity Intraday		</td>
+  <td> {{companyData?.margin_exposure?.equity_intraday}} </td>
+</tr>
+
+<tr>
+  <td>Equity Future	</td>
+  <td> {{companyData?.margin_exposure?.equity_futures}} </td>
+</tr>
+
+<tr>
+ <td>Equity Options		</td>
+ <td> {{companyData?.margin_exposure?.equity_options}} </td>
+</tr>
+<tr>
+ <td>Currency Future		</td>
+ <td> {{companyData?.margin_exposure?.currency_futures}}</td>
+</tr>
+<tr>
+ <td>Currency Options		</td>
+ <td> {{companyData?.margin_exposure?.currency_options}} </td>
+</tr>
+<tr>
+<td>Commodity Future			</td>
+<td> {{companyData?.margin_exposure?.commodity_futures}}</td>
+</tr>
+<tr>
+<td>Commodity Options			</td>
+<td> {{companyData?.margin_exposure?.commodity_options}}</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<!-- subsection ends-->
+
+<!-- sub section start-->
+<div class="container-fluid newSubsection">
+<h3 class="sub-header">{{companyName}} Ratings
+</h3>
+<hr>
+
+
+<table class="table mt-5 mb-5 text-center">
+<thead>
+<tr>
+  <th scope="col">Segment	</th>
+  <th scope="col">Ratings		</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><b>Overall Rating</b>	</td>
+  <td> {{companyData?.ratings?.overall_ratings}}</td>
+
+</tr>
+<tr>
+  <td>Fees		</td>
+  <td> {{companyData?.ratings?.fees}} </td>
+</tr>
+
+<tr>
+  <td>Brokerage	</td>
+  <td> {{companyData?.ratings?.brokerage}} </td>
+</tr>
+
+<tr>
+ <td>Usability		</td>
+ <td> {{companyData?.ratings?.usability}} </td>
+</tr>
+<tr>
+ <td>Customer Service		</td>
+ <td> {{companyData?.ratings?.customer_service}}</td>
+</tr>
+<tr>
+ <td>Research Capabilities		</td>
+ <td> {{companyData?.ratings?.research_capabilities}} </td>
+</tr>
+
+</tbody>
+</table>
+
+</div>
+
+<!-- subsection ends -->
+
+
+
+          </div>
+          <div class="col-md-3">
+            <app-company-page-scroll [companyScrollObject] = "companyScrollObject"></app-company-page-scroll>
+            <app-special-offers></app-special-offers>
+
+        </div>
+      </div>
+  </div>
+  <app-footer [companyName]="companyName"></app-footer>
