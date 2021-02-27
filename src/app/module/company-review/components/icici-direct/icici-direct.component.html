@@ -1,0 +1,615 @@
+<!-- Buttons -->
+<app-company-header [companyName] = "companyName"></app-company-header>
+
+<!-- compare broker -->
+
+  <div class="container-fluid mt-5 p-3 mb-5">
+    <div class="row mt-2">
+      <div class="row mx-auto">
+        <div class="col-md-4">
+          <!-- <label for="">First Broker</label> -->
+          <input type="text" placeholder="" [(ngModel)]="broker1"  class="form-control">
+  
+      </div>
+          <div class="col-md-4">
+              <!-- <label for="">Second Broker</label> -->
+              <input type="text" placeholder="" [(ngModel)]="broker2"  class="form-control">
+  
+          </div>
+          
+          
+          
+          <div class="col-md-4">
+              <button type="submit" (click) = "submitCompareForm()"  class=" submit-button "><b>Compare Brokers</b></button>
+  
+          </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container-fluid">
+      <div class="row">
+          <div class="col-md-9">
+
+
+<!-- subsection start -->
+<div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-4">{{companyName}} Stock Trading / Demat / Brokerage / Reviews 2021
+      </h1>
+      <hr class="my-4">
+      <p class="lead">
+ICICI Direct is a retail trading and investment service from ICICI Securities, the largest retail stock broker firm in India offering a wide range of investment options to the retail and institutional customers. ICICI Securities is part of ICICI Group, India's top financial service provider offering banking and other financial services. ICICI Securities offers 'online trading and investment' services to over 20 lakhs customers through ICICI Direct (ICICIDirect.com).      </p>
+      <p class="lead">
+        ICICIDirect.com is the flagship website of ICICI Bank. This website offers a complete suite of investment products such as Online Equity Trading, Derivatives Trading, Mutual Fund & IPO, Fixed Deposit, Bond, NCD, wealth products, Home Loans, Loan against Securities etc.; all under one login. ICICIdirect.com is among the most visited investment portals in India.        
+    </p>
+    <p class="lead">
+        The 3-in-1 account, which includes ICICI Bank Account, ICICI Trading Account and ICICI Demat Account, is the key offering for retail stock market investors in India. It provides extremely simple and efficient way to invest in stock market and other financial instruments. The customers can visit any of the over 1500 ICICI Bank branches or ICICIDirect offices to get in-person help on financial products which are sold through ICICI direct.
+
+ICICIDirect also offers timely pay-in and pay-out, hassle free settlements and above all local and personalized service.
+    </p>
+    <p class="lead">
+        <b>ICICIDirect Trades In</b>: BSE and NSE
+    </p>
+      <br>
+      
+    </div>
+  </div>
+  <!-- subsection ends -->
+
+  <!-- subsection start -->
+        <div class="container-fluid">
+            <h4 class="display-4">
+                ICICI Direct Charges 2021
+            </h4>
+            <hr>
+
+            <h4 class="sub-header">
+                ICICI Direct Account Opening Charges and AMC
+            </h4>
+
+            <table class="table mt-5 mb-5 text-center">
+                <thead>
+                  <tr>
+                    <th scope="col">Transaction
+                    </th>
+                    <th scope="col">Charges
+                    </th>
+                    <!-- <th scope="col">Classic
+                    </th>
+                    <th scope="col">Preferred
+                    </th>
+                    <th scope="col">Premiere
+                    </th>
+                    <th scope="col">Elite
+                    </th> -->
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Trading Account Opening Charges (One Time)</td>
+                    <td>{{companyData?.account_opening_charges_and_amc?.trading_account_opening_charges}}</td>
+                    
+                  </tr>
+                  <tr>
+                    <td>Trading Annual maintenance charges (AMC)	 </td>
+                    <td>{{companyData?.account_opening_charges_and_amc?.trading_annual_maintenance_charges}}</td>
+                    
+                  </tr>
+                  <tr>
+                    <td>Demat Account Opening Charges (One Time)	 </td>
+                    <td>{{companyData?.account_opening_charges_and_amc?.demat_account_opening_charges}}</td>
+                  
+                  </tr>
+                  <tr>
+                    <td>Demat Account Annual Maintenance Charges AMC (Yearly Fee)	</td>
+                    <td>{{companyData?.account_opening_charges_and_amc?.demat_annual_maintenance_charges}}</td>
+                  
+                  </tr>
+ 
+                </tbody>
+              </table>
+
+              <br><br>
+              <p class="lead">
+                ICICI offers 3 types of brokerage plans to its customer:
+              </p>
+              <h4 class="sub-header">
+                I-Secure Plan (Flat brokerage Plan)
+              </h4>
+              <p class="lead">
+                This plan offers Flat Brokerage (in %) irrespective of the turnover value. This plan is suitable for traders/investors looking at the secured and fixed brokerage. Read more about ICICI Direct I-Secure Plan
+              </p>
+
+              <br>
+              <!-- <h4 class="sub-header">
+                ICICI Direct I - Secure Plan Brokerage Charges
+              </h4> -->
+              <table class="table mt-5 mb-5 text-center">
+                <thead>
+                  <tr>
+                    <th scope="col">Segment
+                    </th>
+                    <th scope="col">Brokerage
+                    </th>
+                    <!-- <th scope="col">Classic
+                    </th>
+                    <th scope="col">Preferred
+                    </th>
+                    <th scope="col">Premiere
+                    </th>
+                    <th scope="col">Elite
+                    </th> -->
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Equity Delivery</td>
+                    <td>{{companyData?.secure_plan_brokerage_charges?.equity_delivery}}</td>
+                    
+                  </tr>
+                  <tr>
+                    <td>Equity Intraday		 </td>
+                    <td>{{companyData?.secure_plan_brokerage_charges?.equity_intraday}}</td>
+                    
+                  </tr>
+                  <tr>
+                    <td>Eq Margin & Margin Plus		 </td>
+                    <td>{{companyData?.secure_plan_brokerage_charges?.equity_margin_and_margin_plus}}</td>
+                  
+                  </tr>
+                  <tr>
+                    <td>Eq Future & Future Plus		</td>
+                    <td>{{companyData?.secure_plan_brokerage_charges?.equity_futures_and_futures_plus}}</td>
+                  
+                  </tr>
+
+                  <tr>
+                    <td>Eq Future & Future Plus (Intraday)	</td>
+                    <td>{{companyData?.secure_plan_brokerage_charges?.equity_futures_and_futures_plus_intraday}}</td>
+                    
+                  </tr>
+                  <tr>
+                    <td>Currency Futures		 </td>
+                    <td>{{companyData?.secure_plan_brokerage_charges?.currency_futures}}</td>
+                    
+                  </tr>
+                  <tr>
+                    <td>Currency Futures (Intraday)		 </td>
+                    <td>{{companyData?.secure_plan_brokerage_charges?.currency_futures_intraday}}</td>
+                  
+                  </tr>
+                  <tr>
+                    <td>Options & Option Plus		</td>
+                    <td>{{companyData?.secure_plan_brokerage_charges?.options_and_option_plus}}</td>
+                  
+                  </tr>
+
+                  <tr>
+                    <td>Options & Option Plus (Intraday)		</td>
+                    <td>{{companyData?.secure_plan_brokerage_charges?.options_and_option_plus_intraday}}</td>
+                    
+                  </tr>
+                  <tr>
+                    <td>Currency Options		 </td>
+                    <td>{{companyData?.secure_plan_brokerage_charges?.currency_options}}</td>
+                    
+                  </tr>
+                  <tr>
+                    <td>Currency Options (Intraday)		 </td>
+                    <td>{{companyData?.secure_plan_brokerage_charges?.currency_options_intraday}}</td>
+                  
+                  </tr>
+                  <tr>
+                    <td>NCDs / Bonds		</td>
+                    <td>{{companyData?.secure_plan_brokerage_charges?.ncds_bonds}}</td>
+                  
+                  </tr>
+ 
+                </tbody>
+              </table>
+
+
+
+
+              <br>
+              <h4 class="sub-header">
+                ICICI Direct Prepaid Brokerage Plan
+
+              </h4>
+              <p class="lead">
+                ICICI Direct Prepaid plan offers discounted brokerage rates when you pay a one time fixed fee upfront. There are 6 prepaid plans available. Each plan has a validity of 15 years. Read more about ICICI Direct Prepaid Brokerage Plan
+              </p>
+              
+              <table class="table mt-5 mb-5 text-center">
+                <thead>
+                  <tr>
+                    <th scope="col">Prepaid Plan
+                    </th>
+                    <th scope="col">Brokerage - Cash	
+                    </th>
+                    <th scope="col">Brokerage - Future	
+                    </th>
+                    <th scope="col">Brokerage - Options	
+                    </th>
+                    <th scope="col">Brokerage - Curr Options	
+                    </th>
+                    <th scope="col">eATM limit	
+                    </th>
+                    <th scope="col">Margin Trading Interest Rate(yearly)
+
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor = "let data of companyData?.prepaid_brokerage_plan">
+                    <td>{{data?.prepaid_plan}}</td>
+                    <td>{{data?.brokerage_cash}}</td>
+                    <td>{{data?.brokerage_futures}}</td>
+                    <td>{{data?.brokerage_options}}</td>
+                    <td>{{data?.brokerage_currency_options}}</td>
+                    <td>{{data?.e_atm_limit}}</td>
+                    <td>{{data?.margin_trading_interest_rate}}</td>
+
+                  </tr>
+                
+                </tbody>
+              </table>
+
+
+
+
+              <br>
+              <h4 class="sub-header">
+                ICICI Direct Prime Plan
+
+              </h4>
+              <p class="lead">
+                ICICI Direct Prime plan is designed to reduce the brokerage charges and also get money instantly in their bank account when selling shares. This plan also offers exclusive research to members. Three prime plans - Rs 900, Rs 4500 and Rs 9500 are available to customers and each of these plans offers an upfront reduction in brokerage across all equity and derivative products. All plans are valid for 365 days. Read more about ICICI Direct Prime Brokerage Plan.
+              </p>
+              
+              <table class="table mt-5 mb-5 text-center">
+                <thead>
+                  <tr>
+                    <th scope="col">Plan
+                    </th>
+                    <th scope="col">Equity Cash		
+                    </th>
+                    <th scope="col">Futures		
+                    </th>
+                    <th scope="col">Options	
+                    </th>
+                    <th scope="col">Currency F&O	
+                    </th>
+                    <th scope="col">Margin Trading Interest Rate(yearly)	
+                    </th>
+                  
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor = "let data of companyData?.prime_plan">
+                    <td>{{data?.plan}}</td>
+                    <td>{{data?.equity_cash}}</td>
+                    <td>{{data?.futures}}</td>
+                    <td>{{data?.options}}</td>
+                    <td>{{data?.currency_f_o}}</td>
+                    <td>{{data?.interest_rate}}</td>
+
+                  </tr>
+                
+                </tbody>
+              </table>
+
+
+              <br><br>
+              <h4 class="sub-header">
+                ICICI Minimum Brokerage Charges
+              </h4>
+              <p class="lead">
+                <b>ICICI Direct Minimum Brokerage</b>: ICICI charges minimum brokerage by the plan you choose.               </p>
+
+               <p class="lead">
+                   <i class="fa fa-check-square-o"></i>
+                   In I-Secure plan, the minimum brokerage of Rs 35 per trade or 2.5% of the trade value whichever is lower.
+
+               </p>
+               <p class="lead">
+                <i class="fa fa-check-square-o"></i>
+                In Prime plan and Prepaid plan, the minimum brokerage of Rs 25 per trade or 2.5% of the trade value whichever is lower.
+
+            </p>
+            <p class="lead">
+                <i class="fa fa-check-square-o"></i>
+                ICICI charges flat 5 paisa per share (Rs 0.05) brokerage on stocks priced less then Rs 10 per share.
+
+            </p>
+
+            <p class="lead">
+                ICICI charges flat 5 paisa per share (Rs 0.05) brokerage on stocks priced less then Rs 10 per share.
+            </p>
+        </div>
+  <!-- subsection ends -->
+<br><br><br><br>
+  <!-- subsection start -->
+        <div class="container-fluid">
+            <h4 class="display-4">
+                ICICI Direct Online Account Opening
+            </h4>
+            
+            <hr>
+            <p class="lead">
+                For Online Stock Trading with ICICI, investor needs to open 3 accounts: ICICI Bank Account, ICICI Direct Trading Account and ICICI Demat Account (DP Account).
+            </p>
+            <p class="lead">
+                <b>Note</b> If you already have a bank account or demat account with ICICI, you could link it with new ICICIDirect trading account.
+            </p>
+            <p class="lead">
+                Opening trading account with ICICI is easy. You could use one of the following options to open account with ICICIDirect.
+            </p>
+            <p class="lead">
+                <i class="fa fa-check-square-o"></i>
+                Visit ICICIDirect.com and fill the "Open an Account" form.
+            </p>
+            <p class="lead">
+                <i class="fa fa-check-square-o"></i>
+                Call ICICI and tell them that you are interested in opening an account with them.
+            </p>
+            <p class="lead">
+                In both the cases ICICI representative contact you in a day or two and tell you about the procedure to open the account. They usually send somebody to your home to collect documents, signature and for demo if required.
+
+
+            </p>
+        </div>
+  <!-- subsection ends -->
+
+
+  <br><br><br><br>
+  <!-- subsection start -->
+        <div class="container-fluid">
+            <h4 class="display-4">
+                ICICI Direct Trading Software (ICICI Direct Trading Platforms)
+            </h4>
+            
+            <hr>
+            <p class="lead">
+                ICICI Direct offers 3 trading platforms to its customers:
+            </p>
+
+            <h4 class="sub-header">
+                ICICIDirect.com Website
+            </h4>
+            <p class="lead">
+                ICICI Direct website is the most used online investment and trading website in India for over 2 decades. ICICI Direct website offers online trading and demat accounts, IPO, SIPs, mutual funds, insurance, and many other products. The website also offers research and recommendations.            
+            </p>
+            <h4 class="sub-header">
+                Trade Racer (Trading Terminal)
+            </h4>
+                <p class="lead">
+                    Trade Racer, the installable trading terminal designed for frequent traders. This desktop online trading software is loaded with a number of tools for high-speed volume trading. The Trade Racer terminal is offered for free to all its customers.
+
+                </p>
+                <h4 class="sub-header">
+                    ICICIDirect Mobile App
+                </h4>
+            <p class="lead">
+                ICICIdirect Mobile App enables you to trade and invest on the go. Downloadable for both Android and iOS, ICICIdirect Mobile app provides all products and services available on ICICIdirect.com along with features like real-time price alerts, research notifications, and customized alerts on Portfolio stocks.
+
+            </p>
+           
+        </div>
+  <!-- subsection ends -->
+
+
+  <br><br><br><br>
+            <!-- subection start -->
+            <div class="container-fluid">
+              <h4 class="display-4">
+                ICICI Direct Pros and Cons
+
+
+              </h4>
+              <hr>
+             
+            
+              <h4 class="sub-header">
+                ICICI Direct Pros (Advantages)
+              </h4>
+              <p class="lead">
+                The following are the advantages of ICICI Direct. You must read ICICI Direct advantages and disadvantages before opening an account with ICICI Direct. ICICI Direct pros and cons help you find if it suits your investment needs.
+
+            </p>
+
+              
+              <p class="lead">
+                <i class="fa fa-check-square-o"></i>
+                3-in-1 account integrates your banking, broking and demat accounts. All accounts are from ICICI and very well integrated. This feature makes ICICI the most interesting player in the online trading facility. There is absolutely no manual interfere require. This is truly online trading environment.
+            </p>
+              
+              <p class="lead">
+                <i class="fa fa-check-square-o"></i>
+                Unlike most of the online trading companies in India which require transferring money to the broker's pool or towards deposits, at ICICIDirect you can manage your own demat and bank accounts through ICICIdirect.com. Money from selling stock is available in ICICI bank account as soon as the ICICIDirect receive it.
+              
+              <p class="lead">
+                <i class="fa fa-check-square-o"></i>
+
+                Investment online in IPOs, Mutual Funds, GOI Bonds, and Postal Savings Schemes all from one website. General Insurance is also available from ICICI Lombard.
+            </p>
+              <p class="lead">
+                <i class="fa fa-check-square-o"></i>
+
+                Trading is available in both BSE and NSE.
+            </p>
+              <p class="lead">
+                <i class="fa fa-check-square-o"></i>
+
+                Low bandwidth website is available for slow internet connection or for trading from mobile devices.
+            </p>
+            <p class="lead">
+                <i class="fa fa-check-square-o"></i>
+
+                Through VTC Feature (Valid Till Cancelled), customers can place buy or sell limit orders which will remain valid for 45 days.
+            </p>
+
+<br><br>
+
+                <h4 class="sub-header">
+                    ICICI Direct Cons (Disadvantages)
+                </h4>
+                <p class="lead">
+                    The following are the cons of ICICI Direct. Check the list of ICICI Direct drawbacks.
+
+                </p>
+  
+                
+                <p class="lead">
+                  <i class="fa fa-check-square-o"></i>
+                  ICICIDirect brokerage is high and not negotiable. The brokerage can be brought down by subscribing to ICICIdirect Prime or prepaid brokerage plans.
+                </p>
+                <p class="lead">
+                    <i class="fa fa-check-square-o"></i>
+                    ICICIDirect doesn't offer commodity trading. With ICICI Trading account you cannot trade at MCX or NCDEX. ICICI Securities have plans to introduce commodity trading in near future.
+                </p>
+                
+                  <p class="lead">
+                    <i class="fa fa-check-square-o"></i>
+                    ICICI minimum brokerage charge as per the standard I-Secure Plan is Rs 35 per trade which is very high for traders who does small trades.
+                </p>
+                
+                  <p class="lead">
+                    <i class="fa fa-check-square-o"></i>
+                    ICICI charges flat Rs 0.05 per share brokerage on stocks quoting upto Rs 10. This makes it very difficult to trade in penny stocks.
+                </p>
+                  
+                <p class="lead">
+                    <i class="fa fa-check-square-o"></i>
+                    ICICI Direct charges Rs 25 per call for call & trade after first 20 free calls in a month.
+                </p>
+               
+            </div>
+            <!-- subsection ends -->
+
+
+
+
+            <br><br><br><br>
+                    <!-- subsection start -->
+   <div class="container-fluid">
+    <h3 class="sub-header">Kotak Securities Margin / Exposure
+    </h3>
+    <hr>
+    <p class="sub-header-content">
+      Kotak Securities leverage for intraday, delivery, options, currency and commodities.    
+    </p>
+    
+    <table class="table mt-5 mb-5 text-center">
+      <thead>
+        <tr>
+          <th scope="col">Segment	</th>
+          <th scope="col">Margin		</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Equity Delivery	</td>
+          <td> {{companyData?.margin_exposure?.equity_delivery}}</td>
+    
+        </tr>
+        <tr>
+          <td>Equity Intraday		</td>
+          <td> {{companyData?.margin_exposure?.equity_intraday}} </td>
+        </tr>
+        
+        <tr>
+          <td>Equity Future	</td>
+          <td> {{companyData?.margin_exposure?.equity_futures}} </td>
+        </tr>
+        
+       <tr>
+         <td>Equity Options		</td>
+         <td> {{companyData?.margin_exposure?.equity_options}} </td>
+        </tr>
+       <tr>
+         <td>Currency Future		</td>
+         <td> {{companyData?.margin_exposure?.currency_futures}}</td>
+       </tr>
+       <tr>
+         <td>Currency Options		</td>
+         <td> {{companyData?.margin_exposure?.currency_options}} </td>
+       </tr>
+       <tr>
+        <td>Commodity Future			</td>
+        <td> {{companyData?.margin_exposure?.commodity_futures}}</td>
+      </tr>
+      <tr>
+        <td>Commodity Options			</td>
+        <td> {{companyData?.margin_exposure?.commodity_options}}</td>
+      </tr>
+      </tbody>
+    </table>
+   </div>
+
+<!-- subsection ends-->
+
+<!-- sub section start-->
+<div class="container-fluid newSubsection">
+    <h3 class="sub-header">{{companyName}} Ratings
+    </h3>
+    <hr>
+    
+    
+    <table class="table mt-5 mb-5 text-center">
+      <thead>
+        <tr>
+          <th scope="col">Segment	</th>
+          <th scope="col">Ratings		</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><b>Overall Rating</b>	</td>
+          <td> {{companyData?.ratings?.overall_ratings}}</td>
+    
+        </tr>
+        <tr>
+          <td>Fees		</td>
+          <td> {{companyData?.ratings?.fees}} </td>
+        </tr>
+        
+        <tr>
+          <td>Brokerage	</td>
+          <td> {{companyData?.ratings?.brokerage}} </td>
+        </tr>
+        
+       <tr>
+         <td>Usability		</td>
+         <td> {{companyData?.ratings?.usability}} </td>
+        </tr>
+       <tr>
+         <td>Customer Service		</td>
+         <td> {{companyData?.ratings?.customer_service}}</td>
+       </tr>
+       <tr>
+         <td>Research Capabilities		</td>
+         <td> {{companyData?.ratings?.research_capabilities}} </td>
+       </tr>
+       
+      </tbody>
+    </table>
+    
+  </div>
+
+<!-- subsection ends -->
+
+
+
+
+          </div>
+          <div class="col-md-3">
+            <app-company-page-scroll [companyScrollObject] = "companyScrollObject"></app-company-page-scroll>
+            <app-special-offers></app-special-offers>
+
+        </div>
+      </div>
+  </div>
+  <app-footer [companyName]="companyName"></app-footer>

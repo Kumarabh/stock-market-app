@@ -1,0 +1,1209 @@
+<!-- Buttons -->
+<app-company-header [companyName] = "companyName"></app-company-header>
+
+<!-- compare broker -->
+
+  <div class="container-fluid mt-5 p-3 mb-5">
+    <div class="row mt-2">
+      <div class="row mx-auto">
+        <div class="col-md-4">
+          <!-- <label for="">First Broker</label> -->
+          <input type="text" placeholder="" [(ngModel)]="broker1"  class="form-control">
+  
+      </div>
+          <div class="col-md-4">
+              <!-- <label for="">Second Broker</label> -->
+              <input type="text" placeholder="" [(ngModel)]="broker2"  class="form-control">
+  
+          </div>
+          
+          
+          
+          <div class="col-md-4">
+              <button type="submit" (click) = "submitCompareForm()"  class=" submit-button "><b>Compare Brokers</b></button>
+  
+          </div>
+      </div>
+    </div>
+  </div>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-9">
+
+            <!-- subsection start -->
+            <div class="jumbotron jumbotron-fluid">
+              <div class="container">
+                <h1 class="display-4">{{companyName}} Stock Trading / Demat / Brokerage / Reviews 2021
+                </h1>
+                <hr class="my-4"> <br>
+                <p class="lead">
+                    Incorporated in 1987, Motilal Oswal Securities Ltd. (MOSL) is a Mumbai, India based diversified financial services firm. The company offers trading services in Equity, Commodity, Currency and Derivatives. It also offers other products like Mutual Funds, IPOs, Gold, Insurance and Fixed Income products. MOSL is widely recognized for its MOAMC discretionary Portfolio Management Service (PMS). The PMS has a strong track record and consistently outperformed the benchmark across market cycles since its inception in 2003.
+                </p>
+                <p class="lead">
+                    Motilal Oswal has diversified client base that includes retail customers (including High Net worth Individuals), mutual funds, foreign institutional investors, financial institutions and corporate clients.
+
+                    As of March 2018, Motilal Oswal had a network spread over 500+ cities and towns comprising 2,200+ Business Locations operated by the company and its Business Partners. The company has over 10,00,000 registered customers with over Rs 69,500 Crores in depository assets.
+                </p>
+                <p class="lead">
+                    Solid research is considered as the foundation of Motilal Oswal Securities. Almost 10% of revenue is invested in equity research. The company has dedicated teams for large-cap, mid-cap and technical research. It has published more than 30,000 research reports on over 260 companies spread across 21 sectors. From a fundamental, technical and derivatives research perspective, Motilal Oswal's research reports have received wide coverage in the media. It was awarded India 's Best Market Analyst Award for IT & FMCG sector by Zee Business.
+                </p>
+                
+                <br>
+
+              </div>
+            </div>
+            <!-- subsection ends -->
+
+<!-- subsection start -->
+<div class="container-fluid">
+    <h4 class="display-4">
+        Account Types
+
+    </h4>
+    <hr>
+    <br>
+    <h4 class="sub-header">
+        Default Account
+
+    </h4>
+    <p class="lead">
+        The standard trading and demat account offers a wide range of investment options customized to suit your time horizon & risk appetite. This account offers trading in investment in Equity, Derivatives, Commodity, Currency, Mutual Funds, IPO, PMS, Insurance and Fixed Income Products. The default account type is for casual traders and long term stock market investors.
+    </p>
+    <h4 class="sub-header">
+        Value Pack
+
+    </h4>
+    <p class="lead">
+        Value Pack Account is the upfront subscription scheme, which gives significant discounts in brokerage rates. With the wide range of value packs available, customer can choose and enjoy the benefits of placing trades at reduced charges. The brokerage charges in value pack are explained below. Value packs are for frequent traders who actively trade on a daily basis.
+
+    </p>
+    <h4 class="sub-header">
+        Margin Pack
+
+
+    </h4>
+    <p class="lead">
+        Margin Pack Account is the upfront committed margin account, which gives significant brokerage discounts. With the wide range of margin packs available, customer can choose and enjoy the benefits of placing trades at reduced charges. Margin Scheme is for frequent traders who actively trade on a daily basis.
+
+
+    </p>
+</div>
+<!-- subsection ends -->
+
+<br><br><br><br>
+<!-- subsection start -->
+         <div class="container-fluid">
+             <h4 class="display-4">
+                Motilal Oswal Charges 2021
+             </h4>
+             <hr>
+
+             <br>
+             <h4 class="sub-header">
+                Motilal Oswal Account Opening Charges
+
+             </h4>
+             <table class="table mt-5 mb-5 text-center">
+                 <thead>
+                     <tr>
+                         <th>Transaction</th>
+                         <th>Charges</th>
+                     </tr>
+                 </thead>
+                 <tbody>
+                     <tr>
+                         <td>
+                            Trading Account Opening
+                         </td>
+                         <td>
+                            {{companyData?.account_opening_charges?.trading_account_opening_charges}}
+                         </td>
+                     </tr>
+                     <tr>
+                        <td>
+                            Trading Annual Maintenance (AMC)	
+                        </td>
+                        <td>
+                            {{companyData?.account_opening_charges?.trading_account_maintenance_charges}}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Demat Account Opening		
+                        </td>
+                        <td>
+                            {{companyData?.account_opening_charges?.demat_account_opening_charges}}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Demat Account Annual Maintenance (AMC)		
+                        </td>
+                        <td>
+                            {{companyData?.account_opening_charges?.demat_account_maintenance_charges}}
+                        </td>
+                    </tr>
+                 </tbody>
+             </table>
+         </div>
+<!-- subsection ends -->
+
+<!-- subsection start -->
+          <br><br><br><br>
+          <div class="container-fluid">
+              <h4 class="display-4">
+                Trading Brokerage
+              </h4>
+              <hr><br>
+              <p class="lead">
+                Motilal broking services offer 3 unique trading plans. Customers could choose one of these as per their requirement.
+              </p>
+
+              <h4 class="sub-header">
+                Default Brokerage Plan
+              </h4>
+              <p class="lead">
+                The default plan is for casual investors in the stock market. This plan is a basic plan. It includes the majority of services including access to research and advisory and free online trading software. The brokerage charges in this plan are highest.
+              </p>
+
+              <table class="table mt-5 mb-5 text-center">
+                <thead>
+                    <tr>
+                        <th>Segment</th>
+                        <th>Brokerage
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            Equity Delivery
+                        </td>
+                        <td>
+                           {{companyData?.brokerage_plans?.equity_delivery}}
+                        </td>
+                    </tr>
+                    <tr>
+                       <td>
+                        Intraday Cash or Future - Equity and Commodity	
+                       </td>
+                       <td>
+                           {{companyData?.brokerage_plans?.intraday_cash_or_futures}}
+                       </td>
+                   </tr>
+                   <tr>
+                       <td>
+                        Options - Equity			
+                       </td>
+                       <td>
+                           {{companyData?.brokerage_plans?.options_equity}}
+                       </td>
+                   </tr>
+                   <tr>
+                       <td>
+                        Currency F&O			
+                       </td>
+                       <td>
+                           {{companyData?.brokerage_plans?.currency_f_o}}
+                       </td>
+                   </tr>
+                </tbody>
+            </table>
+
+            <br> <br>
+            <h4 class="sub-header">
+                Value Pack Plan
+              </h4>
+              <p class="lead">
+                The Value Pack is a prepaid brokerage plan which offers cheaper brokerage when you pay an upfront fee. This plan is for active traders. There are 7 options available in value pack starting from the upfront fee of Rs 2500 to Rs 1 Lakh.
+
+
+              </p>
+
+              <table class="table mt-5 mb-5 text-center">
+                <thead>
+                    <tr>
+                        <th>Segment</th>
+                        <th>Brokerage
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            Equity Delivery	
+                        </td>
+                        <td>
+                           {{companyData?.value_pack_plans?.equity_delivery}}
+                        </td>
+                    </tr>
+                    <tr>
+                       <td>
+                        Intraday Cash or Future - Equity and Commodity	
+                       </td>
+                       <td>
+                           {{companyData?.value_pack_plans?.intraday_cash_or_futures}}
+                       </td>
+                   </tr>
+                   <tr>
+                       <td>
+                        Options - Equity			
+                       </td>
+                       <td>
+                           {{companyData?.value_pack_plans?.options_equity}}
+                       </td>
+                   </tr>
+                   <tr>
+                       <td>
+                        Currency F&O			
+                       </td>
+                       <td>
+                           {{companyData?.value_pack_plans?.currency_f_o}}
+                       </td>
+                   </tr>
+                </tbody>
+            </table>
+
+
+
+            <br> <br>
+            <h4 class="sub-header">
+                Motilal Value Pack Scheme Detail
+
+              </h4>
+              
+
+              <table class="table mt-5 mb-5 text-center">
+                <thead>
+                    <tr>
+                        <th>Scheme name	</th>
+                        <th>VP2KLT (Online)	</th>
+                        <th>VP3KLT(Online)	</th>
+                        <th>VP5KLT	</th>
+                        <th>VP10KLT	</th>
+                        <th>VP30KLT	</th>
+                        <th>VP50KLT	</th>
+                        <th>vpilaclt	</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            Upfront Fees (one time)		
+                        </td>
+                        <td>
+                           {{companyData?.value_pack_scheme_details?.upfront_fees?.vp2klt}}
+                        </td>
+                        <td>
+                            {{companyData?.value_pack_scheme_details?.upfront_fees?.vp3klt}}
+                         </td>
+                         <td>
+                            {{companyData?.value_pack_scheme_details?.upfront_fees?.vp5klt}}
+                         </td>
+                         <td>
+                            {{companyData?.value_pack_scheme_details?.upfront_fees?.vp10klt}}
+                         </td>
+                         <td>
+                            {{companyData?.value_pack_scheme_details?.upfront_fees?.vp30klt}}
+                         </td>
+                         <td>
+                            {{companyData?.value_pack_scheme_details?.upfront_fees?.vp50klt}}
+                         </td>
+                         <td>
+                            {{companyData?.value_pack_scheme_details?.upfront_fees?.vpilaclt}}
+                         </td>
+                    </tr>
+                    <tr>
+                       <td>
+                        Validity		
+                       </td>
+                       <td>
+                        {{companyData?.value_pack_scheme_details?.validity?.vp2klt}}
+                     </td>
+                     <td>
+                         {{companyData?.value_pack_scheme_details?.validity?.vp3klt}}
+                      </td>
+                      <td>
+                         {{companyData?.value_pack_scheme_details?.validity?.vp5klt}}
+                      </td>
+                      <td>
+                         {{companyData?.value_pack_scheme_details?.validity?.vp10klt}}
+                      </td>
+                      <td>
+                         {{companyData?.value_pack_scheme_details?.validity?.vp30klt}}
+                      </td>
+                      <td>
+                         {{companyData?.value_pack_scheme_details?.validity?.vp50klt}}
+                      </td>
+                      <td>
+                         {{companyData?.value_pack_scheme_details?.validity?.vpilaclt}}
+                      </td>
+                   </tr>
+                   <tr>
+                       <td>
+                        Account Opening Fee				
+                       </td>
+                       <td>
+                        {{companyData?.value_pack_scheme_details?.account_opening_fees?.vp2klt}}
+                     </td>
+                     <td>
+                         {{companyData?.value_pack_scheme_details?.account_opening_fees?.vp3klt}}
+                      </td>
+                      <td>
+                         {{companyData?.value_pack_scheme_details?.account_opening_fees?.vp5klt}}
+                      </td>
+                      <td>
+                         {{companyData?.value_pack_scheme_details?.account_opening_fees?.vp10klt}}
+                      </td>
+                      <td>
+                         {{companyData?.value_pack_scheme_details?.account_opening_fees?.vp30klt}}
+                      </td>
+                      <td>
+                         {{companyData?.value_pack_scheme_details?.account_opening_fees?.vp50klt}}
+                      </td>
+                      <td>
+                         {{companyData?.value_pack_scheme_details?.account_opening_fees?.vpilaclt}}
+                      </td>
+                   </tr>
+                   <tr>
+                       <td>
+                        Demat Account AMC (1st Year Free)				
+                       </td>
+                       <td>
+                        {{companyData?.value_pack_scheme_details?.demat_account_amc?.vp2klt}}
+                     </td>
+                     <td>
+                         {{companyData?.value_pack_scheme_details?.demat_account_amc?.vp3klt}}
+                      </td>
+                      <td>
+                         {{companyData?.value_pack_scheme_details?.demat_account_amc?.vp5klt}}
+                      </td>
+                      <td>
+                         {{companyData?.value_pack_scheme_details?.demat_account_amc?.vp10klt}}
+                      </td>
+                      <td>
+                         {{companyData?.value_pack_scheme_details?.demat_account_amc?.vp30klt}}
+                      </td>
+                      <td>
+                         {{companyData?.value_pack_scheme_details?.demat_account_amc?.vp50klt}}
+                      </td>
+                      <td>
+                         {{companyData?.value_pack_scheme_details?.demat_account_amc?.vpilaclt}}
+                      </td>
+                   </tr>
+                   <tr>
+                    <td>
+                        Delivery Brokerage					
+                    </td>
+                    <td>
+                        {{companyData?.value_pack_scheme_details?.delivery_brokerage?.vp2klt}}
+                     </td>
+                     <td>
+                         {{companyData?.value_pack_scheme_details?.delivery_brokerage?.vp3klt}}
+                      </td>
+                      <td>
+                         {{companyData?.value_pack_scheme_details?.delivery_brokerage?.vp5klt}}
+                      </td>
+                      <td>
+                         {{companyData?.value_pack_scheme_details?.delivery_brokerage?.vp10klt}}
+                      </td>
+                      <td>
+                         {{companyData?.value_pack_scheme_details?.delivery_brokerage?.vp30klt}}
+                      </td>
+                      <td>
+                         {{companyData?.value_pack_scheme_details?.delivery_brokerage?.vp50klt}}
+                      </td>
+                      <td>
+                         {{companyData?.value_pack_scheme_details?.delivery_brokerage?.vpilaclt}}
+                      </td>
+                </tr>
+                <tr>
+                    <td>
+                        Intraday Cash (Equity) (both side)					
+                    </td>
+                    <td>
+                        {{companyData?.value_pack_scheme_details?.intraday_cash?.vp2klt}}
+                     </td>
+                     <td>
+                         {{companyData?.value_pack_scheme_details?.intraday_cash?.vp3klt}}
+                      </td>
+                      <td>
+                         {{companyData?.value_pack_scheme_details?.intraday_cash?.vp5klt}}
+                      </td>
+                      <td>
+                         {{companyData?.value_pack_scheme_details?.intraday_cash?.vp10klt}}
+                      </td>
+                      <td>
+                         {{companyData?.value_pack_scheme_details?.intraday_cash?.vp30klt}}
+                      </td>
+                      <td>
+                         {{companyData?.value_pack_scheme_details?.intraday_cash?.vp50klt}}
+                      </td>
+                      <td>
+                         {{companyData?.value_pack_scheme_details?.intraday_cash?.vpilaclt}}
+                      </td>
+                </tr>
+                <tr>
+                    <td>
+                        Intraday Futures (Equity & Commodities) (both side)	                    </td>
+                        <td>
+                            {{companyData?.value_pack_scheme_details?.intraday_futures?.vp2klt}}
+                         </td>
+                         <td>
+                             {{companyData?.value_pack_scheme_details?.intraday_futures?.vp3klt}}
+                          </td>
+                          <td>
+                             {{companyData?.value_pack_scheme_details?.intraday_futures?.vp5klt}}
+                          </td>
+                          <td>
+                             {{companyData?.value_pack_scheme_details?.intraday_futures?.vp10klt}}
+                          </td>
+                          <td>
+                             {{companyData?.value_pack_scheme_details?.intraday_futures?.vp30klt}}
+                          </td>
+                          <td>
+                             {{companyData?.value_pack_scheme_details?.intraday_futures?.vp50klt}}
+                          </td>
+                          <td>
+                             {{companyData?.value_pack_scheme_details?.intraday_futures?.vpilaclt}}
+                          </td>
+                </tr>
+                <tr>
+                    <td>
+                        Options (Equity) (both side)	                    
+                    </td>
+                    <td>
+                        {{companyData?.value_pack_scheme_details?.options_equity?.vp2klt}}
+                     </td>
+                     <td>
+                         {{companyData?.value_pack_scheme_details?.options_equity?.vp3klt}}
+                      </td>
+                      <td>
+                         {{companyData?.value_pack_scheme_details?.options_equity?.vp5klt}}
+                      </td>
+                      <td>
+                         {{companyData?.value_pack_scheme_details?.options_equity?.vp10klt}}
+                      </td>
+                      <td>
+                         {{companyData?.value_pack_scheme_details?.options_equity?.vp30klt}}
+                      </td>
+                      <td>
+                         {{companyData?.value_pack_scheme_details?.options_equity?.vp50klt}}
+                      </td>
+                      <td>
+                         {{companyData?.value_pack_scheme_details?.options_equity?.vpilaclt}}
+                      </td>
+                </tr>
+                <tr>
+                    <td>
+                        Options (Currency) (both side)					
+                    </td>
+                    <td>
+                        {{companyData?.value_pack_scheme_details?.options_currency?.vp2klt}}
+                     </td>
+                     <td>
+                         {{companyData?.value_pack_scheme_details?.options_currency?.vp3klt}}
+                      </td>
+                      <td>
+                         {{companyData?.value_pack_scheme_details?.options_currency?.vp5klt}}
+                      </td>
+                      <td>
+                         {{companyData?.value_pack_scheme_details?.options_currency?.vp10klt}}
+                      </td>
+                      <td>
+                         {{companyData?.value_pack_scheme_details?.options_currency?.vp30klt}}
+                      </td>
+                      <td>
+                         {{companyData?.value_pack_scheme_details?.options_currency?.vp50klt}}
+                      </td>
+                      <td>
+                         {{companyData?.value_pack_scheme_details?.options_currency?.vpilaclt}}
+                      </td>
+                </tr>
+                </tbody>
+            </table>
+
+
+            <h4 class="sub-header">
+                 Margin Scheme
+
+            </h4>
+            <p class="lead">
+                Motilal Oswal Margin Scheme is for frequent traders. The brokerage charges in this plan keep reducing when you commit higher margin money in your trading account.
+
+            </p>
+
+            <h4 class="sub-header">
+                Motilal Oswal Margin Scheme Brokerage
+
+            </h4>
+            <table class="table mt-5 mb-5 text-center">
+                <thead>
+                    <tr>
+                        <th>Segment</th>
+                        <th>Brokerage</th>
+                       
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            Equity Delivery
+                        </td>
+                        <td>
+                            {{companyData?.margin_scheme_brokerage?.equity_delivery}}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Intraday Cash or Future - Equity and Commodity	
+                        </td>
+                        <td>
+                            {{companyData?.margin_scheme_brokerage?.intraday_cash_or_futures}}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Options - Equity	
+                        </td>
+                        <td>
+                            {{companyData?.margin_scheme_brokerage?.options_equity}}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Currency F&O	
+                        </td>
+                        <td>
+                            {{companyData?.margin_scheme_brokerage?.currency_f_o}}
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <br><br>
+            <h4 class="sub-header">
+                Motilal Oswal - Margin Scheme Charges
+
+
+            </h4>
+            <table class="table mt-5 mb-5 text-center">
+                <thead>
+                    <tr>
+                        <th>Scheme	</th>
+                        <th>Margin Rs 0 to Rs 24999	</th>
+                        <th>Margin Rs 25000 to Rs 49999	</th>
+                        <th>Margin Rs 50000 to Rs 99999		</th>
+                        <th>Margin Rs 100000 to Rs 299999		</th>
+                        <th>Margin Rs 300000 to Rs 499999		</th>
+                        <th>Margin Rs 500000
+                        </th>
+                       
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            Trading Account AMC	
+                        </td>
+                        <td>
+                            {{companyData?.margin_scheme_charges?.trading_account_amc?.margin_0_24999}}
+                        </td>
+                        <td>
+                            {{companyData?.margin_scheme_charges?.trading_account_amc?.margin_25000_49999}}
+                        </td><td>
+                            {{companyData?.margin_scheme_charges?.trading_account_amc?.margin_50000_99999}}
+                        </td><td>
+                            {{companyData?.margin_scheme_charges?.trading_account_amc?.margin_100000_299999}}
+                        </td><td>
+                            {{companyData?.margin_scheme_charges?.trading_account_amc?.margin_300000_499999}}
+                        </td><td>
+                            {{companyData?.margin_scheme_charges?.trading_account_amc?.margin_500000}}
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            Admin Charges	
+                        </td>
+                        <td>
+                            {{companyData?.margin_scheme_charges?.trading_account_amc?.margin_0_24999}}
+                        </td>
+                        <td>
+                            {{companyData?.margin_scheme_charges?.trading_account_amc?.margin_25000_49999}}
+                        </td><td>
+                            {{companyData?.margin_scheme_charges?.trading_account_amc?.margin_50000_99999}}
+                        </td><td>
+                            {{companyData?.margin_scheme_charges?.trading_account_amc?.margin_100000_299999}}
+                        </td><td>
+                            {{companyData?.margin_scheme_charges?.trading_account_amc?.margin_300000_499999}}
+                        </td><td>
+                            {{companyData?.margin_scheme_charges?.trading_account_amc?.margin_500000}}
+                        </td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+
+
+            <br><br>
+            <h4 class="sub-header">
+                Motilal Oswal - Margin Scheme Charges
+
+
+            </h4>
+            <table class="table mt-5 mb-5 text-center">
+                <thead>
+                    <tr>
+                        <th>Scheme	</th>
+                        <th>Margin Rs 0 to Rs 24999	</th>
+                        <th>Margin Rs 25000 to Rs 49999	</th>
+                        <th>Margin Rs 50000 to Rs 99999		</th>
+                        <th>Margin Rs 100000 to Rs 299999		</th>
+                        <th>Margin Rs 300000 to Rs 499999		</th>
+                        <th>Margin Rs 500000
+                        </th>
+                       
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            Equity Delivery Brokerage		
+                        </td>
+                        <td>
+                            {{companyData?.margins_scheme_brokerage?.equity_delivery_brokerage?.margin_0_24999}}
+                        </td>
+                        <td>
+                            {{companyData?.margins_scheme_brokerage?.equity_delivery_brokerage?.margin_25000_49999}}
+                        </td><td>
+                            {{companyData?.margins_scheme_brokerage?.equity_delivery_brokerage?.margin_50000_99999}}
+                        </td><td>
+                            {{companyData?.margins_scheme_brokerage?.equity_delivery_brokerage?.margin_100000_299999}}
+                        </td><td>
+                            {{companyData?.margins_scheme_brokerage?.equity_delivery_brokerage?.margin_300000_499999}}
+                        </td><td>
+                            {{companyData?.margins_scheme_brokerage?.equity_delivery_brokerage?.margin_500000}}
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            Equity Intraday Cash & Future (Both side)		
+                        </td>
+                        <td>
+                            {{companyData?.margins_scheme_brokerage?.equity_intraday?.margin_0_24999}}
+                        </td>
+                        <td>
+                            {{companyData?.margins_scheme_brokerage?.equity_intraday?.margin_25000_49999}}
+                        </td><td>
+                            {{companyData?.margins_scheme_brokerage?.equity_intraday?.margin_50000_99999}}
+                        </td><td>
+                            {{companyData?.margins_scheme_brokerage?.equity_intraday?.margin_100000_299999}}
+                        </td><td>
+                            {{companyData?.margins_scheme_brokerage?.equity_intraday?.margin_300000_499999}}
+                        </td><td>
+                            {{companyData?.margins_scheme_brokerage?.equity_intraday?.margin_500000}}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Options		
+                        </td>
+                        <td>
+                            {{companyData?.margins_scheme_brokerage?.options?.margin_0_24999}}
+                        </td>
+                        <td>
+                            {{companyData?.margins_scheme_brokerage?.options?.margin_25000_49999}}
+                        </td><td>
+                            {{companyData?.margins_scheme_brokerage?.options?.margin_50000_99999}}
+                        </td><td>
+                            {{companyData?.margins_scheme_brokerage?.options?.margin_100000_299999}}
+                        </td><td>
+                            {{companyData?.margins_scheme_brokerage?.options?.margin_300000_499999}}
+                        </td><td>
+                            {{companyData?.margins_scheme_brokerage?.options?.margin_500000}}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Currency Futures & Options			
+                        </td>
+                        <td>
+                            {{companyData?.margins_scheme_brokerage?.currency_futures_and_options?.margin_0_24999}}
+                        </td>
+                        <td>
+                            {{companyData?.margins_scheme_brokerage?.currency_futures_and_options?.margin_25000_49999}}
+                        </td><td>
+                            {{companyData?.margins_scheme_brokerage?.currency_futures_and_options?.margin_50000_99999}}
+                        </td><td>
+                            {{companyData?.margins_scheme_brokerage?.currency_futures_and_options?.margin_100000_299999}}
+                        </td><td>
+                            {{companyData?.margins_scheme_brokerage?.currency_futures_and_options?.margin_300000_499999}}
+                        </td><td>
+                            {{companyData?.margins_scheme_brokerage?.currency_futures_and_options?.margin_500000}}
+                        </td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+
+
+
+            <br><br>
+            <h4 class="sub-header">
+                Motilal Demat Charges
+
+
+            </h4>
+            <table class="table mt-5 mb-5 text-center">
+                <thead>
+                    <tr>
+                        <th>Particulars	</th>
+                        <th>Charges	</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            Scheme name	
+                        </td>
+                        <td>
+                            {{companyData?.demat_account_charges?.scheme_name}}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Account Maintenance Charges (AMC)		
+                        </td>
+                        <td>
+                            {{companyData?.demat_account_charges?.account_maintenance_charges}}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Account Administration Charges (AAC)	
+                        </td>
+                        <td>
+                            {{companyData?.demat_account_charges?.account_administration_charges}}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Advance		
+                        </td>
+                        <td>
+                            {{companyData?.demat_account_charges?.advance}}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Demat Transaction Charges - Within MOFSL (Sell only)	
+                        </td>
+                        <td>
+                            {{companyData?.demat_account_charges?.demat_transaction_charges_within}}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Demat Transaction Charges - Outside MOFSL (Sell only)		
+                        </td>
+                        <td>
+                            {{companyData?.demat_account_charges?.demat_transaction_charges_outside}}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Dematerialisation (In all schemes)	
+                        </td>
+                        <td>
+                            {{companyData?.demat_account_charges?.dematerialisation}}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Rematerialisation		
+                        </td>
+                        <td>
+                            {{companyData?.demat_account_charges?.rematerialisaction}}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Pledge, Unpledge, Closure, Invocation		
+                        </td>
+                        <td>
+                            {{companyData?.demat_account_charges?.pledge_unpledge_closure_invocation}}
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+          </div>
+<!-- subsection ends -->
+<br><br><br><br>
+
+<!-- subsection starts -->
+          <div class="container-fluid">
+              <h4 class="display-4">
+                Motilal Oswal Online Account Opening
+
+              </h4>
+              <hr>
+              <p class="lead"><i class="fa fa-check-square-o"></i>
+                The fastest way to open an account with Motilal Oswal is by leaving your contact information below. Once you leave your contact information, you will get a callback in few minutes explaining you the plans and helping you with account opening process.
+              </p>
+          </div>
+<!-- subsection ends -->
+
+<br><br><br><br>
+<!-- subsection starts -->
+<div class="container-fluid">
+    <h4 class="display-4">
+        Motilal Oswal Trading Software (Motilal Oswal Trading Platforms)
+
+    </h4>
+    <hr>
+    <p class="lead">
+        Motilal Oswal offers a range of online trading software. Following are few popular trading softwares offered by Motilal:
+
+    </p>
+    <p class="lead"><i class="fa fa-check-square-o"></i>
+        MO Investor (Trading Website and Mobile App)
+    </p>
+    <p class="lead"><i class="fa fa-check-square-o"></i>
+        MO Trader
+
+    </p>
+    <p class="lead"><i class="fa fa-check-square-o"></i>
+        Desktop Application (Installable Trading Terminal)
+    </p>
+    <p class="lead"><i class="fa fa-check-square-o"></i>
+        Smart Watch (App for Android and Apple Watch)
+    </p>
+</div>
+<!-- subsection ends -->
+
+<br><br><br><br>
+            <!-- subection start -->
+            <div class="container-fluid">
+              <h4 class="display-4">
+                Motilal Oswal Pros and Cons
+
+
+              </h4>
+              <hr>
+             
+            
+              <h4 class="sub-header">
+                Motilal Oswal Pros (Advantages)
+
+              </h4>
+              <p class="lead">
+                The following are the advantages of Motilal Oswal. You must read Motilal Oswal advantages and disadvantages before opening an account with Motilal Oswal. Motilal Oswal pros and cons help you find if it suits your investment needs.
+
+
+            </p>
+
+              
+              <p class="lead">
+                <i class="fa fa-check-square-o"></i>
+                20+ years of experience in trading and investment.
+            </p>
+              
+              <p class="lead">
+                <i class="fa fa-check-square-o"></i>
+                Wide Range of Investment Choices - Equity, Derivatives, IPO, Mutual Funds, Insurance and Fixed Deposit.
+              
+              <p class="lead">
+                <i class="fa fa-check-square-o"></i>
+
+                Value Pack Brokerage Schemes offers low brokerage options.
+            </p>
+              <p class="lead">
+                <i class="fa fa-check-square-o"></i>
+
+                Complete Ease of Operation with more than 60 banks for Fund Transfer.
+            </p>
+              <p class="lead">
+                <i class="fa fa-check-square-o"></i>
+
+                Free research advisory services.
+            </p>
+            <p class="lead">
+                <i class="fa fa-check-square-o"></i>
+
+                Free trading software.
+            </p>
+
+<br><br>
+
+                <h4 class="sub-header">
+                    Motilal Oswal Cons (Disadvantages)
+                </h4>
+                <p class="lead">
+                    The following are the cons of Motilal Oswal. Check the list of Motilal Oswal drawbacks.
+
+
+                </p>
+  
+                
+                <p class="lead">
+                  <i class="fa fa-check-square-o"></i>
+                  Very high brokerage charges in comparison with the discount brokers like Zerodha and 5paisa.
+                </p>
+                <p class="lead">
+                    <i class="fa fa-check-square-o"></i>
+                    The brokerage in value pack scheme is competitive but it requires upfront fees at the time of opting for the plan. The value pack plans cannot be update or cancelled once selected.
+                </p>
+                
+                  <p class="lead">
+                    <i class="fa fa-check-square-o"></i>
+                    Doesn't offer 3-in-1 account.
+                </p>
+                
+                 
+               
+            </div>
+            <!-- subsection ends -->
+
+
+            <br><br><br><br>
+            <!-- subsection start -->
+<div class="container-fluid">
+<h3 class="sub-header">Kotak Securities Margin / Exposure
+</h3>
+<hr>
+<p class="sub-header-content">
+Kotak Securities leverage for intraday, delivery, options, currency and commodities.    
+</p>
+
+<table class="table mt-5 mb-5 text-center">
+<thead>
+<tr>
+  <th scope="col">Segment	</th>
+  <th scope="col">Margin		</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>Equity Delivery	</td>
+  <td> {{companyData?.margin_exposure?.equity_delivery}}</td>
+
+</tr>
+<tr>
+  <td>Equity Intraday		</td>
+  <td> {{companyData?.margin_exposure?.equity_intraday}} </td>
+</tr>
+
+<tr>
+  <td>Equity Future	</td>
+  <td> {{companyData?.margin_exposure?.equity_futures}} </td>
+</tr>
+
+<tr>
+ <td>Equity Options		</td>
+ <td> {{companyData?.margin_exposure?.equity_options}} </td>
+</tr>
+<tr>
+ <td>Currency Future		</td>
+ <td> {{companyData?.margin_exposure?.currency_futures}}</td>
+</tr>
+<tr>
+ <td>Currency Options		</td>
+ <td> {{companyData?.margin_exposure?.currency_options}} </td>
+</tr>
+<tr>
+<td>Commodity Future			</td>
+<td> {{companyData?.margin_exposure?.commodity_futures}}</td>
+</tr>
+<tr>
+<td>Commodity Options			</td>
+<td> {{companyData?.margin_exposure?.commodity_options}}</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<!-- subsection ends-->
+
+<!-- sub section start-->
+<div class="container-fluid newSubsection">
+<h3 class="sub-header">{{companyName}} Ratings
+</h3>
+<hr>
+
+
+<table class="table mt-5 mb-5 text-center">
+<thead>
+<tr>
+  <th scope="col">Segment	</th>
+  <th scope="col">Ratings		</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><b>Overall Rating</b>	</td>
+  <td> {{companyData?.ratings?.overall_ratings}}</td>
+
+</tr>
+<tr>
+  <td>Fees		</td>
+  <td> {{companyData?.ratings?.fees}} </td>
+</tr>
+
+<tr>
+  <td>Brokerage	</td>
+  <td> {{companyData?.ratings?.brokerage}} </td>
+</tr>
+
+<tr>
+ <td>Usability		</td>
+ <td> {{companyData?.ratings?.usability}} </td>
+</tr>
+<tr>
+ <td>Customer Service		</td>
+ <td> {{companyData?.ratings?.customer_service}}</td>
+</tr>
+<tr>
+ <td>Research Capabilities		</td>
+ <td> {{companyData?.ratings?.research_capabilities}} </td>
+</tr>
+
+</tbody>
+</table>
+
+</div>
+
+<!-- subsection ends -->
+<br><br><br><br>
+<!-- subsection start -->
+<div class="container-fluid">
+    <h4 class="display-4">
+        6 Reasons to Open Account with Motilal Oswal
+    </h4>
+    <hr>
+
+    <br>
+    <h4 class="sub-header">
+        Leading Broker in India
+    </h4>
+    <p class="lead"> <i class="fa fa-check-square-o"></i>
+        4-time winner of Best Performing Equity Broker (National) by CNBC TV18 Financial Advisor Awards
+    </p>
+    <p class="lead"> <i class="fa fa-check-square-o"></i>
+        30 years of experience in wealth creation
+    </p><p class="lead"> <i class="fa fa-check-square-o"></i>
+        A Million+ customers, 2,200+ locations, 500+ cities
+    </p>
+
+    <br>
+    <h4 class="sub-header">
+        Research Servies
+    </h4>
+    <p class="lead"> <i class="fa fa-check-square-o"></i>
+        Awarded by Zee Business as India's Best Market Analyst Award for IT & FMCG sector
+    </p>
+    <p class="lead"> <i class="fa fa-check-square-o"></i>
+        Published 30,000+ research reports across 225+ companies and 25+ sectors
+    </p>
+    <p class="lead"> <i class="fa fa-check-square-o"></i>
+        Dedicated teams for large-cap, mid-cap & technical research
+    </p>
+    <p class="lead"> <i class="fa fa-check-square-o"></i>
+        Daily, weekly, monthly, quarterly & yearly reports across asset class
+    </p>
+
+
+    <br>
+    <h4 class="sub-header">
+        Advisory Services
+    </h4>
+    <p class="lead"> <i class="fa fa-check-square-o"></i>
+        Available across asset classes
+    </p>
+    <p class="lead"> <i class="fa fa-check-square-o"></i>
+        Available across devices - Mobile, Tablet, Desktop, & Web
+    </p>
+    <p class="lead"> <i class="fa fa-check-square-o"></i>
+        Customized actionable plan across investment styles & risk profiles
+    </p>
+    <p class="lead"> <i class="fa fa-check-square-o"></i>
+        Advanced tools & strategies for various time
+    </p>
+
+
+    <br>
+    <h4 class="sub-header">
+        Technology
+    </h4>
+    <p class="lead"> <i class="fa fa-check-square-o"></i>
+        Powerful trading platforms across Desktop, Web, mobile or Tablet
+    </p>
+    <p class="lead"> <i class="fa fa-check-square-o"></i>
+        Trade, Invest, Track, Review through a single login
+    </p>
+    <p class="lead"> <i class="fa fa-check-square-o"></i>
+        LIVE streaming quotes and technical charts to help you make the right decision
+    </p>
+    
+
+    <br>
+    <h4 class="sub-header">
+        Product & Services
+
+    </h4>
+    <p class="lead"> <i class="fa fa-check-square-o"></i>
+        All trading & investment solutions ranging from Equities to Insurance under one roof
+    </p>
+    <p class="lead"> <i class="fa fa-check-square-o"></i>
+        Trade across exchanges - BSE, NSE, NCDEX, MSEI
+    </p>
+    <p class="lead"> <i class="fa fa-check-square-o"></i>
+        All products backed by the customized solid research & advice
+    </p>
+    <p class="lead"> <i class="fa fa-check-square-o"></i>
+        Robust trading platforms, highly skilled dedicated advisors and Call & Trade desk
+    </p>
+    <p class="lead"> <i class="fa fa-check-square-o"></i>
+        Services available through branches or business partners and online
+    </p>
+
+
+
+    <br>
+    <h4 class="sub-header">
+        Operational Efficiency
+
+    </h4>
+    <p class="lead"> <i class="fa fa-check-square-o"></i>
+        Apply for an account in just 15 minutes & 6 simple steps
+    </p>
+    <p class="lead"> <i class="fa fa-check-square-o"></i>
+        1-day account activation
+    </p>
+    <p class="lead"> <i class="fa fa-check-square-o"></i>
+        Dedicated customer service team with a 6-hour query resolution TAT
+    </p>
+    <p class="lead"> <i class="fa fa-check-square-o"></i>
+        Customer centric Risk Management System
+    </p>
+    <p class="lead"> <i class="fa fa-check-square-o"></i>
+        Real-time payouts to customers
+    </p>
+    <p class="lead"> <i class="fa fa-check-square-o"></i>
+        Standard plus value added customer reports
+    </p>
+</div>
+<!-- subsection ends -->
+
+<br><br>
+        </div>
+        <div class="col-md-3">
+            <app-company-page-scroll [companyScrollObject] = "companyScrollObject"></app-company-page-scroll>
+            <app-special-offers></app-special-offers>
+
+        </div>
+    </div>
+</div>
+<app-footer [companyName]="companyName"></app-footer>

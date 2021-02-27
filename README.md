@@ -69,3 +69,19 @@ fee_structure: {
     stamp_duty: '',
     gst
 }
+
+prepaid_plan
+brokerage_cash
+brokerage_futures
+brokerage_options
+brokerage_currency_options
+e_atm_limit
+margin_trading_interest_rate
+
+------
+plan
+equity_cash
+futures
+options
+currency_f_o
+interest_rate
