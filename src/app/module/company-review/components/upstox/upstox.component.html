@@ -2,48 +2,7 @@
 
   <!-- compare broker -->
 
-  <div class="container-fluid mt-5 p-3 mb-5">
-    <div class="row mt-2">
-      <div class="row mx-auto">
-        <div class="col-md-4">
-          <!-- <label for="">First Broker</label> -->
-          <input type="text" placeholder="" [(ngModel)]="broker1"  class="form-control">
-  
-      </div>
-          <div class="col-md-4">
-              <!-- <label for="">Second Broker</label> -->
-              <input type="text" placeholder="" [(ngModel)]="broker2"  class="form-control">
-  
-          </div>
-          
-          
-          
-          <div class="col-md-4">
-              <button type="submit" (click) = "submitCompareForm()"  class=" submit-button "><b>Compare Brokers</b></button>
-  
-          </div>
-      </div>
-    </div>
-  </div>
-    <!-- compare broker ends -->
-    
-    <!-- <div class="container-fluid">
-      <h1 class="display-4">Special Offers</h1>
-      <hr class="">
-    <div class="row">
-        <div class="col-md-2">
-
-        </div>
-        <div class="col-md-8 p-0">
-          <app-special-offers></app-special-offers>
-        </div>
-        <div class="col-md-2">
-
-        </div>
-    </div>
-      
-      
-    </div> -->
+  <app-compare-broker></app-compare-broker>
     <!-- review body -->
 
   <div class="container-fluid">

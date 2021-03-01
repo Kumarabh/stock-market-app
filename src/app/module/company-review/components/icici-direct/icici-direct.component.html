@@ -3,29 +3,7 @@
 
 <!-- compare broker -->
 
-  <div class="container-fluid mt-5 p-3 mb-5">
-    <div class="row mt-2">
-      <div class="row mx-auto">
-        <div class="col-md-4">
-          <!-- <label for="">First Broker</label> -->
-          <input type="text" placeholder="" [(ngModel)]="broker1"  class="form-control">
-  
-      </div>
-          <div class="col-md-4">
-              <!-- <label for="">Second Broker</label> -->
-              <input type="text" placeholder="" [(ngModel)]="broker2"  class="form-control">
-  
-          </div>
-          
-          
-          
-          <div class="col-md-4">
-              <button type="submit" (click) = "submitCompareForm()"  class=" submit-button "><b>Compare Brokers</b></button>
-  
-          </div>
-      </div>
-    </div>
-  </div>
+<app-compare-broker></app-compare-broker>
 
 
   <div class="container-fluid">

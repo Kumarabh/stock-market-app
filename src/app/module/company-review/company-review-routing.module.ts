@@ -13,6 +13,7 @@ import { KotakSecuritiesComponent } from './components/kotak-securities/kotak-se
 import { IciciDirectComponent } from './components/icici-direct/icici-direct.component';
 import { MotilalOswalComponent } from './components/motilal-oswal/motilal-oswal.component';
 import { AxisDirectComponent } from './components/axis-direct/axis-direct.component';
+import { AnandRathiComponent } from './components/anand-rathi/anand-rathi.component';
 
 const routes: Routes = [
   {path: '', component: ZerodhaReviewComponent},
@@ -28,7 +29,9 @@ const routes: Routes = [
   {path: 'kotak-securities', component: KotakSecuritiesComponent},
   {path: 'icici-direct', component: IciciDirectComponent},
   {path: 'motilal-oswal', component: MotilalOswalComponent},
-  {path: 'axis-direct', component: AxisDirectComponent}
+  {path: 'axis-direct', component: AxisDirectComponent},
+  {path: 'anand-rathi', component: AnandRathiComponent}
+
 
 ];
 
