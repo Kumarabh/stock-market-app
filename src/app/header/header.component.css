@@ -29,11 +29,11 @@
   .nav-item {
     margin-right: 24px;
     background: #333958;
-    min-height: 64px;
+    /* min-height: 64px; */
   }
   .nav-item:hover {
     background: #2b3152;
-    min-height: 64px;
+    /* min-height: 64px; */
 
   }
   .navbar {
@@ -43,7 +43,7 @@
     background-color: #333958 !important;
     /* padding: 0px; */
     font-family: "Roboto",sans-serif;
-    height: 64px;
+    min-height: 64px;
     padding-top: 0px;
     padding-bottom: 0px;
   }

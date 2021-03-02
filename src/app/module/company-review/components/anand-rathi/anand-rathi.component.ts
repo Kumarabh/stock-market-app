@@ -11,58 +11,65 @@ export class AnandRathiComponent implements OnInit {
   
   companyScrollObject = [
     {
-      links: "Axis Direct Stock Trading",
+      links: "Anand Rathi Stock Trading",
       scrollTo: 100,
       sublinks: []
       
     },
     {
-      links: "AxisDirect Charges 2021",
+      links: "Anand Rathi Charges 2021",
       scrollTo: 800,
+      sublinks: []
+      
+    },
+    {
+      links: "Anand Rathi Online Account Opening",
+      scrollTo: 1200,
       sublinks: [
-      {links: "Axis Direct Account Opening Charges", scrollTo: 800},
-      {links: "Axis Direct Brokerage Charges", scrollTo: 1200},
-      {links: "AxisDirect Other Charges (Hidden Fees)", scrollTo: 1900},
+      
       ]
     },
     {
-      links: "AxisDirect Trading Software (AxisDirect Trading Platforms)",
-      scrollTo: 2200,
+      links: "Anand Rathi Trading Software ",
+      scrollTo: 1500,
       sublinks: [
-        {links: "DirectTrade", scrollTo: 2400},
-      {links: "Swift Trade", scrollTo: 2400},
-      {links: "Mobile Trading", scrollTo: 2600},
-      {links: "AxisDirect lite", scrollTo: 2600}
+      {links: "Trade Lite", scrollTo: 1500},
+      {links: "Trade X'press", scrollTo: 1500},
+      {links: "Trade X'pro", scrollTo: 1600},
+      {links: "Trade X'pro+", scrollTo: 1800},
+      {links: "Trade Flexi", scrollTo: 2700},
+      {links: "Trade On Move", scrollTo: 2800},
+      {links: "Trade Mobi", scrollTo: 2900}
       ]
     },
     {
-      links: "AxisDirect Pros and Cons",
-      scrollTo: 3000,
+      links: "Anand Rathi Pros and Cons",
+      scrollTo: 3300,
       sublinks: [
-      {links: "AxisDirect Pros (Advantages)", scrollTo: 3100},
-      {links: "AxisDirect Cons (Disadvantages)", scrollTo: 3200},
+      {links: "Anand Rathi Pros (Advantages)", scrollTo: 3400},
+      {links: "Anand Rathi Cons (Disadvantages)", scrollTo: 3900},
 
     ]
       
     },
     {
-      links: "AxisDirect Margin / Exposure",
-      scrollTo: 4300,
+      links: "Anand Rathi Margin / Exposure",
+      scrollTo: 4200,
       sublinks: [
       
       ]
       
   },
   {
-    links: "Axis Direct Ratings",
-    scrollTo: 4400,
+    links: "Anand Rathi Ratings",
+    scrollTo: 4900,
     sublinks: [
     
     ]
   },
   {
-    links: "Compare Axis Direct with Top Brokers in India",
-    scrollTo: 4900,
+    links: "Compare Anand Rathi with Top Brokers in India",
+    scrollTo: 5500,
     sublinks: []
   },
   
@@ -71,7 +78,7 @@ export class AnandRathiComponent implements OnInit {
   broker2
   companyData
   brokerList
-  companyName = 'Axis Direct'
+  companyName = 'Anand Rathi'
   constructor(private service: CompanyReviewService) {
     this.getCompanyData();
   }
@@ -81,7 +88,7 @@ export class AnandRathiComponent implements OnInit {
   }
   
   getCompanyData() {
-    this.service.getCompanyData('axis_direct_review').subscribe((doc) => {
+    this.service.getCompanyData('anand_rathi_review').subscribe((doc) => {
       if(doc.exists) {
         this.companyData = doc.data();
         this.companyName = this.companyData.company_name;

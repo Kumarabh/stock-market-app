@@ -1,0 +1,490 @@
+<!-- Buttons -->
+<app-company-header [companyName] = "companyName"></app-company-header>
+
+<!-- compare broker -->
+<app-compare-broker></app-compare-broker>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-9">
+            <div class="jumbotron jumbotron-fluid">
+                <div class="container">
+                  <h1 class="display-4">{{companyName}} Stock Trading / Demat / Brokerage / Reviews 2021
+                  </h1>
+                  <hr class="my-4">
+                  <p class="lead">
+                    SBICAP Securities Ltd (SSL) is the stock broking arm of the State Bank Group and a 100% subsidiary of SBI Capital Markets Ltd. SSL is a full-service stock broker. Founded in 2006, the company's services include Institution Equity, Retail Equity, Derivatives, Broking, Depository services and Third Party Distribution products. They also provide online trading services to investors & traders.                </p>
+                <p class="lead">
+                    SBI Smart is the flagship trading platform of the company. The portal allows both Resident Indians and Non-Resident Indians (NRIs) to invest online in Equity, Derivatives, Mutual Funds, ETFs, IPOs and NCDs. It also offers lending products like Home Loans, Car Loans, and Loan Against Securities (LAS). SSL is registered with the Securities Exchange Board of India and is a Depository Participant with NSDL & CDSL.                </p>
+                <p class="lead">
+                    SBICAP Securities Limited offers a full suite of services to NRIs residing across the globe. For the NRIs residing in the US, UK, Canada, and Japan, SSL does offer a 3-in-1 account but does not solicit investments from them due to regulatory restrictions. NRIs, however, can avail of various services of the company at their sole discretion. SSL in association with State Bank of India provides online trading solutions to NRIs.                </p>
+            
+                  <br>
+                  
+                </div>
+              </div>
+
+            <!-- subsection ends -->
+
+            <div class="container-fluid">
+                <h4 class="sub-header">
+                    Key Facts about SBICAP Securities
+                </h4>
+                <hr>
+                <p class="lead">
+                    <i class="fa fa-check-square-o"></i>
+                    Over a decade of experience in the trading business
+
+                </p>
+                <p class="lead">
+                    <i class="fa fa-check-square-o"></i>
+                    Offer a complete suite of financial products catering to retail, institutional, HNI and NRI investors
+
+                </p>
+                <p class="lead">
+                    <i class="fa fa-check-square-o"></i>
+                    Omnichannel (multiple channels) services
+
+                </p>
+                <p class="lead">
+                    <i class="fa fa-check-square-o"></i>
+                    More than 115 branches across the country
+
+                </p>
+                <p class="lead">
+                    <i class="fa fa-check-square-o"></i>
+                    1000+ field force providing doorstep services
+
+                </p>
+                <p class="lead">
+                    <i class="fa fa-check-square-o"></i>
+                    Offers 3-in-1 accounts to customers
+
+                </p>
+                <p class="lead">
+                    <i class="fa fa-check-square-o"></i>
+                    SBISmart Mobile App and YONO App for on-the-go services
+
+                </p>
+                <p class="lead">
+                    <i class="fa fa-check-square-o"></i>
+                    Offers Demat and research advisory services 
+
+                </p>
+            </div>
+
+            <br><br><br><br>
+            <!-- subsection ends -->
+
+            <div class="container-fluid">
+                <h4 class="display-4">
+                    SBI Securities Trading Software
+                </h4>
+                <hr>
+                <p class="lead">
+                    <i class="fa fa-check-square-o"></i>
+                    SBISmart Portal (Web-based Trading Platform)
+
+                </p>
+                <p class="lead">
+                    <i class="fa fa-check-square-o"></i>
+                    SBISmart Xpress (Desktop Trading Software)
+
+                </p>
+                <p class="lead">
+                    <i class="fa fa-check-square-o"></i>
+                    SBISmart Lite (Website Trading)
+
+                </p>
+                <p class="lead">
+                    <i class="fa fa-check-square-o"></i>
+                    SBISmart Mobile App
+
+                </p>
+
+                <br>
+                <p class="lead">
+                    In addition to the above mentioned online trading platforms, SBI, the parent company of app, offers the YONO (You Only Need One App) app that caters to all your banking and investment needs. You can use the app for banking, trading, insurance, investments, and shopping, etc. You can also open an SBI 3-in-1 account online using the YONO Mobile App. Once you fill the online application form, you need to visit the nearest branch once for in-person verification. 
+                </p>
+
+                <p class="lead">
+                    For those who are not able to use online services for some reasons, they can avail the company's services through other offline channels like-
+                </p>
+
+                <p class="lead">
+                    <i class="fa fa-check-square-o"></i>
+                    Branch Offices
+
+                </p>
+                <p class="lead">
+                    <i class="fa fa-check-square-o"></i>
+                    Relationship Managers
+
+
+                </p>
+                <p class="lead">
+                    <i class="fa fa-check-square-o"></i>
+                    Dial & Trade
+
+                </p>
+                <p class="lead">
+                    <i class="fa fa-check-square-o"></i>
+                    Independent Financial Advisors
+
+                </p>
+            </div>
+
+            <!-- subsection ends -->
+            <br><br><br><br>
+            <div class="container-fluid">
+                <h4 class="display-4">
+                    SBI Securities Charges 2021
+
+                </h4>
+                <hr>
+                <p class="lead">
+                    <i class="fa fa-check-square-o"></i>
+                    3-in-1 Account Opening Charges: {{companyData?.charges?.account_opening_charges_3_in_1}}
+                </p>
+                <p class="lead">
+                    <i class="fa fa-check-square-o"></i>
+                    Annual Maintenance Charges (AMC) : {{companyData?.charges?.annual_maintenance_charges}}
+                </p>
+            </div>
+
+            <br><br>
+            <div class="container-fluid">
+                <h4 class="sub-header">
+                    Trading Brokerages
+                </h4>
+                <p class="lead">
+                    <i class="fa fa-check-square-o mr-2"></i>
+                    <b>Intra-day Trades</b>: {{companyData?.trading_brokerage?.intraday_trades}}
+                </p>
+                <p class="lead">
+                    <i class="fa fa-check-square-o mr-2"></i>
+                    <b>Delivery Based Trades</b>: {{companyData?.trading_brokerage?.delivery_based_trades}}
+                </p>
+                <p class="lead">
+                    <i class="fa fa-check-square-o mr-2"></i>
+                    <b>Futures</b>: {{companyData?.trading_brokerage?.futures}}
+                </p>
+                <p class="lead">
+                    <i class="fa fa-check-square-o mr-2"></i>
+                    <b>Options Trades</b>: {{companyData?.trading_brokerage?.options_trades}}
+                </p>
+            </div>
+
+            <br><br>
+            <div class="container-fluid">
+                <h4 class="sub-header">
+                    SBICAP Securities Brokerage / Charges
+                </h4>
+
+                <table class="table mt-5 mb-5 text-center">
+                    <thead>
+                      <tr>
+                        <th scope="col">Segment	</th>
+                        <th scope="col" >None	</th>
+                        <th scope="col" >Delivery	</th>
+                        <th scope="col" colspan="2">Intraday	</th>
+                        <th scope="col">Minimum
+                      </th>
+                      </tr>
+                      <tr>
+                          <th scope="col">None	</th>
+                          <th scope="col">None	</th>
+                          <th scope="col">None </th>
+                          <th scope="col">Leg 1	</th>
+                          <th scope="col">Leg 2  </th>
+                          <th scope="col">None</th>
+                      </tr>
+                        
+                    </thead>
+                    <tbody>
+                      <tr *ngFor = "let data of companyData?.brokerage_charges">
+                        <td>{{data.col1}}</td>
+                        <td>{{data.col2}}</td>
+                        <td>{{data.col3}}</td>
+                        <td>{{data.col4}}</td>
+                        <td>{{data.col5}}</td>
+                        <td>{{data.col6}}</td>
+                        <td>{{data.col7}}</td>
+                        <td>{{data.col8}}</td>
+                       
+                      </tr>
+                      
+                    </tbody>
+                  </table>
+
+                
+            </div>
+
+
+            <br><br>
+            <div class="container-fluid">
+                <h4 class="sub-header">
+                    SBICAP Securities Brokerage / Charges
+                </h4>
+
+                <table class="table mt-5 mb-5 text-center">
+                    <thead>
+                      <tr>
+                        <th scope="col" colspan="2">On-Market (Sell Market) / Off Market (% of transaction value of each ISIN)
+                        </th>
+                        
+                      
+                      </tr>
+                     
+                        
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>with POA (applicable for On Market Instructions only)	</td>
+                        <td>{{companyData?.demat_transaction_charges?.with_poa}}</td>
+    
+                      </tr>
+                      <tr>
+                        <td>For instruction submitted through internet	</td>
+                        <td>{{companyData?.demat_transaction_charges?.interest}}</td>
+    
+                      </tr>
+                      <tr>
+                        <td>For instruction submitted through Branches		</td>
+                        <td>{{companyData?.demat_transaction_charges?.branches}}</td>
+    
+                      </tr>
+                      <tr>
+                        <td>Buy- market and off-market		</td>
+                        <td>{{companyData?.demat_transaction_charges?.off_market}}</td>
+    
+                      </tr>
+                      <tr>
+                        <td>Rejection / Failed instruction		</td>
+                        <td>{{companyData?.demat_transaction_charges?.rejection}}</td>
+    
+                      </tr>
+                      
+                    </tbody>
+                  </table>
+
+                
+            </div>
+
+
+            <br><br><br><br>
+            <div class="container-fluid">
+                 <h4 class="display-4">
+                    Useful Articles:
+                 </h4>
+                 <hr>
+                 <p class="lead">
+                     <i class="fa fa-check-square-o mr-2"></i>
+                     <b>Best 3-in-1 Trading Account in India Stock Market</b> - ICICI Bank, HDFC Bank, SBI, Kotak Securities etc
+
+                 </p>
+            </div>
+
+
+
+            <br><br><br><br>
+            <!-- subection start -->
+            <div class="container-fluid">
+              <h4 class="display-4">
+                SBI Securities Pros and Cons
+             </h4>
+              <hr>
+             
+            
+              <h4 class="sub-header">
+                SBI Securities Pros (Advantages)
+              </h4>
+              <p class="lead">
+                The following are the advantages of SBI Securities. You must read SBI Securities advantages and disadvantages before opening an account with SBI Securities. SBI Securities pros and cons help you find if it suits your investment needs.
+
+            </p>
+
+              
+              <p class="lead">
+                <i class="fa fa-check-square-o"></i>
+                State Bank of India is the country's largest bank of India and a trusted brand.
+            </p>
+              
+              <p class="lead">
+                <i class="fa fa-check-square-o"></i>
+                Full-service broker with a wide range of financial services under one roof.
+              
+              <p class="lead">
+                <i class="fa fa-check-square-o"></i>
+
+                SBI Securities offer the 3-in-1 account which offers seamless transactions between the Demat, Trading and Bank Account.
+            </p>
+              <p class="lead">
+                <i class="fa fa-check-square-o"></i>
+
+                Offer online investment in IPO, Mutual Funds, and Bonds.
+            </p>
+            <p class="lead">
+                <i class="fa fa-check-square-o"></i>
+
+                Trading Terminal SBISMART Xpress and Mobile Trading app SBISMART are available for free to all customers.
+            </p>
+            <p class="lead">
+                <i class="fa fa-check-square-o"></i>
+
+                Trading is available at over 115 SBICAP Securities branches across major cities.
+            </p>
+            <p class="lead">
+                <i class="fa fa-check-square-o"></i>
+
+                Research reports and analysis tools are offered to all customers.
+            </p>
+
+<br><br>
+
+                <h4 class="sub-header">
+                    SBI Securities Cons (Disadvantages)
+
+                </h4>
+                <p class="lead">
+                    The following are the cons of SBI Securities. Check the list of SBI Securities drawbacks.
+
+                </p>
+  
+                
+                <p class="lead">
+                  <i class="fa fa-check-square-o"></i>
+                  Very high brokerage in comparison to the online discount stock broker.
+                </p>
+                <p class="lead">
+                    <i class="fa fa-check-square-o"></i>
+                    Call & Trade is free for first 30 calls a month. After that, it is charged at Rs 10 per call. Max 3 scripts can be enquired in 1 call.
+                </p>
+                  
+                 
+                 
+               
+            </div>
+            <!-- subsection ends -->
+
+            <br><br><br><br>
+            <!-- subsection start -->
+<div class="container-fluid">
+<h3 class="sub-header">SBI Securities Margin / Exposure
+
+
+</h3>
+<hr>
+<p class="sub-header-content">
+    SBI Securities leverage for intraday, delivery, options, currency and commodities.
+
+</p>
+
+<table class="table mt-5 mb-5 text-center">
+<thead>
+<tr>
+  <th scope="col">Segment	</th>
+  <th scope="col">Margin		</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>Equity Delivery	</td>
+  <td> {{companyData?.margin_exposure?.equity_delivery}}</td>
+
+</tr>
+<tr>
+  <td>Equity Intraday		</td>
+  <td> {{companyData?.margin_exposure?.equity_intraday}} </td>
+</tr>
+
+<tr>
+  <td>Equity Future	</td>
+  <td> {{companyData?.margin_exposure?.equity_futures}} </td>
+</tr>
+
+<tr>
+ <td>Equity Options		</td>
+ <td> {{companyData?.margin_exposure?.equity_options}} </td>
+</tr>
+<tr>
+ <td>Currency Future		</td>
+ <td> {{companyData?.margin_exposure?.currency_futures}}</td>
+</tr>
+<tr>
+ <td>Currency Options		</td>
+ <td> {{companyData?.margin_exposure?.currency_options}} </td>
+</tr>
+<tr>
+<td>Commodity Future			</td>
+<td> {{companyData?.margin_exposure?.commodity_futures}}</td>
+</tr>
+<tr>
+<td>Commodity Options			</td>
+<td> {{companyData?.margin_exposure?.commodity_options}}</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<!-- subsection ends-->
+
+<!-- sub section start-->
+<div class="container-fluid newSubsection">
+<h3 class="sub-header">{{companyName}} Ratings
+</h3>
+<hr>
+
+
+<table class="table mt-5 mb-5 text-center">
+<thead>
+<tr>
+  <th scope="col">Segment	</th>
+  <th scope="col">Ratings		</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><b>Overall Rating</b>	</td>
+  <td> {{companyData?.ratings?.overall_ratings}}</td>
+
+</tr>
+<tr>
+  <td>Fees		</td>
+  <td> {{companyData?.ratings?.fees}} </td>
+</tr>
+
+<tr>
+  <td>Brokerage	</td>
+  <td> {{companyData?.ratings?.brokerage}} </td>
+</tr>
+
+<tr>
+ <td>Usability		</td>
+ <td> {{companyData?.ratings?.usability}} </td>
+</tr>
+<tr>
+ <td>Customer Service		</td>
+ <td> {{companyData?.ratings?.customer_service}}</td>
+</tr>
+<tr>
+ <td>Research Capabilities		</td>
+ <td> {{companyData?.ratings?.research_capabilities}} </td>
+</tr>
+
+</tbody>
+</table>
+
+</div>
+
+<!-- subsection ends -->
+
+        </div>
+        <div class="col-md-3">
+            <app-company-page-scroll [companyScrollObject] = "companyScrollObject"></app-company-page-scroll>
+            <app-special-offers></app-special-offers>
+
+        </div>
+    </div>
+</div>
+<app-footer [companyName]="companyName"></app-footer>

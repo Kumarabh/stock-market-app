@@ -25,10 +25,11 @@ import { MotilalOswalComponent } from './components/motilal-oswal/motilal-oswal.
 import { AxisDirectComponent } from './components/axis-direct/axis-direct.component';
 import { AnandRathiComponent } from './components/anand-rathi/anand-rathi.component';
 import { CompareBrokerComponent } from './components/compare-broker/compare-broker.component';
+import { SbiSecuritiesComponent } from './components/sbi-securities/sbi-securities.component';
 
 
 @NgModule({
-  declarations: [ZerodhaReviewComponent, UpstoxComponent, SpecialOffersComponent, EdelweissReviewComponent, FooterComponent, FivePaisaComponent, ProstocksComponent, SharekhanComponent, AngelBrokingComponent, FyersComponent, HdfcSecuritiesComponent, CompanyHeaderComponent, CompanyPageScrollComponent, KotakSecuritiesComponent, IciciDirectComponent, MotilalOswalComponent, AxisDirectComponent, AnandRathiComponent, CompareBrokerComponent],
+  declarations: [ZerodhaReviewComponent, UpstoxComponent, SpecialOffersComponent, EdelweissReviewComponent, FooterComponent, FivePaisaComponent, ProstocksComponent, SharekhanComponent, AngelBrokingComponent, FyersComponent, HdfcSecuritiesComponent, CompanyHeaderComponent, CompanyPageScrollComponent, KotakSecuritiesComponent, IciciDirectComponent, MotilalOswalComponent, AxisDirectComponent, AnandRathiComponent, CompareBrokerComponent, SbiSecuritiesComponent],
   imports: [
     CommonModule,
     CompanyReviewRoutingModule,
