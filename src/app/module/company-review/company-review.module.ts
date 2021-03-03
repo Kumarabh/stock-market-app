@@ -26,10 +26,13 @@ import { AxisDirectComponent } from './components/axis-direct/axis-direct.compon
 import { AnandRathiComponent } from './components/anand-rathi/anand-rathi.component';
 import { CompareBrokerComponent } from './components/compare-broker/compare-broker.component';
 import { SbiSecuritiesComponent } from './components/sbi-securities/sbi-securities.component';
+import { KarvyComponent } from './components/karvy/karvy.component';
+import { SmcGlobalComponent } from './components/smc-global/smc-global.component';
+import { GrowwComponent } from './components/groww/groww.component';
 
 
 @NgModule({
-  declarations: [ZerodhaReviewComponent, UpstoxComponent, SpecialOffersComponent, EdelweissReviewComponent, FooterComponent, FivePaisaComponent, ProstocksComponent, SharekhanComponent, AngelBrokingComponent, FyersComponent, HdfcSecuritiesComponent, CompanyHeaderComponent, CompanyPageScrollComponent, KotakSecuritiesComponent, IciciDirectComponent, MotilalOswalComponent, AxisDirectComponent, AnandRathiComponent, CompareBrokerComponent, SbiSecuritiesComponent],
+  declarations: [ZerodhaReviewComponent, UpstoxComponent, SpecialOffersComponent, EdelweissReviewComponent, FooterComponent, FivePaisaComponent, ProstocksComponent, SharekhanComponent, AngelBrokingComponent, FyersComponent, HdfcSecuritiesComponent, CompanyHeaderComponent, CompanyPageScrollComponent, KotakSecuritiesComponent, IciciDirectComponent, MotilalOswalComponent, AxisDirectComponent, AnandRathiComponent, CompareBrokerComponent, SbiSecuritiesComponent, KarvyComponent, SmcGlobalComponent, GrowwComponent],
   imports: [
     CommonModule,
     CompanyReviewRoutingModule,

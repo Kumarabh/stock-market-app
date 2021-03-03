@@ -1,0 +1,434 @@
+<!-- Buttons -->
+<app-company-header [companyName] = "companyName"></app-company-header>
+
+<!-- compare broker -->
+<app-compare-broker></app-compare-broker>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-9">
+
+            <div class="jumbotron jumbotron-fluid">
+              <div class="container">
+                <h1 class="display-4">{{companyName}} Stock Trading / Demat / Brokerage / Reviews 2021
+                </h1>
+                <hr class="my-4">
+                <p class="lead">
+                  Groww is a Bangalore based broker offering online flat fee discount brokerage services to invest in
+                  Equity, IPO, and Direct Mutual Funds. Groww is the brand name for Nextbillion Technology Private
+                  Limited who is a SEBI registered stockbroker and a member of NSE and BSE.
+
+                  Established in 2016, Groww initially started as a direct mutual fund investment platform. In the
+                  mid-2020s, Groww expanded its product offering to include Equity trading. The company also offers
+                  Digital gold, US Stocks, and Fixed Deposit as other investment options for its customers.
+                </p>
+                <p class="lead">
+                  Groww chargesa lower of Rs 20 or 0.05% per executed trade. You pay a max of Rs 20 as the brokerage for
+                  an order irrespective of any quantity or amount. Groww offers Free Mutual Fund services with no
+                  charges in investing or redemption of mutual funds.
+
+                  Groww has its own trading platform called Groww (web and mobile trading app) that offers a seamless
+                  trading experience to its investors. It is a safe and secure app with 128-bit encryption. Groww is one
+                  of India's fastest-growing platforms with a strong customer base of 90+ lakh users as of Nov 2020. It
+                  is also one of the highest-rated App (4.5+) in the Google Play Store and App Store.
+
+                  Groww is an online broker. Unlike full-service brokers, it does not offer any tips, recommendations,
+                  and research services. Groww has free eBooks, informative and educative blogs, and resources to help
+                  investors/beginners learn the basics of stock market trading and investment that can assist them to
+                  make an informed investment decision.
+                </p>
+                <br>
+
+              </div>
+            </div>
+
+            
+            <div class="container-fluid">
+                <h4 class="sub-header">
+                    Key Highlights of Groww
+                </h4>
+                <p class="lead">
+                    <i class="fa fa-check-square-o"></i>
+                    Zero commission direct mutual funds.
+
+                </p>
+                <p class="lead">
+                    <i class="fa fa-check-square-o"></i>
+                    The maximum brokerage charged per trade is Rs 20.
+
+                </p>
+                <p class="lead">
+                    <i class="fa fa-check-square-o"></i>
+                    Instant and paperless online account opening.
+
+                </p>
+                <p class="lead">
+                    <i class="fa fa-check-square-o"></i>
+                    Customer awareness through educative and informative Blogs and eBooks.
+
+                </p>
+                <p class="lead">
+                    <i class="fa fa-check-square-o"></i>
+                    Feature to switch external regular mutual fund to direct mutual fund.
+
+                </p>
+                <p class="lead">
+                    <i class="fa fa-check-square-o"></i>
+                    It also provides investment in US Stocks, Digital gold, and Corporate FD.
+
+                </p>
+               
+            </div>
+
+            <br><br><br><br>
+            <div class="container-fluid">
+                <h4 class="display-4">
+                    Groww Charges 2021
+
+                </h4>
+                <hr>
+                <h4 class="sub-header">
+                    Groww Standard Brokerage Plan
+
+                </h4>
+                <p class="lead">
+                    Groww follows a fixed brokerage model wherein it charges a flat Rs 20 or 0.05% (whichever is lower) per executed order. The maximum brokerage chargeable per order is Rs 20.
+                </p>
+
+                <table class="table mt-5 mb-5 text-center">
+                    <thead>
+                    <tr>
+                      <th scope="col">Trading Segment		</th>
+                      <th scope="col">Brokerage Charges
+                    </th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                      <td>Equity Delivery </td>
+                      <td> {{companyData?.brokerage_charges?.equity_delivery}}</td>
+                    
+                    </tr>
+                    <tr>
+                      <td>Equity Intraday</td>
+                      <td> {{companyData?.brokerage_charges?.equity_intraday}} </td>
+                    </tr>
+                    
+                    
+                    </tbody>
+                    </table>
+
+                    <p class="lead">
+                        You are also required to pay other transaction and regulatory charges, Demat charges in addition to the brokerage.
+                    </p>
+
+                    
+
+            </div>
+
+            <br><br>
+            <div class="container-fluid">
+                <h4 class="sub-header">
+                    Other Charges
+                </h4>
+                <p class="lead">
+                    Auto square off charges: {{companyData?.auto_square_off_charges}}
+                </p>
+                <p class="lead">
+                    Visit Groww Brokerage Charges Review for more detail.
+
+                </p>
+            </div>
+
+            <br><br><br><br>
+            <div class="container-fluid">
+                <h4 class="display-4">
+                    Groww Online Account Opening
+
+                </h4>
+                <hr>
+                <p class="lead">
+                    Groww offers online account opening to its customers. It is a simple, instant, and paperless process. The account opening at Groww is free with zero maintenance charges. To open the trading and Demat account with Groww, you need to download the Groww mobile app or register yourself on the company website and complete the setup.
+
+                </p>
+                <p class="lead">
+                    Groww is an online broker with no branches. The company does not provide an account opening form on the website and also does not offer an offline account opening.
+
+                </p>
+
+            </div>
+
+
+            <br><br><br><br>
+            <div class="container-fluid">
+                <h4 class="display-4">
+                    Groww Trading Software (Groww Trading Platforms)
+                </h4>
+                <hr>
+                <p class="lead">
+                    Groww offers its customers to trade via mobile and web. An investor can transact seamlessly switching between the Groww app and website.
+                </p>
+                <p class="lead">
+                    Since Groww initially started as a mutual fund investment platform, the Groww app and web is best known for mutual fund investments. Recently in June 2020, the company launched Equity trading. The company is working on new products like US Stocks, Fixed Deposits, Digital gold to be added in web, and mobile app in a phased wise manner and is fast evolving with enhanced features. The company does not have an installable trading terminal on the desktop. It also does not offer call and trade services.
+
+                </p>
+
+                <br>
+                <h4 class="sub-header">
+                    Groww (Mobile App)
+
+                </h4>
+                <p class="lead">
+                    The mobile trading platform of Groww allows you to trade anytime from anywhere. It is offered free of cost to customers to invest in Equity and Mutual funds. Groww is a safe and secured app with a host of features like line and candlestick charts showing price movements, one-click buy/sell, free content and videos related to stock investments for beginners, complete information about all companies, etc.
+                </p>
+
+                <br>
+                <h4 class="sub-header">
+                    Groww (Website version)
+                </h4>
+                <p class="lead">
+                    Groww website platform is an online web-based trading platform that provides its customers with an enriching online trading experience. This platform allows the clients to explore stocks, mutual funds, digital gold, and place orders online, track transactions, and invest in IPO's. The website has resources, Ebooks, and blogs that provide educative and general information on the stock markets.
+               </p>
+                
+               <p class="lead">
+                Visit Groww Trading Software Review for more detail.
+
+               </p>
+            </div>
+
+            <br><br><br><br>
+              <!-- subection start -->
+              <div class="container-fluid">
+                <h4 class="display-4">
+                    Groww Pros and Cons
+                </h4>
+                <hr>
+               
+              
+                <h4 class="sub-header">
+                    Groww Pros (Advantages)
+
+                </h4>
+                <p class="lead">
+                    The following are the advantages of Groww. You must read Groww advantages and disadvantages before opening an account with Groww. Groww pros and cons help you find if it suits your investment needs.
+  
+              </p>
+  
+                
+                <p class="lead">
+                  <i class="fa fa-check-square-o"></i>
+                  Simple pricing model.
+                </p>
+                
+                <p class="lead">
+                  <i class="fa fa-check-square-o"></i>
+                  One of the cheap discount brokers of India with a brokerage charge of Rs 20 or 0.05% per executed trade, whichever is lower.
+                
+                <p class="lead">
+                  <i class="fa fa-check-square-o"></i>
+  
+                  Zero Account opening fee.
+                </p>
+                <p class="lead">
+                  <i class="fa fa-check-square-o"></i>
+  
+                  Zero Demat AMC Charges.
+                </p>
+              <p class="lead">
+                  <i class="fa fa-check-square-o"></i>
+  
+                  Instant paperless account opening.
+                </p>
+              <p class="lead">
+                  <i class="fa fa-check-square-o"></i>
+  
+                  Online IPO application.
+                </p>
+              <p class="lead">
+                  <i class="fa fa-check-square-o"></i>
+  
+                  Direct Mutual Funds platform that helps you earn an extra 1.5% returns.
+                </p>
+                <p class="lead">
+                    <i class="fa fa-check-square-o"></i>
+    
+                    Option to invest online in digital gold.
+                </p>
+                <p class="lead">
+                    <i class="fa fa-check-square-o"></i>
+    
+                    E-books, Resources, and Blogs that provide the basics and updates on the stock market to help investors make an informed decision.
+                </p>
+                
+  <br><br>
+  
+                  <h4 class="sub-header">
+                    Groww Cons (Disadvantages)
+
+                  </h4>
+                  <p class="lead">
+                    The following are the cons of Groww. Check the list of Groww drawbacks.
+
+ 
+                  </p>    
+                  <p class="lead">
+                    <i class="fa fa-check-square-o"></i>
+                    Limited investment products with no option to currently trade in derivatives (futures & options), commodity, and currency segment.
+                </p>
+                <p class="lead">
+                    <i class="fa fa-check-square-o"></i>
+                    No Call and Trade services.
+                </p>
+                <p class="lead">
+                    <i class="fa fa-check-square-o"></i>
+                    Do not provide stock tips, research reports, or recommendations.
+                </p>
+                <p class="lead">
+                    <i class="fa fa-check-square-o"></i>
+                    No branch support.
+                </p>
+                <p class="lead">
+                    <i class="fa fa-check-square-o"></i>
+                    No Margin trading facility.
+                </p>
+                <p class="lead">
+                    <i class="fa fa-check-square-o"></i>
+                    No Margin against shares.
+                </p>
+                <p class="lead">
+                    <i class="fa fa-check-square-o"></i>
+                    Advanced order types like BO, CO, AMO, and GTT not available.
+                </p>
+                <p class="lead">
+                    <i class="fa fa-check-square-o"></i>
+                    Trailling stop loss orders are not available in Groww app.
+                </p>
+                <p class="lead">
+                    <i class="fa fa-check-square-o"></i>
+                    Do not offer NRI Trading.
+                </p>
+              </div>
+              <!-- subsection ends -->
+  
+              <br><br><br><br>
+              <!-- subsection start -->
+  <div class="container-fluid">
+  <h3 class="sub-header">Groww Margin / Exposure
+  
+  
+  </h3>
+  <hr>
+  <p class="sub-header-content">
+      Groww leverage for intraday, delivery, options, currency and commodities.
+  
+  </p>
+  
+  <table class="table mt-5 mb-5 text-center">
+  <thead>
+  <tr>
+    <th scope="col">Segment	</th>
+    <th scope="col">Margin		</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>Equity Delivery	</td>
+    <td> {{companyData?.margin_exposure?.equity_delivery}}</td>
+  
+  </tr>
+  <tr>
+    <td>Equity Intraday		</td>
+    <td> {{companyData?.margin_exposure?.equity_intraday}} </td>
+  </tr>
+  
+  <tr>
+    <td>Equity Future	</td>
+    <td> {{companyData?.margin_exposure?.equity_futures}} </td>
+  </tr>
+  
+  <tr>
+   <td>Equity Options		</td>
+   <td> {{companyData?.margin_exposure?.equity_options}} </td>
+  </tr>
+  <tr>
+   <td>Currency Future		</td>
+   <td> {{companyData?.margin_exposure?.currency_futures}}</td>
+  </tr>
+  <tr>
+   <td>Currency Options		</td>
+   <td> {{companyData?.margin_exposure?.currency_options}} </td>
+  </tr>
+  <tr>
+  <td>Commodity Future			</td>
+  <td> {{companyData?.margin_exposure?.commodity_futures}}</td>
+  </tr>
+  <tr>
+  <td>Commodity Options			</td>
+  <td> {{companyData?.margin_exposure?.commodity_options}}</td>
+  </tr>
+  </tbody>
+  </table>
+  </div>
+  
+  <!-- subsection ends-->
+  
+  <!-- sub section start-->
+  <div class="container-fluid newSubsection">
+  <h3 class="sub-header">{{companyName}} Ratings
+  </h3>
+  <hr>
+  
+  
+  <table class="table mt-5 mb-5 text-center">
+  <thead>
+  <tr>
+    <th scope="col">Segment	</th>
+    <th scope="col">Ratings		</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td><b>Overall Rating</b>	</td>
+    <td> {{companyData?.ratings?.overall_ratings}}</td>
+  
+  </tr>
+  <tr>
+    <td>Fees		</td>
+    <td> {{companyData?.ratings?.fees}} </td>
+  </tr>
+  
+  <tr>
+    <td>Brokerage	</td>
+    <td> {{companyData?.ratings?.brokerage}} </td>
+  </tr>
+  
+  <tr>
+   <td>Usability		</td>
+   <td> {{companyData?.ratings?.usability}} </td>
+  </tr>
+  <tr>
+   <td>Customer Service		</td>
+   <td> {{companyData?.ratings?.customer_service}}</td>
+  </tr>
+  <tr>
+   <td>Research Capabilities		</td>
+   <td> {{companyData?.ratings?.research_capabilities}} </td>
+  </tr>
+  
+  </tbody>
+  </table>
+  
+  </div>
+  
+  <!-- subsection ends -->
+  
+
+
+        </div>
+        <div class="col-md-3">
+            <app-company-page-scroll [companyScrollObject] = "companyScrollObject"></app-company-page-scroll>
+            <app-special-offers></app-special-offers>
+
+        </div>
+    </div>
+</div>
+<app-footer [companyName]="companyName"></app-footer>

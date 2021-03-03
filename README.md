@@ -85,3 +85,13 @@ futures
 options
 currency_f_o
 interest_rate
+
+------
+equity_delivery
+equity_intraday
+equity_futures
+equity_options
+currency_futures
+currency_options
+commodity_futures
+commodity_options

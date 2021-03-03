@@ -15,6 +15,9 @@ import { MotilalOswalComponent } from './components/motilal-oswal/motilal-oswal.
 import { AxisDirectComponent } from './components/axis-direct/axis-direct.component';
 import { AnandRathiComponent } from './components/anand-rathi/anand-rathi.component';
 import { SbiSecuritiesComponent } from './components/sbi-securities/sbi-securities.component';
+import { KarvyComponent } from './components/karvy/karvy.component';
+import { SmcGlobalComponent } from './components/smc-global/smc-global.component';
+import { GrowwComponent } from './components/groww/groww.component';
 
 const routes: Routes = [
   {path: '', component: ZerodhaReviewComponent},
@@ -32,8 +35,10 @@ const routes: Routes = [
   {path: 'motilal-oswal', component: MotilalOswalComponent},
   {path: 'axis-direct', component: AxisDirectComponent},
   {path: 'anand-rathi', component: AnandRathiComponent},
-  {path: 'sbi-securities', component: SbiSecuritiesComponent}
-
+  {path: 'sbi-securities', component: SbiSecuritiesComponent},
+  {path: 'karvy', component: KarvyComponent},
+  {path:'smc-global', component: SmcGlobalComponent},
+  {path: 'groww', component: GrowwComponent}
 
 
 ];

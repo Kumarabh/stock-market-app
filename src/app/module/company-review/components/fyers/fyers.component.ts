@@ -11,65 +11,68 @@ export class FyersComponent implements OnInit {
   
   companyScrollObject = [
     {
-      links: "Anand Rathi Stock Trading",
+      links: "Fyers Stock Trading",
       scrollTo: 100,
       sublinks: []
       
     },
     {
-      links: "Anand Rathi Charges 2021",
-      scrollTo: 800,
+      links: "Thematic Investing at FYERS",
+      scrollTo: 700,
       sublinks: []
       
     },
     {
-      links: "Anand Rathi Online Account Opening",
-      scrollTo: 1200,
+      links: "Fyers Charges 2021",
+      scrollTo: 1300,
       sublinks: [
+        {links: "Fyers Equity Brokerage Charges", scrollTo: 1800},
+      {links: "Fyers F&O Brokerage Charges", scrollTo: 2300},
+      {links: "Fyers Fee Structure", scrollTo: 2900},
+      {links: "Other Charges", scrollTo: 3200}
+
+      ]
+      
+    },
+    
+    {
+      links: "Fyers Trading Software",
+      scrollTo: 3500,
+      sublinks: [
+      {links: "Fyers One (Trading Terminal)", scrollTo: 3800},
+      {links: "Fyers Markets (Mobile Trading App)", scrollTo: 4000},
+      {links: "Fyers Web Trader", scrollTo: 4200},
       
       ]
     },
     {
-      links: "Anand Rathi Trading Software ",
-      scrollTo: 1500,
+      links: "Fyers Pros and Cons",
+      scrollTo: 4500,
       sublinks: [
-      {links: "Trade Lite", scrollTo: 1500},
-      {links: "Trade X'press", scrollTo: 1500},
-      {links: "Trade X'pro", scrollTo: 1600},
-      {links: "Trade X'pro+", scrollTo: 1800},
-      {links: "Trade Flexi", scrollTo: 2700},
-      {links: "Trade On Move", scrollTo: 2800},
-      {links: "Trade Mobi", scrollTo: 2900}
-      ]
-    },
-    {
-      links: "Anand Rathi Pros and Cons",
-      scrollTo: 3300,
-      sublinks: [
-      {links: "Anand Rathi Pros (Advantages)", scrollTo: 3400},
-      {links: "Anand Rathi Cons (Disadvantages)", scrollTo: 3900},
+      {links: "Fyers Pros (Advantages)", scrollTo: 4500},
+      {links: "Fyers Cons (Disadvantages)", scrollTo: 5200},
 
     ]
       
     },
     {
-      links: "Anand Rathi Margin / Exposure",
-      scrollTo: 4200,
+      links: "Fyers Margin / Exposure",
+      scrollTo: 5500,
       sublinks: [
       
       ]
       
   },
   {
-    links: "Anand Rathi Ratings",
-    scrollTo: 4900,
+    links: "Fyers Ratings",
+    scrollTo: 6200,
     sublinks: [
     
     ]
   },
   {
-    links: "Compare Anand Rathi with Top Brokers in India",
-    scrollTo: 5500,
+    links: "Compare Fyers with Top Brokers in India",
+    scrollTo: 6800,
     sublinks: []
   },
   

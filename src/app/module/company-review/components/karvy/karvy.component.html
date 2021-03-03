@@ -1,0 +1,641 @@
+<!-- Buttons -->
+<app-company-header [companyName] = "companyName"></app-company-header>
+
+<!-- compare broker -->
+<app-compare-broker></app-compare-broker>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-9">
+            <div class="jumbotron jumbotron-fluid">
+                <div class="container">
+                  <h1 class="display-4">{{companyName}} Stock Trading / Demat / Brokerage / Reviews 2021
+                  </h1>
+                  <hr class="my-4">
+                  <p class="lead">
+                    Incorporated in 1990, Karvy Stock Broking Ltd (KSBL) is part of KARVY Group; one of India's leading
+                    financial services company provides stock broking and research advisory services.
+
+                    They offer Customized investment solutions to corporate, institutions and individual investors
+                    through its wide network of offices. Using their combine account facility one can trade in Equities,
+                    Derivatives, Currency or invest in IPOs, Mutual funds or NCDs under one roof.
+
+                    Based in Hyderabad they are among one of the top 10 broker house in India. Some add on tools
+                    provided by KSBL like monthly magazine, Finapolis, which analyzes personal finance and offers share
+                    market tips, weekly e-newsletter Karvy Bazaar Baatein which keep informed on key trends in personal
+                    finance and stock market, trendsperiodic macroeconomic reports etc. They also offer special
+                    portfolio analysis packages and provide customized advisory services to help trader make the right
+                    financial moves to specifically suit their portfolio.
+                  </p>
+                
+                <br>
+                  
+                </div>
+                
+            </div>
+
+            <div class="container-fluid">
+                <h4 class="display-4">
+                    Karvy Charges 2021
+                </h4>
+                <hr>
+                <br>
+                <p class="lead">
+                    <i class="fa fa-check-square-o mr-2"></i>
+                    Trading Account Opening Charges (One Time): {{companyData?.charges?.trading_account_opening_charges}}
+                </p>
+                <p class="lead">
+                    <i class="fa fa-check-square-o mr-2"></i>
+                    Trading Annual maintenance charges (AMC): {{companyData?.charges?.trading_annual_maintenance_charges}}
+                </p>
+                <p class="lead">
+                    <i class="fa fa-check-square-o mr-2"></i>
+                    Demat Account Opening Charges (One Time): {{companyData?.charges?.demat_account_opening_charges}}
+                </p>
+                <p class="lead">
+                    <i class="fa fa-check-square-o mr-2"></i>
+                    Demat Account Annual Maintenance Charges (AMC): {{companyData?.charges?.demat_account_annual_maintenance_charges}}
+                </p>
+                <br>
+                <!-- <p class="lead">
+                    Karvy brokerage plans:
+                </p> -->
+
+                <h4 class="sub-header">
+                    Karvy brokerage plans: Basic Plan
+                </h4>
+                <p class="lead">
+                    In this plan the brokerage is charged in % of the transaction. The brokerage charged in this plan is as below:
+                </p>
+                <br>
+                <p class="lead">
+                    Equity Delivery: {{companyData?.basic_plan?.equity_delivery}}
+                </p>
+                <p class="lead">
+                    Equity Intraday: {{companyData?.basic_plan?.equity_intraday}}
+                </p>
+                <p class="lead">
+                    Equity Future: {{companyData?.basic_plan?.equity_futures}}
+                </p>
+                <p class="lead">
+                    Equity Options (Each Lot): {{companyData?.basic_plan?.equity_options}}
+                </p>
+                <p class="lead">
+                    Currency Future: {{companyData?.basic_plan?.currency_futures}}
+                </p>
+                <p class="lead">
+                    Currency Options (Each Lot): {{companyData?.basic_plan?.currency_options}}
+                </p>
+
+            </div>
+
+            <br><br>
+            <div class="container-fluid">
+                <h4 class="sub-header">
+                    Karvy Brokerage Charges in Detail (Equity Delivery/ Equity Intraday)
+                </h4>
+                <table class="table mt-5 mb-5 text-center">
+                    <thead>
+                    <tr>
+                      <th scope="col">Karvy Charges	</th>
+                      <th scope="col">EQUITY Delivery</th>
+                      <th scope="col">EQUITY Intraday
+                    </th>
+
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                      <td>STT</td>
+                      <td> {{companyData?.brokerage_charges?.stt?.equity_delivery}}</td>
+                      <td> {{companyData?.brokerage_charges?.stt?.equity_intraday}}</td>
+
+                    </tr>
+                    <tr>
+                      <td>Transaction Charges	</td>
+                      <td> {{companyData?.brokerage_charges?.transaction_charges?.equity_delivery}}</td>
+                      <td> {{companyData?.brokerage_charges?.transaction_charges?.equity_intraday}}</td>
+
+                    </tr>
+                    <tr>
+                        <td>Goods and Services Tax (GST)	</td>
+                        <td> {{companyData?.brokerage_charges?.gst?.equity_delivery}}</td>
+                      <td> {{companyData?.brokerage_charges?.gst?.equity_intraday}}</td>
+                      
+                      </tr>
+                      <tr>
+                        <td>SEBI Charges	</td>
+                        <td> {{companyData?.brokerage_charges?.sebi_charges?.equity_delivery}}</td>
+                      <td> {{companyData?.brokerage_charges?.sebi_charges?.equity_intraday}}</td>
+                      </tr>
+                      <tr>
+                        <td>Stamp Duty		</td>
+                        <td> {{companyData?.brokerage_charges?.stamp_charges?.equity_delivery}}</td>
+                        <td> {{companyData?.brokerage_charges?.stamp_charges?.equity_intraday}}</td>
+  
+                    </tr>
+                    
+                    </tbody>
+                    </table>
+
+
+            </div>
+
+            <br>
+            <div class="container-fluid">
+                <h4 class="sub-header">
+                    Karvy Brokerage Charges in Detail (Futures/ Options)
+                </h4>
+                <table class="table mt-5 mb-5 text-center">
+                    <thead>
+                    <tr>
+                      <th scope="col">Karvy Charges	</th>
+                      <th scope="col">Futures</th>
+                      <th scope="col">Options
+                    </th>
+
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                      <td>STT</td>
+                      <td> {{companyData?.brokerage_charges?.stt?.equity_futures}}</td>
+                      <td> {{companyData?.brokerage_charges?.stt?.equity_options}}</td>
+
+                    </tr>
+                    <tr>
+                      <td>Transaction Charges	</td>
+                      <td> {{companyData?.brokerage_charges?.transaction_charges?.equity_futures}}</td>
+                      <td> {{companyData?.brokerage_charges?.transaction_charges?.equity_options}}</td>
+
+                    </tr>
+                    <tr>
+                        <td>Goods and Services Tax (GST)	</td>
+                        <td> {{companyData?.brokerage_charges?.gst?.equity_futures}}</td>
+                      <td> {{companyData?.brokerage_charges?.gst?.equity_options}}</td>
+                      
+                      </tr>
+                      <tr>
+                        <td>SEBI Charges	</td>
+                        <td> {{companyData?.brokerage_charges?.sebi_charges?.equity_futures}}</td>
+                      <td> {{companyData?.brokerage_charges?.sebi_charges?.equity_options}}</td>
+                      </tr>
+                      <tr>
+                        <td>Stamp Duty		</td>
+                        <td> {{companyData?.brokerage_charges?.stamp_charges?.equity_futures}}</td>
+                        <td> {{companyData?.brokerage_charges?.stamp_charges?.equity_options}}</td>
+  
+                    </tr>
+                    
+                    </tbody>
+                    </table>
+
+
+            </div>
+
+            <br>
+            <div class="container-fluid">
+                <h4 class="sub-header">
+                    Karvy Brokerage Charges in Detail (Currency Futures/ Currency Options)
+                </h4>
+                <table class="table mt-5 mb-5 text-center">
+                    <thead>
+                    <tr>
+                      <th scope="col">Karvy Charges	</th>
+                      <th scope="col">Currency Futures</th>
+                      <th scope="col">Currency Options
+                    </th>
+
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                      <td>STT</td>
+                      <td> {{companyData?.brokerage_charges?.stt?.currency_futures}}</td>
+                      <td> {{companyData?.brokerage_charges?.stt?.currency_options}}</td>
+
+                    </tr>
+                    <tr>
+                      <td>Transaction Charges	</td>
+                      <td> {{companyData?.brokerage_charges?.transaction_charges?.currency_futures}}</td>
+                      <td> {{companyData?.brokerage_charges?.transaction_charges?.currency_options}}</td>
+
+                    </tr>
+                    <tr>
+                        <td>Goods and Services Tax (GST)	</td>
+                        <td> {{companyData?.brokerage_charges?.gst?.currency_futures}}</td>
+                      <td> {{companyData?.brokerage_charges?.gst?.currency_options}}</td>
+                      
+                      </tr>
+                      <tr>
+                        <td>SEBI Charges	</td>
+                        <td> {{companyData?.brokerage_charges?.sebi_charges?.currency_futures}}</td>
+                      <td> {{companyData?.brokerage_charges?.sebi_charges?.currency_options}}</td>
+                      </tr>
+                      <tr>
+                        <td>Stamp Duty		</td>
+                        <td> {{companyData?.brokerage_charges?.stamp_charges?.currency_futures}}</td>
+                        <td> {{companyData?.brokerage_charges?.stamp_charges?.currency_options}}</td>
+  
+                    </tr>
+                    
+                    </tbody>
+                    </table>
+
+
+            </div>
+
+
+            <br>
+            <div class="container-fluid">
+                <h4 class="sub-header">
+                    Karvy Brokerage Charges in Detail (Commodity Futures)
+                </h4>
+                <table class="table mt-5 mb-5 text-center">
+                    <thead>
+                    <tr>
+                      <th scope="col">Karvy Charges	</th>
+                      <th scope="col">Commodity Futures</th>
+                     
+
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                      <td>STT</td>
+                      <td> {{companyData?.brokerage_charges?.stt?.commodity_futures}}</td>
+
+                    </tr>
+                    <tr>
+                      <td>Transaction Charges	</td>
+                      <td> {{companyData?.brokerage_charges?.transaction_charges?.commodity_futures}}</td>
+
+                    </tr>
+                    <tr>
+                        <td>Goods and Services Tax (GST)	</td>
+                        <td> {{companyData?.brokerage_charges?.gst?.commodity_futures}}</td>
+                      
+                      </tr>
+                      <tr>
+                        <td>SEBI Charges	</td>
+                        <td> {{companyData?.brokerage_charges?.sebi_charges?.commodity_futures}}</td>
+                      </tr>
+                      <tr>
+                        <td>Stamp Duty		</td>
+                        <td> {{companyData?.brokerage_charges?.stamp_charges?.commodity_futures}}</td>
+  
+                    </tr>
+                    
+                    </tbody>
+                    </table>
+
+
+            </div>
+
+            <div class="container-fluid">
+                <h4 class="sub-header">
+                    Karvy Charge Structure Explanation:
+                </h4>
+                <p class="lead">
+                    <b>STT</b>: {{companyData?.charge_structure?.stt}}
+                </p>
+                <p class="lead">
+                    <b>Stamp Duty</b>: {{companyData?.charge_structure?.stamp_charges}}
+                </p>
+                <p class="lead">
+                    <b>Goods and Services Tax (GST)</b>: {{companyData?.charge_structure?.gst}}
+                </p>
+                <p class="lead">
+                    <b>SEBI Turnover Fees</b>: {{companyData?.charge_structure?.turnover_charges}}
+                </p>
+                <p class="lead">
+                    <b>Transaction Charges</b>: {{companyData?.charge_structure?.transaction_charges}}
+                </p>
+            </div>
+
+            <br><br><br><br>
+            <div class="container-fluid">
+                <h4 class="sub-header">
+                    Useful Articles:
+                </h4>
+                <hr>
+                <p class="lead">
+                    <i class="fa fa-check-square-o mr-2"></i>
+                    The Best 3-in-1 Trading Account in India Stock Market - ICICI Bank, HDFC Bank, SBI, Kotak Securities etc
+
+                </p>
+                <p class="lead">
+                    <i class="fa fa-check-square-o mr-2"></i>
+                    Know about Flat Fee Share Brokers in India (Also known as budget broker or discount broker)
+
+                </p>
+            </div>
+
+            <br><br><br><br>
+            <div class="container-fluid">
+                <h4 class="sub-header">
+                  Karvy Depository Service Charges
+                </h4>
+                <hr>
+                <table class="table mt-5 mb-5 text-center">
+                  <thead>
+                  <tr>
+                    <th scope="col">Particulars	</th>
+                    <th scope="col">Charges</th>
+                  
+
+                  </tr>
+                  </thead>
+                  <tbody>
+                  <tr>
+                    <td>Account Opening	</td>
+                    <td> {{companyData?.service_charges?.account_opening}}</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>Closure of Account		</td>
+                    <td> {{companyData?.service_charges?.account_closure}}</td>
+                  </tr>
+                  <tr>
+                    <td>First Year AMC	</td>
+                    <td> {{companyData?.service_charges?.first_year_amc}}</td>
+                  </tr>
+                  <tr>
+                    <td>Annual Maintenance Charges	</td>
+                    <td> {{companyData?.service_charges?.annual_maintenance_charges}}</td>
+                  </tr>
+                  <tr>
+                    <td>Demat Charges	</td>
+                    <td> {{companyData?.service_charges?.demat_charges}}</td>
+                  </tr>
+                  <tr>
+                    <td>Pledge Creation	</td>
+                    <td> {{companyData?.service_charges?.pledge_creation}}</td>
+                  </tr>
+                  <tr>
+                    <td>Pledge Closure		</td>
+                    <td> {{companyData?.service_charges?.pledge_closure}}</td>
+                  </tr>
+                  <tr>
+                    <td>Pledge Invocation		</td>
+                    <td> {{companyData?.service_charges?.pledge_invocation}}</td>
+                  </tr>
+                  <tr>
+                    <td>Rejection / fails		</td>
+                    <td> {{companyData?.service_charges?.rejection}}</td>
+                  </tr>
+                  </tbody>
+                  </table>
+
+            </div>
+
+            <br><br><br><br>
+            <div class="container-fluid">
+              <h4 class="display-4">
+                Karvy Trading Software (Karvy Trading Platforms)
+
+              </h4>
+              <hr>
+              <p class="lead">
+                Karvy Stock Broking offer multiple trading platforms based on customers investment style and needs.
+              </p>
+              <br>
+              <h4 class="sub-header">
+                Karvy Online Web
+              </h4>
+              <p class="lead">
+                Karvy Online Web or Xpress platform is a web based trading platform which is also works great on low
+                bandwidth. It provides secure and real time access to news, quotes, and trading. It provides convenience
+                to trade anywhere on mobiles, laptop and tablet. Using this platform trader can place, modify, or cancel
+                orders, view order book, trade book, Intraday book and back office reports and real time news.
+              </p>
+
+              <br>
+
+              <h4 class="sub-header">
+                KarvyOnline Mobile Trading App
+
+              </h4>
+              <p class="lead">
+                KarvyOnline Mobile Trading App is a mobile platform which allows trader to execute trades on the move as well as access stock market news, currencies, commodities, quotes of NSE & BSE and many more updates instantly. KarvyOnline mobile app is available in Android Google Play and iPhone App Store for free.
+              </p>
+              <br>
+
+              <h4 class="sub-header">
+                Karvy Nest Trder
+
+              </h4>
+              <p class="lead">
+                Karvy Nest (Next Generation Securities Trading System) Trader is desktop based front-end application that allows a trader to perform several trading functions. Karvy NEST Web is fast, convenient and secure mode for trading activities. It allows the investor to do all the things that are possible from a Trading Work Station (EXE) and more like view orders, trades and positions data, advance charting, view Market Picture and add-on tools to receive alerts, send internal messages etc.
+              </p>
+
+              <p class="lead">
+                Visit Karvy Trading Software Review for more detail.
+              </p>
+            </div>
+
+            <br><br><br><br>
+
+             <!-- subection start -->
+             <div class="container-fluid">
+              <h4 class="display-4">
+                Karvy Pros and Cons
+
+
+             </h4>
+              <hr>
+             
+            
+              <h4 class="sub-header">
+                Karvy Pros (Advantages)
+
+              </h4>
+              <p class="lead">
+                The following are the advantages of Karvy. You must read Karvy advantages and disadvantages before opening an account with Karvy. Karvy pros and cons help you find if it suits your investment needs.
+
+
+
+            </p>
+
+              
+              <p class="lead">
+                <i class="fa fa-check-square-o mr-2"></i>
+                Karvy offers single login for trade in Equities, Currencies and F&O.
+              </p>
+              
+              <p class="lead">
+                <i class="fa fa-check-square-o mr-2"></i>
+                Karvy offers investment in IPO and Mutual fund.
+              </p>
+              <p class="lead">
+                <i class="fa fa-check-square-o mr-2"></i>
+
+                Karvy provides 60 types of technical charts.
+              </p>
+              <p class="lead">
+                <i class="fa fa-check-square-o mr-2"></i>
+
+                Karvy offers free research reports to its customers.
+              </p>
+            <p class="lead">
+                <i class="fa fa-check-square-o mr-2"></i>
+
+                Karvy offers zero demat AMC for first year
+              </p>
+            <p class="lead">
+                <i class="fa fa-check-square-o mr-2"></i>
+
+                Karvy offers Live chat, classroom sessions, webinars, Online Tutorials and Articles by Experts to help beginners understand basics.
+              </p>
+            
+
+<br><br>
+
+                <h4 class="sub-header">
+                  Karvy Cons (Disadvantages)
+
+                </h4>
+                <p class="lead">
+                  The following are the cons of Karvy. Check the list of Karvy drawbacks.
+                </p>               
+                <p class="lead">
+                  <i class="fa fa-check-square-o"></i>
+                  Karvy doesn't offer 3 in 1 account.
+                </p>
+                <p class="lead">
+                  <i class="fa fa-check-square-o"></i>
+                  Brokerage rates are negotiable.
+                </p>
+                <p class="lead">
+                  <i class="fa fa-check-square-o"></i>
+                  Karvy doesn't have referral programs.
+                </p>
+                <p class="lead">
+                  <i class="fa fa-check-square-o"></i>
+                  Karvy is a full services broker so the brokerage charged by them is higher than the discount brokers.
+                </p>
+                 
+                 
+               
+            </div>
+            <!-- subsection ends -->
+
+            <br><br><br><br>
+            <!-- subsection start -->
+<div class="container-fluid">
+<h3 class="sub-header">Karvy Margin / Exposure
+</h3>
+<hr>
+<p class="sub-header-content">
+  Karvy leverage for intraday, delivery, options, currency and commodities.
+</p>
+
+<table class="table mt-5 mb-5 text-center">
+<thead>
+<tr>
+  <th scope="col">Segment	</th>
+  <th scope="col">Margin		</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>Equity Delivery	</td>
+  <td> {{companyData?.margin_exposure?.equity_delivery}}</td>
+
+</tr>
+<tr>
+  <td>Equity Intraday		</td>
+  <td> {{companyData?.margin_exposure?.equity_intraday}} </td>
+</tr>
+
+<tr>
+  <td>Equity Future	</td>
+  <td> {{companyData?.margin_exposure?.equity_futures}} </td>
+</tr>
+
+<tr>
+ <td>Equity Options		</td>
+ <td> {{companyData?.margin_exposure?.equity_options}} </td>
+</tr>
+<tr>
+ <td>Currency Future		</td>
+ <td> {{companyData?.margin_exposure?.currency_futures}}</td>
+</tr>
+<tr>
+ <td>Currency Options		</td>
+ <td> {{companyData?.margin_exposure?.currency_options}} </td>
+</tr>
+<tr>
+<td>Commodity Future			</td>
+<td> {{companyData?.margin_exposure?.commodity_futures}}</td>
+</tr>
+<tr>
+<td>Commodity Options			</td>
+<td> {{companyData?.margin_exposure?.commodity_options}}</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<!-- subsection ends-->
+
+<!-- sub section start-->
+<div class="container-fluid newSubsection">
+<h3 class="sub-header">{{companyName}} Ratings
+</h3>
+<hr>
+
+
+<table class="table mt-5 mb-5 text-center">
+<thead>
+<tr>
+  <th scope="col">Segment	</th>
+  <th scope="col">Ratings		</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><b>Overall Rating</b>	</td>
+  <td> {{companyData?.ratings?.overall_ratings}}</td>
+
+</tr>
+<tr>
+  <td>Fees		</td>
+  <td> {{companyData?.ratings?.fees}} </td>
+</tr>
+
+<tr>
+  <td>Brokerage	</td>
+  <td> {{companyData?.ratings?.brokerage}} </td>
+</tr>
+
+<tr>
+ <td>Usability		</td>
+ <td> {{companyData?.ratings?.usability}} </td>
+</tr>
+<tr>
+ <td>Customer Service		</td>
+ <td> {{companyData?.ratings?.customer_service}}</td>
+</tr>
+<tr>
+ <td>Research Capabilities		</td>
+ <td> {{companyData?.ratings?.research_capabilities}} </td>
+</tr>
+
+</tbody>
+</table>
+
+</div>
+
+<!-- subsection ends -->
+
+
+        </div>
+        <div class="col-md-3">
+          <app-company-page-scroll [companyScrollObject] = "companyScrollObject"></app-company-page-scroll>
+          <app-special-offers></app-special-offers>
+
+        </div>
+    </div>
+</div>
+<app-footer [companyName]="companyName"></app-footer>
