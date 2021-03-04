@@ -1,0 +1,466 @@
+<!-- Buttons -->
+<app-company-header [companyName] = "companyName"></app-company-header>
+
+<!-- compare broker -->
+<app-compare-broker></app-compare-broker>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-9">
+
+            <div class="jumbotron jumbotron-fluid">
+                <div class="container">
+                  <h1 class="display-4">{{companyName}} Stock Trading / Demat / Brokerage / Reviews 2021
+                  </h1>
+                  <hr class="my-4">
+                  <p class="lead">
+                    Incorporated in 1987, Geojit BNP Paribas (Geojit) is one of the major stock brokers based in India. Geojit is based in Kochi, Kerala and has the strong presence in Gulf.
+                </p>
+                <p class="lead">
+                    Geojit BNP Paribas is cash equity and derivatives broker with extensive experience in Portfolio Management Services and the distribution of financial products: mutual funds and life insurance.
+                </p>
+                <p class="lead">
+                    Geojit provides stock trading at NSE and BSE stock exchanges through a strong network of around 500 branches and its state of art online trading portal.
+                </p>
+                <p class="lead">
+                    Geojit BNP Paribas is a stock market listed company and its stock are traded at NSE (GEOJIT) and BSE (532285).
+
+                    Over the years the name of the company got changed from Geojit Securities Ltd. to Geojit Financial Services Ltd. (GFSL) and finally to Geojit BNP Paribas Financial Services LTD in April 2009.                
+                </p>
+                <p class="lead">
+                    <b>Trade In</b>: BSE and NSE
+                </p>
+                <br>
+                  
+                </div>
+            </div>
+
+            <!--  -->
+
+            <div class="container-fluid">
+                <h4 class="display-4">
+                    {{companyName}} Charges 2021
+                </h4>
+                <hr>
+
+                <p class="lead">
+                    <i class=" fa fa-check-square-o mr-2"></i>
+                    Trading Account Opening Charges (One Time): {{companyData?.charges?.trading_account_opening_charges}}
+
+                </p>
+                <p class="lead">
+                    <i class=" fa fa-check-square-o mr-2"></i>
+                    Trading Annual maintenance charges (AMC): {{companyData?.charges?.trading_annual_maintenance_charges}}
+
+                </p>
+                <p class="lead">
+                    <i class=" fa fa-check-square-o mr-2"></i>
+                    Demat Account Opening Charges (One Time): {{companyData?.charges?.demat_account_opening_charges}}
+
+                </p>
+                <p class="lead">
+                    <i class=" fa fa-check-square-o mr-2"></i>
+                    Demat Account Annual Maintenance Charges (AMC): {{companyData?.charges?.demat_account_annual_maintenance_charges}}
+
+                </p>
+
+                <br>
+                <h4 class="sub-header">
+                    Geojit Brokerage Charges:
+                </h4>
+                <br>
+                <h4 class="sub-header">
+                    Cash Market Brokerage
+                </h4>
+                <p class="lead">
+                    <i class="fa fa-check-square-o mr-2"></i>
+                    Delivery-based Trading: {{companyData?.brokerage_charges?.cash_market?.delivery_based_trading}}
+                </p>
+                <p class="lead">
+                    <i class="fa fa-check-square-o mr-2"></i>
+                    Intra-day Trading: {{companyData?.brokerage_charges?.cash_market?.intraday_based_trading}}
+                </p>
+
+                <br>
+                <h4 class="sub-header">
+                    Futures & Options Brokerage
+
+                </h4>
+                <p class="lead">
+                    <i class="fa fa-check-square-o mr-2"></i>
+                    Futures: {{companyData?.brokerage_charges?.futures_and_options?.futures}}
+                </p>
+                <p class="lead">
+                    <i class="fa fa-check-square-o mr-2"></i>
+                    Options Intraday: {{companyData?.brokerage_charges?.futures_and_options?.options_intraday}}
+                </p>
+                <p class="lead">
+                    <i class="fa fa-check-square-o mr-2"></i>
+                    Options carry forward positions: {{companyData?.brokerage_charges?.futures_and_options?.options_carry_forward_positions}}
+                </p>
+
+               
+            </div>
+
+            <!--  -->
+
+            <br><br>
+            <div class="container-fluid">
+                <h4 class="sub-header">
+                    Geojit Other Brokerage Charges
+                </h4>
+
+                <p class="lead">
+                    <i class=" fa fa-check-square-o mr-2"></i>
+                    Minimum Brokerage Geojit: Geojit charges Rs 20 per Contract or 1 paisa per share whichever is higher subject to a maximum of 2.5% per share.
+                </p>
+
+                <br>
+                <h4 class="sub-header">
+                    Geojit Depository Service Charges
+
+                </h4>
+                <br>
+                <p class="lead">
+                    For Resident Retail Customers and Corporates
+
+                </p>
+                <table class="table mt-5 mb-5 text-center">
+                    <thead>
+                        
+                      <tr>
+                        <th scope="col">Particulars
+                        </th>
+                        <th scope="col">Charges
+                        </th>
+
+
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Account Opening		</td>
+                        <td>{{companyData?.service_charges?.account_opening}}</td>
+    
+                      </tr>
+                      <tr>
+                        <td>First Year AMC	 </td>
+                        <td>{{companyData?.service_charges?.first_year_amc}}</td>
+
+                      </tr>
+                      <tr>
+                        <td>Annual Maintenance Charges			 </td>
+                        <td>{{companyData?.service_charges?.account_maintenance_charges}}</td>
+
+                      </tr>
+                      <tr>
+                        <td>Transaction Charges - Buy - Market and Off-Market	</td>
+                        <td>{{companyData?.service_charges?.transaction_charges_buy_market_and_off_market}}</td>
+
+                      </tr>
+                      <tr>
+                        <td>Transaction Charges - Sell - For transaction through Geojit		</td>
+                        <td>{{companyData?.service_charges?.transaction_charges_sell_through_geojit}}</td>
+
+                      </tr>
+                      <tr>
+                        <td>Transaction Charges - Sell - For transaction through other brokers		 </td>
+                        <td>{{companyData?.service_charges?.transaction_charges_sell_through_other_brokers}}</td>
+
+                      </tr>
+                      <tr>
+                        <td>Transaction Charges - Sell - Off Market Trades		</td>
+                        <td>{{companyData?.service_charges?.transaction_charges_sell_off_market_trades}}</td>
+
+                      </tr>
+                      
+                      <tr>
+                        <td>Pledge Creation			</td>
+                        <td>{{companyData?.service_charges?.pledge_creation}}</td>
+
+                      </tr>
+                      <tr>
+                        <td>Pledge closure			</td>
+                        <td>{{companyData?.service_charges?.pledge_closure}}</td>
+
+                      </tr>
+                      <tr>
+                        <td>Pledge invocation			</td>
+                        <td>{{companyData?.service_charges?.pledge_invocation}}</td>
+
+                      </tr>
+                      <tr>
+                        <td>Dematerialisation Charges				</td>
+                        <td>{{companyData?.service_charges?.dematerialisation_charges	}}</td>
+    
+                      </tr>
+                      <tr>
+                        <td>Rematerialisation Charges				</td>
+                        <td>{{companyData?.service_charges?.rematerialisation_charges	}}</td>
+    
+                      </tr>
+                      <tr>
+                        <td>Custody Charges				</td>
+                        <td>{{companyData?.service_charges?.custody_charges}}</td>
+    
+                      </tr>
+
+                    </tbody>
+                  </table>
+
+
+            </div>
+
+            <!--  -->
+
+            <br><br><br><br>
+            <div class="container-fluid">
+                <h4 class="display-4">
+                    Geojit Trading Software (Geojit Trading Platforms)
+
+                </h4>
+                <hr>
+                <p class="lead">
+                    Geojit BNP Paribas offers an Advanced Online Investment Platform called SELFIE (Self-Directed Trading & Investment Platform). The Geojit's trading platform offers Virtual dealer terminal (SEFIE Platinum), WEB and Mobile trading applications.
+
+                </p>
+                <br>
+                <p class="lead">
+                    Geojit BNP Paribas offer stock trading services under two trading plans:
+
+                </p>
+
+                <br>
+                <h4 class="sub-header">
+                    SELFIE Gold
+
+                </h4>
+                <p class="lead">
+                    SELFIE Gold is a trading website (browser based trading application). This trading application is offered absolutely FREE to all online customers and offers uniform experience across multiple devices. The key feature of SELFIE Gold includes integrated Security view with quotes, charts, news, recommendations, MBP, F&O Chains & Order windows all at one place, real time News aggregation and visualization engine and market intelligence & research calls.
+
+
+                </p>
+
+                <br>
+
+                <h4 class="sub-header">
+                    SELFIE Platinum
+
+
+                </h4>
+                <p class="lead">
+                    SELFIE Platinum platform is a virtual dealer terminal (installable EXE program). It is designed for active traders. Key features of SELFIE Platinum includes flexibility to customize screen layout, fast trade execution and Tick by Tick updation of index chart.
+
+                </p>
+                <br>
+                <p class="lead">
+                    Visit Geojit Trading Software Review for more detail.
+
+
+                </p>
+            </div>
+
+
+            <!--  -->
+            <br><br><br><br>
+              <!-- subection start -->
+              <div class="container-fluid">
+                <h4 class="display-4">
+                    Geojit Pros and Cons
+
+               </h4>
+                <hr>
+               
+              
+                <h4 class="sub-header">
+                    Geojit Pros (Advantages)
+
+                </h4>
+                <p class="lead">
+                    The following are the advantages of Geojit. You must read Geojit advantages and disadvantages before opening an account with Geojit. Geojit pros and cons help you find if it suits your investment needs.
+
+  
+              </p>
+  
+                
+                <p class="lead">
+                  <i class="fa fa-check-square-o"></i>
+                  Geojit BNP Paribas has introduced a view only "terminal" that delivers real-time market information from the Company's system to the GPRS enabled mobile phones of Company's clients. FLIP-ME* (Financial Internet Platform-Mobile Edition) delivers key information and a host of other features empowering the client on the move to take trading decisions, and avail the call and trade facility to execute orders.
+                </p>
+                
+                <p class="lead">
+                  <i class="fa fa-check-square-o"></i>
+                  Investors can place orders via phone by calling customer care (Toll free) or through respective branch.
+                
+                <p class="lead">
+                  <i class="fa fa-check-square-o"></i>
+  
+                  Company has list of preferred backs including HDFC Bank, ICICI Bank, Citibank & Federal Bank, Punjab National Bank, Union Bank of India, Bank of India and IDBI Bank.
+                </p>
+                <p class="lead">
+                  <i class="fa fa-check-square-o"></i>
+  
+                  Facility to place online orders in Post-close session of NSE and BSE.
+                </p>
+              <p class="lead">
+                  <i class="fa fa-check-square-o"></i>
+  
+                  Daily market calls, Research Reports, Demat Holdings, change of Platform, etc are available though SMS.
+                </p>
+             
+  
+  <br><br>
+  
+                  <h4 class="sub-header">
+                    Geojit Cons (Disadvantages)
+  
+                  </h4>
+                  <p class="lead">
+                    The following are the cons of Geojit. Check the list of Geojit drawbacks.
+ 
+                  </p>
+    
+                  
+                  <p class="lead">
+                    <i class="fa fa-check-square-o"></i>
+                    Company doesn't offer 3 in 1 trading account like other popular brokers. Investor has to use banking services from other banks.
+                </p>
+                <p class="lead">
+                    <i class="fa fa-check-square-o"></i>
+                    The brokerage changes are very high in comparison to other brokers.
+                </p>
+                <p class="lead">
+                    <i class="fa fa-check-square-o"></i>
+                    Geogit charges minimum brokerage of Rs 20 per Contract or 1 paisa per share whichever is higher.
+                </p>
+               
+                 
+                   
+                   
+                 
+              </div>
+              <!-- subsection ends -->
+  
+              <br><br><br><br>
+              <!-- subsection start -->
+  <div class="container-fluid">
+  <h3 class="sub-header">{{companyName}} Margin / Exposure
+  
+  
+  </h3>
+  <hr>
+  <p class="sub-header-content">
+      {{companyName}} leverage for intraday, delivery, options, currency and commodities.
+  
+  </p>
+  
+  <table class="table mt-5 mb-5 text-center">
+  <thead>
+  <tr>
+    <th scope="col">Segment	</th>
+    <th scope="col">Margin		</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>Equity Delivery	</td>
+    <td> {{companyData?.margin_exposure?.equity_delivery}}</td>
+  
+  </tr>
+  <tr>
+    <td>Equity Intraday		</td>
+    <td> {{companyData?.margin_exposure?.equity_intraday}} </td>
+  </tr>
+  
+  <tr>
+    <td>Equity Future	</td>
+    <td> {{companyData?.margin_exposure?.equity_futures}} </td>
+  </tr>
+  
+  <tr>
+   <td>Equity Options		</td>
+   <td> {{companyData?.margin_exposure?.equity_options}} </td>
+  </tr>
+  <tr>
+   <td>Currency Future		</td>
+   <td> {{companyData?.margin_exposure?.currency_futures}}</td>
+  </tr>
+  <tr>
+   <td>Currency Options		</td>
+   <td> {{companyData?.margin_exposure?.currency_options}} </td>
+  </tr>
+  <tr>
+  <td>Commodity Future			</td>
+  <td> {{companyData?.margin_exposure?.commodity_futures}}</td>
+  </tr>
+  <tr>
+  <td>Commodity Options			</td>
+  <td> {{companyData?.margin_exposure?.commodity_options}}</td>
+  </tr>
+  </tbody>
+  </table>
+  </div>
+  
+  <!-- subsection ends-->
+  
+  <!-- sub section start-->
+  <div class="container-fluid ">
+  <h3 class="sub-header">{{companyName}} Ratings
+  </h3>
+  <hr>
+  
+  
+  <table class="table mt-5 mb-5 text-center">
+  <thead>
+  <tr>
+    <th scope="col">Segment	</th>
+    <th scope="col">Ratings		</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td><b>Overall Rating</b>	</td>
+    <td> {{companyData?.ratings?.overall_ratings}}</td>
+  
+  </tr>
+  <tr>
+    <td>Fees		</td>
+    <td> {{companyData?.ratings?.fees}} </td>
+  </tr>
+  
+  <tr>
+    <td>Brokerage	</td>
+    <td> {{companyData?.ratings?.brokerage}} </td>
+  </tr>
+  
+  <tr>
+   <td>Usability		</td>
+   <td> {{companyData?.ratings?.usability}} </td>
+  </tr>
+  <tr>
+   <td>Customer Service		</td>
+   <td> {{companyData?.ratings?.customer_service}}</td>
+  </tr>
+  <tr>
+   <td>Research Capabilities		</td>
+   <td> {{companyData?.ratings?.research_capabilities}} </td>
+  </tr>
+  
+  </tbody>
+  </table>
+  
+  </div>
+  
+  <!-- subsection ends -->
+  
+
+
+
+        </div>
+        <div class="col-md-3">
+            <app-company-page-scroll [companyScrollObject] = "companyScrollObject"></app-company-page-scroll>
+            <app-special-offers></app-special-offers>
+        </div>
+    </div>
+</div>
+
+<app-footer [companyName]="companyName"></app-footer>

@@ -18,6 +18,8 @@ import { SbiSecuritiesComponent } from './components/sbi-securities/sbi-securiti
 import { KarvyComponent } from './components/karvy/karvy.component';
 import { SmcGlobalComponent } from './components/smc-global/smc-global.component';
 import { GrowwComponent } from './components/groww/groww.component';
+import { IiflSecuritiesComponent } from './components/iifl-securities/iifl-securities.component';
+import { GeojitComponent } from './components/geojit/geojit.component';
 
 const routes: Routes = [
   {path: '', component: ZerodhaReviewComponent},
@@ -38,7 +40,9 @@ const routes: Routes = [
   {path: 'sbi-securities', component: SbiSecuritiesComponent},
   {path: 'karvy', component: KarvyComponent},
   {path:'smc-global', component: SmcGlobalComponent},
-  {path: 'groww', component: GrowwComponent}
+  {path: 'groww', component: GrowwComponent},
+  {path: 'iifl-securities', component: IiflSecuritiesComponent},
+  {path: 'geojit-bnp-paribas', component: GeojitComponent}
 
 
 ];

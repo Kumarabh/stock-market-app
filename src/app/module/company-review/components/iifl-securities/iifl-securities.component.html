@@ -1,0 +1,742 @@
+<!-- Buttons -->
+<app-company-header [companyName] = "companyName"></app-company-header>
+
+<!-- compare broker -->
+
+<app-compare-broker></app-compare-broker>
+
+
+  <div class="container-fluid">
+      <div class="row">
+          <div class="col-md-9">
+
+            <!-- subsection start -->
+<div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-4">{{companyName}} Stock Trading / Demat / Brokerage / Reviews 2021
+      </h1>
+      <hr class="my-4">
+      <p class="lead">
+        Incorporated in 1995, IIFL Securities, part of IIFL Group, is one of the largest independent full service stock brokering house serving retail and institutional clients. IIFL Group is a leading financial service provider in India offering a wide range of services. IIFL is a well-recognized brand for the quality of its advice, personalized service and the use of cutting-edge technology.
+    </p>
+    <p class="lead">
+        IIFL Securities offers online trading and research-based advisory services for an entire range of financial products including Stocks, Derivatives, Commodities, Insurance, FDs, Loans, IPO and Bonds etc.
+
+They have a wide network of branches spread across all major cities across India. IIFL Securities is popular among retail investors and traders for their personalized services through the relationship managers and a network of branches.
+    </p>
+    <p class="lead">
+        IIFL Securities also offers NRI Trading and Investment services. They have a local presence in Colombo, Dubai, New York, Mauritius, London, Singapore and Hong Kong.    </p>
+      <br>
+      
+    </div>
+  </div>
+  <!-- subsection ends -->
+
+  <br><br><br>
+
+  <div class="container-fluid">
+      <h4 class="display-4">
+        IIFL Securities Charges 2021
+
+      </h4>
+      <hr>
+      <br>
+      <!--  -->
+      <h4 class="sub-header">
+        Account Opening Fees & Annual maintenance charges (AMC)
+
+      </h4>
+      <p class="lead">
+        IIFL charge Rs 250 for account opening The charges are currently waived off for online account opening. This one-time charge is also waived for customers who buy certain prepaid brokerage plans. Customers pay Rs 250 for demat account AMC. The Demat AMC is free for 1st year.
+
+
+      </p>
+      <p class="lead">
+          <i class="fa fa-check-square-o mr-2"></i>
+          IIFL Account Opening Charges: Rs 250 (Currently waived off)
+
+      </p>
+      <p class="lead">
+        <i class="fa fa-check-square-o mr-2"></i>
+        Demat Account Annual Maintenance Charges (AMC): Rs 250 (Free for first year)
+
+    </p>
+
+  </div>
+
+<br><br>
+  <div class="container-fluid">
+    <br>
+    <h4 class="sub-header">
+      IIFL Securities Brokerage Plan
+
+    </h4>
+    <p class="lead">
+      IIFL offers 3 brokerage plans designed basis the customer profile. Investor Plan (Online Plus), Super Trader Plan (Pro Traders) and Premium Plan (Dedicated RM). You can choose one of the plans at the time of account opening or switch between them at any time based on your trading needs.
+    </p>
+
+  </div>
+
+  <!--  -->
+<br><br>
+  <div class="container-fluid">
+    <br>
+    <h4 class="sub-header">
+        IIFL Brokerage Charges
+
+    </h4>
+    <p class="lead">
+        IIFL charges brokerage as per the plan selected by the customer. IIFL brokerage charges for delivery is 0.25% and IIFL brokerage charges for intraday is 0.025% when you choose the investor plan. The brokerage for intraday reduces to 0.01% in the Super Trader Plan where the customer has to pay a monthly fee of Rs 999.
+
+    </p>
+
+
+    <table class="table mt-5 mb-5 text-center">
+        <thead>
+          <tr>
+            <th scope="col">Plan name	
+            </th>
+            <th scope="col">Investor Plan (Online Plus)	
+            </th>
+            <th scope="col">Premium Plan (Dedicated RM)	
+            </th>
+            <th scope="col">Super Trader Plan (Pro Traders)
+
+            </th>
+           
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Monthly subscription	</td>
+            <td>{{companyData?.brokerage_charges?.monthly_subscription?.investor_plan}}</td>
+            <td>{{companyData?.brokerage_charges?.monthly_subscription?.premium_plan}}</td>
+            <td>{{companyData?.brokerage_charges?.monthly_subscription?.super_trader_plan}}</td>
+
+          </tr>
+          <tr>
+            <td>Equity Delivery		 </td>
+            <td>{{companyData?.brokerage_charges?.equity_delivery?.investor_plan}}</td>
+            <td>{{companyData?.brokerage_charges?.equity_delivery?.premium_plan}}</td>
+            <td>{{companyData?.brokerage_charges?.equity_delivery?.super_trader_plan}}</td>
+
+          </tr>
+          <tr>
+            <td>Equity Intraday		 </td>
+            <td>{{companyData?.brokerage_charges?.equity_intraday?.investor_plan}}</td>
+            <td>{{companyData?.brokerage_charges?.equity_intraday?.premium_plan}}</td>
+            <td>{{companyData?.brokerage_charges?.equity_intraday?.super_trader_plan}}</td>
+
+          </tr>
+          <tr>
+            <td>Equity Futures		</td>
+            <td>{{companyData?.brokerage_charges?.equity_futures?.investor_plan}}</td>
+            <td>{{companyData?.brokerage_charges?.equity_futures?.premium_plan}}</td>
+            <td>{{companyData?.brokerage_charges?.equity_futures?.super_trader_plan}}</td>
+
+          </tr>
+          <tr>
+            <td>Equity Options		</td>
+            <td>{{companyData?.brokerage_charges?.equity_options?.investor_plan}}</td>
+            <td>{{companyData?.brokerage_charges?.equity_options?.premium_plan}}</td>
+            <td>{{companyData?.brokerage_charges?.equity_options?.super_trader_plan}}</td>
+
+          </tr>
+          <tr>
+            <td>Currency Futures		 </td>
+            <td>{{companyData?.brokerage_charges?.currency_futures?.investor_plan}}</td>
+            <td>{{companyData?.brokerage_charges?.currency_futures?.premium_plan}}</td>
+            <td>{{companyData?.brokerage_charges?.currency_futures?.super_trader_plan}}</td>
+
+          </tr>
+          <tr>
+            <td>Currency Options		 </td>
+            <td>{{companyData?.brokerage_charges?.currency_options?.investor_plan}}</td>
+            <td>{{companyData?.brokerage_charges?.currency_options?.premium_plan}}</td>
+            <td>{{companyData?.brokerage_charges?.currency_options?.super_trader_plan}}</td>
+
+          </tr>
+          <tr>
+            <td>Commodity Futures			</td>
+            <td>{{companyData?.brokerage_charges?.commodity_futures?.investor_plan}}</td>
+            <td>{{companyData?.brokerage_charges?.commodity_futures?.premium_plan}}</td>
+            <td>{{companyData?.brokerage_charges?.commodity_futures?.super_trader_plan}}</td>
+
+          </tr>
+          <tr>
+            <td>Commodity Options			</td>
+            <td>{{companyData?.brokerage_charges?.commodity_options?.investor_plan}}</td>
+            <td>{{companyData?.brokerage_charges?.commodity_options?.premium_plan}}</td>
+            <td>{{companyData?.brokerage_charges?.commodity_options?.super_trader_plan}}</td>
+
+          </tr>
+
+        </tbody>
+      </table>
+
+
+  </div>
+
+<!--  -->
+<br><br>
+  <div class="container-fluid">
+    <br>
+    <h4 class="sub-header">
+        IIFL Charges
+
+
+    </h4>
+    <p class="lead">
+        IIFL Securities demat account opening charges is Rs 250 and IIFL demat AMC charges is Rs 250 per year. IIFL demat account charges also include demat debit transaction charges of Rs 25 per transaction for Investor Plan. IIFL offers free call & trade to all its customers.
+
+
+    </p>
+
+
+    <table class="table mt-5 mb-5 text-center">
+        <thead>
+          <tr>
+            <th scope="col">Plan name	
+            </th>
+            <th scope="col">Investor Plan 
+            </th>
+            <th scope="col">Premium Plan 
+            </th>
+            <th scope="col">Super Trader Plan 
+
+            </th>
+           
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Account Opening Charges (one-time)		</td>
+            <td>{{companyData?.charges?.account_opening_charges?.investor_plan}}</td>
+            <td>{{companyData?.charges?.account_opening_charges?.premium_plan}}</td>
+            <td>{{companyData?.charges?.account_opening_charges?.super_trader_plan}}</td>
+
+          </tr>
+          <tr>
+            <td>Demat AMC (from 2nd year)		 </td>
+            <td>{{companyData?.charges?.demat_amc?.investor_plan}}</td>
+            <td>{{companyData?.charges?.demat_amc?.premium_plan}}</td>
+            <td>{{companyData?.charges?.demat_amc?.super_trader_plan}}</td>
+
+          </tr>
+          <tr>
+            <td>DP transaction charge (Credit)		 </td>
+            <td>{{companyData?.charges?.dp_transaction_charges_credit?.investor_plan}}</td>
+            <td>{{companyData?.charges?.dp_transaction_charges_credit?.premium_plan}}</td>
+            <td>{{companyData?.charges?.dp_transaction_charges_credit?.super_trader_plan}}</td>
+
+          </tr>
+          <tr>
+            <td>DP transaction charge (Debit)			</td>
+            <td>{{companyData?.charges?.dp_transaction_charges_debit?.investor_plan}}</td>
+            <td>{{companyData?.charges?.dp_transaction_charges_debit?.premium_plan}}</td>
+            <td>{{companyData?.charges?.dp_transaction_charges_debit?.super_trader_plan}}</td>
+
+          </tr>
+          <tr>
+            <td>Delayed payment charge (p.a.)		</td>
+            <td>{{companyData?.charges?.delayed_payment_charges?.investor_plan}}</td>
+            <td>{{companyData?.charges?.delayed_payment_charges?.premium_plan}}</td>
+            <td>{{companyData?.charges?.delayed_payment_charges?.super_trader_plan}}</td>
+
+          </tr>
+          <tr>
+            <td>System & Risk square off			 </td>
+            <td>{{companyData?.charges?.system_and_risk_square_off?.investor_plan}}</td>
+            <td>{{companyData?.charges?.system_and_risk_square_off?.premium_plan}}</td>
+            <td>{{companyData?.charges?.system_and_risk_square_off?.super_trader_plan}}</td>
+
+          </tr>
+          <tr>
+            <td>Call & Trade			 </td>
+            <td>{{companyData?.charges?.call_and_trade?.investor_plan}}</td>
+            <td>{{companyData?.charges?.call_and_trade?.premium_plan}}</td>
+            <td>{{companyData?.charges?.call_and_trade?.super_trader_plan}}</td>
+
+          </tr>
+          <tr>
+            <td>Pledge & Unpledge charges/ ISIN (customer initiated)				</td>
+            <td>{{companyData?.charges?.pledge_and_unpledge_charges?.investor_plan}}</td>
+            <td>{{companyData?.charges?.pledge_and_unpledge_charges?.premium_plan}}</td>
+            <td>{{companyData?.charges?.pledge_and_unpledge_charges?.super_trader_plan}}</td>
+
+          </tr>
+          <tr>
+            <td>Re-pledge and Release charges/ ISIN (collaterals)				</td>
+            <td>{{companyData?.charges?.re_pledge_and_release_charges?.investor_plan}}</td>
+            <td>{{companyData?.charges?.re_pledge_and_release_charges?.premium_plan}}</td>
+            <td>{{companyData?.charges?.re_pledge_and_release_charges?.super_trader_plan}}</td>
+
+          </tr>
+
+          <tr>
+            <td>Pledge Invocation Charges		</td>
+            <td>{{companyData?.charges?.pledge_invocation_charges?.investor_plan}}</td>
+            <td>{{companyData?.charges?.pledge_invocation_charges?.premium_plan}}</td>
+            <td>{{companyData?.charges?.pledge_invocation_charges?.super_trader_plan}}</td>
+
+          </tr>
+          <tr>
+            <td>Demat AMC (from 2nd year)		 </td>
+            <td>{{companyData?.charges?.demat_amc?.investor_plan}}</td>
+            <td>{{companyData?.charges?.demat_amc?.premium_plan}}</td>
+            <td>{{companyData?.charges?.demat_amc?.super_trader_plan}}</td>
+
+          </tr>
+          <tr>
+            <td>Pledge Closure			 </td>
+            <td>{{companyData?.charges?.pledge_closure?.investor_plan}}</td>
+            <td>{{companyData?.charges?.pledge_closure?.premium_plan}}</td>
+            <td>{{companyData?.charges?.pledge_closure?.super_trader_plan}}</td>
+
+          </tr>
+          <tr>
+            <td>Demat/ Remat Charges			</td>
+            <td>{{companyData?.charges?.demat_or_remat_charges?.investor_plan}}</td>
+            <td>{{companyData?.charges?.demat_or_remat_charges?.premium_plan}}</td>
+            <td>{{companyData?.charges?.demat_or_remat_charges?.super_trader_plan}}</td>
+
+          </tr>
+          <tr>
+            <td>Payment Gateway Charges			</td>
+            <td>{{companyData?.charges?.payment_gateway_charges?.investor_plan}}</td>
+            <td>{{companyData?.charges?.payment_gateway_charges?.premium_plan}}</td>
+            <td>{{companyData?.charges?.payment_gateway_charges?.super_trader_plan}}</td>
+
+          </tr>
+          <tr>
+            <td>Conversion of MF units/ Destatementization Per SOA			 </td>
+            <td>{{companyData?.charges?.conversion_of_mf_units?.investor_plan}}</td>
+            <td>{{companyData?.charges?.conversion_of_mf_units?.premium_plan}}</td>
+            <td>{{companyData?.charges?.conversion_of_mf_units?.super_trader_plan}}</td>
+
+          </tr>
+          <tr>
+            <td>Reconversion of MF units in to SOA or Redemption/ Restatementization Per SOA				 </td>
+            <td>{{companyData?.charges?.re_conversion_of_mf_units?.investor_plan}}</td>
+            <td>{{companyData?.charges?.re_conversion_of_mf_units?.premium_plan}}</td>
+            <td>{{companyData?.charges?.re_conversion_of_mf_units?.super_trader_plan}}</td>
+
+          </tr>
+          <tr>
+            <td>Re-issuance of (Additional) New DIS					</td>
+            <td>{{companyData?.charges?.re_issuance_of_new_dis?.investor_plan}}</td>
+            <td>{{companyData?.charges?.re_issuance_of_new_dis?.premium_plan}}</td>
+            <td>{{companyData?.charges?.re_issuance_of_new_dis?.super_trader_plan}}</td>
+
+          </tr>
+          <tr>
+            <td>Postal Charges for physical dispatch					</td>
+            <td>{{companyData?.charges?.postal_charges_for_physical_dispatch?.investor_plan}}</td>
+            <td>{{companyData?.charges?.postal_charges_for_physical_dispatch?.premium_plan}}</td>
+            <td>{{companyData?.charges?.postal_charges_for_physical_dispatch?.super_trader_plan}}</td>
+
+          </tr>
+          <tr>
+            <td>Pledge charge (Broker Margin Funding)					</td>
+            <td>{{companyData?.charges?.pledge_charges?.investor_plan}}</td>
+            <td>{{companyData?.charges?.pledge_charges?.premium_plan}}</td>
+            <td>{{companyData?.charges?.pledge_charges?.super_trader_plan}}</td>
+
+          </tr>
+          <tr>
+            <td>Courier/ physical printing (when requested)						</td>
+            <td>{{companyData?.charges?.courier_or_physical_printing?.investor_plan}}</td>
+            <td>{{companyData?.charges?.courier_or_physical_printing?.premium_plan}}</td>
+            <td>{{companyData?.charges?.courier_or_physical_printing?.super_trader_plan}}</td>
+
+          </tr>
+        </tbody>
+      </table>
+
+
+  </div>
+
+  <!--  -->
+<br><br>
+<div class="container-fluid">
+  <br>
+  <h4 class="sub-header">
+    IIFL Services Offered by Plan
+
+  </h4>
+  <p class="lead">
+    The services offered by IIFL varies with the plan you choose. IIFL offers free research and intraday call to all its customers. The installable trading terminal is available for free to only Premium and Super trader plans.
+
+
+  </p>
+
+
+  <table class="table mt-5 mb-5 text-center">
+      <thead>
+        <tr>
+          <th scope="col">Plan name	
+          </th>
+          <th scope="col">Investor Plan 	
+          </th>
+          <th scope="col">Premium Plan 	
+          </th>
+          <th scope="col">Super Trader Plan 
+
+          </th>
+         
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Research Report		</td>
+          <td>{{companyData?.services_offered_by_plan?.research_report?.investor_plan}}</td>
+          <td>{{companyData?.services_offered_by_plan?.research_report?.premium_plan}}</td>
+          <td>{{companyData?.services_offered_by_plan?.research_report?.super_trader_plan}}</td>
+
+        </tr>
+        <tr>
+          <td>Intra-day calls			 </td>
+          <td>{{companyData?.services_offered_by_plan?.intraday_calls?.investor_plan}}</td>
+          <td>{{companyData?.services_offered_by_plan?.intraday_calls?.premium_plan}}</td>
+          <td>{{companyData?.services_offered_by_plan?.intraday_calls?.super_trader_plan}}</td>
+
+        </tr>
+        <tr>
+          <td>Market Guru seminars		 </td>
+          <td>{{companyData?.services_offered_by_plan?.market_guru_seminars?.investor_plan}}</td>
+          <td>{{companyData?.services_offered_by_plan?.market_guru_seminars?.premium_plan}}</td>
+          <td>{{companyData?.services_offered_by_plan?.market_guru_seminars?.super_trader_plan}}</td>
+
+        </tr>
+        <tr>
+          <td>Trader Terminal EXE			</td>
+          <td>{{companyData?.services_offered_by_plan?.trading_terminal_exe?.investor_plan}}</td>
+          <td>{{companyData?.services_offered_by_plan?.trading_terminal_exe?.premium_plan}}</td>
+          <td>{{companyData?.services_offered_by_plan?.trading_terminal_exe?.super_trader_plan}}</td>
+
+        </tr>
+        <tr>
+          <td>Dedicated RM			</td>
+          <td>{{companyData?.services_offered_by_plan?.dedicated_rm?.investor_plan}}</td>
+          <td>{{companyData?.services_offered_by_plan?.dedicated_rm?.premium_plan}}</td>
+          <td>{{companyData?.services_offered_by_plan?.dedicated_rm?.super_trader_plan}}</td>
+
+        </tr>
+        <tr>
+          <td>Analyst/ Investment advisor meetings			 </td>
+          <td>{{companyData?.services_offered_by_plan?.analyst_or_investment_advisor_meetings?.investor_plan}}</td>
+          <td>{{companyData?.services_offered_by_plan?.analyst_or_investment_advisor_meetings?.premium_plan}}</td>
+          <td>{{companyData?.services_offered_by_plan?.analyst_or_investment_advisor_meetings?.super_trader_plan}}</td>
+
+        </tr>
+       
+
+      </tbody>
+    </table>
+
+
+</div>
+
+<br><br><br><br>
+<div class="container-fluid">
+    <h4 class="display-4">
+      IIFL Securities Trading Software (IIFL Securities Trading Platforms)
+    </h4>
+    <hr>
+    <p class="lead">
+      IIFL offers several trading platforms. Most of them are available for free to all the customers.
+    </p>
+
+    <br>
+
+    <h4 class="sub-header">
+        IIFL Markets App (Android and iOS)
+
+    </h4>
+    <p class="lead">
+        IIFL Markets is a mobile app for trading at BSE, NSE and MCX. With lakhs of downloads, it is among the highest-rated trading app in India. The majority of IIFL customers use this app to monitor the markets and trade.
+
+        The app provides you with the facility to trade, analyze and stay updated with the latest information on stock markets in real-time on your Android and Apple mobile phones. Key features of IIFL Markets Mobile App include free research reports, online IPO, trading tips and alerts and integrated back-office reports.
+    </p>
+    <br>
+
+    <h4 class="sub-header">
+        Trader Terminal (TTWeb Website)
+
+    </h4>
+    <p class="lead">
+        The trading terminal on the web is a sophisticated trading website designed for trading on any computer or phone with a web browser. The India Infoline TTWeb has every trading feature needed for a casual investor to the frequent trader.
+
+
+    </p>
+    <br>
+
+
+    <h4 class="sub-header">
+        Trader Terminal (TT.Exe Desktop PC)
+
+    </h4>
+    <p class="lead">
+        IIFL Trader Terminal is installable trading software for PC. It is designed for high volume traders. TT Terminal is an all-inclusive online trading tool, with superior charting and analytical capabilities. It has the fastest order execution speed. It offers the facility to trade in cash, derivatives, mutual funds, IPOs, currencies and commodities, all in one screen.
+    </p>
+    <br>
+
+
+    <h4 class="sub-header">
+        TT Iris
+
+    </h4>
+    <p class="lead">
+        TT Iris is a stock market decision-making software designed for frequent traders. It helps analyze the market real-time and make decisions based on the most recent data. TT Iris's unique features include customized charting, strategy testing, portfolio optimization, candlestick scanners, and price watch.
+
+        TT Iris is a 3rd party trading software build by Spider Software India. It is available for a yearly fee of Rs 54,000.   </p>
+    <br>
+
+    <h4 class="sub-header">
+        IIFL Mutual Funds App (Android and iOS)
+
+    </h4>
+    <p class="lead">
+        IIFL Mutual Fund app is a smart phone app to invest online in Mutual Funds. This app allows Buy, Sell, SIP and Monitor Mutual Funds. This free app allows you to view mutual fund scheme performance, latest industry news & expert advice from Fund Managers. The app also offers an online paperless account opening.
+
+    </p>
+    <p class="lead">
+        Visit IIFL Securities Trading Software Review for more detail.
+
+    </p>
+    <br>
+
+
+</div>
+
+<br><br><br><br>
+<!-- subection start -->
+<div class="container-fluid">
+  <h4 class="display-4">
+    IIFL Securities Pros and Cons
+
+
+  </h4>
+  <hr>
+ 
+
+  <h4 class="sub-header">
+    IIFL Securities Pros (Advantages)
+</h4>
+  <p class="lead">
+    The following are the advantages of IIFL Securities. You must read IIFL Securities advantages and disadvantages before opening an account with IIFL Securities. IIFL Securities pros and cons help you find if it suits your investment needs.
+</p>
+
+<p class="lead">
+    IIFL is a full-service broker. Along with buying and selling, it offers research and recommendations. The personalized services offered through a dedicated relationship manager help traders and beginners.
+
+
+</p>
+  
+  <p class="lead">
+    <i class="fa fa-check-square-o mr-2"></i>
+    Full-service broker with an extended network of branches across India and abroad.
+</p>
+  
+  <p class="lead">
+    <i class="fa fa-check-square-o mr-2"></i>
+    Free Equity and MF research and recommendation services to all customers.
+  
+  <p class="lead">
+    <i class="fa fa-check-square-o mr-2"></i>
+
+    The advanced trading platform 'Trader Terminal' is one of the best.
+</p>
+  <p class="lead">
+    <i class="fa fa-check-square-o mr-2"></i>
+
+    Offer a wide range of financial products including stocks, derivatives, bonds, IPO, MF, Corporate FDs and Insurance.
+</p>
+  <p class="lead">
+    <i class="fa fa-check-square-o mr-2"></i>
+
+    RM (Relationship Manager) services for trading assistance.
+</p>
+<p class="lead">
+    <i class="fa fa-check-square-o mr-2"></i>
+
+    IIFL takes personal FDs as collateral for margin funding.
+</p>
+<p class="lead">
+    <i class="fa fa-check-square-o mr-2"></i>
+
+    IIFL offers Equity Systematic Investment Plan (Equity SIP)
+</p>
+
+
+    <p class="lead">
+        Offer advanced order type like Valid till Date (VTD).
+
+    </p>
+
+  
+    <br><br>
+    <h4 class="sub-header">
+        IIFL Securities Cons (Disadvantages)
+    </h4>
+    <p class="lead">
+        The following are the cons of IIFL Securities. Check the list of IIFL Securities drawbacks.
+
+
+    </p>
+
+    
+    <p class="lead">
+      <i class="fa fa-check-square-o mr-2"></i>
+      Brokerage charges are 60% to 90% higher in comparison to discount stock brokers. Check Discount Broker vs Full-Service Broker in India.
+
+    </p>
+    <p class="lead">
+        <i class="fa fa-check-square-o mr-2"></i>
+        It doesn't offer a 3-in-1 account as IIFL doesn't have a banking license.
+    </p>
+    
+      <p class="lead">
+        <i class="fa fa-check-square-o mr-2"></i>
+        It doesn't offer Direct Mutual Funds.
+    </p>
+    
+      <p class="lead">
+        <i class="fa fa-check-square-o mr-2"></i>
+        The Rs 25 per scrip minimum brokerage change is very high.
+    </p>
+      
+    <p class="lead">
+        <i class="fa fa-check-square-o mr-2"></i>
+        Call & trade changes are Rs 50 per call.
+    </p>
+   
+    <p class="lead">
+        <i class="fa fa-check-square-o mr-2"></i>
+        Advisory on SMS is available at Rs 50 per month.
+    </p>
+   
+   
+</div>
+<!-- subsection ends -->
+
+<br><br><br><br>
+<!-- subsection start -->
+<div class="container-fluid">
+<h3 class="sub-header">{{companyName}} Margin / Exposure
+</h3>
+<hr>
+<p class="sub-header-content">
+{{companyName}} leverage for intraday, delivery, options, currency and commodities.    
+</p>
+
+<table class="table mt-5 mb-5 text-center">
+<thead>
+<tr>
+<th scope="col">Segment	</th>
+<th scope="col">Margin		</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Equity Delivery	</td>
+<td> {{companyData?.margin_exposure?.equity_delivery}}</td>
+
+</tr>
+<tr>
+<td>Equity Intraday		</td>
+<td> {{companyData?.margin_exposure?.equity_intraday}} </td>
+</tr>
+
+<tr>
+<td>Equity Future	</td>
+<td> {{companyData?.margin_exposure?.equity_futures}} </td>
+</tr>
+
+<tr>
+<td>Equity Options		</td>
+<td> {{companyData?.margin_exposure?.equity_options}} </td>
+</tr>
+<tr>
+<td>Currency Future		</td>
+<td> {{companyData?.margin_exposure?.currency_futures}}</td>
+</tr>
+<tr>
+<td>Currency Options		</td>
+<td> {{companyData?.margin_exposure?.currency_options}} </td>
+</tr>
+<tr>
+<td>Commodity Future			</td>
+<td> {{companyData?.margin_exposure?.commodity_futures}}</td>
+</tr>
+<tr>
+<td>Commodity Options			</td>
+<td> {{companyData?.margin_exposure?.commodity_options}}</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<!-- subsection ends-->
+
+<!-- sub section start-->
+<div class="container-fluid newSubsection">
+<h3 class="sub-header">{{companyName}} Ratings
+</h3>
+<hr>
+
+
+<table class="table mt-5 mb-5 text-center">
+<thead>
+<tr>
+<th scope="col">Segment	</th>
+<th scope="col">Ratings		</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><b>Overall Rating</b>	</td>
+<td> {{companyData?.ratings?.overall_ratings}}</td>
+
+</tr>
+<tr>
+<td>Fees		</td>
+<td> {{companyData?.ratings?.fees}} </td>
+</tr>
+
+<tr>
+<td>Brokerage	</td>
+<td> {{companyData?.ratings?.brokerage}} </td>
+</tr>
+
+<tr>
+<td>Usability		</td>
+<td> {{companyData?.ratings?.usability}} </td>
+</tr>
+<tr>
+<td>Customer Service		</td>
+<td> {{companyData?.ratings?.customer_service}}</td>
+</tr>
+<tr>
+<td>Research Capabilities		</td>
+<td> {{companyData?.ratings?.research_capabilities}} </td>
+</tr>
+
+</tbody>
+</table>
+
+</div>
+
+<!-- subsection ends -->
+
+
+
+
+          </div>
+          <div class="col-md-3">
+            <app-company-page-scroll [companyScrollObject] = "companyScrollObject"></app-company-page-scroll>
+            <app-special-offers></app-special-offers>
+        </div>
+      </div>
+  </div>
+  <app-footer [companyName]="companyName"></app-footer>
