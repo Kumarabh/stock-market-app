@@ -32,7 +32,7 @@ import { FooterGlobalComponent } from './footer-global/footer-global.component';
     ShareBrokerReviewsComponent,
     CompareBrokerComponent,
     CarouselComponent,
-    FooterGlobalComponent
+    FooterGlobalComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,7 @@
+.btn-danger {
+    box-shadow: none;
+    color: white;
+    background: #333958;
+    font-size: 11px;
+    border-radius: 18px;
+}
