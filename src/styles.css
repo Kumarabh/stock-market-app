@@ -203,10 +203,12 @@ transition: .3s;
     font-weight: 400;
 }
 .lead2 {
-    font-size: 18px;
-    font-weight: 100;
-    font-family: fangsong;
     color: #333958;
+    /* color:#37474f; */
+    font-size: 12px;
+    line-height: 30px;
+    opacity: .87;
+    font-weight: 400;
 }
 h1 {
     font-size: 24px !important;

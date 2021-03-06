@@ -1,0 +1,16 @@
+
+<div class="card " style="border: none;">
+    <div class="card-header">
+        <label for="">Find Full Service Broker</label>
+    </div>
+    
+    <div class="card-body">
+        <input type="text" [(ngModel)]="selectedServiceBroker" list="serviceBrokerList" name="guest"
+        class="form-control">
+
+      <datalist id=serviceBrokerList>
+        <option *ngFor="let data of serviceBrokerListArray" [ngValue]="data">
+          {{data.companyName}}</option>
+      </datalist>
+    </div>
+</div>

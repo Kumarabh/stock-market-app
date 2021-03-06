@@ -1,15 +1,22 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-compare-broker-stock-market',
-  templateUrl: './compare-broker-stock-market.component.html',
-  styleUrls: ['./compare-broker-stock-market.component.css']
+  selector: 'app-more-discount-brokers',
+  templateUrl: './more-discount-brokers.component.html',
+  styleUrls: ['./more-discount-brokers.component.css']
 })
-export class CompareBrokerStockMarketComponent implements OnInit {
-  broker1
-  broker2
+export class MoreDiscountBrokersComponent implements OnInit {
+  selectedDiscountBroker
+  constructor() { }
 
-  allCompanies = [
+  ngOnInit() {
+  }
+
+  onSubmit() {
+
+  }
+
+  discountBrokerListArray = [
     {companyName: 'ICICI Direct', companyUrl: 'icici-direct'},
     {companyName: 'HDFC Securities', companyUrl: 'hdfc-securities'},
     {companyName: 'Sharekhan', companyUrl: 'sharekhan'},
@@ -64,13 +71,5 @@ export class CompareBrokerStockMarketComponent implements OnInit {
     {companyName: 'GCL Securities', companyUrl: 'gcl-securities'},
 
   ]
-  constructor() { }
 
-  ngOnInit() {
-    console.log('companies', this.allCompanies);
-    
-  }
-  submitCompareForm() {
-
-  }
 }

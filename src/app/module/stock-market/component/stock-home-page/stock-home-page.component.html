@@ -1,18 +1,85 @@
 <app-stock-market-header></app-stock-market-header>
 
-<app-compare-broker-stock-market></app-compare-broker-stock-market>
-
+<!-- <app-compare-broker-stock-market></app-compare-broker-stock-market> -->
+<app-compare-broker></app-compare-broker>
 <div class="container-fluid">
     <div class="row">
         <div class="col-md-9">
 
 
+            <!-- subsection start -->
+<div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-4">India Stock Market Live - Indexes and News
+           
+      </h1>
+      <p class="lead2">
+        Published on Sunday, February 18, 2018 by Chittorgarh.com Team | Modified on Monday, December 21, 2020
+
+      </p>
+      <hr class="my-4">
+      <h4 class="sub-header">
+        Live Indian Stock Markets - BSE / NSE
+
+      </h4>
+      <p class="lead">
+        Incorporated in 1875, the Bombay Stock Exchange of India Ltd.(BSE) is the first stock exchange in India. BSE has about 4748 companies listed.
+
+        Incorporated in November 1992, the National Stock Exchange of India Ltd.(NSE) is the largest stock exchange in India. NSE has about 1016 companies listed. representing the length, breadth and diversity of the Indian economy which includes from hi-tech to heavy industry, software, refinery, public sector units, infrastructure, and financial services.    </p>
+   
+      <br>
+      
+    </div>
+  </div>
+  <!-- subsection ends -->
+
+<br><br><br><br>
+  <div class="container-fluid">
+        <h4 class="sub-header">
+            Top 10 Discount Brokers 2021
+
+        </h4>
+        <table class="table text-center">
+            <thead>
+              <tr>
+                <th scope="col">Rank</th>
+                <th scope="col">Broker</th>
+                <th scope="col">Active Clients</th>
+                <th scope="col">Request Callback</th>
+                <th scope="col">Review</th>
+    
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor = "let data of discountBrokerArray">
+                <td>{{data.rank}}</td>
+                <td> {{data.broker_name}}</td>
+                <td> {{data.active_clients}}</td>
+                <td></td>
+                <td>
+                    <a  routerLink="{{data.review}}" routerLinkActive="active">{{data.review}} </a>
+
+                </td>
+
+              </tr>
+              
+            </tbody>
+          </table>
+  </div>
+
+
+
         </div>
         <div class="col-md-3">
 
-            <div class="card">
-                
+            <div class="card ">
+                <app-more-discount-brokers></app-more-discount-brokers>
             </div>
+            <br>
+            <div class="card ">
+                <app-more-service-brokers></app-more-service-brokers>
+            </div>
+            <br>
             <div class="card">
                 <!-- <div class="card-header text-center">
                     <p class="sub-header" style="color: #333958;">
