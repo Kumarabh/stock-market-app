@@ -1,22 +1,20 @@
 
 
 
-  <div class="   p-3" style="background: #333958; margin-top: -25px;height: 160px;">
+  <div class="   p-3" style="background: #333958; margin-top: -25px;height: 80px;">
 
     <div class="row ">
-      <div class="col-6" style="color: white;">
-        <h1 class="font-weight-bold mt-3 h2">{{companyName}}</h1>
-        <!-- <h4 class="mb-2 h5 text-left">
-              A stock broker plays an essential role in the buying and selling of securities in India. Since stockbrokers play an important role, it is crucial to choose the most suitable stockbroker for yourself.
-              They help you in opening a Demat and Trading Account for your trading and investment needs.
-          </h4> -->
+      <div class="col-6" >
+                <!-- <a href="" style="color: #333959; text-decoration: none;">Zerodha (₹20/Trade) Open Account</a> -->
+           
       </div>
       <div class="col-3">
   
       </div>
       <div class="col-3">
-        <p>
-          <!-- <a href="" class="btn btn-danger btn-md waves-effect waves-light">Margin Calculator</a> -->
+       
+        <p class="clips p-2 mr-0" *ngFor = "let data of pageData?.top_links">
+           <a style="color: #333958;text-decoration: none;cursor: pointer;" routerLink="{{data.link_path}}" routerLinkActive="active"> {{data.link_title}}</a>
         </p>
       </div>
     </div>

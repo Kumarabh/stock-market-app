@@ -1,0 +1,32 @@
+<div class="container-fluid">
+    <h4 class="display-4">
+        NSE & BSE Holidays 2020 List (Stock Market Holidays 2021)
+
+
+    </h4>
+    <table class="table text-center">
+        <thead>
+          <tr>
+            <th scope="col">Date</th>
+            <th scope="col">Holidays</th>
+           
+
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor = "let data of pageData?.holidays">
+         
+            <td>
+                {{data.date}}
+            </td>
+            <td>
+                {{data.holidays}}
+
+            </td>
+
+
+          </tr>
+          
+        </tbody>
+      </table>
+</div>

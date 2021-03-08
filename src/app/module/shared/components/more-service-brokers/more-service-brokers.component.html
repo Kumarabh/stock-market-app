@@ -5,7 +5,10 @@
     </div>
     
     <div class="card-body">
-        <input type="text" [(ngModel)]="selectedServiceBroker" list="serviceBrokerList" name="guest"
+        <input type="text"
+        style="font-weight: 600;
+        color: darkgray;"
+        placeholder="select a broker ..." [(ngModel)]="selectedServiceBroker" list="serviceBrokerList" name="guest"
         class="form-control">
 
       <datalist id=serviceBrokerList>

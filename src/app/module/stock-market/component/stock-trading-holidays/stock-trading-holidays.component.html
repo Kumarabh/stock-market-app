@@ -1,0 +1,141 @@
+<app-stock-market-header></app-stock-market-header>
+
+<!-- <app-compare-broker-stock-market></app-compare-broker-stock-market> -->
+<app-compare-broker></app-compare-broker>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-9">
+
+
+            <!-- subsection start -->
+<div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-4">
+        India Stock Market Holidays 2021 List (BSE, NSE)
+           
+      </h1>
+      <p class="lead2">
+        Published on Thursday, February 15, 2018 by Chittorgarh.com Team | Modified on Tuesday, December 22, 2020
+
+      </p>
+      <hr class="my-4">
+      <h4 class="sub-header">
+        Indian share markets remain open for equity trading on all weekdays except Saturdays, Sundays and declared market holidays.
+
+
+      </h4>
+      <p class="lead">
+        <i class="fa fa-check-square-o mr-2"></i>
+        NSE / BSE Opening Time: 09:15 AM IST
+
+    </p>
+    <p class="lead">
+        <i class="fa fa-check-square-o mr-2"></i>
+        NSE / BSE Closing Time: 3:30 PM IST
+    </p>
+   
+      <br>
+      <p class="lead">
+        Bombay Stock Exchange (BSE) and National Stock Exchange (NSE) of India remain close for trading on following days. Check if BSE / NSE is open today.
+
+
+      </p>
+
+      <p class="lead">
+        <i class="fa fa-check-square-o mr-2"></i>
+        If BSE or NSE closed today?    </p>
+    <p class="lead">
+        <i class="fa fa-check-square-o mr-2"></i>
+        What are Stock Market's holiday hours?
+    </p>
+    <p class="lead">
+        <i class="fa fa-check-square-o mr-2"></i>
+        BSE holidays 2021
+    </p>
+    <p class="lead">
+        <i class="fa fa-check-square-o mr-2"></i>
+        NSE list of trading holidays 2021
+    </p>
+    <p class="lead">
+        <i class="fa fa-check-square-o mr-2"></i>
+        Indian share market timings and holidays
+    </p>
+    <p class="lead">
+        <i class="fa fa-check-square-o mr-2"></i>
+        Stock Market in India open today?
+    </p>
+    </div>
+  </div>
+  <!-- subsection ends -->
+
+<br><br><br><br>
+  <div class="container-fluid">
+        <h4 class="display-4">
+            NSE & BSE Holidays 2021 List (Stock Market Holidays 2021)
+
+
+        </h4>
+        <table class="table text-center">
+            <thead>
+              <tr>
+                <th scope="col">Date</th>
+                <th scope="col">Holidays</th>
+               
+    
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor = "let data of pageData?.holidays">
+             
+                <td>
+                    {{data.date}}
+                </td>
+                <td>
+                    {{data.holidays}}
+
+                </td>
+
+
+              </tr>
+              
+            </tbody>
+          </table>
+  </div>
+
+
+  
+
+  <br><br><br><br>
+  <app-top-ten-stock-brokers></app-top-ten-stock-brokers>
+
+  <br><br><br><br>
+  <app-trading-holidays-twenty-one></app-trading-holidays-twenty-one>
+  
+
+
+
+
+        </div>
+        <div class="col-md-3">
+
+            <div class="card ">
+                <app-more-discount-brokers></app-more-discount-brokers>
+            </div>
+            <br>
+            <div class="card ">
+                <app-more-service-brokers></app-more-service-brokers>
+            </div>
+            <br>
+            <div class="card">
+                <!-- <div class="card-header text-center">
+                    <p class="sub-header" style="color: #333958;">
+                        Short Links
+                    </p>
+                </div> -->
+                <div class="card-body">
+                    <app-short-links-stock-market></app-short-links-stock-market>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

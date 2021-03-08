@@ -19,8 +19,17 @@ export class DataService implements OnInit {
   }
   
   
-  
-  
+
+  getUtilitiesData(docId) : Observable<any>{
+    return this.firestore.collection("utilities").doc(docId).get();
+
+  }
+
+  pageData(pageName): Observable<any> {
+    
+    return this.firestore.collection(pageName).doc('page_data').get();
+  }
+
   getUpcomingIPO() : Observable<any> {
     
     return this.firestore.collection('upcoming-dropdowns').doc('upcoming-ipo').get();

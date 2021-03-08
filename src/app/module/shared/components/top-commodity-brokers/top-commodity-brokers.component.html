@@ -1,0 +1,39 @@
+<div class="container-fluid">
+    <h4 class="display-4">
+        Top Commodity Broker in India List (Full-service Brokers)
+
+    </h4>
+    <table class="table text-center">
+        <thead>
+          <tr>
+            <th scope="col">Broker</th>
+            <th scope="col">Brokerage</th>
+            <th scope="col">Future Margin</th>
+            <th scope="col">Active Clients</th>
+            <th scope="col">Request Callback</th>
+            <th scope="col">Review</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor = "let data of topCommodityBrokers">
+            <td>{{data.broker}}</td>
+            <td> {{data.brokerage}}</td>
+            <td> {{data.futures_margin}}</td>
+            <td> {{data.active_clients}}</td>
+            <td>
+                <a class="text"  routerLink="{{data.review}}" routerLinkActive="active">Open Account</a>
+
+            </td>
+            <td>
+
+                <a class="text" routerLink="{{data.review}}" routerLinkActive="active"> Review ({{data.broker}})  </a>
+                <i class="fa fa-info-circle ml-2"></i>
+
+            </td>
+
+
+          </tr>
+          
+        </tbody>
+      </table>
+</div>

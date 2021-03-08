@@ -1,0 +1,38 @@
+<div class="container-fluid">
+    <h4 class="display-4">
+        Top 10 Discount Brokers 2021
+
+    </h4>
+    <table class="table text-center">
+        <thead>
+          <tr>
+            <th scope="col">Rank</th>
+            <th scope="col">Broker</th>
+            <th scope="col">Active Clients</th>
+            <th scope="col">Request Callback</th>
+            <th scope="col">Review</th>
+
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor = "let data of discountBrokerArray">
+            <td>{{data.rank}}</td>
+            <td> {{data.broker_name}}</td>
+            <td> {{data.active_clients}}</td>
+            <td>
+                <a class="text"  routerLink="{{data.review}}" routerLinkActive="active">Open Account</a>
+
+            </td>
+            <td>
+
+                <a class="text" routerLink="{{data.review}}" routerLinkActive="active"> Review ({{data.broker_name}})  </a>
+                <i class="fa fa-info-circle ml-2"></i>
+
+            </td>
+
+
+          </tr>
+          
+        </tbody>
+      </table>
+</div>

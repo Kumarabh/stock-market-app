@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { CompanyReviewService } from 'src/app/module/company-review/company-review.service';
+import { DataService } from 'src/app/data.service';
 
 @Component({
   selector: 'app-stock-home-page',
@@ -9,27 +9,14 @@ import { CompanyReviewService } from 'src/app/module/company-review/company-revi
 export class StockHomePageComponent implements OnInit {
 
   companyData
-  brokerList
-  discountBrokerArray: any;
-  constructor(private service: CompanyReviewService) {
-    this.getCompanyData();
+  constructor(private service: DataService) {
   }
 
   ngOnInit() {
     
   }
   
-  getCompanyData() {
-    this.service.getTopTenDiscountBrokersList().subscribe((doc) => {
-      if(doc.exists) {
-        // this.companyData = doc.data();
-        this.discountBrokerArray = doc.data().brokers;
-        console.log('companyData',this.companyData);
-      } else {
-        console.log('document not exist')
-      }
-   })
-  }
+  
 
 
 }

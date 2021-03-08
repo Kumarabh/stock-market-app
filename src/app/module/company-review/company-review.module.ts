@@ -24,24 +24,24 @@ import { IciciDirectComponent } from './components/icici-direct/icici-direct.com
 import { MotilalOswalComponent } from './components/motilal-oswal/motilal-oswal.component';
 import { AxisDirectComponent } from './components/axis-direct/axis-direct.component';
 import { AnandRathiComponent } from './components/anand-rathi/anand-rathi.component';
-import { CompareBrokerComponent } from './components/compare-broker/compare-broker.component';
 import { SbiSecuritiesComponent } from './components/sbi-securities/sbi-securities.component';
 import { KarvyComponent } from './components/karvy/karvy.component';
 import { SmcGlobalComponent } from './components/smc-global/smc-global.component';
 import { GrowwComponent } from './components/groww/groww.component';
 import { IiflSecuritiesComponent } from './components/iifl-securities/iifl-securities.component';
 import { GeojitComponent } from './components/geojit/geojit.component';
+import { SharedModule } from '../shared/shared.module';
 
 
 @NgModule({
-  declarations: [ZerodhaReviewComponent, UpstoxComponent, SpecialOffersComponent, EdelweissReviewComponent, FooterComponent, FivePaisaComponent, ProstocksComponent, SharekhanComponent, AngelBrokingComponent, FyersComponent, HdfcSecuritiesComponent, CompanyHeaderComponent, CompanyPageScrollComponent, KotakSecuritiesComponent, IciciDirectComponent, MotilalOswalComponent, AxisDirectComponent, AnandRathiComponent, CompareBrokerComponent, SbiSecuritiesComponent, KarvyComponent, SmcGlobalComponent, GrowwComponent, IiflSecuritiesComponent, GeojitComponent],
+  declarations: [ZerodhaReviewComponent, UpstoxComponent, SpecialOffersComponent, EdelweissReviewComponent, FooterComponent, FivePaisaComponent, ProstocksComponent, SharekhanComponent, AngelBrokingComponent, FyersComponent, HdfcSecuritiesComponent, CompanyHeaderComponent, CompanyPageScrollComponent, KotakSecuritiesComponent, IciciDirectComponent, MotilalOswalComponent, AxisDirectComponent, AnandRathiComponent, SbiSecuritiesComponent, KarvyComponent, SmcGlobalComponent, GrowwComponent, IiflSecuritiesComponent, GeojitComponent],
   imports: [
     CommonModule,
     CompanyReviewRoutingModule,
     FormsModule,
     // CompanyReviewService
     HttpClientModule,
-    
+    SharedModule
     
   ],
   providers: [CompanyReviewService]

@@ -6,10 +6,7 @@ import {Observable, ObservableLike} from 'rxjs';
   providedIn: 'root'
 })
 export class CompanyReviewService {
-  getTopTenDiscountBrokersList() : Observable<any>{
-    return this.firestore.collection("utilities").doc("top_10_discount_brokers").get();
-
-  }
+  
 
   constructor(private http:HttpClient, private firestore: AngularFirestore) { }
   

@@ -2,22 +2,22 @@ import { Component, OnInit } from '@angular/core';
 import { DataService } from 'src/app/data.service';
 
 @Component({
-  selector: 'app-stock-market-header',
-  templateUrl: './stock-market-header.component.html',
-  styleUrls: ['./stock-market-header.component.css']
+  selector: 'app-stock-trading-holidays',
+  templateUrl: './stock-trading-holidays.component.html',
+  styleUrls: ['./stock-trading-holidays.component.css']
 })
-export class StockMarketHeaderComponent implements OnInit {
+export class StockTradingHolidaysComponent implements OnInit {
 
   pageData
-  constructor(private service: DataService) { 
+  discountBrokerArray
+  constructor(private service: DataService) { }
+
+  ngOnInit() {
     this.getPageData();
   }
 
-  ngOnInit() {
-  }
-
   getPageData() {
-    this.service.pageData('stock_market_home').subscribe((doc) => {
+    this.service.pageData('stock_trading_holidays').subscribe((doc) => {
       if(doc.exists) {
         // this.companyData = doc.data();
         this.pageData = doc.data()
@@ -27,6 +27,8 @@ export class StockMarketHeaderComponent implements OnInit {
       }
    })
   }
+
+ 
 
 
 }

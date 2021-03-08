@@ -34,38 +34,8 @@
   <!-- subsection ends -->
 
 <br><br><br><br>
-  <div class="container-fluid">
-        <h4 class="sub-header">
-            Top 10 Discount Brokers 2021
+<app-top-ten-stock-brokers></app-top-ten-stock-brokers>
 
-        </h4>
-        <table class="table text-center">
-            <thead>
-              <tr>
-                <th scope="col">Rank</th>
-                <th scope="col">Broker</th>
-                <th scope="col">Active Clients</th>
-                <th scope="col">Request Callback</th>
-                <th scope="col">Review</th>
-    
-              </tr>
-            </thead>
-            <tbody>
-              <tr *ngFor = "let data of discountBrokerArray">
-                <td>{{data.rank}}</td>
-                <td> {{data.broker_name}}</td>
-                <td> {{data.active_clients}}</td>
-                <td></td>
-                <td>
-                    <a  routerLink="{{data.review}}" routerLinkActive="active">{{data.review}} </a>
-
-                </td>
-
-              </tr>
-              
-            </tbody>
-          </table>
-  </div>
 
 
 
