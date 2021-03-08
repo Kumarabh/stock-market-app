@@ -28,9 +28,7 @@ export class CompanyReviewService {
     return this.firestore.collection(collection).doc("basic_details").get();
    }
 
-  getSpecialOffers(): Observable<any> {
-    return this.firestore.collection('special_offers').doc("special_offers").get();
-  }
+  
 
   upstoxCurrencyCharges(): Observable<any> {
     return this.firestore.collection('upstox-review').doc("currency_charges_table").get();

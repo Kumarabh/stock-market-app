@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { StockMarketHeaderComponent } from './stock-market-header.component';
+import { ShortLinksComponent } from './short-links.component';
 
-describe('StockMarketHeaderComponent', () => {
-  let component: StockMarketHeaderComponent;
-  let fixture: ComponentFixture<StockMarketHeaderComponent>;
+describe('ShortLinksComponent', () => {
+  let component: ShortLinksComponent;
+  let fixture: ComponentFixture<ShortLinksComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ StockMarketHeaderComponent ]
+      declarations: [ ShortLinksComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(StockMarketHeaderComponent);
+    fixture = TestBed.createComponent(ShortLinksComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

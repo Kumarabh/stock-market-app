@@ -2,12 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { DataService } from 'src/app/data.service';
 
 @Component({
-  selector: 'app-stock-market-header',
-  templateUrl: './stock-market-header.component.html',
-  styleUrls: ['./stock-market-header.component.css']
+  selector: 'app-stock-header',
+  templateUrl: './stock-header.component.html',
+  styleUrls: ['./stock-header.component.css']
 })
-export class StockMarketHeaderComponent implements OnInit {
-
+export class StockHeaderComponent implements OnInit {
   pageData
   constructor(private service: DataService) { 
     this.getPageData();
@@ -27,6 +26,4 @@ export class StockMarketHeaderComponent implements OnInit {
       }
    })
   }
-
-
 }

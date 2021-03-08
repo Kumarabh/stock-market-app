@@ -8,7 +8,6 @@ import { UpstoxComponent } from './components/upstox/upstox.component';
 import { FormsModule } from '@angular/forms';
 import { CompanyReviewService } from './company-review.service';
 import { HttpClientModule } from '@angular/common/http';
-import { SpecialOffersComponent } from './components/special-offers/special-offers.component';
 import { EdelweissReviewComponent } from './components/edelweiss-review/edelweiss-review.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { FivePaisaComponent } from './components/five-paisa/five-paisa.component';
@@ -34,7 +33,7 @@ import { SharedModule } from '../shared/shared.module';
 
 
 @NgModule({
-  declarations: [ZerodhaReviewComponent, UpstoxComponent, SpecialOffersComponent, EdelweissReviewComponent, FooterComponent, FivePaisaComponent, ProstocksComponent, SharekhanComponent, AngelBrokingComponent, FyersComponent, HdfcSecuritiesComponent, CompanyHeaderComponent, CompanyPageScrollComponent, KotakSecuritiesComponent, IciciDirectComponent, MotilalOswalComponent, AxisDirectComponent, AnandRathiComponent, SbiSecuritiesComponent, KarvyComponent, SmcGlobalComponent, GrowwComponent, IiflSecuritiesComponent, GeojitComponent],
+  declarations: [ZerodhaReviewComponent, UpstoxComponent, EdelweissReviewComponent, FooterComponent, FivePaisaComponent, ProstocksComponent, SharekhanComponent, AngelBrokingComponent, FyersComponent, HdfcSecuritiesComponent, CompanyHeaderComponent, CompanyPageScrollComponent, KotakSecuritiesComponent, IciciDirectComponent, MotilalOswalComponent, AxisDirectComponent, AnandRathiComponent, SbiSecuritiesComponent, KarvyComponent, SmcGlobalComponent, GrowwComponent, IiflSecuritiesComponent, GeojitComponent],
   imports: [
     CommonModule,
     CompanyReviewRoutingModule,

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { CompanyReviewService } from '../../company-review.service';
+import { DataService } from 'src/app/data.service';
+
 @Component({
   selector: 'app-special-offers',
   templateUrl: './special-offers.component.html',
@@ -8,7 +9,7 @@ import { CompanyReviewService } from '../../company-review.service';
 export class SpecialOffersComponent implements OnInit {
 
   specialOffersArray
-  constructor(private service: CompanyReviewService) { this.getSpecialOffers();}
+  constructor(private service: DataService) { this.getSpecialOffers();}
 
   ngOnInit() {
     
