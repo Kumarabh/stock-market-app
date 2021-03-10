@@ -1,0 +1,111 @@
+<!-- <app-stock-market-header></app-stock-market-header> -->
+<app-stock-header></app-stock-header>
+<!-- <app-compare-broker-stock-market></app-compare-broker-stock-market> -->
+<app-compare-broker></app-compare-broker>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-9">
+
+
+            <!-- subsection start -->
+<div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-4">BSE SME Share Price Live
+           
+      </h1>
+      <p class="lead2">
+        BSE SME is the platform at the Bombay Stock Exchange (BSE) for Small and Medium Enterprises (SME). SME companies raise funds from the public and get listed at the exchange by selling equities in the company. The SME stocks get traded on the same exchange as normal companies.
+      </p>
+    <p class="lead">
+        SEM IPO's offer opportunity to the investors for early investment in businesses which are at a small scale. SME listed companies eventually move to the main exchange once they grow.
+
+    </p>      
+      <p class="lead">
+        BSE SME share price of listed SME companies is provided below. The BSE SME market watch offers live BSE SME quotes, rates, and price. It also provides the list of SME companies at BSE exchange.
+
+
+      </p>
+      <p class="lead">
+        <b>Check out BSE SME gainers and losers.</b>
+
+      </p>
+    </div>
+  </div>
+  <!-- subsection ends -->
+
+<!--  -->
+<br><br><br><br>
+<div class="container-fluid">
+    <h4 class="display-4">
+        BSE SME Share Price Live  
+    </h4>
+    <hr>
+    <table class="table mt-5 mb-5 text-center">
+        <thead>
+        <tr>
+          <th scope="col">Company Name	</th>
+          <th scope="col">Open Price	</th>
+          <th scope="col">High	</th>
+          <th scope="col">Low	</th>
+          <th scope="col">LTP</th>
+          <th scope="col">No. of Shares Traded	</th>
+          <th scope="col">Total Turnover (Rs Lac)	</th>
+          <th scope="col">No. of Trades	Date </th>
+          <th scope="col">Date Updated </th>
+
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor = "let data of pageData?.share_price_live">
+          <td>{{data?.company_name}}</td>
+          <td> {{data?.open_price}}</td>
+          <td> {{data?.high}}</td>
+          <td> {{data?.low}}</td>
+          <td> {{data?.ltp}}</td>
+          <td> {{data?.number_of_shares_traded}}</td>
+          <td> {{data?.total_turnover}}</td>
+          <td> {{data?.number_of_trades}}</td>
+          <td> {{data?.date_updated}}</td>
+
+        </tr>
+       
+        
+        </tbody>
+        </table>
+
+
+</div>
+
+
+
+
+
+
+        </div>
+        <div class="col-md-3">
+
+            <div class="card ">
+                <app-more-discount-brokers></app-more-discount-brokers>
+            </div>
+            <br>
+            <div class="card ">
+                <app-more-service-brokers></app-more-service-brokers>
+            </div>
+            <br>
+            <div class="card">
+                <!-- <div class="card-header text-center">
+                    <p class="sub-header" style="color: #333958;">
+                        Short Links
+                    </p>
+                </div> -->
+                <div class="card-body">
+                    <app-short-links></app-short-links>
+                    <!-- <app-short-links-stock-market></app-short-links-stock-market> -->
+                </div>
+            </div>
+
+            <app-special-offers></app-special-offers>
+
+        </div>
+    </div>
+</div>

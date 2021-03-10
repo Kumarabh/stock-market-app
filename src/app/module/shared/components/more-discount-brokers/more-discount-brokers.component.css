@@ -1,6 +1,13 @@
 .card-header {
-    background: #333958;
+    background: white;
+    
+    border-left: 4px solid #333958;
+    /* box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important; */
+    
 }
+
 label {
-    color: white;
+    color: #333958;
+    font-weight: 100;
+    font-size: 24px;
 }

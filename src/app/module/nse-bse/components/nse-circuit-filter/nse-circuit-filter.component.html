@@ -1,0 +1,121 @@
+<!-- <app-stock-market-header></app-stock-market-header> -->
+<app-stock-header></app-stock-header>
+<!-- <app-compare-broker-stock-market></app-compare-broker-stock-market> -->
+<app-compare-broker></app-compare-broker>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-9">
+
+
+            <!-- subsection start -->
+<div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-4">NSE Daily Circuit Filters - {{filterType}} Circuit Filter Stocks
+           
+      </h1>
+      <p class="lead2">
+        Circuit Filters or Daily Circuit Filters sets the limit to fluctuations of stock prices. Circuit filters are set by stock exchanges to stop any unduly rising or falling of a stock price.    </p>
+    <p class="lead2">
+        They are numeric percent limits set on individual scripts. National Stock Exchange of India (NSE) define circuit filters in 5 categories including 2%, 5%, 10%, 20% and no circuit filter.
+
+    </p>
+    <p class="lead2">
+        Circuit filters works in either ways. I.e. if circuit set for equity is 10%, stock price cannot move further +10% to lower then -10%.
+
+    </p>
+    <p class="lead">
+        Circuit filter changes every day and stock keeps moving between one circuit filter categories to other based on previous day's closing price. Below is the list of current circuit filters at NSE:
+
+
+    </p>
+
+    </div>
+  </div>
+  <!-- subsection ends -->
+
+  <div class="container-fluid">
+      <div class="row">
+          <div class="col-md-12 text-center">
+            <a  class="btn  small-clips" (click) = "loadFilter('percent2')">2% Circuit Filter</a>
+            <a  class="btn  small-clips" (click) = "loadFilter('percent5')">5% Circuit Filter</a>
+            <a  class="btn  small-clips"(click) = "loadFilter('percent10')" >10% Circuit Filter</a>
+            <a  class="btn  small-clips"(click) = "loadFilter('no_circuit_filter')">No Circuit Filter</a>
+            <a  class="btn  small-clips" (click) = "loadFilter('percent20')">20% Circuit Filter</a>
+
+          </div>
+      </div>
+  </div>
+<!-- sub section start -->
+  <!--  -->
+  <br><br><br><br>
+  <div class="container-fluid" *ngIf = "filterType !== '20%'">
+      <h4 class="display-4">
+        Stocks in {{filterType}} Circuit Filter Stocks Circuit Filter
+    </h4>
+      <hr>
+      <table class="table mt-5 mb-5 text-center">
+          <thead>
+          <tr>
+            <th scope="col">Symbol	</th>
+            <th scope="col">Series	</th>
+            <th scope="col">Security Name	</th>       
+          </tr>
+          </thead>
+          <tbody>
+          <tr *ngFor = "let data of circuitArray">
+            <td> {{data?.symbol}}</td>
+            <td> {{data?.series}}</td>
+            <td> {{data?.security_name}}</td>
+
+
+          </tr>
+         
+          
+          </tbody>
+          </table>
+
+
+  </div>
+
+  <div class="container-fluid" *ngIf = "filterType === '20%'">
+    <h4 class="display-4">
+        Stocks in {{filterType}} Circuit Filter Stocks Circuit Filter
+    </h4>
+      <hr>
+      <p class="lead">
+        All NSE listed stocks which are not part of 2%, 5%, 10% and no circuit filters categories, considered as 20% Circuit Filter Stocks.
+      </p>
+  </div>
+
+
+  <!-- subsection ends -->
+
+
+        </div>
+        <div class="col-md-3">
+
+            <div class="card ">
+                <app-more-discount-brokers></app-more-discount-brokers>
+            </div>
+            <br>
+            <div class="card ">
+                <app-more-service-brokers></app-more-service-brokers>
+            </div>
+            <br>
+            <div class="card">
+                <!-- <div class="card-header text-center">
+                    <p class="sub-header" style="color: #333958;">
+                        Short Links
+                    </p>
+                </div> -->
+                <div class="card-body">
+                    <app-short-links></app-short-links>
+                    <!-- <app-short-links-stock-market></app-short-links-stock-market> -->
+                </div>
+            </div>
+
+            <app-special-offers></app-special-offers>
+
+        </div>
+    </div>
+</div>

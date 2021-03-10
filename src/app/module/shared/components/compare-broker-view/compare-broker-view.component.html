@@ -1,0 +1,1171 @@
+
+  <!-- <div class="   p-3" style="background: #333958; margin-top: -25px;height: 80px;">
+
+    <div class="row ">
+      <div class="col-6" >
+           
+      </div>
+      <div class="col-3">
+  
+      </div>
+      <div class="col-3">
+       
+        <p class="clips p-2 mr-0" *ngFor = "let data of shortLinks?.links">
+           <a style="color: #333958;text-decoration: none;cursor: pointer;" routerLink="{{data.link_path}}" routerLinkActive="active"> {{data.link_title}}</a>
+        </p>
+      </div>
+    </div>
+  
+  </div> -->
+
+
+  <app-stock-header></app-stock-header>
+
+  <!-- <app-compare-broker-stock-market></app-compare-broker-stock-market> -->
+  <app-compare-broker></app-compare-broker>
+  <div class="container-fluid">
+      <div class="row">
+          <div class="col-md-9">
+              <!-- <button (click) = "setCompareBrokerData()">set brokers data</button> -->
+  
+                    <!-- subsection start -->
+  <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h1 class="display-4">
+          {{broker1Data?.about?.broker_name}} Vs {{broker2Data?.about?.broker_name}} (Compare {{broker1Data?.about?.broker_name}} and {{broker2Data?.about?.broker_name}})  
+             
+        </h1>
+        <p class="lead2">
+          <!-- Stock market discussion forum offers platform to discuss stock market in India. Share tips, knowledge, research or simply ask questions to fellow members of this forum, get expert advices, learn stock market basics and much more. Members are advised not to use this forum for advertizing products or services. -->
+          Full comparison between {{broker1Data?.about?.broker_name}} and {{broker2Data?.about?.broker_name}}. 
+          Comparing {{broker1Data?.about?.broker_name}} Vs {{broker2Data?.about?.broker_name}} on the basis of brokerage, charges, leverage, margin, demat account and intraday trading. 
+          Let us find, which one is best among {{broker1Data?.about?.broker_name}} vs {{broker2Data?.about?.broker_name}}?
+        </p>
+        
+        
+      </div>
+    </div>
+    <!-- subsection ends -->
+  
+    <div class="container-fluid">
+      <h4 class="display-4">
+        {{broker1Data?.about?.broker_name}} Information
+      </h4>
+
+      <br>
+      <p class="lead">
+        {{broker1Data?.information}}
+      </p>
+    </div>
+
+    <div class="container-fluid">
+      <h4 class="display-4">
+        {{broker2Data?.about?.broker_name}} Information
+      </h4>
+      <br>
+      <p class="lead">
+        {{broker2Data?.information}}
+      </p>
+    </div>
+
+    <br>
+    <!--  -->
+    <br><br><br><br>
+            <div class="container-fluid">
+                <h4 class="display-4">
+                  {{broker1Data?.about?.broker_name}} Vs {{broker2Data?.about?.broker_name}}
+                </h4>
+                <hr>
+                <table class="table mt-5 mb-5 text-center">
+                    <thead>
+                    <tr>
+                      <th scope="col">Rows	</th>
+                      <th scope="col">{{broker1Data?.about?.broker_name}}	</th>
+                      <th scope="col">{{broker2Data?.about?.broker_name}}		</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                      <td>Type of Broker</td>
+                      <td> {{broker1Data?.about?.type_of_broker}}</td>
+                      <td> {{broker2Data?.about?.type_of_broker}}</td>
+
+                    </tr>
+                    <tr>
+                      <td>Supported Exchnages</td>
+                      <td> {{broker1Data?.about?.supported_exchanges}}</td>
+                      <td> {{broker2Data?.about?.supported_exchanges}}</td>
+
+                    </tr>
+                    <tr>
+                      <td>Account Type</td>
+                      <td> {{broker1Data?.about?.type_of_broker}}</td>
+                      <td> {{broker2Data?.about?.type_of_broker}}</td>
+
+                    </tr>
+                    <tr>
+                      <td>Year of Incorporation</td>
+                      <td> {{broker1Data?.about?.year_of_incorporation}}</td>
+                      <td> {{broker2Data?.about?.year_of_incorporation}}</td>
+
+                    </tr>
+                    <tr>
+                      <td>Number of Branches</td>
+                      <td> {{broker1Data?.about?.number_of_branches}}</td>
+                      <td> {{broker2Data?.about?.number_of_branches}}</td>
+
+                    </tr>
+                    <tr>
+                      <td>Broker Enquiry</td>
+                      <td>
+                        <a href=""routerLink="{{broker1Data?.about?.broker_inquiry}}" routerLinkActive="active">{{broker1Data?.about?.broker_name}}</a>
+                        </td>
+                      <td> 
+                        <a href=""routerLink="{{broker2Data?.about?.broker_inquiry}}" routerLinkActive="active">{{broker2Data?.about?.broker_name}}</a>
+
+                        </td>
+
+                    </tr>
+                    
+                    </tbody>
+                    </table>
+
+
+            </div>
+<!--  -->
+<br>
+<br><br><br><br>
+        <div class="container-fluid">
+            <h4 class="display-4">
+              {{broker1Data?.about?.broker_name}} Vs {{broker2Data?.about?.broker_name}} & AMC
+            </h4>
+            <hr>
+            <table class="table mt-5 mb-5 text-center">
+                <thead>
+                <tr>
+                  <th scope="col">Rows	</th>
+                  <th scope="col">{{broker1Data?.about?.broker_name}}	</th>
+                  <th scope="col">{{broker2Data?.about?.broker_name}}		</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                  <td>Trading Account Opening Charges</td>
+                  <td> {{broker1Data?.charges_and_amc?.trading_account_opening_charges}}</td>
+                  <td> {{broker2Data?.charges_and_amc?.trading_account_opening_charges}}</td>
+
+                </tr>
+                <tr>
+                  <td>Trading Account AMC Charges</td>
+                  <td> {{broker1Data?.charges_and_amc?.trading_account_amc_charges}}</td>
+                  <td> {{broker2Data?.charges_and_amc?.trading_account_amc_charges}}</td>
+
+                </tr>
+                <tr>
+                  <td>Demat Account Opening Charges</td>
+                  <td> {{broker1Data?.charges_and_amc?.demat_account_opening_charges}}</td>
+                  <td> {{broker2Data?.charges_and_amc?.demat_account_opening_charges}}</td>
+
+                </tr>
+                <tr>
+                  <td>Demat Account AMC Charges </td>
+                  <td> {{broker1Data?.charges_and_amc?.demat_account_amc_charges}}</td>
+                  <td> {{broker2Data?.charges_and_amc?.demat_account_amc_charges}}</td>
+
+                </tr>
+            
+                
+                </tbody>
+                </table>
+
+
+        </div>   
+
+        <!--  -->
+
+<!--  -->
+<br>
+<br><br><br><br>
+        <div class="container-fluid">
+            <h4 class="display-4">
+              {{broker1Data?.about?.broker_name}} Vs {{broker2Data?.about?.broker_name}} Brokerage
+            </h4>
+            <hr>
+            <table class="table mt-5 mb-5 text-center">
+                <thead>
+                <tr>
+                  <th scope="col">Rows	</th>
+                  <th scope="col">{{broker1Data?.about?.broker_name}}	</th>
+                  <th scope="col">{{broker2Data?.about?.broker_name}}		</th>
+                </tr>
+                <tr>
+                  <th scope="col">Account Type	</th>
+                  <th scope="col">{{broker1Data?.brokerage?.account_type}}	</th>
+                  <th scope="col">{{broker2Data?.brokerage?.account_type}}		</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                  <td>Equity Delivery Brokerage</td>
+                  <td> {{broker1Data?.brokerage?.equity_delivery_brokerage}}</td>
+                  <td> {{broker2Data?.brokerage?.equity_delivery_brokerage}}</td>
+
+                </tr>
+                <tr>
+                  <td>Equity Intraday Brokerage</td>
+                  <td> {{broker1Data?.brokerage?.equity_intraday_brokerage}}</td>
+                  <td> {{broker2Data?.brokerage?.equity_intraday_brokerage}}</td>
+
+                </tr>
+                <tr>
+                  <td>Equity Futures Brokerage</td>
+                  <td> {{broker1Data?.brokerage?.equity_futures_brokerage}}</td>
+                  <td> {{broker2Data?.brokerage?.equity_futures_brokerage}}</td>
+
+                </tr>
+                <tr>
+                  <td>Equity Options Brokerage </td>
+                  <td> {{broker1Data?.brokerage?.equity_options_brokerage}}</td>
+                  <td> {{broker2Data?.brokerage?.equity_options_brokerage}}</td>
+
+                </tr>
+
+                <tr>
+                  <td>Currency Futures Trading Brokerage</td>
+                  <td> {{broker1Data?.brokerage?.currency_futures_trading_brokerage}}</td>
+                  <td> {{broker2Data?.brokerage?.currency_futures_trading_brokerage}}</td>
+
+                </tr>
+                <tr>
+                  <td>Currency Options Trading Brokerage</td>
+                  <td> {{broker1Data?.brokerage?.currency_options_trading_brokerage}}</td>
+                  <td> {{broker2Data?.brokerage?.currency_options_trading_brokerage}}</td>
+
+                </tr>
+                <tr>
+                  <td>Commodity Futures Trading Brokerage </td>
+                  <td> {{broker1Data?.brokerage?.commodity_futures_trading_brokerage}}</td>
+                  <td> {{broker2Data?.brokerage?.commodity_futures_trading_brokerage}}</td>
+
+                </tr>
+                <tr>
+                  <td>Commodity Options Trading Brokerage</td>
+                  <td> {{broker1Data?.brokerage?.commodity_options_trading_brokerage}}</td>
+                  <td> {{broker2Data?.brokerage?.commodity_options_trading_brokerage}}</td>
+
+                </tr>
+                <tr>
+                  <td>Special Offer </td>
+                  <td> </td>
+                  <td> </td>
+
+                </tr>
+                
+                </tbody>
+                </table>
+
+
+        </div>   
+
+        <!--  -->
+
+
+        <!--  -->
+<br>
+<br><br><br><br>
+        <div class="container-fluid">
+            <h4 class="display-4">
+              {{broker1Data?.about?.broker_name}} Vs {{broker2Data?.about?.broker_name}} Brokerage Plan-2
+            </h4>
+            <hr>
+            <table class="table mt-5 mb-5 text-center">
+                <thead>
+                <tr>
+                  <th scope="col">Rows	</th>
+                  <th scope="col">{{broker1Data?.about?.broker_name}}	</th>
+                  <th scope="col">{{broker2Data?.about?.broker_name}}		</th>
+                </tr>
+                <tr>
+                  <th scope="col">Account Type	</th>
+                  <th scope="col">{{broker1Data?.brokerage_plan2?.account_type}}	</th>
+                  <th scope="col">{{broker2Data?.brokerage_plan2?.account_type}}		</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                  <td>Equity Delivery Brokerage</td>
+                  <td> {{broker1Data?.brokerage_plan2?.equity_delivery_brokerage}}</td>
+                  <td> {{broker2Data?.brokerage_plan2?.equity_delivery_brokerage}}</td>
+
+                </tr>
+                <tr>
+                  <td>Equity Intraday Brokerage</td>
+                  <td> {{broker1Data?.brokerage_plan2?.equity_intraday_brokerage}}</td>
+                  <td> {{broker2Data?.brokerage_plan2?.equity_intraday_brokerage}}</td>
+
+                </tr>
+                <tr>
+                  <td>Equity Futures Brokerage</td>
+                  <td> {{broker1Data?.brokerage_plan2?.equity_futures_brokerage}}</td>
+                  <td> {{broker2Data?.brokerage_plan2?.equity_futures_brokerage}}</td>
+
+                </tr>
+                <tr>
+                  <td>Equity Options Brokerage </td>
+                  <td> {{broker1Data?.brokerage_plan2?.equity_options_brokerage}}</td>
+                  <td> {{broker2Data?.brokerage_plan2?.equity_options_brokerage}}</td>
+
+                </tr>
+
+                <tr>
+                  <td>Currency Futures Trading Brokerage</td>
+                  <td> {{broker1Data?.brokerage_plan2?.currency_futures_trading_brokerage}}</td>
+                  <td> {{broker2Data?.brokerage_plan2?.currency_futures_trading_brokerage}}</td>
+
+                </tr>
+                <tr>
+                  <td>Currency Options Trading Brokerage</td>
+                  <td> {{broker1Data?.brokerage_plan2?.currency_options_trading_brokerage}}</td>
+                  <td> {{broker2Data?.brokerage_plan2?.currency_options_trading_brokerage}}</td>
+
+                </tr>
+                <tr>
+                  <td>Commodity Futures Trading Brokerage </td>
+                  <td> {{broker1Data?.brokerage_plan2?.commodity_futures_trading_brokerage}}</td>
+                  <td> {{broker2Data?.brokerage_plan2?.commodity_futures_trading_brokerage}}</td>
+
+                </tr>
+                <tr>
+                  <td>Commodity Options Trading Brokerage</td>
+                  <td> {{broker1Data?.brokerage_plan2?.commodity_options_trading_brokerage}}</td>
+                  <td> {{broker2Data?.brokerage_plan2?.commodity_options_trading_brokerage}}</td>
+
+                </tr>
+                <tr>
+                  <td>Special Offer </td>
+                  <td> </td>
+                  <td> </td>
+
+                </tr>
+                
+                </tbody>
+                </table>
+
+
+        </div>   
+
+        <!--  -->
+
+       <!--  -->
+       <br>
+       <br><br><br><br>
+               <div class="container-fluid">
+                   <h4 class="display-4">
+                     {{broker1Data?.about?.broker_name}} Vs {{broker2Data?.about?.broker_name}} Brokerage Plan-3
+                   </h4>
+                   <hr>
+                   <table class="table mt-5 mb-5 text-center">
+                       <thead>
+                       <tr>
+                         <th scope="col">Rows	</th>
+                         <th scope="col">{{broker1Data?.about?.broker_name}}	</th>
+                         <th scope="col">{{broker2Data?.about?.broker_name}}		</th>
+                       </tr>
+                       <tr>
+                         <th scope="col">Account Type	</th>
+                         <th scope="col">{{broker1Data?.brokerage_plan3?.account_type}}	</th>
+                         <th scope="col">{{broker2Data?.brokerage_plan3?.account_type}}		</th>
+                       </tr>
+                       </thead>
+                       <tbody>
+                       <tr>
+                         <td>Equity Delivery Brokerage</td>
+                         <td> {{broker1Data?.brokerage_plan3?.equity_delivery_brokerage}}</td>
+                         <td> {{broker2Data?.brokerage_plan3?.equity_delivery_brokerage}}</td>
+       
+                       </tr>
+                       <tr>
+                         <td>Equity Intraday Brokerage</td>
+                         <td> {{broker1Data?.brokerage_plan3?.equity_intraday_brokerage}}</td>
+                         <td> {{broker2Data?.brokerage_plan3?.equity_intraday_brokerage}}</td>
+       
+                       </tr>
+                       <tr>
+                         <td>Equity Futures Brokerage</td>
+                         <td> {{broker1Data?.brokerage_plan3?.equity_futures_brokerage}}</td>
+                         <td> {{broker2Data?.brokerage_plan3?.equity_futures_brokerage}}</td>
+       
+                       </tr>
+                       <tr>
+                         <td>Equity Options Brokerage </td>
+                         <td> {{broker1Data?.brokerage_plan3?.equity_options_brokerage}}</td>
+                         <td> {{broker2Data?.brokerage_plan3?.equity_options_brokerage}}</td>
+       
+                       </tr>
+       
+                       <tr>
+                         <td>Currency Futures Trading Brokerage</td>
+                         <td> {{broker1Data?.brokerage_plan3?.currency_futures_trading_brokerage}}</td>
+                         <td> {{broker2Data?.brokerage_plan3?.currency_futures_trading_brokerage}}</td>
+       
+                       </tr>
+                       <tr>
+                         <td>Currency Options Trading Brokerage</td>
+                         <td> {{broker1Data?.brokerage_plan3?.currency_options_trading_brokerage}}</td>
+                         <td> {{broker2Data?.brokerage_plan3?.currency_options_trading_brokerage}}</td>
+       
+                       </tr>
+                       <tr>
+                         <td>Commodity Futures Trading Brokerage </td>
+                         <td> {{broker1Data?.brokerage_plan3?.commodity_futures_trading_brokerage}}</td>
+                         <td> {{broker2Data?.brokerage_plan3?.commodity_futures_trading_brokerage}}</td>
+       
+                       </tr>
+                       <tr>
+                         <td>Commodity Options Trading Brokerage</td>
+                         <td> {{broker1Data?.brokerage_plan3?.commodity_options_trading_brokerage}}</td>
+                         <td> {{broker2Data?.brokerage_plan3?.commodity_options_trading_brokerage}}</td>
+       
+                       </tr>
+                       <tr>
+                         <td>Special Offer </td>
+                         <td> </td>
+                         <td> </td>
+       
+                       </tr>
+                       
+                       </tbody>
+                       </table>
+       
+       
+               </div>   
+       
+               <!--  -->
+
+               <br>
+               <!--  -->
+               <br><br><br><br>
+                       <div class="container-fluid">
+                           <h4 class="display-4">
+                             {{broker1Data?.about?.broker_name}} Vs {{broker2Data?.about?.broker_name}}
+                           </h4>
+                           <hr>
+                           <table class="table mt-5 mb-5 text-center">
+                               <thead>
+                               <tr>
+                                 <th scope="col">Rows	</th>
+                                 <th scope="col">{{broker1Data?.about?.broker_name}}	</th>
+                                 <th scope="col">{{broker2Data?.about?.broker_name}}		</th>
+                               </tr>
+                               </thead>
+                               <tbody>
+                               <tr>
+                                 <td>Minimum Brokerage Charges</td>
+                                 <td> {{broker1Data?.minimum_brokerage_charges}}</td>
+                                 <td> {{broker2Data?.minimum_brokerage_charges}}</td>
+           
+                               </tr>
+                               <tr>
+                                 <td>Other Brokerage Charges </td>
+                                 <td> {{broker1Data?.other_brokerage_charges}}</td>
+                                 <td> {{broker2Data?.other_brokerage_charges}}</td>
+           
+                               </tr>
+                               <tr>
+                                 <td>Call & Trade Charges</td>
+                                 <td> {{broker1Data?.call_and_trade_charges}}</td>
+                                 <td> {{broker2Data?.call_and_trade_charges}}</td>
+           
+                               </tr>
+                             
+                               
+                               </tbody>
+                               </table>
+           
+           
+                       </div>
+           <!--  -->
+           
+           <br>
+           <!--  -->
+           <br><br><br><br>
+                   <div class="container-fluid">
+                       <h4 class="display-4">
+                         {{broker1Data?.about?.broker_name}} Vs {{broker2Data?.about?.broker_name}} Transaction Charges
+                       </h4>
+                       <hr>
+                       <table class="table mt-5 mb-5 text-center">
+                           <thead>
+                           <tr>
+                             <th scope="col">Rows	</th>
+                             <th scope="col">{{broker1Data?.about?.broker_name}}	</th>
+                             <th scope="col">{{broker2Data?.about?.broker_name}}		</th>
+                           </tr>
+                           </thead>
+                           <tbody>
+                           <tr>
+                             <td>Equity Delivery</td>
+                             <td> {{broker1Data?.transaction_charges?.equity_delivery}}</td>
+                             <td> {{broker2Data?.transaction_charges?.equity_delivery}}</td>
+       
+                           </tr>
+                           <tr>
+                             <td>Equity Intraday</td>
+                             <td> {{broker1Data?.transaction_charges?.equity_intraday}}</td>
+                             <td> {{broker2Data?.transaction_charges?.equity_intraday}}</td>
+       
+                           </tr>
+                           <tr>
+                             <td>Equity Futures</td>
+                             <td> {{broker1Data?.transaction_charges?.equity_futures}}</td>
+                             <td> {{broker2Data?.transaction_charges?.equity_futures}}</td>
+       
+                           </tr>
+                           <tr>
+                            <td>Equity Options</td>
+                            <td> {{broker1Data?.transaction_charges?.equity_options}}</td>
+                            <td> {{broker2Data?.transaction_charges?.equity_options}}</td>
+      
+                          </tr>
+                          <tr>
+                            <td>Currency Futures</td>
+                            <td> {{broker1Data?.transaction_charges?.currency_futures}}</td>
+                            <td> {{broker2Data?.transaction_charges?.currency_futures}}</td>
+      
+                          </tr>
+                          <tr>
+                            <td>Currency Options</td>
+                            <td> {{broker1Data?.transaction_charges?.currency_options}}</td>
+                            <td> {{broker2Data?.transaction_charges?.currency_options}}</td>
+      
+                          </tr>
+                          <tr>
+                            <td>Commodity</td>
+                            <td> {{broker1Data?.transaction_charges?.commodity}}</td>
+                            <td> {{broker2Data?.transaction_charges?.commodity}}</td>
+      
+                          </tr>
+                           </tbody>
+                           </table>
+       
+       
+                   </div>
+       <!--  -->
+       
+
+       <br>
+       <!--  -->
+       <br><br><br><br>
+               <div class="container-fluid">
+                   <h4 class="display-4">
+                     {{broker1Data?.about?.broker_name}} Vs {{broker2Data?.about?.broker_name}} Leverage (Margin)
+                   </h4>
+                   <hr>
+                   <table class="table mt-5 mb-5 text-center">
+                       <thead>
+                       <tr>
+                         <th scope="col">Rows	</th>
+                         <th scope="col">{{broker1Data?.about?.broker_name}}	</th>
+                         <th scope="col">{{broker2Data?.about?.broker_name}}		</th>
+                       </tr>
+                       </thead>
+                       <tbody>
+                       <tr>
+                         <td>Equity Delivery</td>
+                         <td> {{broker1Data?.leverage?.equity_delivery}}</td>
+                         <td> {{broker2Data?.leverage?.equity_delivery}}</td>
+   
+                       </tr>
+                       <tr>
+                         <td>Equity Intraday</td>
+                         <td> {{broker1Data?.leverage?.equity_intraday}}</td>
+                         <td> {{broker2Data?.leverage?.equity_intraday}}</td>
+   
+                       </tr>
+                       <tr>
+                         <td>Equity Futures</td>
+                         <td> {{broker1Data?.leverage?.equity_futures}}</td>
+                         <td> {{broker2Data?.leverage?.equity_futures}}</td>
+   
+                       </tr>
+                       <tr>
+                        <td>Equity Options</td>
+                        <td> {{broker1Data?.leverage?.equity_options}}</td>
+                        <td> {{broker2Data?.leverage?.equity_options}}</td>
+  
+                      </tr>
+                      <tr>
+                        <td>Currency Futures</td>
+                        <td> {{broker1Data?.leverage?.currency_futures}}</td>
+                        <td> {{broker2Data?.leverage?.currency_futures}}</td>
+  
+                      </tr>
+                      <tr>
+                        <td>Currency Options</td>
+                        <td> {{broker1Data?.leverage?.currency_options}}</td>
+                        <td> {{broker2Data?.leverage?.currency_options}}</td>
+  
+                      </tr>
+                      <tr>
+                        <td>Commodity</td>
+                        <td> {{broker1Data?.leverage?.commodity}}</td>
+                        <td> {{broker2Data?.leverage?.commodity}}</td>
+  
+                      </tr>
+                       </tbody>
+                       </table>
+   
+   
+               </div>
+   <!--  -->
+   
+   <br>
+   <!--  -->
+   <br><br><br><br>
+           <div class="container-fluid">
+               <h4 class="display-4">
+                 {{broker1Data?.about?.broker_name}} and {{broker2Data?.about?.broker_name}} Features
+               </h4>
+               <hr>
+               <table class="table mt-5 mb-5 text-center">
+                   <thead>
+                   <tr>
+                     <th scope="col">Rows	</th>
+                     <th scope="col">{{broker1Data?.about?.broker_name}}	</th>
+                     <th scope="col">{{broker2Data?.about?.broker_name}}		</th>
+                   </tr>
+                   </thead>
+                   <tbody>
+                   <tr>
+                     <td>3 in 1 Account </td>
+                     <td> {{broker1Data?.features?.three_in_one_account}}</td>
+                     <td> {{broker2Data?.features?.three_in_one_account}}</td>
+
+                   </tr>
+                   <tr>
+                     <td>Charting</td>
+                     <td> {{broker1Data?.features?.charting}}</td>
+                     <td> {{broker2Data?.features?.charting}}</td>
+
+                   </tr>
+                   <tr>
+                     <td>Automated Trading</td>
+                     <td> {{broker1Data?.features?.automated_trading}}</td>
+                     <td> {{broker2Data?.features?.automated_trading}}</td>
+
+                   </tr>
+                   <tr>
+                    <td>SMS Alerts</td>
+                    <td> {{broker1Data?.features?.sms_alerts}}</td>
+                    <td> {{broker2Data?.features?.sms_alerts}}</td>
+
+                  </tr>
+                  <tr>
+                    <td>Online Demo</td>
+                    <td> {{broker1Data?.features?.online_demo}}</td>
+                    <td> {{broker2Data?.features?.online_demo}}</td>
+
+                  </tr>
+                  <tr>
+                    <td>Online Portfolio</td>
+                    <td> {{broker1Data?.features?.online_portfolio}}</td>
+                    <td> {{broker2Data?.features?.online_portfolio}}</td>
+
+                  </tr>
+                  <tr>
+                    <td>Margin Trading Funding Available</td>
+                    <td> {{broker1Data?.features?.margin_trading_funding_available}}</td>
+                    <td> {{broker2Data?.features?.margin_trading_funding_available}}</td>
+
+                  </tr>
+                  <tr>
+                    <td>Margin Against Shares (Equity Cash)</td>
+                    <td> {{broker1Data?.features?.margin_against_shares_equity_cash}}</td>
+                    <td> {{broker2Data?.features?.margin_against_shares_equity_cash}}</td>
+
+                  </tr>
+                  <tr>
+                    <td>Margin Against Shares (Equity F&O)</td>
+                    <td> {{broker1Data?.features?.margin_against_shares_equity_f_o}}</td>
+                    <td> {{broker2Data?.features?.margin_against_shares_equity_f_o}}</td>
+
+                  </tr>
+                  <tr>
+                    <td>Trading Platform</td>
+                    <td> {{broker1Data?.features?.trading_platforms}}</td>
+                    <td> {{broker2Data?.features?.trading_platforms}}</td>
+
+                  </tr>
+                  <tr>
+                    <td>Intraday Square-off Time</td>
+                    <td> {{broker1Data?.features?.intraday_square_off_time}}</td>
+                    <td> {{broker2Data?.features?.intraday_square_off_time}}</td>
+
+                  </tr>
+                  <tr>
+                    <td>Other Features</td>
+                    <td> {{broker1Data?.features?.other_features}}</td>
+                    <td> {{broker2Data?.features?.other_features}}</td>
+
+                  </tr>
+                  <tr>
+                    <td>Referral Program</td>
+                    <td> {{broker1Data?.features?.referral_program}}</td>
+                    <td> {{broker2Data?.features?.referral_program}}</td>
+
+                  </tr>
+                   </tbody>
+                   </table>
+
+
+           </div>
+<!--  -->
+
+<br>
+<!--  -->
+<br><br><br><br>
+        <div class="container-fluid">
+            <h4 class="display-4">
+              {{broker1Data?.about?.broker_name}} Vs {{broker2Data?.about?.broker_name}} Review By Rating
+            </h4>
+            <hr>
+            <table class="table mt-5 mb-5 text-center">
+                <thead>
+                <tr>
+                  <th scope="col">Rows	</th>
+                  <th scope="col">{{broker1Data?.about?.broker_name}}	</th>
+                  <th scope="col">{{broker2Data?.about?.broker_name}}		</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                  <td>Fees</td>
+                  <td> {{broker1Data?.ratings?.fees}}</td>
+                  <td> {{broker2Data?.ratings?.fees}}</td>
+
+                </tr>
+                <tr>
+                  <td>Trading Brokerage</td>
+                  <td> {{broker1Data?.ratings?.trading_brokerage}}</td>
+                  <td> {{broker2Data?.ratings?.trading_brokerage}}</td>
+
+                </tr>
+                <tr>
+                  <td>Trading Platform Usability</td>
+                  <td> {{broker1Data?.ratings?.trading_platform_usability}}</td>
+                  <td> {{broker2Data?.ratings?.trading_platform_usability}}</td>
+
+                </tr>
+                <tr>
+                 <td>Customer Service</td>
+                 <td> {{broker1Data?.ratings?.customer_service}}</td>
+                 <td> {{broker2Data?.ratings?.customer_service}}</td>
+
+               </tr>
+               <tr>
+                 <td>Research Capabilities</td>
+                 <td> {{broker1Data?.ratings?.research_capabilities}}</td>
+                 <td> {{broker2Data?.ratings?.research_capabilities}}</td>
+
+               </tr>
+               <tr>
+                 <td>Overall Ratings</td>
+                 <td> {{broker1Data?.ratings?.overall_ratings}}</td>
+                 <td> {{broker2Data?.ratings?.overall_ratings}}</td>
+
+               </tr>
+               <tr>
+                 <td>Broker Rating</td>
+                 <td> {{broker1Data?.ratings?.broker_rating}}</td>
+                 <td> {{broker2Data?.ratings?.broker_rating}}</td>
+
+               </tr>
+                </tbody>
+                </table>
+
+
+        </div>
+<!--  -->
+
+
+<br>
+<!--  -->
+<br><br><br><br>
+        <div class="container-fluid">
+            <h4 class="display-4">
+              {{broker1Data?.about?.broker_name}} Vs {{broker2Data?.about?.broker_name}} Investment Options
+            </h4>
+            <hr>
+            <table class="table mt-5 mb-5 text-center">
+                <thead>
+                <tr>
+                  <th scope="col">Rows	</th>
+                  <th scope="col">{{broker1Data?.about?.broker_name}}	</th>
+                  <th scope="col">{{broker2Data?.about?.broker_name}}		</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                  <td>Stock / Equity</td>
+                  <td> {{broker1Data?.investment_options?.stock_or_equity}}</td>
+                  <td> {{broker2Data?.investment_options?.stock_or_equity}}</td>
+
+                </tr>
+                <tr>
+                  <td>Commodity </td>
+                  <td> {{broker1Data?.investment_options?.commodity}}</td>
+                  <td> {{broker2Data?.investment_options?.commodity}}</td>
+
+                </tr>
+                <tr>
+                  <td>Currency </td>
+                  <td> {{broker1Data?.investment_options?.currency}}</td>
+                  <td> {{broker2Data?.investment_options?.currency}}</td>
+
+                </tr>
+                <tr>
+                 <td>Initial Public Offers (IPO)</td>
+                 <td> {{broker1Data?.investment_options?.ipo}}</td>
+                 <td> {{broker2Data?.investment_options?.ipo}}</td>
+
+               </tr>
+               <tr>
+                 <td>Mutual Funds</td>
+                 <td> {{broker1Data?.investment_options?.mutual_funds}}</td>
+                 <td> {{broker2Data?.investment_options?.mutual_funds}}</td>
+
+               </tr>
+               <tr>
+                 <td>Bond / NCD</td>
+                 <td> {{broker1Data?.investment_options?.bond_or_ncd}}</td>
+                 <td> {{broker2Data?.investment_options?.bond_or_ncd}}</td>
+
+               </tr>
+               <tr>
+                 <td>Debt </td>
+                 <td> {{broker1Data?.investment_options?.debt}}</td>
+                 <td> {{broker2Data?.investment_options?.debt}}</td>
+
+               </tr>
+               <tr>
+                <td>Other Investment Options </td>
+                <td> {{broker1Data?.investment_options?.other_investment_options}}</td>
+                <td> {{broker2Data?.investment_options?.other_investment_options}}</td>
+
+              </tr>
+                </tbody>
+                </table>
+
+
+        </div>
+<!--  -->
+
+
+<br>
+<!--  -->
+<br><br><br><br>
+        <div class="container-fluid">
+            <h4 class="display-4">
+              {{broker1Data?.about?.broker_name}} Vs {{broker2Data?.about?.broker_name}} Order Type Offered
+            </h4>
+            <hr>
+            <table class="table mt-5 mb-5 text-center">
+                <thead>
+                <tr>
+                  <th scope="col">Rows	</th>
+                  <th scope="col">{{broker1Data?.about?.broker_name}}	</th>
+                  <th scope="col">{{broker2Data?.about?.broker_name}}		</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                  <td>Bracket Order</td>
+                  <td> {{broker1Data?.order_type_offered?.bracket_order}}</td>
+                  <td> {{broker2Data?.order_type_offered?.bracket_order}}</td>
+
+                </tr>
+                <tr>
+                  <td>Cover Order </td>
+                  <td> {{broker1Data?.order_type_offered?.cover_order}}</td>
+                  <td> {{broker2Data?.order_type_offered?.cover_order}}</td>
+
+                </tr>
+                <tr>
+                  <td>Buy Today Sell Tomorrow (BTST) </td>
+                  <td> {{broker1Data?.order_type_offered?.buy_today_sell_tomorrow}}</td>
+                  <td> {{broker2Data?.order_type_offered?.buy_today_sell_tomorrow}}</td>
+
+                </tr>
+                <tr>
+                 <td>Sell Today Buy Tomorrow (STBT)</td>
+                 <td> {{broker1Data?.order_type_offered?.sell_today_buy_tomorrow}}</td>
+                 <td> {{broker2Data?.order_type_offered?.sell_today_buy_tomorrow}}</td>
+
+               </tr>
+               <tr>
+                 <td>After Market Order(AMO)</td>
+                 <td> {{broker1Data?.order_type_offered?.after_market_order}}</td>
+                 <td> {{broker2Data?.order_type_offered?.after_market_order}}</td>
+
+               </tr>
+               <tr>
+                 <td>Good Till Cancelled (GTC)</td>
+                 <td> {{broker1Data?.order_type_offered?.good_till_cancelled}}</td>
+                 <td> {{broker2Data?.order_type_offered?.good_till_cancelled}}</td>
+
+               </tr>
+          
+                </tbody>
+                </table>
+
+
+        </div>
+<!--  -->
+
+
+<br>
+<!--  -->
+<br><br><br><br>
+        <div class="container-fluid">
+            <h4 class="display-4">
+              {{broker1Data?.about?.broker_name}} Vs {{broker2Data?.about?.broker_name}} Research Report
+            </h4>
+            <hr>
+            <table class="table mt-5 mb-5 text-center">
+                <thead>
+                <tr>
+                  <th scope="col">Rows	</th>
+                  <th scope="col">{{broker1Data?.about?.broker_name}}	</th>
+                  <th scope="col">{{broker2Data?.about?.broker_name}}		</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                  <td>Daily Market Report</td>
+                  <td> {{broker1Data?.research_report?.daily_market_report}}</td>
+                  <td> {{broker2Data?.research_report?.daily_market_report}}</td>
+
+                </tr>
+                <tr>
+                  <td>Free Tips </td>
+                  <td> {{broker1Data?.research_report?.free_tips}}</td>
+                  <td> {{broker2Data?.research_report?.free_tips}}</td>
+
+                </tr>
+                <tr>
+                  <td>Quarterly Result Analysis</td>
+                  <td> {{broker1Data?.research_report?.quaterly_result_analysis}}</td>
+                  <td> {{broker2Data?.research_report?.quaterly_result_analysis}}</td>
+
+                </tr>
+                <tr>
+                 <td>News Alerts</td>
+                 <td> {{broker1Data?.research_report?.news_alerts}}</td>
+                 <td> {{broker2Data?.research_report?.news_alerts}}</td>
+
+               </tr>
+             
+          
+                </tbody>
+                </table>
+
+
+        </div>
+<!--  -->
+
+
+
+<br>
+<!--  -->
+<br><br><br><br>
+        <div class="container-fluid">
+            <h4 class="display-4">
+              {{broker1Data?.about?.broker_name}} Vs {{broker2Data?.about?.broker_name}} Suitable For Investor Type
+            </h4>
+            <hr>
+            <table class="table mt-5 mb-5 text-center">
+                <thead>
+                <tr>
+                  <th scope="col">Rows	</th>
+                  <th scope="col">{{broker1Data?.about?.broker_name}}	</th>
+                  <th scope="col">{{broker2Data?.about?.broker_name}}		</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                  <td>Casual Investor</td>
+                  <td> {{broker1Data?.investor_type?.casual_investor}}</td>
+                  <td> {{broker2Data?.investor_type?.casual_investor}}</td>
+
+                </tr>
+                <tr>
+                  <td>Active Investor </td>
+                  <td> {{broker1Data?.investor_type?.active_investor}}</td>
+                  <td> {{broker2Data?.investor_type?.active_investor}}</td>
+
+                </tr>
+                <tr>
+                  <td>Trader </td>
+                  <td> {{broker1Data?.investor_type?.trader}}</td>
+                  <td> {{broker2Data?.investor_type?.trader}}</td>
+
+                </tr>
+               
+             
+          
+                </tbody>
+                </table>
+
+
+        </div>
+<!--  -->
+
+
+
+<br>
+<!--  -->
+<br><br><br><br>
+        <div class="container-fluid">
+            <h4 class="display-4">
+              {{broker1Data?.about?.broker_name}} Vs {{broker2Data?.about?.broker_name}} Pros and Cons
+            </h4>
+            <hr>
+
+            <h4 class="sub-header">
+              {{broker1Data?.about?.broker_name}} Vs {{broker2Data?.about?.broker_name}} Pros 
+            </h4>
+            <table class="table mt-5 mb-5 text-center">
+                <thead>
+                <tr>
+                  <th scope="col">Rows	</th>
+                  <th scope="col">{{broker1Data?.about?.broker_name}}	</th>
+                  <th scope="col">{{broker2Data?.about?.broker_name}}		</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr >
+                  <td>
+                    Pros
+                  </td>
+                  <td class="text-left">
+                    <p class="lead"  *ngFor = "let data of broker1Data?.pros">
+                      {{data}}
+                    </p>
+                  </td>
+                  <td class="text-left">
+                    <p class="lead"  *ngFor = "let data of broker1Data?.pros">
+                      {{data}}
+                    </p>
+                  </td>
+                </tr>
+                
+                <tr >
+                  <td>
+                    Cons
+                  </td>
+                  <td class="text-left">
+                    <p class="lead"  *ngFor = "let data of broker1Data?.cons">
+                      {{data}}
+                    </p>
+                  </td>
+                  <td class="text-left">
+                    <p class="lead"  *ngFor = "let data of broker1Data?.cons">
+                      {{data}}
+                    </p>
+                  </td>
+                </tr>
+               
+             
+          
+                </tbody>
+                </table>
+
+
+        </div>
+<!--  -->
+
+
+<br>
+<!--  -->
+<br><br><br><br>
+        <div class="container-fluid">
+            <h4 class="display-4">
+              Compare {{broker1Data?.about?.broker_name}} with More Brokers 
+            </h4>
+            <hr>
+           
+            <div class="row mx-auto m-1 text-center ">
+              <div class="col-md-4" *ngFor = "let broker of brokerList">
+                <div class="card faqCards ">
+                  <div class="card-body">
+                    <a class="form-control"routerLink="/compare-brokers/{{broker1Data?.about?.broker_url}}-vs-{{broker.companyUrl}}" routerLinkActive="active"  class="faq"  href="">{{broker1Data?.about?.broker_name}} Vs {{broker.companyName}}</a>
+      
+                  </div>
+                </div>
+                
+              </div>
+              
+            </div>
+
+
+            
+        </div>
+      <!--  -->
+        <br><br><br><br>
+        <div class="container-fluid">
+            <h4 class="display-4">
+              Compare {{broker2Data?.about?.broker_name}} with More Brokers 
+            </h4>
+            <hr>
+           
+            <div class="row mx-auto m-1 text-center ">
+              <div class="col-md-4" *ngFor = "let broker of brokerList">
+                <div class="card faqCards ">
+                  <div class="card-body">
+                    <a class="form-control" routerLink="/compare-brokers{{broker2Data?.about?.broker_url}}-vs-{{broker.companyUrl}}" routerLinkActive="active" class="faq"  href="">{{broker2Data?.about?.broker_name}} Vs {{broker.companyName}}</a>
+      
+                  </div>
+                </div>
+                
+              </div>
+              
+            </div>
+
+
+            
+        </div>
+      
+        <!--  -->
+          </div>
+          <div class="col-md-3">
+  
+              <div class="card ">
+                  <app-more-discount-brokers></app-more-discount-brokers>
+              </div>
+              <br>
+              <div class="card ">
+                  <app-more-service-brokers></app-more-service-brokers>
+              </div>
+              <br>
+              <div class="card">
+                  <!-- <div class="card-header text-center">
+                      <p class="sub-header" style="color: #333958;">
+                          Short Links
+                      </p>
+                  </div> -->
+                  <div class="card-body">
+                      <app-short-links></app-short-links>
+  
+                      <!-- <app-short-links-stock-market></app-short-links-stock-market> -->
+                  </div>
+              </div>
+  
+              <app-special-offers></app-special-offers>
+  
+          </div>
+      </div>
+  </div>
+  
+    
+  <br><br><br><br>
+  

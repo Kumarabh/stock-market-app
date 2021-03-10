@@ -5,7 +5,7 @@
     </div>
     
     <div class="card-body">
-        <input type="text"
+        <input type="text" (change) = "navigateToUrl()"
         style="font-weight: 600;
         color: darkgray;"
         placeholder="select a broker ..." [(ngModel)]="selectedServiceBroker" list="serviceBrokerList" name="guest"

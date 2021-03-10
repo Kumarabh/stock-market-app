@@ -4,14 +4,14 @@
     </div>
     
     <div class="card-body">
-        <input type="text"
+        <input type="text"(change) = "navigateToUrl()"
         style="font-weight: 600;
         color: darkgray;"
         placeholder="select a broker ..." [(ngModel)]="selectedDiscountBroker" list="discountBrokerList" name="guest"
         class="form-control">
 
-      <datalist id=discountBrokerList>
-        <option *ngFor="let data of discountBrokerListArray" [ngValue]="data">
+      <datalist id=discountBrokerList >
+        <option *ngFor="let data of discountBrokerListArray"  [ngValue]="data" >
           {{data.companyName}}</option>
       </datalist>
     </div>

@@ -1,0 +1,10 @@
+.small-clips {
+    background: white !important;
+    color: #333958 !important;
+    border-left: 4px solid;
+    border-bottom-right-radius: 12px;
+}
+.small-clips:hover {
+    box-shadow: none !important;
+    border-bottom-right-radius: 0px;
+}

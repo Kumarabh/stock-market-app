@@ -8,7 +8,7 @@ import { DataService } from 'src/app/data.service';
 })
 export class StockHomePageComponent implements OnInit {
 
-  companyData
+  
   constructor(private service: DataService) {
   }
 

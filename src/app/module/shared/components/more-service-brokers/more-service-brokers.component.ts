@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-more-service-brokers',
@@ -8,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 export class MoreServiceBrokersComponent implements OnInit {
 
   selectedServiceBroker
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
   }
@@ -16,12 +17,21 @@ export class MoreServiceBrokersComponent implements OnInit {
   onSubmit() {
 
   }
+  navigateToUrl() {
+    console.log('navigate to:', this.selectedServiceBroker);
+    
+    this.serviceBrokerListArray.forEach(element => {
+      if(element.companyName === this.selectedServiceBroker) {
+        this.router.navigateByUrl('/review/'+ element.companyUrl);
+      }
+    });
+  }
 
   serviceBrokerListArray = [
     {companyName: 'ICICI Direct', companyUrl: 'icici-direct'},
     {companyName: 'HDFC Securities', companyUrl: 'hdfc-securities'},
     {companyName: 'Sharekhan', companyUrl: 'sharekhan'},
-    {companyName: 'AxisDirect', companyUrl: 'axis-direct'},
+    {companyName: 'Axis Direct', companyUrl: 'axis-direct'},
     {companyName: 'Angel Broking', companyUrl: 'angel-broking'},
     {companyName: 'Kotak Securities', companyUrl: 'kotak-securities'},
     {companyName: 'Motilal Oswal', companyUrl: 'motilal-oswal'},

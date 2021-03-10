@@ -13,15 +13,16 @@ import { TopCommodityBrokersComponent } from './components/top-commodity-brokers
 import { SpecialOffersComponent } from './components/special-offers/special-offers.component';
 import { ShortLinksComponent } from './components/short-links/short-links.component';
 import { StockHeaderComponent } from './components/stock-header/stock-header.component';
+import { CompareBrokerViewComponent } from './components/compare-broker-view/compare-broker-view.component';
 
 
 @NgModule({
-  declarations: [CompareBrokerComponent, MoreDiscountBrokersComponent, MoreServiceBrokersComponent, TopTenStockBrokersComponent, TradingHolidaysTwentyOneComponent, CheapestCommodityBrokersComponent, TopCommodityBrokersComponent, SpecialOffersComponent, ShortLinksComponent, StockHeaderComponent],
+  declarations: [CompareBrokerComponent, MoreDiscountBrokersComponent, MoreServiceBrokersComponent, TopTenStockBrokersComponent, TradingHolidaysTwentyOneComponent, CheapestCommodityBrokersComponent, TopCommodityBrokersComponent, SpecialOffersComponent, ShortLinksComponent, StockHeaderComponent, CompareBrokerViewComponent],
   imports: [
     CommonModule,
     SharedRoutingModule,
     FormsModule
   ],
-  exports: [CompareBrokerComponent, MoreDiscountBrokersComponent, MoreServiceBrokersComponent, TopTenStockBrokersComponent, TradingHolidaysTwentyOneComponent,CheapestCommodityBrokersComponent, TopCommodityBrokersComponent, SpecialOffersComponent, ShortLinksComponent, StockHeaderComponent]
+  exports: [CompareBrokerComponent, MoreDiscountBrokersComponent, MoreServiceBrokersComponent, TopTenStockBrokersComponent, TradingHolidaysTwentyOneComponent,CheapestCommodityBrokersComponent, TopCommodityBrokersComponent, SpecialOffersComponent, ShortLinksComponent, StockHeaderComponent,CompareBrokerViewComponent]
 })
 export class SharedModule { }

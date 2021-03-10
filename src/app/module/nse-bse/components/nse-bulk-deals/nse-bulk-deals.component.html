@@ -1,0 +1,101 @@
+<!-- <app-stock-market-header></app-stock-market-header> -->
+<app-stock-header></app-stock-header>
+<!-- <app-compare-broker-stock-market></app-compare-broker-stock-market> -->
+<app-compare-broker></app-compare-broker>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-9">
+
+
+            <!-- subsection start -->
+<div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-4">NSE Bulk Deals
+           
+      </h1>
+      <p class="lead2">
+        Bulk deal is a stock trading where stock quantities buy or sell by an investor is more then 0.5% of total number of equity shares of the company listed at India stock exchanges.
+
+        In year 2004 SEBI bring more transparency to the bulk deals by making is compulsory for stock exchanges to publish intraday bulk deals at the end of the trading day.
+        
+        Below are current bulk deals at National Stock Exchange of India (NSE):      
+    </p>
+    
+    </div>
+  </div>
+  <!-- subsection ends -->
+
+<!-- sub section start -->
+  <!--  -->
+  <br><br><br><br>
+  <div class="container-fluid">
+      <h4 class="display-4">
+        NSE Bulk Deals From Last Trading Session      
+    </h4>
+      <hr>
+      <table class="table mt-5 mb-5 text-center">
+          <thead>
+          <tr>
+            <th scope="col">Date	</th>
+            <th scope="col">Symbol	</th>
+            <th scope="col">Security Name	</th>
+            <th scope="col">Client Name	</th>
+            <th scope="col">Buy/Sell</th>
+            <th scope="col">Quantity Traded	</th>
+            <th scope="col">Trade Price / Wght. Avg. Price	</th>
+            <th scope="col">Remarks	</th>
+
+          </tr>
+          </thead>
+          <tbody>
+          <tr *ngFor = "let data of pageData?.last_trading_session_deals">
+            <td>{{data?.date}}</td>
+            <td> {{data?.symbol}}</td>
+            <td> {{data?.security_name}}</td>
+            <td> {{data?.client_name}}</td>
+            <td> {{data?.buy_or_sell}}</td>
+            <td> {{data?.quantity_traded}}</td>
+            <td> {{data?.trade_price}}</td>
+            <td> {{data?.remarks}}</td>
+
+          </tr>
+         
+          
+          </tbody>
+          </table>
+
+
+  </div>
+
+
+  <!-- subsection ends -->
+
+
+        </div>
+        <div class="col-md-3">
+
+            <div class="card ">
+                <app-more-discount-brokers></app-more-discount-brokers>
+            </div>
+            <br>
+            <div class="card ">
+                <app-more-service-brokers></app-more-service-brokers>
+            </div>
+            <br>
+            <div class="card">
+                <!-- <div class="card-header text-center">
+                    <p class="sub-header" style="color: #333958;">
+                        Short Links
+                    </p>
+                </div> -->
+                <div class="card-body">
+                    <app-short-links></app-short-links>
+                    <!-- <app-short-links-stock-market></app-short-links-stock-market> -->
+                </div>
+            </div>
+
+            <app-special-offers></app-special-offers>
+
+        </div>
+    </div>
+</div>
