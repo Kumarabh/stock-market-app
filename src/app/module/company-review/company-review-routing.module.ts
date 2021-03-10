@@ -20,6 +20,36 @@ import { SmcGlobalComponent } from './components/smc-global/smc-global.component
 import { GrowwComponent } from './components/groww/groww.component';
 import { IiflSecuritiesComponent } from './components/iifl-securities/iifl-securities.component';
 import { GeojitComponent } from './components/geojit/geojit.component';
+import { StoxkartComponent } from './components/stoxkart/stoxkart.component';
+import { DhaniStocksComponent } from './components/dhani-stocks/dhani-stocks.component';
+import { ReligareComponent } from './components/religare/religare.component';
+import { VenturaComponent } from './components/ventura/ventura.component';
+import { MasterTrustComponent } from './components/master-trust/master-trust.component';
+import { IndiaBullsComponent } from './components/india-bulls/india-bulls.component';
+import { AdityaBirlaMoneyComponent } from './components/aditya-birla-money/aditya-birla-money.component';
+import { BonanzaComponent } from './components/bonanza/bonanza.component';
+import { SamcoComponent } from './components/samco/samco.component';
+import { TradingBellsComponent } from './components/trading-bells/trading-bells.component';
+import { IdbiCapitalsComponent } from './components/idbi-capitals/idbi-capitals.component';
+import { TradeSmartComponent } from './components/trade-smart/trade-smart.component';
+import { SasOnlineComponent } from './components/sas-online/sas-online.component';
+import { ItradeOnlineComponent } from './components/itrade-online/itrade-online.component';
+import { RkGlobalComponent } from './components/rk-global/rk-global.component';
+import { TradePlusComponent } from './components/trade-plus/trade-plus.component';
+import { TradeJiniComponent } from './components/trade-jini/trade-jini.component';
+import { AliceBlueComponent } from './components/alice-blue/alice-blue.component';
+import { WisdomCapitalComponent } from './components/wisdom-capital/wisdom-capital.component';
+import { FinvasiaComponent } from './components/finvasia/finvasia.component';
+import { RmoneyComponent } from './components/rmoney/rmoney.component';
+import { BeelineComponent } from './components/beeline/beeline.component';
+import { JustTradeComponent } from './components/just-trade/just-trade.component';
+import { AchiiversComponent } from './components/achiivers/achiivers.component';
+import { TrustLineComponent } from './components/trust-line/trust-line.component';
+import { YesSecuritiesComponent } from './components/yes-securities/yes-securities.component';
+import { IndiraSecuritiesComponent } from './components/indira-securities/indira-securities.component';
+import { PaytmMoneyComponent } from './components/paytm-money/paytm-money.component';
+import { ChoiceBrokingComponent } from './components/choice-broking/choice-broking.component';
+import { GclSecuritiesComponent } from './components/gcl-securities/gcl-securities.component';
 
 const routes: Routes = [
   {path: '', component: ZerodhaReviewComponent},
@@ -42,7 +72,38 @@ const routes: Routes = [
   {path:'smc-global', component: SmcGlobalComponent},
   {path: 'groww', component: GrowwComponent},
   {path: 'iifl-securities', component: IiflSecuritiesComponent},
-  {path: 'geojit-bnp-paribas', component: GeojitComponent}
+  {path: 'geojit-bnp-paribas', component: GeojitComponent},
+  {path: 'stoxkart', component: StoxkartComponent},
+  {path: 'dhani-stocks', component: DhaniStocksComponent},
+  {path: 'religare', component: ReligareComponent},
+  {path: 'ventura', component: VenturaComponent},
+  {path: 'master-trust', component: MasterTrustComponent},
+  {path: 'india-bulls', component: IndiaBullsComponent},
+  {path: 'aditya-birla-money', component: AdityaBirlaMoneyComponent},
+  {path: 'bonanza', component: BonanzaComponent},
+  {path: 'samco', component: SamcoComponent},
+  {path: 'trading-bells', component: TradingBellsComponent},
+  {path: 'idbi-capital', component: IdbiCapitalsComponent},
+  {path: 'trade-smart', component: TradeSmartComponent},
+  {path: 'sas-online', component: SasOnlineComponent},
+  {path: 'itrade-online', component: ItradeOnlineComponent},
+  {path: 'rk-global', component: RkGlobalComponent},
+  {path: 'trade-plus', component: TradePlusComponent},
+  {path: 'trade-jini', component: TradeJiniComponent},
+  {path: 'alice-blue', component: AliceBlueComponent},
+  {path: 'wisdom-capital', component: WisdomCapitalComponent},
+  {path: 'finvasia', component: FinvasiaComponent},
+  {path: 'rmoney', component: RmoneyComponent},
+  {path: 'beeline', component: BeelineComponent},
+  {path: 'just-trade', component: JustTradeComponent},
+  {path: 'achiievers', component: AchiiversComponent},
+  {path: 'trustline', component: TrustLineComponent},
+  {path: 'yes-securities', component: YesSecuritiesComponent},
+  {path: 'indira-securities', component: IndiraSecuritiesComponent},
+  {path: 'paytm-money', component: PaytmMoneyComponent},
+  {path: 'choice-broking', component: ChoiceBrokingComponent},
+  {path: 'gcl-securities', component: GclSecuritiesComponent},
+
 
 
 ];

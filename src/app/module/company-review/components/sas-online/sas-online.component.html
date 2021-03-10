@@ -1,0 +1,29 @@
+<!-- Buttons -->
+<app-company-header [companyName] = "companyName"></app-company-header>
+
+<!-- compare broker -->
+<app-compare-broker></app-compare-broker>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-9">
+            <div class="jumbotron jumbotron-fluid">
+                <div class="container">
+                  <h1 class="display-4">{{companyName}} Stock Trading / Demat / Brokerage / Reviews 2021
+                  </h1>
+                  <hr class="my-4">
+                  
+                
+                <br>
+                  
+                </div>
+                
+            </div>
+        </div>
+        <div class="col-md-3">
+            <app-company-page-scroll [companyScrollObject] = "companyScrollObject"></app-company-page-scroll>
+          <app-special-offers></app-special-offers>
+
+        </div>
+    </div>
+</div>
+<app-footer [companyName]="companyName"></app-footer>
