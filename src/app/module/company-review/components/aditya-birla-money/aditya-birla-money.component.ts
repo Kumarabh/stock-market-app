@@ -8,36 +8,13 @@ import { CompanyReviewService } from '../../company-review.service';
 })
 export class AdityaBirlaMoneyComponent implements OnInit {
 
-  
-  companyScrollObject = [
-    {
-      links: "Aditya Birla Money Stock Trading",
-      scrollTo: 100,
-      sublinks: []     
-    } 
-  ]
-
-  companyData
-  brokerList
-  companyName = 'Aditya Birla Money'
-  constructor(private service: CompanyReviewService) {
-    this.getCompanyData();
+  constructor() {
   }
 
   ngOnInit() {
   }
   
-  getCompanyData() {
-    this.service.getCompanyData('aditya_birla_money_review').subscribe((doc) => {
-      if(doc.exists) {
-        this.companyData = doc.data();
-        this.companyName = this.companyData.company_name;
-        console.log('companyData',this.companyData);
-      } else {
-        console.log('document not exist')
-      }
-   })
-  }
+ 
 
 
 

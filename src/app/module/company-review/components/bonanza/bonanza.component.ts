@@ -8,36 +8,10 @@ import { CompanyReviewService } from '../../company-review.service';
 })
 export class BonanzaComponent implements OnInit {
 
-
-  companyScrollObject = [
-    {
-      links: "Bonanza Stock Trading",
-      scrollTo: 100,
-      sublinks: []     
-    } 
-  ]
-
-  companyData
-  brokerList
-  companyName = 'Bonanza'
-  constructor(private service: CompanyReviewService) {
-    this.getCompanyData();
+  constructor() {
+    
   }
+ngOnInit() {
 
-  ngOnInit() {
-  }
-  
-  getCompanyData() {
-    this.service.getCompanyData('bonanza_review').subscribe((doc) => {
-      if(doc.exists) {
-        this.companyData = doc.data();
-        this.companyName = this.companyData.company_name;
-        console.log('companyData',this.companyData);
-      } else {
-        console.log('document not exist')
-      }
-   })
-  }
-
-
+}
 }

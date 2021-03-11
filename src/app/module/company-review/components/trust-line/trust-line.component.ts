@@ -8,35 +8,8 @@ import { CompanyReviewService } from '../../company-review.service';
 })
 export class TrustLineComponent implements OnInit {
 
-  companyScrollObject = [
-    {
-      links: "Trustline Stock Trading",
-      scrollTo: 100,
-      sublinks: []     
-    } 
-  ]
-
-  companyData
-  brokerList
-  companyName = 'Trustline'
-  constructor(private service: CompanyReviewService) {
-    this.getCompanyData();
+  ngOnInit () {
+    
   }
-
-  ngOnInit() {
-  }
-  
-  getCompanyData() {
-    this.service.getCompanyData('trustline_review').subscribe((doc) => {
-      if(doc.exists) {
-        this.companyData = doc.data();
-        this.companyName = this.companyData.company_name;
-        console.log('companyData',this.companyData);
-      } else {
-        console.log('document not exist')
-      }
-   })
-  }
-
 
 }

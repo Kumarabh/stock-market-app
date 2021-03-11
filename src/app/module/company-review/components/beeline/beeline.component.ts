@@ -8,35 +8,12 @@ import { CompanyReviewService } from '../../company-review.service';
 })
 export class BeelineComponent implements OnInit {
 
-  companyScrollObject = [
-    {
-      links: "Beeline Stock Trading",
-      scrollTo: 100,
-      sublinks: []     
-    } 
-  ]
-
-  companyData
-  brokerList
-  companyName = 'Beeline'
-  constructor(private service: CompanyReviewService) {
-    this.getCompanyData();
+  constructor() {
   }
 
   ngOnInit() {
   }
   
-  getCompanyData() {
-    this.service.getCompanyData('beeline_review').subscribe((doc) => {
-      if(doc.exists) {
-        this.companyData = doc.data();
-        this.companyName = this.companyData.company_name;
-        console.log('companyData',this.companyData);
-      } else {
-        console.log('document not exist')
-      }
-   })
-  }
-
+  
 
 }

@@ -6,18 +6,494 @@
 <div class="container-fluid">
     <div class="row">
         <div class="col-md-9">
+            <!--  -->
             <div class="jumbotron jumbotron-fluid">
                 <div class="container">
                   <h1 class="display-4">{{companyName}} Stock Trading / Demat / Brokerage / Reviews 2021
                   </h1>
-                  <hr class="my-4">
+                  <!-- <hr class="my-4"> -->
                   
+                  <p class="lead">
+                    Incorporated in 2006, Alice Blue is a Bangalore based discount stock broker offering stock and commodity trading services at BSE, NSE, and MCX. Alice Blue also offers depository service (demat account) through its membership with CDSL.
+
+                    AliceBlue offers 2 brokerage plans, 'Trade Pro' and 'Freedom 20' to its customers. In the 'Trade Pro' plan, the company charges percentage-based brokerage. Customers have to pay a fixed percentage of the trading value. For intraday trading, a trader has to pay 0.01% of the trade value for equity, Futures and Commodity segment and Rs 20 per lot for Options. For delivery trades, the company charges 0.1% for equity delivery, 0.01% for Futures & Commodities and Rs 20 per lot for Options trading.
+                  </p>
                 
                 <br>
                   
                 </div>
                 
             </div>
+            <!--  -->
+
+            <div class="container-fluid">
+                <h4 class="display-4">
+                    AliceBlue Trading Tools
+
+                </h4>
+               
+               
+                <table class="table mt-5 mb-5 text-center">
+                    <thead>
+                      <tr>
+                          <th scope="col">Software Name
+                          </th>
+                        <th scope="col">Description
+                        </th>
+                        <th scope="col">Pricing
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr *ngFor = "let data of companyData?.trading_tools">
+                        <td>{{data?.software}}</td>
+                        <td>{{data?.description}}</td>
+                        <td>{{data?.pricing}}</td>
+
+                    </tr>
+                     
+                     
+                      
+                    </tbody>
+                  </table>
+
+
+            </div>
+
+            <!--  -->
+            <div class="container-fluid">
+                <h4 class="display-4">
+                    Account Types
+
+                </h4>
+               <p class="lead">
+                Alice Blue offers 2 types of accounts to target different customer needs. The account types and available key features are described below:
+               </p>
+               
+                <table class="table mt-5 mb-5 text-center">
+                    <thead>
+                      <tr>
+                          <th scope="col">Account Type
+                          </th>
+                        <th scope="col">Local Branch Support?
+                        </th>
+                        <th scope="col">Call & Trade (Free)
+                        </th>
+                        <th scope="col">Online/Mobile trading application?
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr *ngFor = "let data of companyData?.account_types">
+                        <td>{{data?.account_type}}</td>
+                        <td>{{data?.local_branch_support}}</td>
+                        <td>{{data?.call_and_trade}}</td>
+                        <td>{{data?.online_trading_application}}</td>
+
+                    </tr>
+                     
+                     
+                      
+                    </tbody>
+                  </table>
+
+
+            </div>
+
+            <!--  -->
+            <div class="container-fluid">
+                <h4 class="display-4">
+                    Alice Blue Charges 2021
+
+
+                </h4>
+               <p class="lead">
+                <!-- Trading Account Opening Charges (One Time) -->
+
+            </p>
+               
+                <table class="table mt-5 mb-5 text-center">
+                    <thead>
+                      <tr>
+                          <th scope="col">Col - 1
+                          </th>
+                        <th scope="col">Col - 2
+                        </th>
+                       
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr >
+                          <td>Trading Account Opening Charges (One Time)</td>
+                        <td>
+                            <ul *ngFor = "let data of companyData?.charges?.trading_account_opening_charges"><li>{{data}}</li></ul>
+                        </td>
+                        
+                    </tr>
+                    <tr >
+                        <td>Trading Annual maintenance charges (AMC)</td>
+                      <td>{{companyData?.charges?.trading_annual_maintenance_charges}}</td>
+                      
+                  </tr>
+                  <tr >
+                    <td>Demat Account Opening Charges (One Time)</td>
+                  <td>{{companyData?.charges?.demat_account_opening_charges}}</td>
+                  
+              </tr>
+              <tr >
+                <td>Demat Account Annual Maintenance Charges (AMC)</td>
+              <td>{{companyData?.charges?.demat_account_annual_maintenance_charges}}</td>
+              
+          </tr>
+                     
+                      
+                    </tbody>
+                  </table>
+
+
+            </div>
+
+            <!--  -->
+             <!--  -->
+             <div class="container-fluid">
+                <h4 class="display-4">
+                    Alice Blue Brokerage & Fees- Trade Pro Plan
+
+                </h4>
+               <p class="lead">
+                Alice Blue offers 2 types of accounts to target different customer needs. The account types and available key features are described below:
+               </p>
+               
+                <table class="table mt-5 mb-5 text-center">
+                    <thead>
+                      <tr>
+                          <th scope="col">Col - 1
+                          </th>
+                        <th scope="col">Col - 2
+                        </th>
+                        
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr >
+                        <td>Equity Delivery Brokerage</td>
+                        <td>{{companyData?.brokerage_and_fees_trade_pro_plan?.equity_delivery}}</td>
+                      </tr>
+                      <tr >
+                        <td>Equity Intraday Brokerage</td>
+                        <td>{{companyData?.brokerage_and_fees_trade_pro_plan?.equity_intraday}}</td>
+                      </tr>
+                      <tr >
+                        <td>Equity Future Brokerage</td>
+                        <td>{{companyData?.brokerage_and_fees_trade_pro_plan?.equity_futures}}</td>
+                      </tr>
+                      <tr >
+                        <td>Equity Option Brokerage</td>
+                        <td>{{companyData?.brokerage_and_fees_trade_pro_plan?.equity_options}}</td>
+                      </tr>
+                      <tr >
+                        <td>Currency Future Brokerage</td>
+                        <td>{{companyData?.brokerage_and_fees_trade_pro_plan?.currency_futures}}</td>
+                      </tr>
+                      <tr >
+                        <td>Currency Option Brokerage</td>
+                        <td>{{companyData?.brokerage_and_fees_trade_pro_plan?.currency_options}}</td>
+                      </tr>
+                      <tr >
+                        <td>Commodity Future Brokerage</td>
+                        <td>{{companyData?.brokerage_and_fees_trade_pro_plan?.commodity_futures}}</td>
+                      </tr>
+                      <tr >
+                        <td>Commodity Option Brokerage</td>
+                        <td>{{companyData?.brokerage_and_fees_trade_pro_plan?.commodity_options}}</td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+
+            </div>
+
+            <!--  -->
+
+             <!--  -->
+             <div class="container-fluid">
+                <h4 class="display-4">
+                    Alice Blue Brokerage & Fees- Freedom Plans (F20)
+
+                </h4>
+               <!-- <p class="lead">
+                Alice Blue offers 2 types of accounts to target different customer needs. The account types and available key features are described below:
+               </p> -->
+               
+                <table class="table mt-5 mb-5 text-center">
+                    <thead>
+                      <tr>
+                          <th scope="col">Col - 1
+                          </th>
+                        <th scope="col">Col - 2
+                        </th>
+                        
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr >
+                        <td>Equity Delivery Brokerage</td>
+                        <td>{{companyData?.brokerage_and_fees_trade_freedom_plan?.equity_delivery}}</td>
+                      </tr>
+                      <tr >
+                        <td>Equity Intraday Brokerage</td>
+                        <td>{{companyData?.brokerage_and_fees_trade_freedom_plan?.equity_intraday}}</td>
+                      </tr>
+                      <tr >
+                        <td>Equity Future Brokerage</td>
+                        <td>{{companyData?.brokerage_and_fees_trade_freedom_plan?.equity_futures}}</td>
+                      </tr>
+                      <tr >
+                        <td>Equity Option Brokerage</td>
+                        <td>{{companyData?.brokerage_and_fees_trade_freedom_plan?.equity_options}}</td>
+                      </tr>
+                      <tr >
+                        <td>Currency Future Brokerage</td>
+                        <td>{{companyData?.brokerage_and_fees_trade_freedom_plan?.currency_futures}}</td>
+                      </tr>
+                      <tr >
+                        <td>Currency Option Brokerage</td>
+                        <td>{{companyData?.brokerage_and_fees_trade_freedom_plan?.currency_options}}</td>
+                      </tr>
+                      <tr >
+                        <td>Commodity Future Brokerage</td>
+                        <td>{{companyData?.brokerage_and_fees_trade_freedom_plan?.commodity_futures}}</td>
+                      </tr>
+                      <tr >
+                        <td>Commodity Option Brokerage</td>
+                        <td>{{companyData?.brokerage_and_fees_trade_freedom_plan?.commodity_options}}</td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+
+            </div>
+
+            <!--  -->
+
+
+ <!--  -->
+ <div class="container-fluid">
+    <h4 class="sub-header">
+        Alice Blue Brokerage Fee Explained
+
+    </h4>
+   <p class="lead">
+    Equity Delivery & Intraday   
+</p>
+   
+    <table class="table mt-5 mb-5 text-center">
+        <thead>
+          <tr>
+              <th scope="col">Alice Blue Charges
+              </th>
+            <th scope="col">Equity Delivery
+            </th>
+            <th scope="col">
+                Equity Intraday
+            </th>
+            
+          </tr>
+        </thead>
+        <tbody>
+           
+            <tr>
+              <td>Securities Transaction Tax (STT)</td>
+              <td> {{companyData?.brokerage_charges?.equity_delivery_and_intraday?.stt?.equity_delivery}}</td>
+              <td> {{companyData?.brokerage_charges?.equity_delivery_and_intraday?.stt?.equity_intraday}}</td>
+            </tr>
+            <tr>
+              <td>Transaction / Turnover Charges</td>
+              <td> {{companyData?.brokerage_charges?.equity_delivery_and_intraday?.transaction_charges?.equity_delivery}}</td>
+              <td> {{companyData?.brokerage_charges?.equity_delivery_and_intraday?.transaction_charges?.equity_intraday}}</td>
+            </tr>
+            <tr>
+              <td>Goods and Services Tax (GST)</td>
+              <td> {{companyData?.brokerage_charges?.equity_delivery_and_intraday?.gst?.equity_delivery}}</td>
+              <td> {{companyData?.brokerage_charges?.equity_delivery_and_intraday?.gst?.equity_intraday}}</td>
+            </tr>
+            <tr>
+              <td>SEBI Charges</td>
+              <td> {{companyData?.brokerage_charges?.equity_delivery_and_intraday?.sebi_charges?.equity_delivery}}</td>
+              <td> {{companyData?.brokerage_charges?.equity_delivery_and_intraday?.sebi_charges?.equity_intraday}}</td>
+            </tr>
+            <tr>
+              <td>Stamp Charges</td>
+              <td> {{companyData?.brokerage_charges?.equity_delivery_and_intraday?.stamp_charges?.equity_delivery}}</td>
+              <td> {{companyData?.brokerage_charges?.equity_delivery_and_intraday?.stamp_charges?.equity_intraday}}</td>
+            </tr>
+           
+          </tbody>
+      </table>
+
+
+</div>
+
+<!--  -->
+
+<!--  -->
+<div class="container-fluid">
+    <!-- <h4 class="sub-header">
+        Alice Blue Brokerage Fee Explained
+
+    </h4> -->
+   <p class="lead">
+    Equity F&O Brokerage   
+</p>
+   
+    <table class="table mt-5 mb-5 text-center">
+        <thead>
+          <tr>
+              <th scope="col">Alice Blue Charges
+              </th>
+            <th scope="col">Futures
+            </th>
+            <th scope="col">
+                Options
+            </th>
+            
+          </tr>
+        </thead>
+        <tbody>
+           
+            <tr>
+              <td>Securities Transaction Tax (STT)</td>
+              <td> {{companyData?.brokerage_charges?.equity_f_o?.stt?.futures}}</td>
+              <td> {{companyData?.brokerage_charges?.equity_f_o?.stt?.options}}</td>
+            </tr>
+            <tr>
+              <td>Transaction / Turnover Charges</td>
+              <td> {{companyData?.brokerage_charges?.equity_f_o?.transaction_charges?.futures}}</td>
+              <td>{{ companyData?.brokerage_charges?.equity_f_o?.transaction_charges?.options}}</td>
+            </tr>
+            <tr>
+              <td>Goods and Services Tax (GST)</td>
+              <td> {{companyData?.brokerage_charges?.equity_f_o?.gst?.futures}}</td>
+              <td> {{companyData?.brokerage_charges?.equity_f_o?.gst?.options}}</td>
+            </tr>
+            <tr>
+              <td>SEBI Charges</td>
+              <td> {{companyData?.brokerage_charges?.equity_f_o?.sebi_charges?.futures}}</td>
+              <td> {{companyData?.brokerage_charges?.equity_f_o?.sebi_charges?.options}}</td>
+            </tr>
+            <tr>
+              <td>Stamp Charges</td>
+              <td> {{companyData?.brokerage_charges?.equity_f_o?.stamp_charges?.futures}}</td>
+              <td> {{companyData?.brokerage_charges?.equity_f_o?.stamp_charges?.options}}</td>
+            </tr>
+           
+          </tbody>
+      </table>
+
+
+</div>
+
+<!--  -->
+
+<!--  -->
+<div class="container-fluid">
+    <!-- <h4 class="sub-header">
+        Alice Blue Brokerage Fee Explained
+
+    </h4> -->
+   <p class="lead">
+    Currency F&O and Commodity Brokerage  
+</p>
+   
+    <table class="table mt-5 mb-5 text-center">
+        <thead>
+          <tr>
+              <th scope="col">Alice Blue Charges
+              </th>
+            <th scope="col">Futures
+            </th>
+            <th scope="col">
+                Options
+            </th>
+            <th scope="col">Commodity</th>
+            
+          </tr>
+        </thead>
+        <tbody>
+           
+            <tr>
+              <td>Securities Transaction Tax (STT)</td>
+              <td> {{companyData?.brokerage_charges?.currency_f_o?.stt?.futures}}</td>
+              <td> {{companyData?.brokerage_charges?.currency_f_o?.stt?.options}}</td>
+              <td> {{companyData?.brokerage_charges?.currency_f_o?.stt?.commodity}}</td>
+
+            </tr>
+            <tr>
+              <td>Transaction / Turnover Charges</td>
+              <td> {{companyData?.brokerage_charges?.currency_f_o?.transaction_charges?.futures}}</td>
+              <td> {{companyData?.brokerage_charges?.currency_f_o?.transaction_charges?.options}}</td>
+              <td> {{companyData?.brokerage_charges?.currency_f_o?.transaction_charges?.commodity}}</td>
+
+            </tr>
+            <tr>
+              <td>Goods and Services Tax (GST)</td>
+              <td> {{companyData?.brokerage_charges?.currency_f_o?.gst?.futures}}</td>
+              <td> {{companyData?.brokerage_charges?.currency_f_o?.gst?.options}}</td>
+              <td> {{companyData?.brokerage_charges?.currency_f_o?.gst?.commodity}}</td>
+
+            </tr>
+            <tr>
+              <td>SEBI Charges</td>
+              <td> {{companyData?.brokerage_charges?.currency_f_o?.sebi_charges?.futures}}</td>
+              <td> {{companyData?.brokerage_charges?.currency_f_o?.sebi_charges?.options}}</td>
+              <td> {{companyData?.brokerage_charges?.currency_f_o?.sebi_charges?.commodity}}</td>
+
+            </tr>
+            <tr>
+              <td>Stamp Charges</td>
+              <td> {{companyData?.brokerage_charges?.currency_f_o?.stamp_charges?.futures}}</td>
+              <td> {{companyData?.brokerage_charges?.currency_f_o?.stamp_charges?.options}}</td>
+              <td> {{companyData?.brokerage_charges?.currency_f_o?.stamp_charges?.commodity}}</td>
+            </tr>
+           
+          </tbody>
+      </table>
+
+
+</div>
+
+<!--  -->
+<!--  -->
+    <div class="container-fluid">
+        <h4 class="sub-header">
+            AliceBlue Fee Structure Explained:
+        </h4>
+
+        <p class="lead">
+            <i class="fa fa-check-square-o mr-2"></i>
+            <b>Brokerage</b>: {{companyData?.fee_structure_explained?.brokerage}}
+        </p>
+        <p class="lead">
+            <i class="fa fa-check-square-o mr-2"></i>
+            <b>STT</b>: {{companyData?.fee_structure_explained?.stt}}
+        </p>
+        <p class="lead">
+            <i class="fa fa-check-square-o mr-2"></i>
+            <b>Exchange Transaction or Turnover Charges</b>: {{companyData?.fee_structure_explained?.turnover_charges}}
+        </p>
+        <p class="lead">
+            <i class="fa fa-check-square-o mr-2"></i>
+            <b>Goods and Services Tax (GST)</b>: {{companyData?.fee_structure_explained?.gst}}
+        </p>
+        <p class="lead">
+            <i class="fa fa-check-square-o mr-2"></i>
+            <b>SEBI Charges</b>: {{companyData?.fee_structure_explained?.sebi_charges}}
+        </p>
+        <p class="lead">
+            <i class="fa fa-check-square-o mr-2"></i>
+            <b>Stamp Duty</b>: {{companyData?.fee_structure_explained?.stamp_charges}}
+        </p>
+    </div>
         </div>
         <div class="col-md-3">
             <app-company-page-scroll [companyScrollObject] = "companyScrollObject"></app-company-page-scroll>

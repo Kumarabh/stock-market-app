@@ -1,0 +1,668 @@
+<!-- Buttons -->
+<app-company-header [companyName] = "companyName"></app-company-header>
+
+<!-- compare broker -->
+<app-compare-broker></app-compare-broker>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-9">
+
+            <div class="jumbotron jumbotron-fluid">
+                <div class="container">
+                  <h1 class="display-4">{{companyName}} Stock Trading / Demat / Brokerage / Reviews 2021
+                  </h1>
+                  <hr class="my-4">
+                <br>
+                  <p class="lead">
+                      {{companyData?.information}}
+                  </p>
+
+                  
+                </div>
+                
+            </div>
+
+            <!--  -->
+            <div class="container-fluid">
+                <h4 class="display-4">
+                    Account Types
+                </h4>
+                <br>
+                <p class="lead">
+                    {{companyName}} offers {{companyData?.account_types.length}} different plans to help your trade :
+                </p>
+
+                <br>
+                <div *ngFor = "let data of companyData?.account_types">
+                    <h4 class="sub-header">
+                        {{data?.type}}
+                    </h4>
+                    <p class="lead">
+                        {{data?.description}}
+                    </p>
+                </div>
+            </div>
+            <!--  -->
+
+            <br><br><br><br>
+            <div class="container-fluid">
+                <h4 class="display-4">
+                    {{companyData?.about?.broker_name}} Online Account Opening
+                </h4>
+                <br>
+                <p class="lead">
+                    Fill an online application form. Click here to fill the {{companyData?.about?.broker_name}} contact form.
+
+                </p>
+            </div>
+<br><br><br><br>
+
+
+            <!--  -->
+            <div class="container-fluid">
+                <h4 class="display-4">
+                    {{companyData?.about?.broker_name}} Trading Software ( {{companyData?.about?.broker_name}} Trading Platforms)
+                </h4>
+                <br>
+                <p class="lead">
+                    You can trade with {{companyData?.about?.broker_name}} in following ways:
+                </p>
+                
+                <br>
+                <div *ngFor = "let data of companyData?.trading_softwares?.softwares">
+                    <h4 class="sub-header">
+                        {{data?.type}}
+                    </h4>
+                    <p class="lead">
+                        {{data?.description}}
+                    </p>
+                </div>
+            </div>
+            <!--  -->
+
+
+<!-- charges start-->
+<br><br><br><br>
+
+<div class="jumbotron">
+    <h1 class="display-4 header">{{companyData?.about?.broker_name}} charges 2021</h1>
+    <!-- <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p> -->
+    <hr class="my-4">
+    <!-- <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+    <p class="lead">
+      <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+    </p> -->
+
+    <!-- sub section -->
+    <h3 class="sub-header">{{companyData?.about?.broker_name}} Account Opening Charges</h3>
+    
+    <p class="sub-header-content">
+      Trading account opening charges for {{companyData?.about?.broker_name}} is {{companyData?.charges_and_amc?.trading_account_opening_charges}}. 
+      Demat account opening charges for {{companyData?.about?.broker_name}} is {{companyData?.charges_and_amc?.demat_account_opening_charges}}.
+      The demat account annual maintenance charges is 
+      {{companyData?.charges_and_amc?.demat_account_amc_charges}}. 
+      The trading account annual maintenance charges is 
+      {{companyData?.charges_and_amc?.demat_account_amc_charges}}.
+    </p>
+
+    <table class="table mt-5 mb-5 text-center">
+      <thead>
+        <tr>
+          <th scope="col">Transaction</th>
+          <th scope="col">Charges</th>
+          
+
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Trading Account Opening Charges</td>
+          <td> {{companyData?.charges_and_amc?.trading_account_opening_charges}}</td>
+         
+        </tr>
+        <tr>
+          <td>Demat Account Opening Charges</td>
+          <td> {{companyData?.charges_and_amc?.demat_account_opening_charges}}</td>
+         
+        </tr>
+        <tr>
+          <td>Trading Account AMC</td>
+          <td> {{companyData?.charges_and_amc?.trading_account_amc_charges}}</td>
+          
+        </tr>
+        <tr>
+          <td>Demat Account AMC</td>
+          <td> {{companyData?.charges_and_amc?.demat_account_amc_charges}}</td>
+         
+        </tr>
+      </tbody>
+    </table>
+    <!-- sub section ends -->
+
+    <!-- sub section -->
+    <h3 class="sub-header">{{companyData?.about?.broker_name}} Brokerage Charges 2020</h3>
+    <p class="sub-header-content">
+      {{companyData?.about?.broker_name}} follows a fixed brokerage model wherein it charges a flat Rs 20 or 0.03% (whichever is lower) per executed order. It charges zero brokerage on equity delivery. The maximum brokerage chargeable per order is Rs 20.
+    </p>
+
+    <table class="table mt-5 mb-5 text-center">
+      <thead>
+        <tr>
+          <th scope="col">Trading Segment</th>
+          <th scope="col">Brokerage Charges</th>
+          
+
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Equity Delivery</td>
+          <td> {{companyData?.brokerage2020?.equity_delivery}}</td>
+         
+        </tr>
+        <tr>
+          <td>Equity Intraday</td>
+          <td> {{companyData?.brokerage2020?.equity_intraday}}</td>
+         
+        </tr>
+        <tr>
+          <td>Equity Future</td>
+          <td> {{companyData?.brokerage2020?.equity_futures}}</td>
+         
+        </tr>
+        <tr>
+          <td>Equity Options</td>
+          <td> {{companyData?.brokerage2020?.equity_options}}</td>
+         
+        </tr>
+        <tr>
+          <td>Currency Futures</td>
+          <td> {{companyData?.brokerage2020?.commodity_futures}}</td>
+         
+        </tr>
+        <tr>
+          <td>Currency Options</td>
+          <td> {{companyData?.brokerage2020?.currency_options}}</td>
+         
+        </tr>
+        <tr>
+          <td>Commodity Futures</td>
+          <td> {{companyData?.brokerage2020?.commodity_futures}}</td>
+         
+        </tr>
+        <tr>
+          <td>Commodity Options</td>
+          <td> {{companyData?.brokerage2020?.commodity_options}}</td>
+         
+        </tr>
+        <tr>
+          <td>Mutual Fund</td>
+          <td> {{companyData?.brokerage2020?.equity_delivery}}</td>
+         
+        </tr>
+      </tbody>
+    </table>
+    <!-- sub section ends -->
+   
+
+     <!-- sub section -->
+     <h3 class="sub-header">{{companyData?.about?.broker_name}} Equity Charges</h3>
+     <p class="sub-header-content">
+      {{companyData?.about?.broker_name}} charges Rs 0 (no brokerage) for equity delivery trades. For intraday trading, they charge flat Rs 20 per executed order or 0.03% (whichever is lower) on both sides.
+    </p>
+
+     <table class="table mt-5 mb-5 text-center">
+       <thead>
+         <tr>
+           <th scope="col">Charge Type</th>
+           <th scope="col">Equity Delivery</th>
+           <th scope="col">Equity Intraday</th>
+
+         </tr>
+       </thead>
+       <tbody>
+         <tr>
+           <td>Brokerage</td>
+           <td> {{companyData?.equity_charges?.brokerage?.equity_delivery}}	</td>
+           <td> {{companyData?.equity_charges?.brokerage?.equity_intraday}} </td>
+
+         </tr>
+         <tr>
+           <td>Securities Transaction Tax (STT)</td>
+           <td> {{companyData?.equity_charges?.stt?.equity_delivery}}	</td>
+           <td> {{companyData?.equity_charges?.stt?.equity_intraday}} </td>
+         </tr>
+         <tr>
+           <td>Transaction / Turnover Charges</td>
+           <td> {{companyData?.equity_charges?.transaction_charges?.equity_delivery}}	</td>
+           <td> {{companyData?.equity_charges?.transaction_charges?.equity_intraday}} </td>
+
+         </tr>
+         <tr>
+           <td>Goods and Services Tax (GST)</td>
+           <td> {{companyData?.equity_charges?.gst?.equity_delivery}}	</td>
+           <td> {{companyData?.equity_charges?.gst?.equity_intraday}} </td>
+
+         </tr>
+         <tr>
+           <td>SEBI Charges</td>
+           <td> {{companyData?.equity_charges?.sebi_charges?.equity_delivery}}	</td>
+           <td> {{companyData?.equity_charges?.sebi_charges?.equity_intraday}} </td>
+         </tr>
+         <tr>
+           <td>Stamp Charges</td>
+           <td> {{companyData?.equity_charges?.stamp_charges?.equity_delivery}}	</td>
+           <td> {{companyData?.equity_charges?.stamp_charges?.equity_intraday}} </td>
+
+         </tr>
+        
+       </tbody>
+     </table>
+     <!-- sub section ends -->
+
+
+      <!-- sub section -->
+      <h3 class="sub-header">{{companyData?.about?.broker_name}} F&O Charges </h3>
+      <p class="sub-header-content">
+        {{companyData?.about?.broker_name}} F&O brokerage charge is flat Rs 20 per executed order or 0.03% (whichever is lower). You also have to pay taxes like STT, Transaction Fee, GST, SEBI charges, and Stamp Duty.           </p>
+
+      <table class="table mt-5 mb-5 text-center">
+        <thead>
+          <tr>
+            <th scope="col">Charge Type</th>
+            <th scope="col">Equity Futures</th>
+            <th scope="col">Equity Options</th>
+
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Brokerage</td>
+            <td> {{companyData?.equity_f_and_o_charges?.brokerage?.futures}}	</td>
+            <td> {{companyData?.equity_f_and_o_charges?.brokerage?.options}} </td>
+ 
+          </tr>
+          <tr>
+            <td>Securities Transaction Tax (STT)</td>
+            <td> {{companyData?.equity_f_and_o_charges?.stt?.futures}}	</td>
+            <td> {{companyData?.equity_f_and_o_charges?.stt?.options}} </td>
+          </tr>
+          <tr>
+            <td>Transaction / Turnover Charges</td>
+            <td> {{companyData?.equity_f_and_o_charges?.transaction_charges?.futures}}	</td>
+            <td> {{companyData?.equity_f_and_o_charges?.transaction_charges?.options}} </td>
+ 
+          </tr>
+          <tr>
+            <td>Goods and Services Tax (GST)</td>
+            <td> {{companyData?.equity_f_and_o_charges?.gst?.futures}}	</td>
+            <td> {{companyData?.equity_f_and_o_charges?.gst?.options}} </td>
+ 
+          </tr>
+          <tr>
+            <td>SEBI Charges</td>
+            <td> {{companyData?.equity_f_and_o_charges?.sebi_charges?.futures}}	</td>
+            <td> {{companyData?.equity_f_and_o_charges?.sebi_charges?.options}} </td>
+          </tr>
+          <tr>
+            <td>Stamp Charges</td>
+            <td> {{companyData?.equity_f_and_o_charges?.stamp_charges?.futures}}	</td>
+            <td> {{companyData?.equity_f_and_o_charges?.stamp_charges?.options}} </td>
+ 
+          </tr>
+         
+        </tbody>
+      </table>
+      <!-- sub section ends -->
+
+
+      <!-- sub section -->
+      <h3 class="sub-header">{{companyData?.about?.broker_name}} Currency Charges
+      </h3>
+      <p class="sub-header-content">
+        {{companyData?.about?.broker_name}} currency brokerage charge is flat Rs 20 per executed order or 0.03% (whichever is lower). In addition to brokerage, the customer has to pay taxes like STT, Transaction Fee, GST, SEBI charges, and Stamp Duty.</p>
+
+      <table class="table mt-5 mb-5 text-center">
+        <thead>
+          <tr>
+            <th scope="col">Charge Type</th>
+            <th scope="col">Currency Futures</th>
+            <th scope="col">Currency Options</th>
+
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Brokerage</td>
+            <td> {{companyData?.equity_currency_charges?.brokerage?.futures}}	</td>
+            <td> {{companyData?.equity_currency_charges?.brokerage?.options}} </td>
+ 
+          </tr>
+          <tr>
+            <td>Securities Transaction Tax (STT)</td>
+            <td> {{companyData?.equity_currency_charges?.stt?.futures}}	</td>
+            <td> {{companyData?.equity_currency_charges?.stt?.options}} </td>
+          </tr>
+          <tr>
+            <td>Transaction / Turnover Charges</td>
+            <td> {{companyData?.equity_currency_charges?.transaction_charges?.futures}}	</td>
+            <td> {{companyData?.equity_currency_charges?.transaction_charges?.options}} </td>
+ 
+          </tr>
+          <tr>
+            <td>Goods and Services Tax (GST)</td>
+            <td> {{companyData?.equity_currency_charges?.gst?.futures}}	</td>
+            <td> {{companyData?.equity_currency_charges?.gst?.options}} </td>
+ 
+          </tr>
+          <tr>
+            <td>SEBI Charges</td>
+            <td> {{companyData?.equity_currency_charges?.sebi_charges?.futures}}	</td>
+            <td> {{companyData?.equity_currency_charges?.sebi_charges?.options}} </td>
+          </tr>
+          <tr>
+            <td>Stamp Charges</td>
+            <td> {{companyData?.equity_currency_charges?.stamp_charges?.futures}}	</td>
+            <td> {{companyData?.equity_currency_charges?.stamp_charges?.options}} </td>
+ 
+          </tr>
+         
+         
+        </tbody>
+      </table>
+      <!-- sub section ends -->
+
+
+
+      <!-- sub section -->
+      <h3 class="sub-header">{{companyData?.about?.broker_name}} Commodities Charges
+
+      </h3>
+      <p class="sub-header-content">
+        {{companyData?.about?.broker_name}} commodity brokerage charge is flat Rs 20 or 0.03% (whichever is lower) per executed order. Along with this, customers have to pay taxes like STT, Transaction Fee, GST, SEBI charges, and Stamp Duty.</p>
+
+      <table class="table mt-5 mb-5 text-center">
+        <thead>
+          <tr>
+            <th scope="col">Charge Type</th>
+            <th scope="col">Commodity Futures</th>
+            <th scope="col">Commodity Options</th>
+
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Brokerage</td>
+            <td> {{companyData?.equity_commodity_charges?.brokerage?.futures}}	</td>
+            <td> {{companyData?.equity_commodity_charges?.brokerage?.options}} </td>
+ 
+          </tr>
+          <tr>
+            <td>Securities Transaction Tax (STT)</td>
+            <td> {{companyData?.equity_commodity_charges?.stt?.futures}}	</td>
+            <td> {{companyData?.equity_commodity_charges?.stt?.options}} </td>
+          </tr>
+          <tr>
+            <td>Transaction / Turnover Charges</td>
+            <td> {{companyData?.equity_commodity_charges?.transaction_charges?.futures}}	</td>
+            <td> {{companyData?.equity_commodity_charges?.transaction_charges?.options}} </td>
+ 
+          </tr>
+          <tr>
+            <td>Goods and Services Tax (GST)</td>
+            <td> {{companyData?.equity_commodity_charges?.gst?.futures}}	</td>
+            <td> {{companyData?.equity_commodity_charges?.gst?.options}} </td>
+ 
+          </tr>
+          <tr>
+            <td>SEBI Charges</td>
+            <td> {{companyData?.equity_commodity_charges?.sebi_charges?.futures}}	</td>
+            <td> {{companyData?.equity_commodity_charges?.sebi_charges?.options}} </td>
+          </tr>
+          <tr>
+            <td>Stamp Charges</td>
+            <td> {{companyData?.equity_commodity_charges?.stamp_charges?.futures}}	</td>
+            <td> {{companyData?.equity_commodity_charges?.stamp_charges?.options}} </td>
+ 
+          </tr>
+         
+        </tbody>
+      </table>
+      <!-- sub section ends -->
+
+<!-- subsection start -->
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4">{{companyData?.about?.broker_name}} Fee Structure
+
+    </h1>
+    <hr class="my-4">
+    <!-- <p class="lead">Securities Transaction Tax (STT)</p> -->
+   
+  <!-- list item -->
+  <h4 class="sub-header"><i class="fa fa-ravelry mr-2 fa-flip-horizontal"></i>Securities Transaction Tax (STT) </h4>
+  <p class="lead">          {{companyData?.fee_structure?.stt}} 
+  </p>
+  <!-- list item ends -->
+  <!-- list item -->
+  <h4 class="sub-header"><i class="fa fa-ravelry mr-2 fa-flip-horizontal"></i>Transaction Charges (Exchange Turnover Charges) </h4>
+  <p class="lead">  {{companyData?.fee_structure?.transaction_charges}}</p>
+  <!-- list item ends -->
+  <!-- list item -->
+  <h4 class="sub-header"><i class="fa fa-ravelry mr-2 fa-flip-horizontal"></i>Goods and Services Tax (GST) </h4>
+  <p class="lead">{{companyData?.fee_structure?.gst}}</p>
+  <!-- list item ends -->
+  <!-- list item -->
+  <h4 class="sub-header"><i class="fa fa-ravelry mr-2 fa-flip-horizontal"></i>SEBI Charges </h4>
+  <p class="lead">{{companyData?.fee_structure?.sebi_charges}}</p>
+  <!-- list item ends -->
+  <!-- list item -->
+  <h4 class="sub-header"><i class="fa fa-ravelry mr-2 fa-flip-horizontal"></i>Stamp Duty </h4>
+  <p class="lead">{{companyData?.fee_structure?.stamp_charges}}</p>
+  <!-- list item ends -->
+  </div>
+</div>
+
+
+<!-- subsection ends -->
+
+
+  </div>
+
+<!-- charges ends -->
+
+<!-- subsection start -->
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4">{{companyData?.about?.broker_name}} Pros (Advantages)
+
+    </h1>
+    <p class="lead">
+      The following are the advantages of {{companyData?.about?.broker_name}}. You must read {{companyData?.about?.broker_name}} advantages and disadvantages before opening an account with {{companyData?.about?.broker_name}}. {{companyData?.about?.broker_name}} pros and cons help you find if it suits your investment needs.
+
+    </p>
+    <hr class="my-4">
+    <!-- <p class="lead">Securities Transaction Tax (STT)</p> -->
+   
+  <!-- list item -->
+  <div *ngFor = "let data of companyData?.pros">
+    <!-- <h4 class="sub-header"><i class="fa fa-thumbs-up mr-2" aria-hidden="true"></i>Most popular broker  </h4> -->
+  <p class="lead">
+    <i class="fa fa-check-square-o mr-2"></i>
+     {{data}}
+  </p>
+  </div>
+  <!-- list item ends -->
+  
+  </div>
+</div>
+
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4">{{companyData?.about?.broker_name}} Cons (Disadvantages)
+
+    </h1>
+    <p class="lead">
+      The following are the cons of {{companyData?.about?.broker_name}}. Check the list of {{companyData?.about?.broker_name}} drawbacks.
+
+    </p>
+   <!-- list item -->
+   <div *ngFor = "let data of companyData?.cons">
+    <!-- <h4 class="sub-header"><i class="fa fa-thumbs-up mr-2" aria-hidden="true"></i>Most popular broker  </h4> -->
+  <p class="lead">
+    <i class="fa fa-check-square-o mr-2"></i>
+     {{data}}
+  </p>
+  </div>
+  <!-- list item ends -->
+  
+ 
+  </div>
+</div>
+
+<!-- sub section -->
+<div class="container-fluid">
+  <h3 class="sub-header">{{companyData?.about?.broker_name}} Margin / Exposure
+
+  </h3>
+  <p class="sub-header-content">
+    {{companyData?.about?.broker_name}} leverage for intraday, delivery, options, currency and commodities.</p>
+  <table class="table mt-5 mb-5  text-center">
+    <thead>
+      <tr>
+        <th scope="col">Segment	</th>
+        <th scope="col">Margin </th>
+        
+
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Equity Delivery	 </td>
+        <td>{{companyData?.margin_exposure?.equity_delivery}}
+        </td>
+        
+
+      </tr>
+      <tr>
+        <td>Equity Intraday	</td>
+        <td> {{companyData?.margin_exposure?.equity_intraday}}
+        </td>
+      
+      </tr>
+      <tr>
+        <td>Equity Future		</td>
+        <td> {{companyData?.margin_exposure?.equity_futures}}
+        </td>
+       
+
+      </tr>
+      <tr>
+        <td>Equity Options	</td>
+        <td> {{companyData?.margin_exposure?.equity_options}}
+        </td>
+        
+
+      </tr>
+      <tr>
+        <td>Currency Future		</td>
+        <td> {{companyData?.margin_exposure?.currency_futures}}
+        </td>
+       
+        
+      </tr>
+      <tr>
+        <td>Currency Options		</td>
+        <td> {{companyData?.margin_exposure?.currency_options}}
+        </td>
+       
+        
+
+      </tr>
+      <tr>
+        <td>Commodity Future			</td>
+        <td> {{companyData?.margin_exposure?.commodity_futures}}
+
+        </td>
+       
+       
+
+      </tr>
+      <tr>
+        <td>Commodity Options			</td>
+        <td> {{companyData?.margin_exposure?.commodity_options}}
+
+        </td>
+       
+       
+
+      </tr>
+     
+    </tbody>
+  </table>
+</div>
+<!-- sub section ends -->
+
+
+
+<!-- subsection start -->
+<div class="container-fluid newSubsection">
+  <h3 class="sub-header">{{companyName}} Ratings
+  </h3>
+  <hr>
+  
+  
+  <table class="table mt-5 mb-5 text-center">
+    <thead>
+      <tr>
+        <th scope="col">Segment	</th>
+        <th scope="col">Ratings		</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><b>Overall Rating</b>	</td>
+        <td> {{companyData?.ratings?.overall_ratings}}</td>
+  
+      </tr>
+      <tr>
+        <td>Fees		</td>
+        <td> {{companyData?.ratings?.fees}} </td>
+      </tr>
+      
+      <tr>
+        <td>Brokerage	</td>
+        <td> {{companyData?.ratings?.trading_brokerage}} </td>
+      </tr>
+      
+     <tr>
+       <td>Usability		</td>
+       <td> {{companyData?.ratings?.trading_platform_usability}} </td>
+      </tr>
+     <tr>
+       <td>Customer Service		</td>
+       <td> {{companyData?.ratings?.customer_service}}</td>
+     </tr>
+     <tr>
+       <td>Research Capabilities		</td>
+       <td> {{companyData?.ratings?.research_capabilities}} </td>
+     </tr>
+     
+    </tbody>
+  </table>
+  
+</div>
+
+
+
+
+<!-- subsection ends -->
+        </div>
+        <div class="col-md-3">
+            <app-company-page-scroll [companyScrollObject] = "companyScrollObject"></app-company-page-scroll>
+          <app-special-offers></app-special-offers>
+
+        </div>
+    </div>
+</div>
+<app-footer [companyName]="companyName"></app-footer>

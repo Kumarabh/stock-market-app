@@ -49,4 +49,12 @@ export class CompanyReviewService {
     return this.firestore.collection('company_review').doc(company_name).get();
 
   }
+
+  getCompareData(company_name): Observable<any> {
+    console.log('company name', company_name);
+    
+    return this.firestore.collection('compare_brokers').doc(company_name).get();
+
+  }
+
 }
