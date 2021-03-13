@@ -14,7 +14,7 @@ export class StockMessageBoardComponent implements OnInit {
   }
 
   setCompareBrokerData() {
-    this.service.setCompareBrokerData('master_trust',this.dataObject)
+    this.service.setCompareBrokerData('zerodha',this.dataObject)
   }
 
   dataObject =  {
@@ -22,7 +22,7 @@ export class StockMessageBoardComponent implements OnInit {
     
     about: {
     
-    broker_name: "Master Trust",
+    broker_name: "Zerodha",
     type_of_broker: "Discount Broker",
     supported_exchanges: "",
     account_type: "",
@@ -97,7 +97,7 @@ export class StockMessageBoardComponent implements OnInit {
         currency_futures: "NSE Rs 120 | BSE Rs 100",
         currency_options: "NSE Rs 4200 | BSE Rs 1000",
         commodity: "MCX Rs 250",
-        enquire: "/review/master-trust"
+        enquire: "/review/zerodha"
     },
     leverage: {
         equity_delivery: "1x for fixed brokerage plan; Upto 4.5x for standard plan",
@@ -108,7 +108,7 @@ export class StockMessageBoardComponent implements OnInit {
         currency_options: "-",
         commodity_futures: "-",
         commodity_options: "-",
-        enquire: "/review/master-trust"
+        enquire: "/review/zerodha"
     },
     features: {
         three_in_one_account: "no",
@@ -124,7 +124,7 @@ export class StockMessageBoardComponent implements OnInit {
         intraday_square_off_time: "Eq Cash: 3:15 PM | Eq F&O : 3:25 PM | Currency: 4:45 PM | Commodities: 25 min before close",
         other_features: "Direct Mutual Funds, APIs for Algo Trading",
         referral_program: "yes",
-        enquire: "/review/master-trust"
+        enquire: "/review/zerodha"
 
 
     },
@@ -150,7 +150,7 @@ export class StockMessageBoardComponent implements OnInit {
         sell_today_buy_tomorrow: "-",
         after_market_order: "-",
         good_till_cancelled: "-",
-        enquire: "/review/master-trust"
+        enquire: "/review/zerodha"
 
     },
     research_report: {
@@ -318,11 +318,16 @@ export class StockMessageBoardComponent implements OnInit {
         
     },
     fee_structure: {
-        stt: "This is charged only on the sell side for intraday and F&O trades. It is charged on both sides for Delivery trades in Equity.",
-        transaction_charges: "This fee charged by the stock exchanges for using their trading platform.",
-        gst: "This is charged at 18% of the total cost of brokerage plus transaction charges.",
-        sebi_charges: "This is charged at Rs 5 per Crore.",
-        stamp_charges: "Eq Delivery - 0.015% (buy side), Eq Intraday - 0.03% (buy side)"
+        stt: "0.0126% of Total Turnover",
+        transaction_charges: "0.00325% of Total Turnover",
+        gst: "18% of (brokerage + transaction charges)",
+        sebi_charges: "Ts.5/ crore",
+        stamp_charges: "Depends on State (very minimal)",
+        trading_account_opening_charges: "Rs.200",
+        trading_account_amc_charges: "Rs.0",
+        demat_account_opening_charges: "Rs.200",
+        demat_account_amc_charges: "Rs 300 per year"
+
     }
     ,
     margin_exposure: {

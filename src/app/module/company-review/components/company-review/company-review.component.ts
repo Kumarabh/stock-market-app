@@ -10,6 +10,7 @@ export class CompanyReviewComponent implements OnInit {
 
   @Input('companyCode') companyCode: any;
   @Input('companyName') companyName: any;
+  @Input('companyUrl') companyUrl: any;
 
   companyScrollObject = [
     {

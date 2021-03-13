@@ -41,9 +41,9 @@
   
       </div>
       <div class="col-3">
-        <p>
-          <!-- <a href="" class="btn btn-danger btn-md waves-effect waves-light">Margin Calculator</a> -->
-        </p>
+        <p class="clips p-2 mr-0" *ngFor = "let data of shortLinks?.top_links">
+          <a style="color: #333958;text-decoration: none;cursor: pointer;" routerLink="{{data.link_path}}" routerLinkActive="active"> {{data.link_title}}</a>
+       </p>
       </div>
     </div>
   

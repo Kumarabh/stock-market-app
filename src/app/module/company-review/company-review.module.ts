@@ -9,7 +9,6 @@ import { FormsModule } from '@angular/forms';
 import { CompanyReviewService } from './company-review.service';
 import { HttpClientModule } from '@angular/common/http';
 import { EdelweissReviewComponent } from './components/edelweiss-review/edelweiss-review.component';
-import { FooterComponent } from './components/footer/footer.component';
 import { FivePaisaComponent } from './components/five-paisa/five-paisa.component';
 import { ProstocksComponent } from './components/prostocks/prostocks.component';
 import { SharekhanComponent } from './components/sharekhan/sharekhan.component';
@@ -64,7 +63,7 @@ import { CompanyReviewComponent } from './components/company-review/company-revi
 
 
 @NgModule({
-  declarations: [ZerodhaReviewComponent, UpstoxComponent, EdelweissReviewComponent, FooterComponent, FivePaisaComponent, ProstocksComponent, SharekhanComponent, AngelBrokingComponent, FyersComponent, HdfcSecuritiesComponent, CompanyHeaderComponent, CompanyPageScrollComponent, KotakSecuritiesComponent, IciciDirectComponent, MotilalOswalComponent, AxisDirectComponent, AnandRathiComponent, SbiSecuritiesComponent, KarvyComponent, SmcGlobalComponent, GrowwComponent, IiflSecuritiesComponent, GeojitComponent, StoxkartComponent, DhaniStocksComponent, ReligareComponent, VenturaComponent, MasterTrustComponent, IndiaBullsComponent, AdityaBirlaMoneyComponent, BonanzaComponent, SamcoComponent, TradingBellsComponent, IdbiCapitalsComponent, TradeSmartComponent, SasOnlineComponent, ItradeOnlineComponent, RkGlobalComponent, TradePlusComponent, TradeJiniComponent, AliceBlueComponent, WisdomCapitalComponent, FinvasiaComponent, RmoneyComponent, BeelineComponent, JustTradeComponent, AchiiversComponent, TrustLineComponent, YesSecuritiesComponent, IndiraSecuritiesComponent, PaytmMoneyComponent, ChoiceBrokingComponent, GclSecuritiesComponent, CompanyReviewComponent],
+  declarations: [ZerodhaReviewComponent, UpstoxComponent, EdelweissReviewComponent, FivePaisaComponent, ProstocksComponent, SharekhanComponent, AngelBrokingComponent, FyersComponent, HdfcSecuritiesComponent, CompanyHeaderComponent, CompanyPageScrollComponent, KotakSecuritiesComponent, IciciDirectComponent, MotilalOswalComponent, AxisDirectComponent, AnandRathiComponent, SbiSecuritiesComponent, KarvyComponent, SmcGlobalComponent, GrowwComponent, IiflSecuritiesComponent, GeojitComponent, StoxkartComponent, DhaniStocksComponent, ReligareComponent, VenturaComponent, MasterTrustComponent, IndiaBullsComponent, AdityaBirlaMoneyComponent, BonanzaComponent, SamcoComponent, TradingBellsComponent, IdbiCapitalsComponent, TradeSmartComponent, SasOnlineComponent, ItradeOnlineComponent, RkGlobalComponent, TradePlusComponent, TradeJiniComponent, AliceBlueComponent, WisdomCapitalComponent, FinvasiaComponent, RmoneyComponent, BeelineComponent, JustTradeComponent, AchiiversComponent, TrustLineComponent, YesSecuritiesComponent, IndiraSecuritiesComponent, PaytmMoneyComponent, ChoiceBrokingComponent, GclSecuritiesComponent, CompanyReviewComponent],
   imports: [
     CommonModule,
     CompanyReviewRoutingModule,

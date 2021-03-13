@@ -7,13 +7,13 @@
       <i class="fa fa-code-fork mr-2" aria-hidden="true"></i> Compare {{companyName}} with Top Brokers in India
     
     </h1>
-    <hr class="my-4">
+    <!-- <hr class="my-4"> -->
     <!-- <hr class=""> -->
       <div class="row mx-auto m-1 text-center ">
-        <div class="col-md-4" *ngFor = "let broker of brokerList?.brokers">
+        <div class="col-md-4" *ngFor = "let broker of brokerList">
           <div class="card faqCards ">
             <div class="card-body">
-              <a class="form-control" class="faq"  href="">{{companyName}} Vs {{broker.company_name}}</a>
+              <a class="form-control" class="faq"  routerLink="/compare-brokers/{{companyUrl}}-vs-{{broker.companyUrl}}" routerLinkActive="active">{{companyName}} Vs {{broker.companyName}}</a>
 
             </div>
           </div>
